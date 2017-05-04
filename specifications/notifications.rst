@@ -54,7 +54,7 @@ Geo Ripple
 Si la notificación es del tipo **radial**, puede tener activado el **ripple effect** como sistema
 para la expansión de esa notificación de forma automática.
 
-.. image:: ../_static/images/ripple_effect.png
+.. image:: /_static/images/ripple_effect.png
 
 1. Partiendo de un centro y de un radio, se **seleccionan los dispositivos** que están disponibles para este primer *ripple*.
 
@@ -116,4 +116,4 @@ Una vez creados los grupos, se envía la notificación:
 4. Si no es relevante, se no se hace nada hasta la siguiente comprobación.
 5. Cuando pasa el tiempo límite, se detienen las comprobaciones de relevancia.
 
-.. image:: ../_static/images/progressive.png
+.. image:: /_static/images/progressive.png

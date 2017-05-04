@@ -5,7 +5,7 @@ Arquitectura
 El siguiente esquema representa la arquitectura lógica sobre la que funciona la plataforma
 de Onpublico Backstage.
 
-.. image:: ../_static/images/architecture.png
+.. image:: /_static/images/architecture.png
 
 Los elementos principales son:
 

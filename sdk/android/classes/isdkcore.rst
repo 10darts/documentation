@@ -1,3 +1,5 @@
+.. _android-sdk-classes-isdkcore:
+
 ISDKCore
 ========
 

@@ -1,3 +1,5 @@
+.. _android-sdk-classes-iustrings:
+
 IUIStrings
 ==========
 
@@ -12,7 +14,7 @@ Strings to be presented to the user
 Return a CharSequence explaining to the user why your app uses location
 and why permission should be granted.
 
-The returned value should be multilanguage aware.
+The returned value should be multi-language aware.
 
 -  **Parameters:** ``context`` — context to be used to access string
    resources
