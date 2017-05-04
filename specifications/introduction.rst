@@ -1,3 +1,5 @@
+.. _introduction:
+
 ============
 Introducción
 ============
@@ -16,26 +18,21 @@ Terminología
 Resumen de los términos que se van a utilizar durante el documento. Cada uno de ellos será explicado
 en profundidad en sus correspondientes secciones.
 
-**Usuario**
+.. glossary::
 
-    Llamaremos **usuario** a aquella entidad con la *capacidad potencial* de identificarse en el sistema, mediante
-    el uso de un correo electrónico y una contraseña. Diferenciaremos dos grandes grupos de usuarios, los **usuarios premium** y
-    los **usuarios**.
+    :ref:`Cliente <users-clients>`
+        Los **clientes** son aquellas entidades que pueden identificarse en el sistema, y tienen asociados a ellos el contenido (dispositivos, notificaciones, etc.)
 
-    - Los **clientes** son aquellas entidades que pueden identificarse en el sistema, y tienen asociados a ellos el contenido (dispositivos, notificaciones, etc.)
-    - Los **usuarios**, por defecto no pueden identificarse en el sistema, pero son aquellos a que usan un dispositivo en particular.
+    :ref:`Usuario <users-simple>`
+        Los **usuarios** no pueden identificarse en el sistema, pero son aquellos a que usan un dispositivo en particular.
 
-**Dispositivo**
+    :ref:`Dispositivo <devices>`
+        Llamaremos **dispositivo** a todo aquel aparato capaz de recibir notificaciones push.
 
-    Llamaremos **dispositivo** a todo aquel aparato capaz de recibir notificaciones push.
+    :ref:`Notificación <notifications>`
+        Una **notificación** se define como un mensaje, definido por un texto y un *destino* creado por un *usuario premium*,
+        en el que ha establecido una serie de condiciones para definir a cuantos dispositivos va a llegar el mensaje,
+        tales como el idioma del dispositivo, versión del cliente, y sobretodo el *área de entrega* de este.
 
-**Notificación**
-
-    Una **notificación** se define como un mensaje, definido por un texto y un *destino* creado por un *usuario premium*,
-    en el que ha establecido una serie de condiciones para definir a cuantos dispositivos va a llegar el mensaje,
-    tales como el idioma del dispositivo, versión del cliente, y sobretodo el *área de entrega* de este.
-
-**Push**
-
-    Un **push** en el sistema simboliza *un envío en concreto* que ha sido realizado a una serie de *dispositivos*.
-
+    :ref:`Push <pushes>`
+        Un **push** en el sistema simboliza *un envío en concreto* que ha sido realizado a una serie de *dispositivos*.

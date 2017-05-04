@@ -86,5 +86,5 @@ Ejemplo:
 | **27/3/2017** |               |               |         9.217 |
 +---------------+---------------+---------------+---------------+
 
-*De los dispositivos creados durante la semana del 13/3/2017, durante esta semana han tenido actividad 9.940 dispositivos (se corresponde con el total de creados). Durante la semana de 20/3/2017, de estos dispositivos, han tenido actividad 8.120.*
-
+.. note::
+    De los dispositivos creados durante la semana del 13/3/2017, durante esta semana han tenido actividad 9.940 dispositivos (se corresponde con el total de creados). Durante la semana de 20/3/2017, de estos dispositivos, han tenido actividad 8.120.

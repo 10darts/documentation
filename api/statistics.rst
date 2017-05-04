@@ -102,7 +102,7 @@ Cohorts
     :query origin_date: fecha de inicio de la semana donde los devices se han creado (eg: 2017-04-11)
     :query target_date: fecha de inicio de la semana donde analizar la actividad de los devices creados (eg: 2017-04-11)
 
-     **Ejemplo de respuesta**:
+    **Ejemplo de respuesta**:
 
     .. sourcecode:: http
 

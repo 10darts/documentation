@@ -1,3 +1,5 @@
+.. _users:
+
 ========
 Usuarios
 ========
@@ -8,6 +10,8 @@ usuarios, los **clientes** y los **usuarios**.
 
 - Los **clientes**
 - Los **usuarios**
+
+.. _users-clients:
 
 Clientes
 --------
@@ -27,6 +31,8 @@ Aplicación SNS
 Los *clientes* tienen que registrar en la plataforma los credenciales de su aplicación móvil
 para que se registre una **aplicación de SNS** para cada plataforma que quiera soportar
 el usuario.
+
+.. _users-simple:
 
 Usuarios
 --------

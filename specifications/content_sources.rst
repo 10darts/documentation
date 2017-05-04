@@ -69,8 +69,9 @@ Ejemplo de RSS:
         </channel>
     </rss>
 
-Si la fuente tiene información geográfica asociada a los *items*, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_,
-esta se asocia al contenido generado.
+.. note::
+    Si la fuente tiene información geográfica asociada a los *items*, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_,
+    esta se asocia al contenido generado.
 
 Conversor de contenido
 ----------------------

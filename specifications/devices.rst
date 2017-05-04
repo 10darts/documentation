@@ -1,3 +1,5 @@
+.. _devices:
+
 ============
 Dispositivos
 ============
@@ -34,8 +36,9 @@ Se pueden importar los dispositivos usando ficheros CSV, separados por comas, co
 Los campos opcionales se tienen que dejar en blanco pero ocupando su columna, en caso de que no
 se quieran incluir.
 
-Si el email del usuario tiene de dominio ``example.com`` entonces el correo será ignorado
-a la hora de darlo de alta en la base de datos.
+.. note::
+    Si el email del usuario tiene de dominio ``example.com`` entonces el correo será ignorado
+    a la hora de darlo de alta en la base de datos.
 
 
 Comprobación global de estado
@@ -49,4 +52,3 @@ Para esta notificación no se solicitará la conformación de recepción por par
 busca detectar aquellos dispositivos cuyo *token* para identificarlos en el envío de notificaciones push
 ha dejado de ser válido, en cuyo caso se consideraría que el dispositivo ha dejado de tener la aplicación
 del cliente instalada.
-

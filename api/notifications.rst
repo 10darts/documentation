@@ -243,7 +243,8 @@ manera uniforme entre todas las alternativas.
     :>json string notification: URI de la notificación de la cual se quiere crear la alternativa, **obligatorio**
     :>json binary image: imagen para usar en la alternativa
 
-    Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
+    .. warning::
+        Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
 
 
 Pasos de distribución de una notificación

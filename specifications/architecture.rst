@@ -9,10 +9,10 @@ de Onpublico Backstage.
 
 Los elementos principales son:
 
-- Users
-- Devices
-- Notifications
-- Pushes
+- :ref:`Users <users>`
+- :ref:`Devices <devices>`
+- :ref:`Notifications <notifications>`
+- :ref:`Pushes <pushes>`
 
 A los que se añade un módulo para la gestión de las localizaciones definidas por *fronteras
 administrativas*, es decir, países, estados, ciudades, barrios, etc. Cada uno de estos

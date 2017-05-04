@@ -59,5 +59,6 @@ Añadir clave/valor a un usuario
     :<json string value: representación en cadena de texto del valor que se quiere asociar a la key
     :<json string users: referencia al usuario al que se quiere asociar el valor
 
-En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
-almacenar claves como si fueran etiquetas al uso.
+.. note::
+    En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
+    almacenar claves como si fueran etiquetas al uso.

@@ -15,6 +15,8 @@ To build the documentation, you need to be able to run Python code in your machi
 Insall requirements
 ^^^^^^^^^^^^^^^^^^^
 
+You only have to do this once:
+
 .. code-block:: bash
 
     $ mkvirtualenv 10darts-documentation
@@ -22,6 +24,8 @@ Insall requirements
 
 Compile documentation
 ^^^^^^^^^^^^^^^^^^^^^
+
+To create the HTML version of the documentation, run these commands:
 
 .. code-block:: bash
 
@@ -32,7 +36,11 @@ Compile documentation
 Upload to GitHub pages
 ^^^^^^^^^^^^^^^^^^^^^^
 
+After commit and push, and also after compiling the documentation, then, run
+the following commands:
+
 .. code-block:: bash
 
     $ workon 10darts-documentation
+
     (10darts-documentation) $ ghp-import -n -m 'your commit message' -p _build/html

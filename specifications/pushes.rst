@@ -1,3 +1,5 @@
+.. _pushes:
+
 ======
 Pushes
 ======
@@ -117,5 +119,3 @@ Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se modifica 
 
 Además, para que el cliente sea compatible con estas notificaciones, ha de ser configurado tal como se indica
 en la `documentación de Apple <https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW8>`_.
-
-
