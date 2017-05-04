@@ -1,0 +1,634 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Onpublico Medialab SL
+# This file is distributed under the same license as the 10Darts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 10Darts 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-04 14:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../api.rst:3
+msgid "API HTTP RESTful"
+msgstr ""
+
+#: ../../api/applications.rst:3
+msgid "Aplicaciones"
+msgstr ""
+
+#: ../../api/applications.rst:6
+msgid "Crear aplicación"
+msgstr ""
+
+#: ../../api/applications.rst:10 ../../api/applications.rst:23
+#: ../../api/applications.rst:63 ../../api/applications.rst:100
+#: ../../api/devices.rst:10 ../../api/devices.rst:73 ../../api/devices.rst:110
+#: ../../api/feeds.rst:10 ../../api/feeds.rst:45 ../../api/feeds.rst:74
+#: ../../api/keys.rst:13 ../../api/keys.rst:40 ../../api/notifications.rst:10
+#: ../../api/notifications.rst:27 ../../api/notifications.rst:45
+#: ../../api/notifications.rst:139 ../../api/notifications.rst:161
+#: ../../api/notifications.rst:178 ../../api/notifications.rst:218
+#: ../../api/notifications.rst:258 ../../api/notifications.rst:337
+#: ../../api/notifications.rst:430 ../../api/pushes.rst:16
+#: ../../api/pushes.rst:39 ../../api/pushes.rst:66 ../../api/pushes.rst:94
+#: ../../api/statistics.rst:10 ../../api/statistics.rst:53
+#: ../../api/statistics.rst:96 ../../api/users.rst:15 ../../api/users.rst:38
+#: ../../api/users.rst:76 ../../api/users.rst:145 ../../api/users.rst:172
+msgid "**Ejemplo de petición**:"
+msgstr ""
+
+#: ../../api/applications.rst ../../api/devices.rst ../../api/keys.rst
+#: ../../api/notifications.rst ../../api/pushes.rst ../../api/users.rst
+msgid "Request JSON Object"
+msgstr ""
+
+#: ../../api/applications.rst:37
+msgid "nombre de la aplicación, ha de ser único y sin espacios, **obligatorio**"
+msgstr ""
+
+#: ../../api/applications.rst:38
+msgid "tipo de plataforma, \"GCM\", \"APNS\" o \"APNS_SANDBOX\""
+msgstr ""
+
+#: ../../api/applications.rst:39
+msgid ""
+"para APNS y APNS_SANDBOX se corresponde con el certificado SSL, y no se "
+"aplica en GCM"
+msgstr ""
+
+#: ../../api/applications.rst:40
+msgid ""
+"para APNS y APNS_SANDBOX se corresponde con el la clave privada, y con "
+"GCM se corresponde con la *API Key*"
+msgstr ""
+
+#: ../../api/applications.rst:42 ../../api/applications.rst:70
+#: ../../api/applications.rst:107 ../../api/devices.rst:34
+#: ../../api/devices.rst:95 ../../api/devices.rst:116 ../../api/feeds.rst:17
+#: ../../api/feeds.rst:56 ../../api/feeds.rst:85 ../../api/notifications.rst:86
+#: ../../api/notifications.rst:150 ../../api/notifications.rst:167
+#: ../../api/notifications.rst:184 ../../api/notifications.rst:230
+#: ../../api/notifications.rst:264 ../../api/notifications.rst:343
+#: ../../api/notifications.rst:436 ../../api/pushes.rst:29
+#: ../../api/pushes.rst:52 ../../api/pushes.rst:79 ../../api/pushes.rst:107
+#: ../../api/statistics.rst:16 ../../api/statistics.rst:59
+#: ../../api/statistics.rst:105 ../../api/users.rst:21 ../../api/users.rst:55
+#: ../../api/users.rst:92 ../../api/users.rst:160 ../../api/users.rst:178
+msgid "**Ejemplo de respuesta**:"
+msgstr ""
+
+#: ../../api/applications.rst:59
+msgid "Listar aplicaciones"
+msgstr ""
+
+#: ../../api/applications.rst:93
+msgid "}"
+msgstr ""
+
+#: ../../api/applications.rst:96
+msgid "Borrar aplicaciones"
+msgstr ""
+
+#: ../../api/authentication.rst:3
+msgid "Autenticación"
+msgstr ""
+
+#: ../../api/authentication.rst:6
+msgid "Autenticación vía Token"
+msgstr ""
+
+#: ../../api/authentication.rst:8
+msgid ""
+"Cada **cliente** dispondrá de un credencial en forma de cadena de texto "
+"aleatoria generada por el sistema. Esta cadena, o ``token`` será "
+"utilizado para la autenticación de las llamadas al API."
+msgstr ""
+
+#: ../../api/authentication.rst:11
+msgid ""
+"El token debe ser incluido en la cabecera HTTP de **Authorization**. La "
+"clave tiene que estar precedida por el literal ``Token``, con una "
+"separación de un espacio entre las dos cadenas. Por ejemplo::"
+msgstr ""
+
+#: ../../api/authentication.rst:17
+msgid ""
+"Las llamadas no autenticadas tendrán como resultado una respuesta del "
+"tipo ``HTTP 401 Unauthorized``."
+msgstr ""
+
+#: ../../api/devices.rst:3
+msgid "Devices"
+msgstr ""
+
+#: ../../api/devices.rst:6
+msgid "Registro de dispositivos"
+msgstr ""
+
+#: ../../api/devices.rst:26
+msgid "token identificativo del dispositivo para la recepción de pushes"
+msgstr ""
+
+#: ../../api/devices.rst:27 ../../api/devices.rst:58
+msgid "plataforma del dispositivo, ``0`` para Android, ``1`` para iOS"
+msgstr ""
+
+#: ../../api/devices.rst:28
+msgid "usuario al que está asociado el dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:29 ../../api/devices.rst:60 ../../api/devices.rst:89
+msgid "cadena de descripción del modelo del dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:30 ../../api/devices.rst:61 ../../api/devices.rst:90
+msgid "cadena que identifica la versión del cliente que usa el dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:31 ../../api/devices.rst:62 ../../api/devices.rst:91
+msgid "cadena que identifica el idioma del dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:32 ../../api/devices.rst:63 ../../api/devices.rst:93
+msgid ""
+"coordenadas del dispositivo, donde ``coordinates`` es un array con las "
+"coordenadas de la siguiente forma: **[longitud, latidud]**"
+msgstr ""
+
+#: ../../api/devices.rst ../../api/notifications.rst ../../api/users.rst
+msgid "Response JSON Object"
+msgstr ""
+
+#: ../../api/devices.rst:56
+msgid "id interno único del dispositvo"
+msgstr ""
+
+#: ../../api/devices.rst:57
+msgid ""
+"codigo único del dispositivo, es el que se usa al hacer referencia a este"
+" en el resto del API"
+msgstr ""
+
+#: ../../api/devices.rst:59 ../../api/devices.rst:88
+msgid "usuario ('persona') al que está asociado el dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:67
+msgid "Actualizar dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:69
+msgid "Para actualizar la posición, el usuario asociado u otros datos."
+msgstr ""
+
+#: ../../api/devices.rst:92
+msgid ""
+"booleano que indica si se han desactivado/activado las notificaciones "
+"push en el dispositivo"
+msgstr ""
+
+#: ../../api/devices.rst:103
+msgid "Registro de acceso"
+msgstr ""
+
+#: ../../api/devices.rst:105
+msgid ""
+"Para registrar la actividad de un dispositivo, se necesita que se realice"
+" una llamada explícita para que se registre el acceso de un dispositivo."
+msgstr ""
+
+#: ../../api/feeds.rst:3
+msgid "Feeds"
+msgstr ""
+
+#: ../../api/feeds.rst:6
+msgid "Listar los feeds"
+msgstr ""
+
+#: ../../api/feeds.rst:41
+msgid "Añadir un nuevo feed"
+msgstr ""
+
+#: ../../api/feeds.rst:69
+msgid "Comprobar elementos del feed"
+msgstr ""
+
+#: ../../api/keys.rst:3
+msgid "Keys"
+msgstr ""
+
+#: ../../api/keys.rst:5
+msgid ""
+"El sistema permite almacenar **información arbitraria** en formato de "
+"clave/valor asociada tanto a dispositivos como a usuarios."
+msgstr ""
+
+#: ../../api/keys.rst:9
+msgid "Añadir clave/valor a un dispositivo"
+msgstr ""
+
+#: ../../api/keys.rst:30 ../../api/keys.rst:57
+msgid ""
+"objeto JSON con la clave ``name`` indicando el nombre de la clave que se "
+"quiere asociar, **obligatorio**"
+msgstr ""
+
+#: ../../api/keys.rst:31 ../../api/keys.rst:58
+msgid ""
+"en caso de indicar un valor asociado, el tipo de este valor, siendo 0: "
+"float, 1: int, 2: string, 3: bool"
+msgstr ""
+
+#: ../../api/keys.rst:32 ../../api/keys.rst:59
+msgid "representación en cadena de texto del valor que se quiere asociar a la key"
+msgstr ""
+
+#: ../../api/keys.rst:33
+msgid "referencia al dispositivo al que se quiere asociar el valor"
+msgstr ""
+
+#: ../../api/keys.rst:36
+msgid "Añadir clave/valor a un usuario"
+msgstr ""
+
+#: ../../api/keys.rst:60
+msgid "referencia al usuario al que se quiere asociar el valor"
+msgstr ""
+
+#: ../../api/keys.rst:63
+msgid ""
+"En ambas llamadas, se puede omitir los campos relacionados con el valor "
+"(``type`` y ``value``) para almacenar claves como si fueran etiquetas al "
+"uso."
+msgstr ""
+
+#: ../../api/notifications.rst:3
+msgid "Notifications"
+msgstr ""
+
+#: ../../api/notifications.rst:6
+msgid "Crear una notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:62
+msgid "texto de la notificación **obligatorio**"
+msgstr ""
+
+#: ../../api/notifications.rst:63 ../../api/notifications.rst:116
+msgid ""
+"cadena única que representa el tipo del contenido de destino de la "
+"notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:64 ../../api/notifications.rst:117
+msgid "código único que identifica el contenido de destino de la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:65 ../../api/notifications.rst:118
+msgid "idioma de los dispositivos a los que enviar la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:66 ../../api/notifications.rst:119
+msgid "plataforma a la que enviar la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:67 ../../api/notifications.rst:120
+msgid ""
+"versión del cliente que deben de tener los dispositivos a los que se "
+"envía la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:68 ../../api/notifications.rst:121
+msgid "lista de usuarios a los que la notificación debe ser enviada"
+msgstr ""
+
+#: ../../api/notifications.rst:69 ../../api/notifications.rst:122
+msgid "``MultiPolygon`` con las areas donde la notificación ha de ser efectiva"
+msgstr ""
+
+#: ../../api/notifications.rst:70 ../../api/notifications.rst:123
+msgid ""
+"``Point`` que representa el centro de la circunferencia donde la "
+"notificación es efectiva"
+msgstr ""
+
+#: ../../api/notifications.rst:71 ../../api/notifications.rst:124
+msgid "radio de la circunferencia donde la notificación es efectiva"
+msgstr ""
+
+#: ../../api/notifications.rst:72
+msgid "define el algoritmo de distribución"
+msgstr ""
+
+#: ../../api/notifications.rst:73
+msgid "define el centro del efecto Geo Ripple (solo para algoritmo de Geo Ripple)"
+msgstr ""
+
+#: ../../api/notifications.rst:74
+msgid ""
+"define el radio por defecto del efecto Geo Ripple (solo para algoritmo de"
+" Geo Ripple)"
+msgstr ""
+
+#: ../../api/notifications.rst:75 ../../api/notifications.rst:126
+msgid "marcar la notificación como silenciosa"
+msgstr ""
+
+#: ../../api/notifications.rst:76 ../../api/notifications.rst:127
+msgid "indicar que la notificación requiere confirmación"
+msgstr ""
+
+#: ../../api/notifications.rst:77 ../../api/notifications.rst:128
+msgid "indicar que la notificación hará una selección de devices aleatoria"
+msgstr ""
+
+#: ../../api/notifications.rst:78 ../../api/notifications.rst:129
+msgid "indica el tamaño de la muestra aleatoria"
+msgstr ""
+
+#: ../../api/notifications.rst:79 ../../api/notifications.rst:130
+msgid "indica el *peso* del contenido asociado a la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:80
+msgid "indicar que la notificación hará la comprobación de *churn*"
+msgstr ""
+
+#: ../../api/notifications.rst:81 ../../api/notifications.rst:131
+msgid ""
+"lista de *keys* que han de tener los devices a los que se quiere enviar "
+"la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:82
+msgid ""
+"puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
+"tags se aplican a dispositivos o a usuarios, por defecto se toma el valor"
+" de \"device\""
+msgstr ""
+
+#: ../../api/notifications.rst:84 ../../api/notifications.rst:247
+msgid ""
+"Si se incluye el campo ``image`` la petición ha de ir en formato "
+"*multipart*."
+msgstr ""
+
+#: ../../api/notifications.rst:112
+msgid "identificador interno único de la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:113
+msgid "identificador único de la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:114
+msgid "texto de la notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:115
+msgid "imagen para usar en el contenido"
+msgstr ""
+
+#: ../../api/notifications.rst:125
+msgid "activar el 'ripple effect' para esta notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:132
+msgid ""
+"puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
+"tags se aplican a dispositivos o a usuarios"
+msgstr ""
+
+#: ../../api/notifications.rst:135
+msgid "Actualizar notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:157
+msgid "Enviar notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:174
+msgid "Reintentar notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:211
+msgid "Crear una alternative a una notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:213
+msgid ""
+"Se puede crear una alternativa de contenido para una notificación ya "
+"creada. Los pushes se distribuirán de manera uniforme entre todas las "
+"alternativas."
+msgstr ""
+
+#: ../../api/notifications.rst:242
+msgid "texto alternativo de la notificación, **obligatorio**"
+msgstr ""
+
+#: ../../api/notifications.rst:243
+msgid ""
+"URI de la notificación de la cual se quiere crear la alternativa, "
+"**obligatorio**"
+msgstr ""
+
+#: ../../api/notifications.rst:244
+msgid "imagen para usar en la alternativa"
+msgstr ""
+
+#: ../../api/notifications.rst:251
+msgid "Pasos de distribución de una notificación"
+msgstr ""
+
+#: ../../api/notifications.rst:253
+msgid ""
+"Para cada una de las notificaciones se pueden obtener los pasos que han "
+"dado para realizar la distribución de esta."
+msgstr ""
+
+#: ../../api/notifications.rst:330
+msgid "Log de comprobaciones de relevancia"
+msgstr ""
+
+#: ../../api/notifications.rst:332
+msgid ""
+"Los logs de comprobación de relevancia se pueden obtener para una "
+"notificación o para un paso de distribución."
+msgstr ""
+
+#: ../../api/pushes.rst:3
+msgid "Pushes"
+msgstr ""
+
+#: ../../api/pushes.rst:6
+msgid "Read"
+msgstr ""
+
+#: ../../api/pushes.rst:8
+msgid ""
+"Los pushes leídos no afectan directamente a las estadísticas de los "
+"devices, sino que se utilizan para el parámetro ``badge`` de cada "
+"dispositivo. Un push puede ser leído sin que este haya sido pulsado por "
+"el usuario."
+msgstr ""
+
+#: ../../api/pushes.rst:14
+msgid "Marca el push indicado como leído."
+msgstr ""
+
+#: ../../api/pushes.rst:27 ../../api/pushes.rst:50 ../../api/pushes.rst:77
+#: ../../api/pushes.rst:105
+msgid "device que realiza la acción"
+msgstr ""
+
+#: ../../api/pushes.rst:37
+msgid "Marca todos los pushes no leídos como leídos."
+msgstr ""
+
+#: ../../api/pushes.rst:59
+msgid "Follow"
+msgstr ""
+
+#: ../../api/pushes.rst:61
+msgid ""
+"La acción de ``follow`` sobre un push se corresponde con la acción que "
+"realiza el usuario al hacer click en la notificación que le llega al "
+"dispositivo."
+msgstr ""
+
+#: ../../api/pushes.rst:86
+msgid "Received"
+msgstr ""
+
+#: ../../api/pushes.rst:88
+msgid ""
+"El push se marca como recibido de forma automática en el momento en que "
+"este llega al dispositivo. De esta forma se tiene la certeza de que pese "
+"a la falta de garantías que nos dan los sistemas de entrega de "
+"notificaciones push, esta notificación sí ha llegado."
+msgstr ""
+
+#: ../../api/statistics.rst:3
+msgid "Estadísticas"
+msgstr ""
+
+#: ../../api/statistics.rst:6
+msgid "Estadísticas diarias"
+msgstr ""
+
+#: ../../api/statistics.rst:49
+msgid "Estadísticas semanales"
+msgstr ""
+
+#: ../../api/statistics.rst:92
+msgid "Cohorts"
+msgstr ""
+
+#: ../../api/statistics.rst
+msgid "Query Parameters"
+msgstr ""
+
+#: ../../api/statistics.rst:102
+msgid ""
+"fecha de inicio de la semana donde los devices se han creado (eg: "
+"2017-04-11)"
+msgstr ""
+
+#: ../../api/statistics.rst:103
+msgid ""
+"fecha de inicio de la semana donde analizar la actividad de los devices "
+"creados (eg: 2017-04-11)"
+msgstr ""
+
+#: ../../api/users.rst:3
+msgid "Users"
+msgstr ""
+
+#: ../../api/users.rst:5
+msgid ""
+"En el sistema se diferencia los diferentes perfiles de usuario usando los"
+" recursos ``users`` para los **clientes**, y ``personas`` para los "
+"**usuarios**. Se utiliza el termino ``persona`` del inglés, que hace "
+"referencia a la personalidad de alguien según la percibe otra persona, ya"
+" que en este recurso se guarda los datos que se tienen desde la "
+"perspectiva del **cliente**."
+msgstr ""
+
+#: ../../api/users.rst:11
+msgid "Usuario actual"
+msgstr ""
+
+#: ../../api/users.rst:49 ../../api/users.rst:109
+msgid "email del usuario"
+msgstr ""
+
+#: ../../api/users.rst:50
+msgid "nombre del usuario"
+msgstr ""
+
+#: ../../api/users.rst:51
+msgid "apellido/s del usuario"
+msgstr ""
+
+#: ../../api/users.rst:52
+msgid "contraseña del usuario"
+msgstr ""
+
+#: ../../api/users.rst:72
+msgid "Registro de persona"
+msgstr ""
+
+#: ../../api/users.rst:87 ../../api/users.rst:156
+msgid "email del usuario, **obligatorio**"
+msgstr ""
+
+#: ../../api/users.rst:88 ../../api/users.rst:110 ../../api/users.rst:157
+msgid "nombre del usuario, si se sabe"
+msgstr ""
+
+#: ../../api/users.rst:89 ../../api/users.rst:111 ../../api/users.rst:158
+msgid "apellido/s del usuario, si se saben"
+msgstr ""
+
+#: ../../api/users.rst:90
+msgid "URI del device al que se quiere asociar la persona"
+msgstr ""
+
+#: ../../api/users.rst:107
+msgid "id interno único del usuario"
+msgstr ""
+
+#: ../../api/users.rst:108
+msgid ""
+"código único del usuario, es el que se usa al hacer referencia a este en "
+"el resto del API"
+msgstr ""
+
+#: ../../api/users.rst:113
+msgid ""
+"La llamada puede dar error si se introducen datos inválidos, o si el "
+"correo electrónico del **usuario** ya está registrado para el este "
+"**cliente**."
+msgstr ""
+
+#: ../../api/users.rst:116
+msgid "**Ejemplo de respuestas**:"
+msgstr ""
+
+#: ../../api/users.rst:141
+msgid "Actualizar persona"
+msgstr ""
+
+#: ../../api/users.rst:168
+msgid "Buscar persona"
+msgstr ""
+

@@ -20,5 +20,9 @@
 *.py[cod]
 __pycache__
 
+# Translations
+*.mo
+*.pot
+
 # Sphinx
 _build/

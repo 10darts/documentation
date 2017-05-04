@@ -22,6 +22,33 @@ You only have to do this once:
     $ mkvirtualenv 10darts-documentation
     (10darts-documentation) $ pip install -r requirements.txt
 
+Translations
+^^^^^^^^^^^^
+First, activate the virtualenv:
+
+.. code-block:: bash
+
+    $ workon 10darts-documentation
+
+Extract document’s translatable messages into pot files:
+
+.. code-block:: bash
+
+    (10darts-documentation) $ make gettext
+
+Setup/update locale:
+
+.. code-block:: bash
+
+    (10darts-documentation) $ sphinx-intl update -p _build/locale -l es -l en
+
+Build mo files and make translated document:
+
+.. code-block:: bash
+
+    (10darts-documentation) $ sphinx-intl build
+    (10darts-documentation) $ make -e SPHINXOPTS="-D language='en'" html
+
 Compile documentation
 ^^^^^^^^^^^^^^^^^^^^^
 
