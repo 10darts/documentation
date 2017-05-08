@@ -26,12 +26,12 @@ Importar dispositivos
 Se pueden importar los dispositivos usando ficheros CSV, separados por comas, con las siguientes columnas:
 
 - Token del dispositivo (string).
-- Plataforma (entero, ``0`` para Android, ``1`` para iOS).
+- Plataforma (entero, ``android`` para Android, ``ios`` para iOS).
 - Posición (string). Ejemplo: ``RID=4326;POINT (-99.0099141 19.335117)``, donde las coordenadas son **longitud y latitud, en ese orden**.
 - Idioma (string), código de dos caracteres del idioma, opcional.
-- Version (string), opcional
-- Model (string), opcional
-- Email (string) del usuario asociado
+- Version (string), opcional.
+- Model (string), opcional.
+- Email (string) del usuario asociado.
 
 Los campos opcionales se tienen que dejar en blanco pero ocupando su columna, en caso de que no
 se quieran incluir.
