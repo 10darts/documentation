@@ -191,13 +191,21 @@ Actualizar persona
 Buscar persona
 --------------
 
-.. http:get:: /api/v1/personas/?email=(string:email)
+Se puede buscar una persona por el username o por el email.
+
+.. http:get:: /api/v1/personas/?(string:field)=(string:email)
 
     **Ejemplo de petición**:
 
     .. sourcecode:: http
 
         GET /api/v1/personas/?email=client1@example.com HTTP/1.1
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/personas/?username=client1 HTTP/1.1
 
     **Ejemplo de respuesta**:
 
