@@ -2,6 +2,38 @@
 Devices
 =======
 
+Plataformas
+-----------
+
+.. http:get:: /api/v1/platforms/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/platforms/ HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "count": 2,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "name": "android"
+                },
+                {
+                    "name": "ios"
+                }
+            ]
+        }
+
 Registro de dispositivos
 ------------------------
 
