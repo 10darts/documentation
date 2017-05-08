@@ -81,10 +81,15 @@ Registro de persona
         Content-Type: application/json
 
         {
-            "email": "..."
+            "email": "...",
+            "type": "Point",
+                "coordinates": [-123.0208, 44.0489]
+            }
         }
 
-    :<json string email: email del usuario, **obligatorio**
+    :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**, **obligatorio**
+    :<json string username: nombre único del usuario, según quiera el cliente
+    :<json string email: email del usuario
     :<json string first_name: nombre del usuario, si se sabe
     :<json string last_name: apellido/s del usuario, si se saben
     :<json string device: URI del device al que se quiere asociar la persona
@@ -99,6 +104,7 @@ Registro de persona
         {
             "id": 3947,
             "code": "DVS7eE",
+            "username": "client1",
             "email": "client1@example.com",
             "first_name": "",
             "last_name": ""
@@ -106,9 +112,11 @@ Registro de persona
 
     :>json int id: id interno único del usuario
     :>json string code: código único del usuario, es el que se usa al hacer referencia a este en el resto del API
+    :>json string username: nombre único del usuario, según quiera el cliente
     :>json string email: email del usuario
     :>json string first_name: nombre del usuario, si se sabe
     :>json string last_name: apellido/s del usuario, si se saben
+    :>json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
     La llamada puede dar error si se introducen datos inválidos, o si el correo electrónico del **usuario**
     ya está registrado para el este **cliente**.

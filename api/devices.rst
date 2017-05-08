@@ -30,6 +30,7 @@ Registro de dispositivos
     :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
     :<json string language: cadena que identifica el idioma del dispositivo
     :<json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+    :<json string persona: URI de la persona con la que vincular el dispositivo
 
     **Ejemplo de respuesta**:
 
@@ -50,7 +51,8 @@ Registro de dispositivos
             "position": {
                 "type": "Point",
                     "coordinates": [-123.0208, 44.0489]
-                }
+                },
+            "persona": "/api/v1/personas/IECwPN/"
         }
 
     :>json int id: id interno único del dispositvo
@@ -61,6 +63,11 @@ Registro de dispositivos
     :>json string version: cadena que identifica la versión del cliente que usa el dispositivo
     :>json string language: cadena que identifica el idioma del dispositivo
     :>json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+
+.. note::
+
+    Si no se indica una persona en la petición de creación de device, esta se
+    creará de forma automática y se devolverá en la respuesta de creación.
 
 
 Actualizar dispositivo
