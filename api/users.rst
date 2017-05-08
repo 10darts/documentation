@@ -82,17 +82,18 @@ Registro de persona
 
         {
             "email": "...",
-            "type": "Point",
+            "position": {
+                "type": "Point",
                 "coordinates": [-123.0208, 44.0489]
             }
         }
 
-    :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**, **obligatorio**
     :<json string username: nombre único del usuario, según quiera el cliente
     :<json string email: email del usuario
     :<json string first_name: nombre del usuario, si se sabe
     :<json string last_name: apellido/s del usuario, si se saben
     :<json string device: URI del device al que se quiere asociar la persona
+    :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
     **Ejemplo de respuesta**:
 
@@ -118,8 +119,11 @@ Registro de persona
     :>json string last_name: apellido/s del usuario, si se saben
     :>json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
-    La llamada puede dar error si se introducen datos inválidos, o si el correo electrónico del **usuario**
-    ya está registrado para el este **cliente**.
+    La llamada puede dar error si:
+
+    - Se introducen datos inválidos, como un email inválido en el campo de email
+    - Si el correo electrónico de la **persona** ya está registrado para el **cliente**
+    - Si el ``username`` de la **persona** ya está registrado para el **cliente**
 
     **Ejemplo de respuestas**:
 
@@ -144,6 +148,18 @@ Registro de persona
                 "Email already exists."
             ]
         }
+
+    .. sourcecode:: http
+
+        HTTP/1.1 400 Bad Request
+        Content-Type: application/json
+
+        {
+            "username": [
+                "Username already exists."
+            ]
+        }
+
 
 Actualizar persona
 ------------------
