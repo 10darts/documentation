@@ -1,3 +1,4 @@
+===========
 Mobile SDKs
 ===========
 
@@ -5,3 +6,4 @@ Mobile SDKs
     :maxdepth: 2
 
     android/index
+    ios/index

@@ -1,10 +1,8 @@
-.. _android-sdk-index:
+.. _android-sdk-quickstart:
 
-Android SDK
-===========
-
+==========
 QuickStart
-----------
+==========
 
 The following instructions will guide you through the process of
 implementing 10 Darts SDK in your application, the instructions are
@@ -21,15 +19,15 @@ Note that the target devices should have Google Play services installed
 and updated on it for the proper operation of this SDK
 
 1 Configure the Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 Library
-"""""""
+^^^^^^^
 
 -  Copy the SDK aar file to your libs directory
 
 Gradle
-""""""
+^^^^^^
 
 -  Add the library to the dependencies:
 
@@ -49,7 +47,7 @@ Gradle
 
 
 Manifest
-""""""""
+^^^^^^^^
 
 -  Add the required permissions:
 
@@ -142,7 +140,7 @@ Manifest
    of :ref:`Google Cloud Messaging <android-sdk-gcm>`
 
 2 Implement client class
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 Follow the steps in :ref:`Implementing client class <android-sdk-client>` and
 you are done!.

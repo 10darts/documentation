@@ -444,12 +444,12 @@ unmodified
 -  ``observer`` — observer to be called when the operation is done
 
 ``public interface ILocationAlerter``
-=====================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Location alerter to redirect user to configuration
 
 ``void alertNotEnabled(Activity parent)``
-=========================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Alert the user that location is not enabled, good place to open device
 location settings for the user

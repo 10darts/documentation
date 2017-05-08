@@ -1,5 +1,6 @@
 .. _android-sdk-client:
 
+=========================
 Implementing client class
 =========================
 

@@ -16,7 +16,7 @@ Registro de dispositivos
 
         {
             "token": "...",
-            "platform": 0,
+            "platform": "android",
             "position": {
             "type": "Point",
                 "coordinates": [-123.0208, 44.0489]
@@ -24,7 +24,7 @@ Registro de dispositivos
         }
 
     :<json string token: token identificativo del dispositivo para la recepción de pushes
-    :<json int platform: plataforma del dispositivo, ``0`` para Android, ``1`` para iOS
+    :<json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS
     :<json string user: usuario al que está asociado el dispositivo
     :<json string model: cadena de descripción del modelo del dispositivo
     :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
@@ -41,7 +41,7 @@ Registro de dispositivos
         {
             "id": 4,
             "code": "9XzsNm",
-            "platform": 0,
+            "platform": "android",
             "persona": null,
             "disabled": false,
             "model": "",
@@ -55,7 +55,7 @@ Registro de dispositivos
 
     :>json int id: id interno único del dispositvo
     :>json string code: codigo único del dispositivo, es el que se usa al hacer referencia a este en el resto del API
-    :>json int platform: plataforma del dispositivo, ``0`` para Android, ``1`` para iOS
+    :>json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS
     :>json string persona: usuario ('persona') al que está asociado el dispositivo
     :>json string model: cadena de descripción del modelo del dispositivo
     :>json string version: cadena que identifica la versión del cliente que usa el dispositivo

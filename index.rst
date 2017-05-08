@@ -7,5 +7,5 @@
    :caption: Contenidos:
 
    specifications
-   sdk/index
+   sdks/index
    api
