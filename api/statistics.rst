@@ -41,6 +41,8 @@ Métricas
         :query start_date: fecha de comienzo (eg: 2017-04-11)
         :query finish_date: fecha de fin (eg: 2017-04-15)
         :query step: número de días que pasan entre resultado y resultado
+        :query notifications: lista de códigos de notificaciones sobre los que se quiere obtener estadísticas (e.g. ``notifications=MJ6H6Y,OsFKVH``)
+        :query fields: lista de campos que se quiere incluir en la respuesta, por defecto, se incluyen todos (e.g. ``notifications=notifications,sent_to``)
 
     **Ejemplo de respuesta**:
 
