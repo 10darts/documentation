@@ -12,5 +12,5 @@ Especificaciones
    specifications/notifications
    specifications/pushes
    specifications/places
-   specifications/metrics
+   specifications/statistics
    specifications/content_sources

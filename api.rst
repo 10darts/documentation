@@ -12,5 +12,5 @@ API HTTP RESTful
    api/notifications
    api/pushes
    api/keys
-   api/metrics
+   api/statistics
    api/feeds
