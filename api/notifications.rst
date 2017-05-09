@@ -63,7 +63,7 @@ Crear una notificación
     :<json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
     :<json string destination_code: código único que identifica el contenido de destino de la notificación
     :<json string language: idioma de los dispositivos a los que enviar la notificación
-    :<json string platforms: plataforma a la que enviar la notificación
+    :<json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
     :<json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
     :<json list users: lista de usuarios a los que la notificación debe ser enviada
     :<json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
@@ -116,7 +116,7 @@ Crear una notificación
     :>json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
     :>json string destination_code: código único que identifica el contenido de destino de la notificación
     :>json string language: idioma de los dispositivos a los que enviar la notificación
-    :>json string platforms: plataformas a la que enviar la notificación
+    :>json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
     :>json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
     :>json list users: lista de usuarios a los que la notificación debe ser enviada
     :>json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
