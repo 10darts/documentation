@@ -1,6 +1,6 @@
-============
-Estadísticas
-============
+========
+Métricas
+========
 
 Globales sobre notificaciones push
 ----------------------------------
