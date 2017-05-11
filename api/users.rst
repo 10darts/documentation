@@ -81,13 +81,14 @@ Registro de persona
         Content-Type: application/json
 
         {
-            "email": "...",
+            "client_data": "...",
             "position": {
                 "type": "Point",
                 "coordinates": [-123.0208, 44.0489]
             }
         }
 
+    :<json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
     :<json string username: nombre único del usuario, según quiera el cliente
     :<json string email: email del usuario
     :<json string first_name: nombre del usuario, si se sabe
@@ -105,6 +106,7 @@ Registro de persona
         {
             "id": 3947,
             "code": "DVS7eE",
+            "client_data": "client1",
             "username": "client1",
             "email": "client1@example.com",
             "first_name": "",
@@ -113,6 +115,7 @@ Registro de persona
 
     :>json int id: id interno único del usuario
     :>json string code: código único del usuario, es el que se usa al hacer referencia a este en el resto del API
+    :>json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
     :>json string username: nombre único del usuario, según quiera el cliente
     :>json string email: email del usuario
     :>json string first_name: nombre del usuario, si se sabe
@@ -122,8 +125,7 @@ Registro de persona
     La llamada puede dar error si:
 
     - Se introducen datos inválidos, como un email inválido en el campo de email
-    - Si el correo electrónico de la **persona** ya está registrado para el **cliente**
-    - Si el ``username`` de la **persona** ya está registrado para el **cliente**
+    - Si el ``client_data`` de la **persona** ya está registrado para el **cliente**
 
     **Ejemplo de respuestas**:
 
@@ -144,19 +146,8 @@ Registro de persona
         Content-Type: application/json
 
         {
-            "email": [
-                "Email already exists."
-            ]
-        }
-
-    .. sourcecode:: http
-
-        HTTP/1.1 400 Bad Request
-        Content-Type: application/json
-
-        {
-            "username": [
-                "Username already exists."
+            "client_data": [
+                "Client data already exists."
             ]
         }
 
@@ -177,7 +168,9 @@ Actualizar persona
             "email": "..."
         }
 
-    :<json string email: email del usuario, **obligatorio**
+    :<json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
+    :<json string email: email del usuario
+    :<json string username: nombre de usuario del usuario
     :<json string first_name: nombre del usuario, si se sabe
     :<json string last_name: apellido/s del usuario, si se saben
 
@@ -193,19 +186,19 @@ Buscar persona
 
 Se puede buscar una persona por el username o por el email.
 
-.. http:get:: /api/v1/personas/?(string:field)=(string:email)
+.. http:get:: /api/v1/personas/?(string:field)=(string:value)
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/personas/?client_data=client1 HTTP/1.1
 
     **Ejemplo de petición**:
 
     .. sourcecode:: http
 
         GET /api/v1/personas/?email=client1@example.com HTTP/1.1
-
-    **Ejemplo de petición**:
-
-    .. sourcecode:: http
-
-        GET /api/v1/personas/?username=client1 HTTP/1.1
 
     **Ejemplo de respuesta**:
 
@@ -222,6 +215,7 @@ Se puede buscar una persona por el username o por el email.
                 {
                     "id": 1,
                     "code": "IECwPN",
+                    "client_data": "client1",
                     "email": "client1@example.com",
                     "first_name": "",
                     "last_name": ""

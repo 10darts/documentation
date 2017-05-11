@@ -75,7 +75,6 @@ Registro de dispositivos
             "id": 4,
             "code": "9XzsNm",
             "platform": "android",
-            "persona": null,
             "disabled": false,
             "model": "",
             "version": null,
@@ -137,6 +136,54 @@ Para actualizar la posición, el usuario asociado u otros datos.
 
         HTTP/1.1 200 OK
 
+Enlazar un dispositivo a una persona
+------------------------------------
+
+Para enlazar un usuario del cliente con el dispositivo, se puede realizar una
+llamada a ``/api/v1/devices/links/`` indicando en el campo de ``client_data``
+el valor que identifica al usuario de forma única para el cliente.
+
+.. http:post:: /api/v1/devices/links/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        PATCH /api/v1/devices/links/ HTTP/1.1
+        Content-Type: application/json
+
+        {
+            "device": "/api/v1/devices/9XzsNm/",
+            "client_data": "foo"
+        }
+
+    :<json string device: URI del device que se quiere actualizar
+    :<json string client_data: referencia única del cliente que identifica la persona
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "id": 4,
+            "code": "9XzsNm",
+            "platform": "android",
+            "disabled": false,
+            "model": "",
+            "version": null,
+            "language": null,
+            "position": {
+                "type": "Point",
+                    "coordinates": [-123.0208, 44.0489]
+                },
+            "persona": "/api/v1/personas/IECwPN/"
+        }
+    .. note::
+
+        La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
 
 Registro de acceso
 ------------------
