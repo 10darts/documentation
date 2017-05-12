@@ -34,13 +34,13 @@ Se pueden importar los dispositivos usando ficheros CSV, separados por comas, co
 - Idioma (string), código de dos caracteres del idioma, opcional.
 - Version (string), opcional.
 - Model (string), opcional.
-- Email (string) del usuario asociado.
+- *Client data* (string), cualquier cadena única en el sistema del cliente que identifique al usuario del dispositivo.
 
 Los campos opcionales se tienen que dejar en blanco pero ocupando su columna, en caso de que no
 se quieran incluir.
 
 .. note::
-    Si el email del usuario tiene de dominio ``example.com`` entonces el correo será ignorado
+    Si el campo de *client data* es un email, y este tiene de dominio ``example.com``, entonces este será ignorado
     a la hora de darlo de alta en la base de datos.
 
 
