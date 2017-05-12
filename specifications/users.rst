@@ -37,7 +37,7 @@ el usuario.
 Personas
 --------
 
-Las *`personas <https://en.wikipedia.org/wiki/Persona_(psychology)>`_*  son
+Las `personas <https://en.wikipedia.org/wiki/Persona_(psychology)>`_  son
 **aquellos a los que se les asocia a un dispositivo**. Un dispositivo solo
 puede tener una persona asociado al mismo tiempo.
 
