@@ -23,8 +23,8 @@ en profundidad en sus correspondientes secciones.
     :ref:`Cliente <users-clients>`
         Los **clientes** son aquellas entidades que pueden identificarse en el sistema, y tienen asociados a ellos el contenido (dispositivos, notificaciones, etc.)
 
-    :ref:`Usuario <users-simple>`
-        Los **usuarios** no pueden identificarse en el sistema, pero son aquellos a que usan un dispositivo en particular.
+    :ref:`Persona <users-simple>`
+        Las **personas** no pueden identificarse en el sistema, pero son aquellos que usan un dispositivo en particular.
 
     :ref:`Dispositivo <devices>`
         Llamaremos **dispositivo** a todo aquel aparato capaz de recibir notificaciones push.

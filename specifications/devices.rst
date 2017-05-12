@@ -6,18 +6,21 @@ Dispositivos
 
 Un **dispositivo** a todo aquel aparato capaz de recibir notificaciones push.
 
-Será la aplicación cliente, por medio del **SDK** la encargada de realizar las siguientes
+Será la aplicación cliente, por medio del **SDK** o directamente usando el
+**API**, la encargada de realizar las siguientes
 acciones sobre el dispositivo:
 
-- Asociar el dispositivo a un usuario.
-- Actualizar las coordenadas de dispositivo.
-- Actualizar datos del dispositivos, idioma, versión o el modelo.
-- **Registrar acceso** del dispositivo a la aplicación.
+- :ref:`Asociar el dispositivo a una persona. <api-devices-link>`
+- :ref:`Actualizar las coordenadas de dispositivo. <api-devices-link>`
+- :ref:`Actualizar datos del dispositivos, idioma, versión o el modelo. <api-devices-link>`
+- :ref:`**Registrar acceso** del dispositivo a la aplicación. <api-devices-access>`
 
-Es importante remarcar que el **registro de acceso** del dispositivo a la aplicación se realice
-de forma explícita desde el SDK, ya que esto asegura un control exacto de **cuando se considera
-que un usuario a accedido** a la aplicación, pudiendo adaptarse a las condiciones concretas
-de cada una de las plataformas disponibles.
+.. note::
+
+    Es importante remarcar que el **registro de acceso** del dispositivo a la aplicación se realice
+    de forma explícita desde el SDK, ya que esto asegura un control exacto de
+    **cuando se considera que un usuario a accedido** a la aplicación, pudiendo
+    adaptarse a las condiciones concretas de cada una de las plataformas disponibles.
 
 
 Importar dispositivos
