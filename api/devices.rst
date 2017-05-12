@@ -101,6 +101,7 @@ Registro de dispositivos
     creará de forma automática y se devolverá en la respuesta de creación.
 
 .. _api-devices-update:
+
 Actualizar dispositivo
 ----------------------
 
@@ -137,6 +138,7 @@ Para actualizar la posición, el usuario asociado u otros datos.
         HTTP/1.1 200 OK
 
 .. _api-devices-link:
+
 Enlazar un dispositivo a una persona
 ------------------------------------
 
@@ -187,6 +189,7 @@ el valor que identifica al usuario de forma única para el cliente.
         La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
 
 .. _api-devices-access:
+
 Registro de acceso
 ------------------
 
