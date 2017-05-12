@@ -13,7 +13,7 @@ acciones sobre el dispositivo:
 - :ref:`Asociar el dispositivo a una persona. <api-devices-link>`
 - :ref:`Actualizar las coordenadas de dispositivo. <api-devices-link>`
 - :ref:`Actualizar datos del dispositivos, idioma, versión o el modelo. <api-devices-link>`
-- :ref:`**Registrar acceso** del dispositivo a la aplicación. <api-devices-access>`
+- :ref:`Registrar acceso del dispositivo a la aplicación. <api-devices-access>`
 
 .. note::
 
