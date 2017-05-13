@@ -32,8 +32,8 @@ dispositivos alcanzables.
 Reintentos
 ----------
 
-Una notificación **que no tenga activado el 'ripple effect'** puede ser **reintentada**. Un reintento significa
-que se creará una notificación nueva que de ser enviada, se seleccionarán los dispositivos objetos de la
+Una notificación **que no tenga activado el 'ripple effect'** y **haya sido enviada** puede ser **reintentada**. Un reintento significa
+que se creará una notificación nueva que ha de ser enviada, donde se seleccionarán los dispositivos objetivos de la
 siguiente forma:
 
 - Se parte de los dispositivos **seleccionados en el momento de enviar la notificación original**.
