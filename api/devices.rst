@@ -184,9 +184,52 @@ el valor que identifica al usuario de forma única para el cliente.
                 },
             "persona": "/api/v1/personas/IECwPN/"
         }
+
     .. note::
 
         La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
+
+Buscar dispositivo
+------------------
+
+.. http:get:: /api/v1/devices/?(string:field)=(string:value)
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/devices/?token=dummy HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "id": 4,
+                    "code": "9XzsNm",
+                    "platform": "android",
+                    "disabled": false,
+                    "model": "",
+                    "version": null,
+                    "language": null,
+                    "position": {
+                        "type": "Point",
+                            "coordinates": [-123.0208, 44.0489]
+                        },
+                    "persona": "/api/v1/personas/IECwPN/"
+                }
+            ]
+        }
+
+    :query token: valor del token que se quiere buscar
 
 .. _api-devices-access:
 
