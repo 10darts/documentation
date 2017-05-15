@@ -60,7 +60,7 @@ Registro de dispositivos
     :<json string user: usuario al que está asociado el dispositivo
     :<json string model: cadena de descripción del modelo del dispositivo
     :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
-    :<json string language: cadena que identifica el idioma del dispositivo
+    :<json string language: cadena de dos caracteres que identifica el idioma del dispositivo
     :<json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
     :<json string persona: URI de la persona con la que vincular el dispositivo
 
