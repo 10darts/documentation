@@ -63,6 +63,7 @@ Estructura del push
             "img": "...",
             "cfm": 1,
             "sil": 0,
+            "org": "10d",
             "ctm": {
                 "field": "value"
             }
@@ -89,6 +90,7 @@ Estructura del push
         "img": "...",
         "cfm": 1,
         "sil": 0,
+        "org": "10d",
         "ctm": {
             "field": "value"
         }
@@ -101,6 +103,7 @@ Estructura del push
 - ``sil`` campo que indica si el push **es silencioso**, con valor de ``1`` si lo es y ``0`` en caso contrario.
 - ``ctm`` campo que contiene un objeto con datos personalizados del usuario (**opcional**).
 - ``img`` URL de la imagen que se usará para el contenido enriquecido de la notificación (**opcional**).
+- ``org`` campo que siempre contiene el valor ``10d``, para comprobar que el push venga desde la plataforma.
 
 Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se modifica quedando de la siguiente manera:
 
