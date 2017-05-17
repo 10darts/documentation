@@ -117,7 +117,8 @@ Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se modifica 
         "dst": "...",
         "dsc": "...",
         "cfm": 1,
-        "sil": 1
+        "sil": 1,
+        "org": "10d"
     }
 
 Además, para que el cliente sea compatible con estas notificaciones, ha de ser configurado tal como se indica
