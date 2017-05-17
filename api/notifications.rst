@@ -132,7 +132,7 @@ Crear una notificación
     :>json float weight: indica el *peso* del contenido asociado a la notificación
     :>json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
     :>json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios
-    :>json int estimated_personas: número estimado de destinatarios de la notificación
+    :>json int estimated: número estimado de destinatarios de la notificación
 
 Actualizar notificación
 -----------------------
