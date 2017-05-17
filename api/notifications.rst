@@ -108,7 +108,8 @@ Crear una notificación
             "center": null,
             "radius": null,
             "users": [],
-            "weight": 0.0
+            "weight": 0.0,
+            "audience": 1000
         }
 
     :>json int id: identificador interno único de la notificación
@@ -132,6 +133,7 @@ Crear una notificación
     :>json float weight: indica el *peso* del contenido asociado a la notificación
     :>json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
     :>json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios
+    :>json int audience: número estimado de destinatarios de la notificación
 
 Actualizar notificación
 -----------------------
@@ -154,6 +156,43 @@ Actualizar notificación
     .. sourcecode:: http
 
         HTTP/1.1 200 OK
+
+
+Actualizar audiencia de la notificación
+----------------------------------------
+
+.. http:patch:: /api/v1/notifications/(string:code)/update_audience/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        PATCH /api/v1/notifications/(string:code)/update_audience/ HTTP/1.1
+        Content-Type: application/json
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "id": 1,
+            "code": "w58Xar",
+            "message": "Hello notification!",
+            "destination_type": "news",
+            "destination_code": "1",
+            "language": null,
+            "platforms":null,
+            "version":null,
+            "areas": null,
+            "center": null,
+            "radius": null,
+            "users": [],
+            "weight": 0.0,
+            "audience": 1000
+        }
 
 Enviar notificación
 -------------------
