@@ -29,6 +29,7 @@ Listar los feeds
             "results": [
                 {
                     "id": 1,
+                    "code": "tO8idg",
                     "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
                     "last_check": null,
                     "title": "NASA Breaking News"
@@ -69,7 +70,7 @@ Comprobar elementos del feed
 ----------------------------
 
 
-.. http:post:: /api/v1/feeds/(int: id)/check/
+.. http:post:: /api/v1/feeds/(string: code)/check/
 
     **Ejemplo de petición**:
 

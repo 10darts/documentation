@@ -14,3 +14,4 @@ API HTTP RESTful
    api/keys
    api/statistics
    api/feeds
+   api/contents
