@@ -94,6 +94,7 @@ Registro de persona
     :<json string first_name: nombre del usuario, si se sabe
     :<json string last_name: apellido/s del usuario, si se saben
     :<json string device: URI del device al que se quiere asociar la persona
+    :<json string country: código de dos letras que identifica el país de la persona
     :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
     **Ejemplo de respuesta**:
@@ -120,6 +121,7 @@ Registro de persona
     :>json string email: email del usuario
     :>json string first_name: nombre del usuario, si se sabe
     :>json string last_name: apellido/s del usuario, si se saben
+    :>json string country: código de dos letras que identifica el país de la persona
     :>json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
     La llamada puede dar error si:
@@ -173,6 +175,7 @@ Actualizar persona
     :<json string username: nombre de usuario del usuario
     :<json string first_name: nombre del usuario, si se sabe
     :<json string last_name: apellido/s del usuario, si se saben
+    :<json string country: código de dos letras que identifica el país de la persona
 
     **Ejemplo de respuesta**:
 
