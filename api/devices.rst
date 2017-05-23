@@ -61,6 +61,7 @@ Registro de dispositivos
     :<json string model: cadena de descripción del modelo del dispositivo
     :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
     :<json string language: cadena de dos caracteres que identifica el idioma del dispositivo
+    :<json string country: código de dos letras que identifica el país del dispositivo
     :<json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
     :<json string persona: URI de la persona con la que vincular el dispositivo
 
@@ -93,12 +94,19 @@ Registro de dispositivos
     :>json string model: cadena de descripción del modelo del dispositivo
     :>json string version: cadena que identifica la versión del cliente que usa el dispositivo
     :>json string language: cadena que identifica el idioma del dispositivo
+    :>json string country: código de dos letras que identifica el país del dispositivo
     :>json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
 .. note::
 
     Si no se indica una persona en la petición de creación de device, esta se
     creará de forma automática y se devolverá en la respuesta de creación.
+
+.. note::
+
+    Si no se especifica un país, se tomara automáticamente desde las coordenadas
+    que se introducen. Si no se dan unas coordenadas, se usará la IP para
+    establecer el país del dispostivo.
 
 .. _api-devices-update:
 
