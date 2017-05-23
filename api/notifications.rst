@@ -65,6 +65,7 @@ Crear una notificación
     :<json string language: idioma de los dispositivos a los que enviar la notificación
     :<json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
     :<json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
+    :<json string country: código de dos letras del país en el que tienen que estar registrados los devices a los que se quiere mandar la notificación
     :<json list users: lista de usuarios a los que la notificación debe ser enviada
     :<json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
     :<json GeoJSON center: ``Point`` que representa el centro de la circunferencia donde la notificación es efectiva
@@ -121,6 +122,7 @@ Crear una notificación
     :>json string language: idioma de los dispositivos a los que enviar la notificación
     :>json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
     :>json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
+    :>json string country: código de dos letras del país en el que tienen que estar registrados los devices a los que se quiere mandar la notificación
     :>json list users: lista de usuarios a los que la notificación debe ser enviada
     :>json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
     :>json GeoJSON center: ``Point`` que representa el centro de la circunferencia donde la notificación es efectiva
