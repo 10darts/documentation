@@ -12,8 +12,6 @@ por *días* o *semanas*.
 - **Notificaciones push recibidas**, el número total de notificaciones que han sido confirmadas como recibidas.
 - **Notificaciones push clicadas**, el número total de notificaciones que el usuario ha clicado para acceder al contenido.
 - **Dispositivos a los que se les ha enviado al menos una notificación push**
-- **Media de notificaciones por dispositivo**
-- **Varianza de notificaciones por dispositivo**
 
 De entre las notificaciones que se tienen en cuenta se excluyen aquellas que son *silent*.
 

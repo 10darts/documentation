@@ -560,3 +560,47 @@ distribución.
                 }
             ]
         }
+
+Métricas de la notificación
+---------------------------
+
+.. http:get:: /api/v1/notifications/(string:code)/metrics/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/notifications/sPAqib/metrics/ HTTP/1.1
+
+    :query start_datetime: fecha de comienzo (eg: 2017-04-11T00:00:00)
+    :query finish_datetime: fecha de fin (eg: 2017-04-15T23:59:59)
+    :query days: número de días que pasan entre resultado y resultado
+    :query hours: número de horas que pasan entre resultado y resultado
+    
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "results": [
+                {
+                    "start_datetime": "2017-05-23T00:28:51.256213Z",
+                    "sent_to": 991,
+                    "skipped": 0,
+                    "followed_by": 22,
+                    "finish_datetime": "2017-05-23T01:28:51.256213Z",
+                    "received_by": 227
+                },
+                {
+                    "start_datetime": "2017-05-23T01:28:51.256213Z",
+                    "sent_to": 0,
+                    "skipped": 0,
+                    "followed_by": 7,
+                    "finish_datetime": "2017-05-23T02:28:51.256213Z",
+                    "received_by": 36
+                }
+            ]
+        }
