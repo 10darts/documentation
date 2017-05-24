@@ -58,6 +58,7 @@ Estructura del push
             "message": "...",
             "title": "...",
             "badge": 1,
+            "dl": "...",
             "dst": "...",
             "dsc": "...",
             "img": "...",
@@ -85,6 +86,7 @@ Estructura del push
         },
         "id": "...",
         "title": "...",
+        "dl": "...",
         "dst": "...",
         "dsc": "...",
         "img": "...",
@@ -97,6 +99,7 @@ Estructura del push
     }
 
 - ``id`` se corresponde con el código único del push, que ha de ser usado para identificarlo a la hora de marcarlo como recibido o como abierto.
+- ``dl`` *deep link*
 - ``dst`` campo arbitrario de texto que debería identificar el **tipo de destino** que la aplicación cliente debería de abrir al pulsar en la notificación.
 - ``dsc`` campo arbitrario de texto que debería identificar de forma única el **contenido del destino** que la aplicación cliente debería de abrir al pulsar en la notificación.
 - ``cfm`` campo que indica si el push requiere la **confirmación de entrega**, con valor de ``1`` si lo necesita y ``0`` en caso contrario.
