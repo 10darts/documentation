@@ -60,6 +60,7 @@ Crear una notificación
         }
 
     :<json string message: texto de la notificación **obligatorio**
+    :<json string deep_link: enlace profundo
     :<json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
     :<json string destination_code: código único que identifica el contenido de destino de la notificación
     :<json string language: idioma de los dispositivos a los que enviar la notificación
@@ -117,6 +118,7 @@ Crear una notificación
     :>json string code: identificador único de la notificación
     :>json string message: texto de la notificación
     :>json binary image: imagen para usar en el contenido
+    :>json string deep_link: enlace profundo
     :>json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
     :>json string destination_code: código único que identifica el contenido de destino de la notificación
     :>json string language: idioma de los dispositivos a los que enviar la notificación
@@ -576,7 +578,7 @@ Métricas de la notificación
     :query finish_datetime: fecha de fin (eg: 2017-04-15T23:59:59)
     :query days: número de días que pasan entre resultado y resultado
     :query hours: número de horas que pasan entre resultado y resultado
-    
+
     **Ejemplo de respuesta**:
 
     .. sourcecode:: http
