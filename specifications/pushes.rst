@@ -107,6 +107,7 @@ Estructura del push
 - ``ctm`` campo que contiene un objeto con datos personalizados del usuario (**opcional**).
 - ``img`` URL de la imagen que se usará para el contenido enriquecido de la notificación (**opcional**).
 - ``org`` campo que siempre contiene el valor ``10d``, para comprobar que el push venga desde la plataforma.
+- ``not`` campo que tiene el código único que hace referencia al contenido que ha generado la notificación push
 
 Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se modifica quedando de la siguiente manera:
 
