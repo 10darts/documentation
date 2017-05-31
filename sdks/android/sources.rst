@@ -12,3 +12,4 @@ Sources
     sources/inotifications
     sources/isdkcore
     sources/iuistrings
+    sources/INotifications-IBackgroundCustomNotificationLoaderListener

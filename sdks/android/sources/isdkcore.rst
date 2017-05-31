@@ -1,62 +1,65 @@
 .. _android-sdk-classes-isdkcore:
 
+.. java:import:: android.content Context
+
 ISDKCore
 ========
 
-``public interface ISDKCore``
------------------------------
+.. java:package:: com.darts.sdk.client
+   :noindex:
 
-ISDKCore handles core events on SDK
+.. java:type:: public interface ISDKCore
 
-``public void remoteLogException(Exception e)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ISDKCore handles core events on SDK
 
-To send a remote exception to your desired server e.g.: {@code
-Crashlytics.logException(e);}
+Methods
+-------
+logEvent
+^^^^^^^^
 
--  **Parameters:** ``e`` — the exception to be logged
+.. java:method:: public void logEvent(String category, String type, String message)
+   :outertype: ISDKCore
 
-``public void logEvent(String category, String type, String message)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Called to log events, for example to use analytics
-
-.. code:: java
-
+   Called to log events, for example to use analytics 
+   .. code:: java
     Tracker _t = OnpublicoApplication.getPushTracker();
-    if (_t != null)
-    {
-        _t.send(new HitBuilders.EventBuilder()
-        .setCategory("Push")
-        .setNonInteraction(true)
-        .setAction("errorRegister")
-        .setLabel(e.getMessage())
-        .build());
-    }
+      if (_t != null)
+      {
+          _t.send(new HitBuilders.EventBuilder().setCategory("Push")
+          .setNonInteraction(true)
+          .setAction("errorRegister").setLabel(e.getMessage()).build());
+      }
 
--  **Parameters:**
--  ``category`` — category
--  ``type`` — type
--  ``message`` — message
+   :param category: category
+   :param type: type
+   :param message: message
 
-``public void performSetup()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainActivityClassName
+^^^^^^^^^^^^^^^^^^^^^
 
-Called when the SDK is initialized
+.. java:method:: public String mainActivityClassName()
+   :outertype: ISDKCore
 
-Do any customization here like Sdk.alwaysShowLastNotification:
+   Called to retrieve the main activity class name \ ``return MainActivity.class.getName()``\
 
-.. code:: java
+   :return: the main activity class name
 
-     Sdk.alwaysShowLastNotification(false);
+performSetup
+^^^^^^^^^^^^
 
-``public String mainActivityClassName()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public void performSetup(Context context)
+   :outertype: ISDKCore
 
-Called to retrieve the main activity class name
+   Called when the SDK is initialized Do any customization here like Sdk.alwaysShowLastNotification: \ ``Sdk.alwaysShowLastNotification(false);``\
 
-.. code:: java
+   :param context: context to be used, for example to get string resources
 
-     return MainActivity.class.getName()
+remoteLogException
+^^^^^^^^^^^^^^^^^^
 
--  **Returns:** the main activity class name
+.. java:method:: public void remoteLogException(Exception e)
+   :outertype: ISDKCore
+
+   To send a remote exception to your desired server e.g.: \ ``Crashlytics.logException(e);``\
+
+   :param e: the exception to be logged

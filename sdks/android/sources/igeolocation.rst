@@ -3,20 +3,27 @@
 IGeolocation
 ============
 
-public interface IGeolocation
------------------------------
+.. java:package:: com.darts.sdk.client
+   :noindex:
 
-Geolocation related functions
+.. java:type:: public interface IGeolocation
 
-void onUserRejectedLocationPermission()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Called when the user has rejected location permission, do not make any
-further UI interaction with the user regarding location permission
+Methods
+-------
+onUserAcceptedLocationPermission
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-void onUserAcceptedLocationPermission()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method::  void onUserAcceptedLocationPermission()
+   :outertype: IGeolocation
 
-Called when the user has accepted location permission, note that asking
-for permissions depends on several factors and is not always asked to
-the user.
+   Called when the user has accepted location permission, note that asking for permissions depends on several factors and is not always asked to the user.
+
+onUserRejectedLocationPermission
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. java:method::  void onUserRejectedLocationPermission()
+   :outertype: IGeolocation
+
+   Called when the user has rejected location permission, do not make any further UI interaction with the user regarding location permission
+

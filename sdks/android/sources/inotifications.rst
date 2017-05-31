@@ -1,131 +1,137 @@
 .. _android-sdk-classes-inotifications:
 
+
+.. java:import:: com.darts.sdk Model.Notification
+
 INotifications
 ==============
 
-Documentation
-=============
+.. java:package:: com.darts.sdk.client
+   :noindex:
 
-``public interface INotifications``
------------------------------------
+.. java:type:: public interface INotifications
 
-Notifications related interface
+   Notifications related interface
 
-``void onNotificationShowed(Notification notification)``
---------------------------------------------------------
+Methods
+-------
+getCustomNotificationLargeView
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Called when a notification is showed to the user
+.. java:method:: public RemoteViews getCustomNotificationLargeView(Notification notification, Context context)
+   :outertype: INotifications
 
--  **Parameters:** ``notification`` —
+   you should also return a view on getCustomNotificationSmallView if you need to load some data could be done later, return immediately override if you want to provide your large custom notification view when expanded
 
-``void onNotificationShowedInList(Notification notification)``
---------------------------------------------------------------
+   :param notification:
+   :param context:
 
-Called when a notification is showed to the user in the stacked
-notification
+getCustomNotificationSmallView
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  **Parameters:** ``notification`` —
+.. java:method:: public RemoteViews getCustomNotificationSmallView(Notification notification, Context context)
+   :outertype: INotifications
 
-``boolean onNotificationReceived(Notification notification)``
--------------------------------------------------------------
+   if you need to load some data could be done later, return immediately, override if you want to provide your custom notification view when collapsed
 
-Called when a notification is received in the device
+   :param notification:
+   :param context:
 
--  **Parameters:** ``notification`` —
--  **Returns:**
+loadBackgroundCustomNotificationData
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``boolean onNotificationClicked(Notification notification)``
-------------------------------------------------------------
+.. java:method::  void loadBackgroundCustomNotificationData(IBackgroundCustomNotificationLoaderListener listener, Notification notification, RemoteViews rv, RemoteViews rvBig, Context context)
+   :outertype: INotifications
 
-Called when a showed notification is clicked
+   Called to start all your background custom notification loading, return immediately. You MUST call listener.revertToStandardNotification() or listener.customNotificationsReady() once.
 
--  **Parameters:** ``notification`` —
--  **Returns:**
+   :param listener: listener to call when you are ready
+   :param notification: notification to load data
+   :param rv: RemoteViews to be filled
+   :param rvBig: RemoteViews to be filled
+   :param context: context to use
 
-``boolean onNotificationListCleared()``
----------------------------------------
+notificationHasImage
+^^^^^^^^^^^^^^^^^^^^
 
-Called when the notification list is cleared
+.. java:method:: public boolean notificationHasImage(Notification notification)
+   :outertype: INotifications
 
--  **Returns:**
+   Return true if the notification should have an image
 
-``void openNotification(Notification notification)``
-----------------------------------------------------
+   :param notification: notification containing data to build the notification
+   :return: true if the notification should contain a custom image.
 
-Open the notification, start your desired intent configured properly
+onNotificationClicked
+^^^^^^^^^^^^^^^^^^^^^
 
--  **Parameters:** ``notification`` — the clicked notification
+.. java:method::  boolean onNotificationClicked(Notification notification)
+   :outertype: INotifications
 
-``void openNotificationList()``
--------------------------------
+   Called when a showed notification is clicked
 
-Start the proper intent to show notification list, the user has clicked
-on stacked notification
+   :param notification:
 
-``public boolean notificationHasImage(Notification notification)``
-------------------------------------------------------------------
+onNotificationListCleared
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Return true if the notification should have an image
+.. java:method::  boolean onNotificationListCleared()
+   :outertype: INotifications
 
--  **Parameters:** ``notification`` — notification containing data to
-   build the notification
--  **Returns:** true if the notification should contain a custom image.
+   Called when the notification list is cleared
 
-``public RemoteViews getCustomNotificationSmallView(Notification notification, Context context)``
--------------------------------------------------------------------------------------------------
+onNotificationReceived
+^^^^^^^^^^^^^^^^^^^^^^
 
-if you need to load some data could be done later, return immediately,
-override if you want to provide your custom notification view when
-collapsed
+.. java:method::  boolean onNotificationReceived(Notification notification)
+   :outertype: INotifications
 
--  **Parameters:**
--  ``notification`` —
--  ``context`` —
--  **Returns:**
+   Called when a notification is received in the device
 
-``public RemoteViews getCustomNotificationLargeView(Notification notification, Context context)``
--------------------------------------------------------------------------------------------------
+   :param notification:
 
-you should also return a view on getCustomNotificationSmallView if you
-need to load some data could be done later, return immediately override
-if you want to provide your large custom notification view when expanded
+onNotificationShowed
+^^^^^^^^^^^^^^^^^^^^
 
--  **Parameters:**
--  ``notification`` —
--  ``context`` —
--  **Returns:**
+.. java:method::  void onNotificationShowed(Notification notification)
+   :outertype: INotifications
 
-``public interface IBackgroundCustomNotificationLoaderListener``
-----------------------------------------------------------------
+   Called when a notification is showed to the user
 
-To provide asynchronous custom notifications loading.
+   :param notification:
 
-You must call either revertToStandardNotification or
-customNotificationsReady once
+onNotificationShowedInList
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``void revertToStandardNotification()``
----------------------------------------
+.. java:method::  void onNotificationShowedInList(Notification notification)
+   :outertype: INotifications
 
-Loading failed and should fallback to standard notification
+   Called when a notification is showed to the user in the stacked notification
 
-``void customNotificationsReady(Bitmap bitmap)``
-------------------------------------------------
+   :param notification:
 
-All asynchronous loading and manipulations done, remote views are ready
-to use
+openNotification
+^^^^^^^^^^^^^^^^
 
--  **Parameters:** ``bitmap`` — if provided this bitmap will be used in
-   NotificationBuilder..setLargeIcon()
+.. java:method::  boolean openNotification(Notification notification, Context context)
+   :outertype: INotifications
 
-``void loadBackgroundCustomNotificationData( IBackgroundCustomNotificationLoaderListener listener)``
-----------------------------------------------------------------------------------------------------
+   Open the notification, start your desired intent configured properly, return true to override deep url launching.
 
-Called to start all your background custom notification loading, return
-immediately.
+   :param notification: the clicked notification
+   :param context: context to be used
+   :return: true if client opens the notification overriding SDK default behabiour
 
-You MUST call listener.revertToStandardNotification() or
-listener.customNotificationsReady() once.
+openNotificationList
+^^^^^^^^^^^^^^^^^^^^
 
--  **Parameters:** ``listener`` — listener to call when you are ready
+.. java:method::  void openNotificationList(Context context)
+   :outertype: INotifications
+
+   Start the proper intent to show notification list, the user has clicked on stacked notification
+
+   :param context: context to be used
+
+
 
 `back to Client <../README.md>`__

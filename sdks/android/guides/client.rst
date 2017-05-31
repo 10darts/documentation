@@ -12,7 +12,7 @@ Implementing client class
 
    Create class
 
-And implement all the methods, default implementation it’s ok for
+And implement the methods, default implementation it’s ok for
 starting but you should add your own functionality as needed.
 
 .. figure:: /_static/images/client2.png
@@ -61,6 +61,28 @@ Add your custom functionality as needed, please refer to :ref:`SDKClient class d
     {
         return context.getString(R.string.locationPermissionExplanation);
     }
+
+
+4 Forward OnCreate of your Main Activity
+----------------------------------------
+
+.. code:: java
+  @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        SDK.onCreate(savedInstanceState, this, new Communications.ILocationAlerter()
+        {
+            @Override
+            public void alertNotEnabled(Activity activity)
+            {
+                //See Adding Geolocation if you are using this feature otherwise leave empty function.
+            }
+        });
+    }
+
 
 Next Steps
 ----------
