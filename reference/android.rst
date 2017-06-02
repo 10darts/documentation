@@ -4,12 +4,6 @@ Android SDK
 
 .. toctree::
     :maxdepth: 2
+    :glob:
 
-    android/client
-    android/igeolocation
-    android/inotifications
-    android/isdkcore
-    android/iuistrings
-    android/sdk
-    android/sdkclient
-    android/INotifications-IBackgroundCustomNotificationLoaderListener
+    android/*

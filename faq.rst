@@ -4,7 +4,6 @@ FAQ
 
 .. toctree::
     :maxdepth: 2
+    :glob:
 
-    faq/app
-    faq/gcm
-    faq/geolocation
+    faq/*
