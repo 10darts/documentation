@@ -1,5 +1,6 @@
-.. _android-sdk-gcm:
+.. _faq-gcm:
 
+======================
 Google Cloud Messaging
 ======================
 

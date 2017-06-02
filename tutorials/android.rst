@@ -1,33 +1,39 @@
-.. _android-sdk-quickstart:
+.. _android-sdk-setup:
 
-==========
-QuickStart
-==========
+=================
+Android SDK Setup
+=================
 
 The following instructions will guide you through the process of
 implementing 10 Darts SDK in your application, the instructions are
 based on *Android Studio.*
 
-If you are not familiar with *Android Studio* please refer to this
-:ref:`Quick tutorial <android-sdk-application>`.
+.. note::
 
-Before proceeding you should have created a GCM project in your firebase
-console, please refer to :ref:`Google Cloud Messaging <android-sdk-gcm>` and
-follow the steps.
+    If you are not familiar with *Android Studio* please refer to this
+    :ref:`Quick tutorial <faq-android-application>`.
 
-Note that the target devices should have Google Play services installed
-and updated on it for the proper operation of this SDK
+.. note::
+    Note that the target devices should have Google Play services installed
+    and updated on it for the proper operation of this SDK
 
-1 Configure the Application
----------------------------
+.. warning::
 
-Library
-^^^^^^^
+    Before proceeding you should have created a GCM project in your firebase
+    console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and
+    follow the steps.
 
--  Copy the SDK aar file to your libs directory
 
-Gradle
-^^^^^^
+Configure the application
+-------------------------
+
+1. Library
+^^^^^^^^^^
+
+-  Copy the SDK ``aar`` file to your libs directory
+
+2. Gradle setup
+^^^^^^^^^^^^^^^
 
 -  Add the library to the dependencies:
 
@@ -46,8 +52,8 @@ Gradle
     compile 'org.apache.httpcomponents:httpmime:4.3.5'
 
 
-Manifest
-^^^^^^^^
+3. Update manifest
+^^^^^^^^^^^^^^^^^^
 
 -  Add the required permissions:
 
@@ -137,23 +143,89 @@ Manifest
 -  **sdk\_clientClass**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
 -  **gcm\_defaultSenderId**: the sender id you copied in the last step
-   of :ref:`Google Cloud Messaging <android-sdk-gcm>`
+   of :ref:`Google Cloud Messaging <faq-gcm>`
 
-2 Implement client class
-------------------------
+.. _android-sdk-client:
 
-Follow the steps in :ref:`Implementing client class <android-sdk-client>` and
-you are done!.
+Implementing client class
+-------------------------
 
-Next steps
-----------
+Create a client class whose superclass is SDKClient
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can also make your app Geolocation aware, for that, just follow
-:ref:`Adding Geolocation <android-sdk-geolocation>`
+.. figure:: /_static/images/client1.png
+  :alt: Create class
 
-Additional Documentation
-------------------------
+  Create class
 
-:ref:`SDKClient class documentation <android-sdk-classes-client>`
+And implement the methods, default implementation it’s ok for
+starting but you should add your own functionality as needed.
 
-:ref:`SDK class documentation <android-sdk-classes-sdk>`
+.. figure:: /_static/images/client2.png
+  :alt: Implement methods
+
+  Implement methods
+
+Don't forget to add the full qualified name of this class to the
+:ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
+
+Configure SDK behavior
+^^^^^^^^^^^^^^^^^^^^^^
+
+The SDK configuration is done in the performSetup() function, just add
+your custom configuration here
+
+.. code:: java
+
+   @Override
+   public void performSetup()
+   {
+       SDK.instance().stackNotifications(true)
+               .alwaysShowLastNotification(true)
+               .limitNotificationSoundAndVibrationTime(true)
+               .setLargeIconResource(R.mipmap.ic_launcher)
+   }
+
+Please refer to :ref:`SDK class documentation <android-sdk-classes-sdk>` for further
+information
+
+Implement your functionality
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Add your custom functionality as needed, please refer to :ref:`SDKClient class documentation <android-sdk-classes-client>` for further documentation
+
+.. code:: java
+
+   @Override
+   public String mainActivityClassName()
+   {
+       return MainActivity.class.getName();
+   }
+
+   @Override
+   public CharSequence getLocationExplanation(Context context)
+   {
+       return context.getString(R.string.locationPermissionExplanation);
+   }
+
+
+Forward OnCreate of your Main Activity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code:: java
+
+   @Override
+   protected void onCreate(Bundle savedInstanceState)
+   {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_main);
+
+       SDK.onCreate(savedInstanceState, this, new Communications.ILocationAlerter()
+       {
+           @Override
+           public void alertNotEnabled(Activity activity)
+           {
+               //See Adding Geolocation if you are using this feature otherwise leave empty function.
+           }
+       });
+   }

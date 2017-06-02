@@ -1,6 +1,6 @@
-====================
-Fuentes de contenido
-====================
+=========
+Contenido
+=========
 
 El sistema está preparado para el uso de diferentes fuentes de contenido para, a partir de las cuales,
 crear una notificación asociada a este contenido.

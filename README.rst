@@ -40,7 +40,7 @@ Setup/update locale:
 
 .. code-block:: bash
 
-    (10darts-documentation) $ sphinx-intl update -p _build/locale -l es -l en
+    (10darts-documentation) $ sphinx-intl update -p _build/gettext -l es -l en
 
 Build mo files and make translated document:
 

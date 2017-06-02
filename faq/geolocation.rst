@@ -1,9 +1,10 @@
 .. _android-sdk-geolocation:
 
+==================
 Adding Geolocation
 ==================
 
-1 Forward your Main Activity events
+Forward your Main Activity events
 -----------------------------------
 
 In order to keep geolocation updates properly you should forward the
@@ -101,7 +102,7 @@ the SDK:
     getApplicationContext());
     }
 
-2 Get notified on location updates
+Get notified on location updates
 ----------------------------------
 
 To get notified when a new location is available, you should register

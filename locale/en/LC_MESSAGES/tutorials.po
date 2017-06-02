@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Onpublico Medialab SL
+# This file is distributed under the same license as the 10Darts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 10Darts 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 13:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../tutorials.rst:3
+msgid "Tutoriales"
+msgstr ""
+
+#: ../../tutorials/android.rst:5
+msgid "Android SDK Setup"
+msgstr ""
+
+#: ../../tutorials/android.rst:7
+msgid ""
+"The following instructions will guide you through the process of "
+"implementing 10 Darts SDK in your application, the instructions are based"
+" on *Android Studio.*"
+msgstr ""
+
+#: ../../tutorials/android.rst:13
+msgid ""
+"If you are not familiar with *Android Studio* please refer to this "
+":ref:`Quick tutorial <faq-android-application>`."
+msgstr ""
+
+#: ../../tutorials/android.rst:17
+msgid ""
+"Note that the target devices should have Google Play services installed "
+"and updated on it for the proper operation of this SDK"
+msgstr ""
+
+#: ../../tutorials/android.rst:22
+msgid ""
+"Before proceeding you should have created a GCM project in your firebase "
+"console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and "
+"follow the steps."
+msgstr ""
+
+#: ../../tutorials/android.rst:28
+msgid "Configure the application"
+msgstr ""
+
+#: ../../tutorials/android.rst:31
+msgid "1. Library"
+msgstr ""
+
+#: ../../tutorials/android.rst:33
+msgid "Copy the SDK ``aar`` file to your libs directory"
+msgstr ""
+
+#: ../../tutorials/android.rst:36
+msgid "2. Gradle setup"
+msgstr ""
+
+#: ../../tutorials/android.rst:38
+msgid "Add the library to the dependencies:"
+msgstr ""
+
+#: ../../tutorials/android.rst:44
+msgid "Add the needed dependencies:"
+msgstr ""
+
+#: ../../tutorials/android.rst:56
+msgid "3. Update manifest"
+msgstr ""
+
+#: ../../tutorials/android.rst:58
+msgid "Add the required permissions:"
+msgstr ""
+
+#: ../../tutorials/android.rst:70
+msgid ""
+"Add C2D Message permission, note you should change **yourpackagename** "
+"with your app package, e.g.: *com.yourcompany.appname*"
+msgstr ""
+
+#: ../../tutorials/android.rst:79
+msgid ""
+"In Application section add the required receivers note you should change "
+"**yourpackagename** with your app package, e.g.: "
+"*com.yourcompany.appname*:"
+msgstr ""
+
+#: ../../tutorials/android.rst:125
+msgid "The last step is to add your configuration inside the Application section"
+msgstr ""
+
+#: ../../tutorials/android.rst:142
+msgid "**sdk\\_accessToken**: your access token to 10 Darts"
+msgstr ""
+
+#: ../../tutorials/android.rst:143
+msgid ""
+"**sdk\\_clientClass**: the full qualified name of your SDK implementation"
+" (see :ref:`Implementing client class <android-sdk-client>`)"
+msgstr ""
+
+#: ../../tutorials/android.rst:145
+msgid ""
+"**gcm\\_defaultSenderId**: the sender id you copied in the last step of "
+":ref:`Google Cloud Messaging <faq-gcm>`"
+msgstr ""
+
+#: ../../tutorials/android.rst:151
+msgid "Implementing client class"
+msgstr ""
+
+#: ../../tutorials/android.rst:154
+msgid "Create a client class whose superclass is SDKClient"
+msgstr ""
+
+#: ../../tutorials/android.rst:159
+msgid "Create class"
+msgstr ""
+
+#: ../../tutorials/android.rst:161
+msgid ""
+"And implement the methods, default implementation it’s ok for starting "
+"but you should add your own functionality as needed."
+msgstr ""
+
+#: ../../tutorials/android.rst:167
+msgid "Implement methods"
+msgstr ""
+
+#: ../../tutorials/android.rst:169
+msgid ""
+"Don't forget to add the full qualified name of this class to the "
+":ref:`manifest configuration <android-sdk-setup>` **“sdk\\_clientClass”**"
+msgstr ""
+
+#: ../../tutorials/android.rst:173
+msgid "Configure SDK behavior"
+msgstr ""
+
+#: ../../tutorials/android.rst:175
+msgid ""
+"The SDK configuration is done in the performSetup() function, just add "
+"your custom configuration here"
+msgstr ""
+
+#: ../../tutorials/android.rst:189
+msgid ""
+"Please refer to :ref:`SDK class documentation <android-sdk-classes-sdk>` "
+"for further information"
+msgstr ""
+
+#: ../../tutorials/android.rst:193
+msgid "Implement your functionality"
+msgstr ""
+
+#: ../../tutorials/android.rst:195
+msgid ""
+"Add your custom functionality as needed, please refer to :ref:`SDKClient "
+"class documentation <android-sdk-classes-client>` for further "
+"documentation"
+msgstr ""
+
+#: ../../tutorials/android.rst:213
+msgid "Forward OnCreate of your Main Activity"
+msgstr ""
+
+#: ../../tutorials/ios.rst:3
+msgid "iOS SDKs Setup"
+msgstr ""
+

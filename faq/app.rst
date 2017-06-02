@@ -1,10 +1,8 @@
-.. _android-sdk-application:
+.. _faq-android-application:
 
-Application
-===========
-
-Create an Android application
------------------------------
+====================================
+How to create an Android Application
+====================================
 
 -  Start a new Android Studio project:
 
@@ -34,8 +32,3 @@ Create an Android application
    :alt: Customize activity
 
    Customize activity
-
-Configure the Application
--------------------------
-
-Go to :ref:`Configure the application <android-sdk-index>` in main documentation.

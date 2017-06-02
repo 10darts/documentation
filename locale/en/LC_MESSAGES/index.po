@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 14:23+0200\n"
+"POT-Creation-Date: 2017-06-02 13:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,24 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../index.rst:3
-msgid "¡Bienvenido a la documentación de 10Darts!"
+msgid "Documentación y ayuda"
 msgstr ""
 
 #: ../../index.rst:5
-msgid "Contenidos:"
+msgid ""
+"El sistema **10Darts** se puede definir como un *sistema de difusión de "
+"contenido inteligente*, en donde dicha difusión se realiza mediante el "
+"uso de *notificaciones push* a dispositivos móviles iOS y Android."
+msgstr ""
+
+#: ../../index.rst:8
+msgid ""
+"El sistema completo consta de dos partes muy diferenciadas, la plataforma"
+" de *Software as a Service* (Saas), que incluye un *backend* **API "
+"público y un panel de gestión**, y el **SDK para aplicaciones móviles**."
+msgstr ""
+
+#: ../../index.rst:12
+msgid "Contenidos"
 msgstr ""
 

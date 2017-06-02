@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 14:23+0200\n"
+"POT-Creation-Date: 2017-06-02 13:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,41 +17,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../specifications.rst:3
-msgid "Especificaciones"
+#: ../../features.rst:3
+msgid "Funcionalidades"
 msgstr ""
 
-#: ../../specifications/architecture.rst:3
+#: ../../features/architecture.rst:3
 msgid "Arquitectura"
 msgstr ""
 
-#: ../../specifications/architecture.rst:5
+#: ../../features/architecture.rst:5
 msgid ""
 "El siguiente esquema representa la arquitectura lógica sobre la que "
 "funciona la plataforma de Onpublico Backstage."
 msgstr ""
 
-#: ../../specifications/architecture.rst:10
+#: ../../features/architecture.rst:10
 msgid "Los elementos principales son:"
 msgstr ""
 
-#: ../../specifications/architecture.rst:12
+#: ../../features/architecture.rst:12
 msgid ":ref:`Users <users>`"
 msgstr ""
 
-#: ../../specifications/architecture.rst:13
+#: ../../features/architecture.rst:13
 msgid ":ref:`Devices <devices>`"
 msgstr ""
 
-#: ../../specifications/architecture.rst:14
+#: ../../features/architecture.rst:14
 msgid ":ref:`Notifications <notifications>`"
 msgstr ""
 
-#: ../../specifications/architecture.rst:15
+#: ../../features/architecture.rst:15
 msgid ":ref:`Pushes <pushes>`"
 msgstr ""
 
-#: ../../specifications/architecture.rst:17
+#: ../../features/architecture.rst:17
 msgid ""
 "A los que se añade un módulo para la gestión de las localizaciones "
 "definidas por *fronteras administrativas*, es decir, países, estados, "
@@ -59,23 +59,22 @@ msgid ""
 "detalle en su propia sección."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:3
-#: ../../specifications/content_sources.rst:18
-msgid "Fuentes de contenido"
+#: ../../features/content_sources.rst:3
+msgid "Contenido"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:5
+#: ../../features/content_sources.rst:5
 msgid ""
 "El sistema está preparado para el uso de diferentes fuentes de contenido "
 "para, a partir de las cuales, crear una notificación asociada a este "
 "contenido."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:9
+#: ../../features/content_sources.rst:9
 msgid "Contenido genérico"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:11
+#: ../../features/content_sources.rst:11
 msgid ""
 "De cualquier *fuente de contenido* se tiene que poder extraer un "
 "contenido genérico, que sería cualquier contenido de Internet que pueda "
@@ -83,17 +82,21 @@ msgid ""
 "los usuarios de la plataforma."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:15
+#: ../../features/content_sources.rst:15
 msgid ""
 "Además, el contenido puede tener una referencia a una posición geográfica"
 " a la que este haga referencia."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:21
+#: ../../features/content_sources.rst:18
+msgid "Fuentes de contenido"
+msgstr ""
+
+#: ../../features/content_sources.rst:21
 msgid "Feeds"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:23
+#: ../../features/content_sources.rst:23
 msgid ""
 "El tipo de contenido principal son los feeds RSS/Atom. Cada feed de RSS "
 "viene identificado por su URL y por el *cliente* al que este pertenece. "
@@ -101,22 +104,22 @@ msgid ""
 " por defecto establecido en 2 horas."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:27
+#: ../../features/content_sources.rst:27
 msgid "Ejemplo de RSS:"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:73
+#: ../../features/content_sources.rst:73
 msgid ""
 "Si la fuente tiene información geográfica asociada a los *items*, `GeoRSS"
 " <https://es.wikipedia.org/wiki/GeoRSS>`_, esta se asocia al contenido "
 "generado."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:77
+#: ../../features/content_sources.rst:77
 msgid "Conversor de contenido"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:79
+#: ../../features/content_sources.rst:79
 msgid ""
 "A cada una de las fuentes de contenido se puede especificar un "
 "**conversor de contenido**, que es el encargado de dado un contenido en "
@@ -125,55 +128,55 @@ msgid ""
 "y/o envío definidas por el usuario."
 msgstr ""
 
-#: ../../specifications/content_sources.rst:83
+#: ../../features/content_sources.rst:83
 msgid ""
 "Un *conversor de contenido* permite especificar para cada una de las "
 "fuentes de contenido:"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:85
+#: ../../features/content_sources.rst:85
 msgid "Plantilla de mensaje"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:86
+#: ../../features/content_sources.rst:86
 msgid "Plantilla de título"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:87
+#: ../../features/content_sources.rst:87
 msgid "Áreas donde distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:88
+#: ../../features/content_sources.rst:88
 msgid ""
 "Centro y radio de donde distribuir la notificación (excluyente con las "
 "áreas)"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:89
+#: ../../features/content_sources.rst:89
 msgid "Lista de usuarios a los que distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:90
+#: ../../features/content_sources.rst:90
 msgid "Idioma al que distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:91
+#: ../../features/content_sources.rst:91
 msgid "Plataforma a la que distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:92
+#: ../../features/content_sources.rst:92
 msgid "Versión a la que distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:93
+#: ../../features/content_sources.rst:93
 msgid "Segmento al que distribuir la notificación"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:96
+#: ../../features/content_sources.rst:96
 msgid "Plantillas"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:98
+#: ../../features/content_sources.rst:98
 msgid ""
 "Las plantillas para mensajes y título de la notificación permiten la "
 "personalización del contenido de la notificación. A la hora de renderizar"
@@ -181,64 +184,69 @@ msgid ""
 " del contenido:"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:102
+#: ../../features/content_sources.rst:102
 msgid "``title``, que se corresponde con el título del contenido"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:103
+#: ../../features/content_sources.rst:103
 msgid "``body``, que se corresponde con el cuerpo del contenido, sin etiquetado"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:104
+#: ../../features/content_sources.rst:104
 msgid "``url``, la URL asociada al contenido"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:106
+#: ../../features/content_sources.rst:106
 msgid ""
 "Para hacer referencia a las variables, se tienen que usar entre ``{}``. "
 "Ejemplo::"
 msgstr ""
 
-#: ../../specifications/content_sources.rst:111
+#: ../../features/content_sources.rst:111
 msgid ""
 "En general, se soporta el lenguaje de plantillas de Django, ver su "
 "`documentación <https://docs.djangoproject.com/en/1.11/ref/templates/>`_ "
 "para una referencia completa."
 msgstr ""
 
-#: ../../specifications/devices.rst:5 ../../specifications/statistics.rst:45
+#: ../../features/devices.rst:5 ../../features/statistics.rst:43
 msgid "Dispositivos"
 msgstr ""
 
-#: ../../specifications/devices.rst:7
+#: ../../features/devices.rst:7
 msgid ""
 "Un **dispositivo** a todo aquel aparato capaz de recibir notificaciones "
 "push."
 msgstr ""
 
-#: ../../specifications/devices.rst:9
+#: ../../features/devices.rst:9
 msgid ""
-"Será la aplicación cliente, por medio del **SDK** la encargada de "
-"realizar las siguientes acciones sobre el dispositivo:"
+"Será la aplicación cliente, por medio del **SDK** o directamente usando "
+"el **API**, la encargada de realizar las siguientes acciones sobre el "
+"dispositivo:"
 msgstr ""
 
-#: ../../specifications/devices.rst:12
-msgid "Asociar el dispositivo a un usuario."
+#: ../../features/devices.rst:13
+msgid ":ref:`Asociar el dispositivo a una persona. <api-devices-link>`"
 msgstr ""
 
-#: ../../specifications/devices.rst:13
-msgid "Actualizar las coordenadas de dispositivo."
+#: ../../features/devices.rst:14
+msgid ":ref:`Actualizar las coordenadas de dispositivo. <api-devices-link>`"
 msgstr ""
 
-#: ../../specifications/devices.rst:14
-msgid "Actualizar datos del dispositivos, idioma, versión o el modelo."
+#: ../../features/devices.rst:15
+msgid ""
+":ref:`Actualizar datos del dispositivos, idioma, versión o el modelo. "
+"<api-devices-link>`"
 msgstr ""
 
-#: ../../specifications/devices.rst:15
-msgid "**Registrar acceso** del dispositivo a la aplicación."
+#: ../../features/devices.rst:16
+msgid ""
+":ref:`Registrar acceso del dispositivo a la aplicación. <api-devices-"
+"access>`"
 msgstr ""
 
-#: ../../specifications/devices.rst:17
+#: ../../features/devices.rst:20
 msgid ""
 "Es importante remarcar que el **registro de acceso** del dispositivo a la"
 " aplicación se realice de forma explícita desde el SDK, ya que esto "
@@ -247,63 +255,66 @@ msgid ""
 "concretas de cada una de las plataformas disponibles."
 msgstr ""
 
-#: ../../specifications/devices.rst:24
+#: ../../features/devices.rst:27
 msgid "Importar dispositivos"
 msgstr ""
 
-#: ../../specifications/devices.rst:26
+#: ../../features/devices.rst:29
 msgid ""
 "Se pueden importar los dispositivos usando ficheros CSV, separados por "
 "comas, con las siguientes columnas:"
 msgstr ""
 
-#: ../../specifications/devices.rst:28
+#: ../../features/devices.rst:31
 msgid "Token del dispositivo (string)."
 msgstr ""
 
-#: ../../specifications/devices.rst:29
-msgid "Plataforma (entero, ``0`` para Android, ``1`` para iOS)."
+#: ../../features/devices.rst:32
+msgid "Plataforma (entero, ``android`` para Android, ``ios`` para iOS)."
 msgstr ""
 
-#: ../../specifications/devices.rst:30
+#: ../../features/devices.rst:33
 msgid ""
 "Posición (string). Ejemplo: ``RID=4326;POINT (-99.0099141 19.335117)``, "
 "donde las coordenadas son **longitud y latitud, en ese orden**."
 msgstr ""
 
-#: ../../specifications/devices.rst:31
+#: ../../features/devices.rst:34
 msgid "Idioma (string), código de dos caracteres del idioma, opcional."
 msgstr ""
 
-#: ../../specifications/devices.rst:32
-msgid "Version (string), opcional"
+#: ../../features/devices.rst:35
+msgid "Version (string), opcional."
 msgstr ""
 
-#: ../../specifications/devices.rst:33
-msgid "Model (string), opcional"
+#: ../../features/devices.rst:36
+msgid "Model (string), opcional."
 msgstr ""
 
-#: ../../specifications/devices.rst:34
-msgid "Email (string) del usuario asociado"
+#: ../../features/devices.rst:37
+msgid ""
+"*Client data* (string), cualquier cadena única en el sistema del cliente "
+"que identifique al usuario del dispositivo."
 msgstr ""
 
-#: ../../specifications/devices.rst:36
+#: ../../features/devices.rst:39
 msgid ""
 "Los campos opcionales se tienen que dejar en blanco pero ocupando su "
 "columna, en caso de que no se quieran incluir."
 msgstr ""
 
-#: ../../specifications/devices.rst:40
+#: ../../features/devices.rst:43
 msgid ""
-"Si el email del usuario tiene de dominio ``example.com`` entonces el "
-"correo será ignorado a la hora de darlo de alta en la base de datos."
+"Si el campo de *client data* es un email, y este tiene de dominio "
+"``example.com``, entonces este será ignorado a la hora de darlo de alta "
+"en la base de datos."
 msgstr ""
 
-#: ../../specifications/devices.rst:45
+#: ../../features/devices.rst:48
 msgid "Comprobación global de estado"
 msgstr ""
 
-#: ../../specifications/devices.rst:47
+#: ../../features/devices.rst:50
 msgid ""
 "Para asegurar que los dispositivos en la base de datos son válidos, el "
 "sistema realizará una **comprobación global del estado de estos cada 24 "
@@ -311,7 +322,7 @@ msgid ""
 "por el dispositivo."
 msgstr ""
 
-#: ../../specifications/devices.rst:51
+#: ../../features/devices.rst:54
 msgid ""
 "Para esta notificación no se solicitará la conformación de recepción por "
 "parte del dispositivo, sólo se busca detectar aquellos dispositivos cuyo "
@@ -320,78 +331,77 @@ msgid ""
 "de tener la aplicación del cliente instalada."
 msgstr ""
 
-#: ../../specifications/introduction.rst:5
+#: ../../features/introduction.rst:5
 msgid "Introducción"
 msgstr ""
 
-#: ../../specifications/introduction.rst:7
+#: ../../features/introduction.rst:7
 msgid ""
-"El proyecto **Onpublico Backstage** se puede definir como un *sistema de "
-"difusión de contenido inteligente*, en donde dicha difusión se realiza "
-"mediante el uso de *notificaciones push* a dispositivos móviles iOS y "
-"Android."
+"El sistema **10Darts** se puede definir como un *sistema de difusión de "
+"contenido inteligente*, en donde dicha difusión se realiza mediante el "
+"uso de *notificaciones push* a dispositivos móviles iOS y Android."
 msgstr ""
 
-#: ../../specifications/introduction.rst:10
+#: ../../features/introduction.rst:10
 msgid ""
 "El sistema completo consta de dos partes muy diferenciadas, la plataforma"
 " de *Software as a Service* (Saas), que incluye un *backend* API público "
 "y un panel de gestión, y el *SDK* para aplicaciones móviles."
 msgstr ""
 
-#: ../../specifications/introduction.rst:13
+#: ../../features/introduction.rst:13
 msgid ""
 "En este documento nos vamos a centrar principalmente en la definición del"
 " sistema de SaaS."
 msgstr ""
 
-#: ../../specifications/introduction.rst:16
+#: ../../features/introduction.rst:16
 msgid "Terminología"
 msgstr ""
 
-#: ../../specifications/introduction.rst:18
+#: ../../features/introduction.rst:18
 msgid ""
 "Resumen de los términos que se van a utilizar durante el documento. Cada "
 "uno de ellos será explicado en profundidad en sus correspondientes "
 "secciones."
 msgstr ""
 
-#: ../../specifications/introduction.rst:22
+#: ../../features/introduction.rst:22
 msgid ":ref:`Cliente <users-clients>`"
 msgstr ""
 
-#: ../../specifications/introduction.rst:24
+#: ../../features/introduction.rst:24
 msgid ""
 "Los **clientes** son aquellas entidades que pueden identificarse en el "
 "sistema, y tienen asociados a ellos el contenido (dispositivos, "
 "notificaciones, etc.)"
 msgstr ""
 
-#: ../../specifications/introduction.rst:25
-msgid ":ref:`Usuario <users-simple>`"
+#: ../../features/introduction.rst:25
+msgid ":ref:`Persona <users-simple>`"
 msgstr ""
 
-#: ../../specifications/introduction.rst:27
+#: ../../features/introduction.rst:27
 msgid ""
-"Los **usuarios** no pueden identificarse en el sistema, pero son aquellos"
-" a que usan un dispositivo en particular."
+"Las **personas** no pueden identificarse en el sistema, pero son aquellos"
+" que usan un dispositivo en particular."
 msgstr ""
 
-#: ../../specifications/introduction.rst:28
+#: ../../features/introduction.rst:28
 msgid ":ref:`Dispositivo <devices>`"
 msgstr ""
 
-#: ../../specifications/introduction.rst:30
+#: ../../features/introduction.rst:30
 msgid ""
 "Llamaremos **dispositivo** a todo aquel aparato capaz de recibir "
 "notificaciones push."
 msgstr ""
 
-#: ../../specifications/introduction.rst:31
+#: ../../features/introduction.rst:31
 msgid ":ref:`Notificación <notifications>`"
 msgstr ""
 
-#: ../../specifications/introduction.rst:33
+#: ../../features/introduction.rst:33
 msgid ""
 "Una **notificación** se define como un mensaje, definido por un texto y "
 "un *destino* creado por un *usuario premium*, en el que ha establecido "
@@ -400,47 +410,47 @@ msgid ""
 "sobretodo el *área de entrega* de este."
 msgstr ""
 
-#: ../../specifications/introduction.rst:36
+#: ../../features/introduction.rst:36
 msgid ":ref:`Push <pushes>`"
 msgstr ""
 
-#: ../../specifications/introduction.rst:38 ../../specifications/pushes.rst:7
+#: ../../features/introduction.rst:38 ../../features/pushes.rst:7
 msgid ""
 "Un **push** en el sistema simboliza *un envío en concreto* que ha sido "
 "realizado a una serie de *dispositivos*."
 msgstr ""
 
-#: ../../specifications/notifications.rst:5
+#: ../../features/notifications.rst:5
 msgid "Notificaciones"
 msgstr ""
 
-#: ../../specifications/notifications.rst:7
+#: ../../features/notifications.rst:7
 msgid ""
 "Se entiende que una **notificación** es todo aquella comunicación que un "
 "**cliente** quiere distribuir entre un segmento de sus usuarios, "
 "identificados por sus dispositivos."
 msgstr ""
 
-#: ../../specifications/notifications.rst:10
+#: ../../features/notifications.rst:10
 msgid ""
 "Toda notificación puede tener las siguientes características opcionales "
 "no excluyentes:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:12
+#: ../../features/notifications.rst:12
 msgid ""
 "**Notificación silenciosa**, si esta característica está activada, el SDK"
 " se encargará de no mostrar la notificación al usuario final."
 msgstr ""
 
-#: ../../specifications/notifications.rst:13
+#: ../../features/notifications.rst:13
 msgid ""
 "**Acuse de recibo**, si esta característica está activada, el SDK se "
 "encargará de notificar al backend que la notificación ha sido recibida "
 "por el usuario."
 msgstr ""
 
-#: ../../specifications/notifications.rst:14
+#: ../../features/notifications.rst:14
 msgid ""
 "**Muestreo aleatorio**, si esto está activo, se tendrá que indicar además"
 " un tamaño de la muestra deseado, de tal forma que los dispositivos a los"
@@ -448,7 +458,7 @@ msgid ""
 " teniendo como límite el tamaño de muestra indicado."
 msgstr ""
 
-#: ../../specifications/notifications.rst:16
+#: ../../features/notifications.rst:16
 msgid ""
 "Se puede realizar una segmentación geográfica de los dispositivos. En "
 "función del tipo de área definida para la selección geográfica de "
@@ -456,39 +466,39 @@ msgid ""
 "excluyentes entre sí:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:19
+#: ../../features/notifications.rst:19
 msgid ""
 "**Radial**, el filtro geográfico para la selección de dispositivos se "
 "corresponde con una circunferencia, definida por un centro y un radio (en"
 " metros)."
 msgstr ""
 
-#: ../../specifications/notifications.rst:20
+#: ../../features/notifications.rst:20
 msgid ""
 "**Zonal**, el filtro geográfico para la selección de dispositivos se "
 "corresponde con un conjunto de polígonos, que se pueden extraer de "
 "regiones administrativas, como barrios, ciudades, estados, países, etc."
 msgstr ""
 
-#: ../../specifications/notifications.rst:22
+#: ../../features/notifications.rst:22
 msgid ""
 "Además, se puede realizar segmentación, que se irá acumulando usando los "
 "siguiente parámetros:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:24
+#: ../../features/notifications.rst:24
 msgid "**Idioma**"
 msgstr ""
 
-#: ../../specifications/notifications.rst:25
+#: ../../features/notifications.rst:25
 msgid "**Versión del cliente instalada**"
 msgstr ""
 
-#: ../../specifications/notifications.rst:26
+#: ../../features/notifications.rst:26
 msgid "**Plataforma**, seleccionando entre iOS y/o Android"
 msgstr ""
 
-#: ../../specifications/notifications.rst:28
+#: ../../features/notifications.rst:28
 msgid ""
 "Independientemente de la *segmentación* que se realice del usuario, a "
 "cada notificación se le puede aplicar un **ripple effect**, es decir, el "
@@ -496,70 +506,70 @@ msgid ""
 "los dispositivos alcanzables."
 msgstr ""
 
-#: ../../specifications/notifications.rst:33
+#: ../../features/notifications.rst:33
 msgid "Reintentos"
 msgstr ""
 
-#: ../../specifications/notifications.rst:35
+#: ../../features/notifications.rst:35
 msgid ""
-"Una notificación **que no tenga activado el 'ripple effect'** puede ser "
-"**reintentada**. Un reintento significa que se creará una notificación "
-"nueva que de ser enviada, se seleccionarán los dispositivos objetos de la"
-" siguiente forma:"
+"Una notificación **que no tenga activado el 'ripple effect'** y **haya "
+"sido enviada** puede ser **reintentada**. Un reintento significa que se "
+"creará una notificación nueva que ha de ser enviada, donde se "
+"seleccionarán los dispositivos objetivos de la siguiente forma:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:39
+#: ../../features/notifications.rst:39
 msgid ""
 "Se parte de los dispositivos **seleccionados en el momento de enviar la "
 "notificación original**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:40
+#: ../../features/notifications.rst:40
 msgid "De este conjunto, se excluyen aquellos que hayan **abierto el push**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:41
+#: ../../features/notifications.rst:41
 msgid ""
 "Del resultado, se excluyen también aquellos que hayan dado **error al "
 "mandar el push**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:42
+#: ../../features/notifications.rst:42
 msgid ""
 "Si la notificación original tiene marcado la confirmación de entrega, del"
 " resultado anterior, se excluyen los que han marcado el **push como "
 "recibido**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:44
+#: ../../features/notifications.rst:44
 msgid ""
 "Se puede hacer un reintento de una notificación que sea ya un reintento "
 "de una anterior, y la selección de dispositivos se seleccionarán de forma"
 " análoga."
 msgstr ""
 
-#: ../../specifications/notifications.rst:49
+#: ../../features/notifications.rst:49
 msgid "Ripple Effect"
 msgstr ""
 
-#: ../../specifications/notifications.rst:52
+#: ../../features/notifications.rst:52
 msgid "Geo Ripple"
 msgstr ""
 
-#: ../../specifications/notifications.rst:54
+#: ../../features/notifications.rst:54
 msgid ""
 "Si la notificación es del tipo **radial**, puede tener activado el "
 "**ripple effect** como sistema para la expansión de esa notificación de "
 "forma automática."
 msgstr ""
 
-#: ../../specifications/notifications.rst:59
+#: ../../features/notifications.rst:59
 msgid ""
 "Partiendo de un centro y de un radio, se **seleccionan los dispositivos**"
 " que están disponibles para este primer *ripple*."
 msgstr ""
 
-#: ../../specifications/notifications.rst:61
+#: ../../features/notifications.rst:61
 msgid ""
 "Se crean cada uno de los grupos de dispositivos a los que se va a enviar "
 "esta primera oleada de notificaciones. Cada uno de esos grupos se asocia "
@@ -568,25 +578,25 @@ msgid ""
 "maás recientemente, y otro grupo con el resto."
 msgstr ""
 
-#: ../../specifications/notifications.rst:63
+#: ../../features/notifications.rst:63
 msgid ""
 "El tamaño del grupo de dispositivos del primer paso (**grupo de "
 "control**) viene dado por las siguientes reglas:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:65
+#: ../../features/notifications.rst:65
 msgid ""
 "Se seleccionan todos los *dispositivos activos*, aquellos que han tenido "
 "actividad registrada en las últimas 48 horas."
 msgstr ""
 
-#: ../../specifications/notifications.rst:66
+#: ../../features/notifications.rst:66
 msgid ""
 "Si el tamaño de este conjunto es menor que el tamaño mínimo deseado "
 "(250), se seleccionan todos."
 msgstr ""
 
-#: ../../specifications/notifications.rst:67
+#: ../../features/notifications.rst:67
 #, python-format
 msgid ""
 "Si el 10% del total de dispositivos activos es es menor que diez veces el"
@@ -594,19 +604,19 @@ msgid ""
 "activos."
 msgstr ""
 
-#: ../../specifications/notifications.rst:68
+#: ../../features/notifications.rst:68
 msgid ""
 "En cualquier otro caso, se seleccionan diez veces el tamaño mínimo "
 "deseado (2500) dispositivos."
 msgstr ""
 
-#: ../../specifications/notifications.rst:70
+#: ../../features/notifications.rst:70
 msgid ""
 "Cuando la selección es menor que el total de dispositivos activos, esta "
 "se hace siempre de forma aleatoria."
 msgstr ""
 
-#: ../../specifications/notifications.rst:72
+#: ../../features/notifications.rst:72
 msgid ""
 "Se **envian los pushes** al *grupo de control*. Justo después de "
 "enviarlos, se calcula cuando será comprovación de relevancia, teniendo en"
@@ -614,7 +624,7 @@ msgid ""
 "contenido."
 msgstr ""
 
-#: ../../specifications/notifications.rst:74
+#: ../../features/notifications.rst:74
 msgid ""
 "Dor defecto se programa para *15 minutos después* del envío de los "
 "pushes. Si esa comprobación resulta ser entre las 23h y las 7h de la zona"
@@ -622,62 +632,62 @@ msgid ""
 "comprobarse a partir de las 7h."
 msgstr ""
 
-#: ../../specifications/notifications.rst:76
+#: ../../features/notifications.rst:76
 msgid ""
 "Se **comprueba la relevancia** de la notificación, midiendo tanto el "
 "ratio de aperturas del push, como el ratio la actividad que ha generado "
 "el contenido con el volumen de audiencia de la zona."
 msgstr ""
 
-#: ../../specifications/notifications.rst:78
+#: ../../features/notifications.rst:78
 msgid ""
 "El volumen de la audiencia del contenido ha de ser actualizado desde la "
 "plataforma que genera el contenido."
 msgstr ""
 
-#: ../../specifications/notifications.rst:80
+#: ../../features/notifications.rst:80
 msgid ""
 "Si supuera alguno de los dos criterios, por ratio de aperturas, o por "
 "audiencia, se marca como **relevante en el paso inicial**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:82
+#: ../../features/notifications.rst:82
 msgid ""
 "En caso contrario, se programa con los mismo criterios anteriores, la "
 "hora de la siguiente comprobación."
 msgstr ""
 
-#: ../../specifications/notifications.rst:84
+#: ../../features/notifications.rst:84
 msgid ""
 "Si es relevante, **se envia el push al siguiente paso**, con el resto de "
 "dispositivos, y se repite la comprobación de relevancia anterior, puntos "
 "3 y 4."
 msgstr ""
 
-#: ../../specifications/notifications.rst:86
+#: ../../features/notifications.rst:86
 msgid ""
 "Si en el último es relevante, se genera una nueva notificación a partir "
 "de la inicial, un nuevo *ripple*, **ampliando el radio** y se repiten los"
 " pasos desde el punto 1."
 msgstr ""
 
-#: ../../specifications/notifications.rst:88
+#: ../../features/notifications.rst:88
 msgid ""
 "Si en cualquiera de los pasos, se supera el **tiempo máximo de 8 horas** "
 "sin que sea relevante, se deja de comprobar y se para el algoritmo."
 msgstr ""
 
-#: ../../specifications/notifications.rst:90
+#: ../../features/notifications.rst:90
 msgid ""
 "Las expansiones se detienen también al llegar a un **radio máximo, de "
 "1000Km**."
 msgstr ""
 
-#: ../../specifications/notifications.rst:94
+#: ../../features/notifications.rst:94
 msgid "Progressive Ripple"
 msgstr ""
 
-#: ../../specifications/notifications.rst:96
+#: ../../features/notifications.rst:96
 msgid ""
 "El algoritmo de expansión progresiva realiza una distribución de los "
 "pushes a los dispositivos disponibles para la notificación, de tal forma "
@@ -685,101 +695,101 @@ msgid ""
 "envío, teniendo en cuenta que:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:100
+#: ../../features/notifications.rst:100
 #, python-format
 msgid "Al enviar el 1º grupo, se cubrirá el 1% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:101
+#: ../../features/notifications.rst:101
 #, python-format
 msgid "Al enviar el 2º grupo, se cubrirá el 2% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:102
+#: ../../features/notifications.rst:102
 #, python-format
 msgid "Al enviar el 3º grupo, se cubrirá el 3% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:103
+#: ../../features/notifications.rst:103
 #, python-format
 msgid "Al enviar el 4º grupo, se cubrirá el 5% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:104
+#: ../../features/notifications.rst:104
 #, python-format
 msgid "Al enviar el 5º grupo, se cubrirá el 8% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:105
+#: ../../features/notifications.rst:105
 #, python-format
 msgid "Al enviar el 6º grupo, se cubrirá el 13% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:106
+#: ../../features/notifications.rst:106
 #, python-format
 msgid "Al enviar el 7º grupo, se cubrirá el 21% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:107
+#: ../../features/notifications.rst:107
 #, python-format
 msgid "Al enviar el 8º grupo, se cubrirá el 34% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:108
+#: ../../features/notifications.rst:108
 #, python-format
 msgid "Al enviar el 9º grupo, se cubrirá el 55% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:109
+#: ../../features/notifications.rst:109
 #, python-format
 msgid "Al enviar el 10º grupo, se cubrirá el 100% de los dispositivos totales."
 msgstr ""
 
-#: ../../specifications/notifications.rst:111
+#: ../../features/notifications.rst:111
 msgid "Una vez creados los grupos, se envía la notificación:"
 msgstr ""
 
-#: ../../specifications/notifications.rst:113
+#: ../../features/notifications.rst:113
 msgid "Se envía al primer grupo no enviado aún."
 msgstr ""
 
-#: ../../specifications/notifications.rst:114
+#: ../../features/notifications.rst:114
 msgid "Se comprueba la relevancia, de la misma forma que en el *ripple effect*."
 msgstr ""
 
-#: ../../specifications/notifications.rst:115
+#: ../../features/notifications.rst:115
 msgid "Si es relevante, se envía al siguiente grupo."
 msgstr ""
 
-#: ../../specifications/notifications.rst:116
+#: ../../features/notifications.rst:116
 msgid "Si no es relevante, se no se hace nada hasta la siguiente comprobación."
 msgstr ""
 
-#: ../../specifications/notifications.rst:117
+#: ../../features/notifications.rst:117
 msgid ""
 "Cuando pasa el tiempo límite, se detienen las comprobaciones de "
 "relevancia."
 msgstr ""
 
-#: ../../specifications/places.rst:5
+#: ../../features/places.rst:5
 msgid "Lugares"
 msgstr ""
 
-#: ../../specifications/places.rst:7
+#: ../../features/places.rst:7
 msgid ""
 "Los lugares, o **places**, son zonas geográficas que representan "
 "fronteras administrativas de partes del mundo. Se pueden corresponder con"
 " barrios, ciudades, estados, países, etc."
 msgstr ""
 
-#: ../../specifications/places.rst:10
+#: ../../features/places.rst:10
 msgid ""
 "El objetivo de esto es tener una base de datos propia de lugares "
 "administrativos, de forma que no se dependa de servicios de terceros, "
 "como Nominatim o Google Maps."
 msgstr ""
 
-#: ../../specifications/places.rst:13
+#: ../../features/places.rst:13
 msgid ""
 "De todas formas, utilizando el API de búsqueda de Nominatim, con el "
 "parámetro de ``polygon_geojson=1`` se pueden obtener resultados de "
@@ -787,7 +797,7 @@ msgid ""
 "base de datos de forma directa."
 msgstr ""
 
-#: ../../specifications/places.rst:17
+#: ../../features/places.rst:17
 msgid ""
 "A la hora de enviar una notificación a un área administrativa, el proceso"
 " consistirá en utilizar el API de *places* para obtener las fronteras de "
@@ -796,11 +806,11 @@ msgid ""
 "una ciudad a un polígono arbitrario."
 msgstr ""
 
-#: ../../specifications/pushes.rst:5
+#: ../../features/pushes.rst:5
 msgid "Pushes"
 msgstr ""
 
-#: ../../specifications/pushes.rst:11
+#: ../../features/pushes.rst:11
 msgid ""
 "La responsabilidad de crear los pushes recae **exclusivamente** en las "
 "notificaciones, por lo que no se pueden crear vía API. Sin embargo, la "
@@ -808,220 +818,227 @@ msgid ""
 "push enviado, utilizando las llamadas del API correspondientes."
 msgstr ""
 
-#: ../../specifications/pushes.rst:16
+#: ../../features/pushes.rst:16
 msgid "Pushes *leídos*"
 msgstr ""
 
-#: ../../specifications/pushes.rst:18
+#: ../../features/pushes.rst:18
 msgid ""
 "Se marca un push como *leído* cuando el usuario decide marcarlo como tal."
 " Esto no tiene efecto para las estadísticas, ya que el usuario podría "
 "marcar un push como leído aunque no lo haya abierto."
 msgstr ""
 
-#: ../../specifications/pushes.rst:22
+#: ../../features/pushes.rst:22
 msgid ""
 "Solo afecta al contador de ``badge`` que se envía en cada push. Es "
 "responsabilidad del lado cliente (la aplicación) marcar un push como "
 "leído."
 msgstr ""
 
-#: ../../specifications/pushes.rst:26
+#: ../../features/pushes.rst:26
 msgid "Pushes *seguidos*"
 msgstr ""
 
-#: ../../specifications/pushes.rst:28
+#: ../../features/pushes.rst:28
 msgid ""
 "Los pushes *seguidos* o *abiertos*, son aquellos sobre los que el usuario"
 " a pulsado para acceder al contenido."
 msgstr ""
 
-#: ../../specifications/pushes.rst:31
+#: ../../features/pushes.rst:31
 msgid ""
 "Es responsabilidad del lado cliente (la aplicación) marcar un push como "
 "seguido."
 msgstr ""
 
-#: ../../specifications/pushes.rst:34
+#: ../../features/pushes.rst:34
 msgid "Pushes *recibidos*"
 msgstr ""
 
-#: ../../specifications/pushes.rst:36
+#: ../../features/pushes.rst:36
 msgid ""
 "Los pushes *recibidos* son aquellos que la aplicación ha marcado como "
 "recibidos. Se asume que si el contenido del push tiene el valor de "
 "``cfm`` a 1 se necesita confirmación."
 msgstr ""
 
-#: ../../specifications/pushes.rst:40
+#: ../../features/pushes.rst:40
 msgid ""
 "Es responsabilidad del lado cliente (la aplicación) marcar un push como "
 "recibido."
 msgstr ""
 
-#: ../../specifications/pushes.rst:43
+#: ../../features/pushes.rst:43
 msgid "Pushes *silenciosos*"
 msgstr ""
 
-#: ../../specifications/pushes.rst:45
+#: ../../features/pushes.rst:45
 msgid ""
 "Los pushes *silenciosos* son aquellos que se envían pero la aplicación no"
 " muestra ningún mensaje al usuario."
 msgstr ""
 
-#: ../../specifications/pushes.rst:49
+#: ../../features/pushes.rst:49
 msgid "Estructura del push"
 msgstr ""
 
-#: ../../specifications/pushes.rst:51
+#: ../../features/pushes.rst:51
 msgid "**Android**"
 msgstr ""
 
-#: ../../specifications/pushes.rst:72
+#: ../../features/pushes.rst:75
 msgid "**iOS**"
 msgstr ""
 
-#: ../../specifications/pushes.rst:97
+#: ../../features/pushes.rst:103
 msgid ""
 "``id`` se corresponde con el código único del push, que ha de ser usado "
 "para identificarlo a la hora de marcarlo como recibido o como abierto."
 msgstr ""
 
-#: ../../specifications/pushes.rst:98
+#: ../../features/pushes.rst:104
+msgid "``dl`` *deep link*"
+msgstr ""
+
+#: ../../features/pushes.rst:105
 msgid ""
 "``dst`` campo arbitrario de texto que debería identificar el **tipo de "
 "destino** que la aplicación cliente debería de abrir al pulsar en la "
 "notificación."
 msgstr ""
 
-#: ../../specifications/pushes.rst:99
+#: ../../features/pushes.rst:106
 msgid ""
 "``dsc`` campo arbitrario de texto que debería identificar de forma única "
 "el **contenido del destino** que la aplicación cliente debería de abrir "
 "al pulsar en la notificación."
 msgstr ""
 
-#: ../../specifications/pushes.rst:100
+#: ../../features/pushes.rst:107
 msgid ""
 "``cfm`` campo que indica si el push requiere la **confirmación de "
 "entrega**, con valor de ``1`` si lo necesita y ``0`` en caso contrario."
 msgstr ""
 
-#: ../../specifications/pushes.rst:101
+#: ../../features/pushes.rst:108
 msgid ""
 "``sil`` campo que indica si el push **es silencioso**, con valor de ``1``"
 " si lo es y ``0`` en caso contrario."
 msgstr ""
 
-#: ../../specifications/pushes.rst:102
+#: ../../features/pushes.rst:109
 msgid ""
 "``ctm`` campo que contiene un objeto con datos personalizados del usuario"
 " (**opcional**)."
 msgstr ""
 
-#: ../../specifications/pushes.rst:103
+#: ../../features/pushes.rst:110
 msgid ""
 "``img`` URL de la imagen que se usará para el contenido enriquecido de la"
 " notificación (**opcional**)."
 msgstr ""
 
-#: ../../specifications/pushes.rst:105
+#: ../../features/pushes.rst:111
+msgid ""
+"``org`` campo que siempre contiene el valor ``10d``, para comprobar que "
+"el push venga desde la plataforma."
+msgstr ""
+
+#: ../../features/pushes.rst:112
+msgid ""
+"``not`` campo que tiene el código único que hace referencia al contenido "
+"que ha generado la notificación push"
+msgstr ""
+
+#: ../../features/pushes.rst:114
 msgid ""
 "Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se "
 "modifica quedando de la siguiente manera:"
 msgstr ""
 
-#: ../../specifications/pushes.rst:120
+#: ../../features/pushes.rst:130
 msgid ""
 "Además, para que el cliente sea compatible con estas notificaciones, ha "
 "de ser configurado tal como se indica en la `documentación de Apple "
 "<https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW8>`_."
 msgstr ""
 
-#: ../../specifications/statistics.rst:3
+#: ../../features/statistics.rst:3
 msgid "Estadísticas"
 msgstr ""
 
-#: ../../specifications/statistics.rst:6
+#: ../../features/statistics.rst:6
 msgid "Globales sobre notificaciones push"
 msgstr ""
 
-#: ../../specifications/statistics.rst:8 ../../specifications/statistics.rst:23
+#: ../../features/statistics.rst:8 ../../features/statistics.rst:21
 msgid ""
 "Cada **cliente** podrá acceder a las siguientes estadísticas, agrupadas "
 "por *días* o *semanas*."
 msgstr ""
 
-#: ../../specifications/statistics.rst:11
+#: ../../features/statistics.rst:11
 msgid ""
 "**Notificaciones push enviadas**, el número total de notificaciones "
 "enviadas."
 msgstr ""
 
-#: ../../specifications/statistics.rst:12
+#: ../../features/statistics.rst:12
 msgid ""
 "**Notificaciones push recibidas**, el número total de notificaciones que "
 "han sido confirmadas como recibidas."
 msgstr ""
 
-#: ../../specifications/statistics.rst:13
+#: ../../features/statistics.rst:13
 msgid ""
 "**Notificaciones push clicadas**, el número total de notificaciones que "
 "el usuario ha clicado para acceder al contenido."
 msgstr ""
 
-#: ../../specifications/statistics.rst:14
+#: ../../features/statistics.rst:14
 msgid ""
 "**Dispositivos a los que se les ha enviado al menos una notificación "
 "push**"
 msgstr ""
 
-#: ../../specifications/statistics.rst:15
-msgid "**Media de notificaciones por dispositivo**"
-msgstr ""
-
-#: ../../specifications/statistics.rst:16
-msgid "**Varianza de notificaciones por dispositivo**"
-msgstr ""
-
-#: ../../specifications/statistics.rst:18
+#: ../../features/statistics.rst:16
 msgid ""
 "De entre las notificaciones que se tienen en cuenta se excluyen aquellas "
 "que son *silent*."
 msgstr ""
 
-#: ../../specifications/statistics.rst:21
+#: ../../features/statistics.rst:19
 msgid "Globales sobre dispositivos"
 msgstr ""
 
-#: ../../specifications/statistics.rst:26
+#: ../../features/statistics.rst:24
 msgid "**Dispositivos** registrados durante el periodo de tiempo indicado"
 msgstr ""
 
-#: ../../specifications/statistics.rst:27
+#: ../../features/statistics.rst:25
 msgid "**Total dispositivos** creados hasta la fecha indicada"
 msgstr ""
 
-#: ../../specifications/statistics.rst:28
+#: ../../features/statistics.rst:26
 msgid "**Usuarios** registrados durante el periodo de tiempo indicado"
 msgstr ""
 
-#: ../../specifications/statistics.rst:29
+#: ../../features/statistics.rst:27
 msgid "**Total usuarios** creados hasta la fecha indicada"
 msgstr ""
 
-#: ../../specifications/statistics.rst:31
+#: ../../features/statistics.rst:29
 msgid ""
 "Los usuarios en este caso son aquellos que se han creado y asociado a un "
 "dispositivo."
 msgstr ""
 
-#: ../../specifications/statistics.rst:34
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:32 ../../features/statistics.rst:43
 msgid "Churn"
 msgstr ""
 
-#: ../../specifications/statistics.rst:36
+#: ../../features/statistics.rst:34
 msgid ""
 "Consideramos que el **churn** se corresponde con número de dispositivos "
 "que han dejado de ser aptos para la recepción de pushes. Un dispositivo "
@@ -1030,97 +1047,94 @@ msgid ""
 "los servicios de Apple y Google."
 msgstr ""
 
-#: ../../specifications/statistics.rst:42
+#: ../../features/statistics.rst:40
 msgid "Ejemplo"
 msgstr ""
 
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:43
 msgid "Not. Push Enviadas"
 msgstr ""
 
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:43
 msgid "Not. Push Recibidas"
 msgstr ""
 
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:43
 msgid "Not. Push Clicadas"
 msgstr ""
 
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:43
 msgid "Avg. Notificaciones/Dispositivo"
 msgstr ""
 
-#: ../../specifications/statistics.rst:45
+#: ../../features/statistics.rst:43
 msgid "Sigma2 Notificaciones/Dispositivo"
 msgstr ""
 
-#: ../../specifications/statistics.rst:47
-#: ../../specifications/statistics.rst:80
-#: ../../specifications/statistics.rst:82
+#: ../../features/statistics.rst:45 ../../features/statistics.rst:78
+#: ../../features/statistics.rst:80
 msgid "**13/3/2017**"
 msgstr ""
 
-#: ../../specifications/statistics.rst:49
-#: ../../specifications/statistics.rst:80
-#: ../../specifications/statistics.rst:84
+#: ../../features/statistics.rst:47 ../../features/statistics.rst:78
+#: ../../features/statistics.rst:82
 msgid "**20/3/2017**"
 msgstr ""
 
-#: ../../specifications/statistics.rst:51
-#: ../../specifications/statistics.rst:80
-#: ../../specifications/statistics.rst:86
+#: ../../features/statistics.rst:49 ../../features/statistics.rst:78
+#: ../../features/statistics.rst:84
 msgid "**27/3/2017**"
 msgstr ""
 
-#: ../../specifications/statistics.rst:55
+#: ../../features/statistics.rst:53
 msgid "Para cada notificación push"
 msgstr ""
 
-#: ../../specifications/statistics.rst:57
+#: ../../features/statistics.rst:55
 msgid ""
 "Para cada *notificación push* el usuario podrá ver las siguientes "
 "estadísticas."
 msgstr ""
 
-#: ../../specifications/statistics.rst:59
+#: ../../features/statistics.rst:57
 msgid ""
 "**Destinatarios**, dispositivos a los que se les ha enviado la "
 "notificación."
 msgstr ""
 
-#: ../../specifications/statistics.rst:60
+#: ../../features/statistics.rst:58
 msgid ""
 "**Recibidas**, el número total de notificaciones que han sido confirmadas"
 " como recibidas."
 msgstr ""
 
-#: ../../specifications/statistics.rst:61
+#: ../../features/statistics.rst:59
 msgid ""
 "**Clicadas**, el número total de notificaciones que el usuario ha clicado"
 " para acceder al contenido."
 msgstr ""
 
-#: ../../specifications/statistics.rst:62
+#: ../../features/statistics.rst:60
 msgid ""
 "**Churn**, número de dispositivos que a las *12 horas* se ha marcado como"
 " inactivo."
 msgstr ""
 
-#: ../../specifications/statistics.rst:64
+#: ../../features/statistics.rst:62
 msgid "Estas estadísticas se ofrecerán de forma global para la notificación."
 msgstr ""
 
-#: ../../specifications/statistics.rst:66
+#: ../../features/statistics.rst:64
 msgid ""
 "Además, se mostrará al usuario la evolución de los valores de "
 "**recibidos** y **clicadas** en el tiempo en forma de gráfica."
 msgstr ""
 
-#: ../../specifications/statistics.rst:70
+#: ../../features/statistics.rst:68
 msgid "Cohorts"
 msgstr ""
 
-#: ../../specifications/statistics.rst:72
+#: ../../features/statistics.rst:70
 msgid ""
 "En las *cohorts* que se le ofrecen a los **cliente** se muestra la "
 "evolución de los dispositivos que han tenido actividad con su aplicación "
@@ -1130,35 +1144,35 @@ msgid ""
 "ha tenido actividad."
 msgstr ""
 
-#: ../../specifications/statistics.rst:77
+#: ../../features/statistics.rst:75
 msgid "Ejemplo:"
 msgstr ""
 
-#: ../../specifications/statistics.rst:82
+#: ../../features/statistics.rst:80
 msgid "9.940"
 msgstr ""
 
-#: ../../specifications/statistics.rst:82
+#: ../../features/statistics.rst:80
 msgid "8.120"
 msgstr ""
 
-#: ../../specifications/statistics.rst:82
+#: ../../features/statistics.rst:80
 msgid "6.487"
 msgstr ""
 
-#: ../../specifications/statistics.rst:84
+#: ../../features/statistics.rst:82
 msgid "7.310"
 msgstr ""
 
-#: ../../specifications/statistics.rst:84
+#: ../../features/statistics.rst:82
 msgid "6.105"
 msgstr ""
 
-#: ../../specifications/statistics.rst:86
+#: ../../features/statistics.rst:84
 msgid "9.217"
 msgstr ""
 
-#: ../../specifications/statistics.rst:90
+#: ../../features/statistics.rst:88
 msgid ""
 "De los dispositivos creados durante la semana del 13/3/2017, durante esta"
 " semana han tenido actividad 9.940 dispositivos (se corresponde con el "
@@ -1166,85 +1180,82 @@ msgid ""
 " han tenido actividad 8.120."
 msgstr ""
 
-#: ../../specifications/users.rst:5 ../../specifications/users.rst:38
+#: ../../features/users.rst:5
 msgid "Usuarios"
 msgstr ""
 
-#: ../../specifications/users.rst:7
+#: ../../features/users.rst:7
 msgid ""
-"Llamaremos **usuario** a aquella entidad con la *capacidad potencial* de "
-"identificarse en el sistema, mediante el uso de un correo electrónico y "
-"una contraseña. Diferenciaremos dos grandes grupos de usuarios, los "
-"**clientes** y los **usuarios**."
+"Llamaremos **usuario** a aquella entidad en el sistema que representa a "
+"un individuo, o conjunto de individuos, en la realidad. Diferenciaremos "
+"dos grandes grupos de usuarios:"
 msgstr ""
 
-#: ../../specifications/users.rst:11
+#: ../../features/users.rst:11
 msgid "Los **clientes**"
 msgstr ""
 
-#: ../../specifications/users.rst:12
-msgid "Los **usuarios**"
+#: ../../features/users.rst:12
+msgid "Las **personas**"
 msgstr ""
 
-#: ../../specifications/users.rst:17
+#: ../../features/users.rst:17
 msgid "Clientes"
 msgstr ""
 
-#: ../../specifications/users.rst:19
+#: ../../features/users.rst:19
 msgid ""
 "Los **clientes** son aquellos capaces de identificarse en el sistema. Por"
 " lo general estarán relacionados con empresas que actúen de clientes de "
 "la plataforma (por ejemplo, Onpublico)."
 msgstr ""
 
-#: ../../specifications/users.rst:22
+#: ../../features/users.rst:22
 msgid ""
 "Además de ser los que se identifiquen en el sistema, estos usuarios son "
-"los poseen el contenido. Tanto las notificaciones, los dispositivos, los "
-"pushes y los usuarios tienen asociados un dueño, que siempre se "
+"los *poseen el contenido*. Tanto las notificaciones, los dispositivos, "
+"los pushes y las personas tienen asociados un dueño, que siempre se "
 "corresponderá con un cliente."
 msgstr ""
 
-#: ../../specifications/users.rst:26
+#: ../../features/users.rst:26
 msgid ""
 "Las **llamadas del API** vendrán siempre identificadas por uno de estos "
 "usuarios."
 msgstr ""
 
-#: ../../specifications/users.rst:29
+#: ../../features/users.rst:29
 msgid "Aplicación SNS"
 msgstr ""
 
-#: ../../specifications/users.rst:31
+#: ../../features/users.rst:31
 msgid ""
 "Los *clientes* tienen que registrar en la plataforma los credenciales de "
 "su aplicación móvil para que se registre una **aplicación de SNS** para "
 "cada plataforma que quiera soportar el usuario."
 msgstr ""
 
-#: ../../specifications/users.rst:40
-msgid ""
-"Los usuarios son **aquellos a los que se les asocia a un dispositivo**. "
-"Un dispositivo solo puede tener un usuario asociado al mismo tiempo."
+#: ../../features/users.rst:38
+msgid "Personas"
 msgstr ""
 
-#: ../../specifications/users.rst:43
+#: ../../features/users.rst:40
 msgid ""
-"Los usuarios se *identifican por un correo electrónico*, y son creados "
-"bajo demanda por clientes."
+"Las `personas <https://en.wikipedia.org/wiki/Persona_(psychology)>`_  son"
+" **aquellos a los que se les asocia a un dispositivo**. Un dispositivo "
+"solo puede tener una persona asociado al mismo tiempo."
 msgstr ""
 
-#: ../../specifications/users.rst:46
+#: ../../features/users.rst:44
 msgid ""
-"Si un mismo usuario (mismo correo electrónico) es creado por varios "
-"clientes, solo se crea una vez, y todos los clientes que lo registran "
-"comparten la posesión de este usuario."
+"Los usuarios se *identifican por un código único*, y son creados al dar "
+"de alta un device en el sistema. También se pueden crear bajo demanda por"
+" el **cliente**."
 msgstr ""
 
-#: ../../specifications/users.rst:50
+#: ../../features/users.rst:47
 msgid ""
-"Un usuario no puede identificarse directamente en el sistema, y toda "
-"acción que tenga que ver con este sera registrada usando el dispositivo "
-"que este utilizando, no el usuario."
+"Las personas no pueden identificarse directamente en el sistema, y "
+"siempre pertenecen a un único **cliente**."
 msgstr ""
 

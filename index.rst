@@ -1,11 +1,20 @@
-==========================================
-¡Bienvenido a la documentación de 10Darts!
-==========================================
+=====================
+Documentación y ayuda
+=====================
+
+El sistema **10Darts** se puede definir como un *sistema de difusión de contenido inteligente*,
+en donde dicha difusión se realiza mediante el uso de *notificaciones push* a dispositivos móviles iOS y Android.
+
+El sistema completo consta de dos partes muy diferenciadas, la plataforma de *Software as a Service* (Saas), que
+incluye un *backend* **API público y un panel de gestión**, y el **SDK para aplicaciones móviles**.
+
+Contenidos
+----------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contenidos:
 
-   specifications
-   sdks/index
-   api
+   features
+   tutorials
+   faq
+   reference
