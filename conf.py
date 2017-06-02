@@ -34,7 +34,8 @@
 import os
 
 extensions = [
-    'sphinxcontrib.httpdomain'
+    'sphinxcontrib.httpdomain',
+    'javasphinx'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

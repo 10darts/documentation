@@ -20,15 +20,17 @@ logEvent
 .. java:method:: public void logEvent(String category, String type, String message)
    :outertype: ISDKCore
 
-   Called to log events, for example to use analytics 
+   Called to log events, for example to use analytics
+
    .. code:: java
-    Tracker _t = OnpublicoApplication.getPushTracker();
-      if (_t != null)
-      {
-          _t.send(new HitBuilders.EventBuilder().setCategory("Push")
-          .setNonInteraction(true)
-          .setAction("errorRegister").setLabel(e.getMessage()).build());
-      }
+
+       Tracker _t = OnpublicoApplication.getPushTracker();
+       if (_t != null)
+       {
+            _t.send(new HitBuilders.EventBuilder().setCategory("Push")
+            .setNonInteraction(true)
+            .setAction("errorRegister").setLabel(e.getMessage()).build());
+       }
 
    :param category: category
    :param type: type

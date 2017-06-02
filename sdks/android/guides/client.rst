@@ -67,7 +67,8 @@ Add your custom functionality as needed, please refer to :ref:`SDKClient class d
 ----------------------------------------
 
 .. code:: java
-  @Override
+
+    @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
