@@ -30,7 +30,7 @@ Configure the application
 1. Library
 ^^^^^^^^^^
 
--  Copy the SDK ``aar`` file to your libs directory
+-  Copy the SDK ``aar`` files to your libs directory
 
 .. ¿Enlaces para la descarga? O Mejor, subir a JCenter/Maven Central el
     paquete y poner directamente la dependencia.
@@ -42,7 +42,26 @@ Configure the application
 
 .. code::
 
-    compile(name: 'sdk-sdkProduction-release', ext: ‘aar')
+    compile(name: 'sdk-sdkProduction-release', ext: 'aar')
+    compile(name: 'general-release', ext: 'aar')
+
+.. note::
+
+    if you have a warning "Error:Failed to resolve: :sdk-sdkProduction-release:"
+    check that in your project build.gradle you have added libs directory with flatDir:
+
+   .. code::
+
+       allprojects {
+           repositories {
+               jcenter()
+               flatDir {
+                   dirs 'libs'
+               }
+           }
+       }
+
+
 
 -  Add the needed dependencies:
 
@@ -57,6 +76,17 @@ Configure the application
 .. Esto no debería de ser necesario, el SDK debería de indicar sus
     propias dependencias, sin que el usuario las tuviera que poner
     de forma explícita.
+
+
+- Add packaging options in android section:
+
+ .. code::
+
+        packagingOptions {
+            pickFirst 'META-INF/*'
+        }
+
+
 
 
 3. Update manifest
