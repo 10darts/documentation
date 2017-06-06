@@ -1,5 +1,7 @@
 .. _android-sdk-setup:
 
+.. Guía para la instalación en Android del SDK.
+
 =================
 Android SDK Setup
 =================
@@ -9,7 +11,6 @@ implementing 10 Darts SDK in your application, the instructions are
 based on *Android Studio.*
 
 .. note::
-
     If you are not familiar with *Android Studio* please refer to this
     :ref:`Quick tutorial <faq-android-application>`.
 
@@ -18,7 +19,6 @@ based on *Android Studio.*
     and updated on it for the proper operation of this SDK
 
 .. warning::
-
     Before proceeding you should have created a GCM project in your firebase
     console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and
     follow the steps.
@@ -31,6 +31,9 @@ Configure the application
 ^^^^^^^^^^
 
 -  Copy the SDK ``aar`` file to your libs directory
+
+.. ¿Enlaces para la descarga? O Mejor, subir a JCenter/Maven Central el
+    paquete y poner directamente la dependencia.
 
 2. Gradle setup
 ^^^^^^^^^^^^^^^
@@ -50,6 +53,10 @@ Configure the application
     compile 'com.google.android.gms:play-services-location:9.8.0'
     compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
     compile 'org.apache.httpcomponents:httpmime:4.3.5'
+
+.. Esto no debería de ser necesario, el SDK debería de indicar sus
+    propias dependencias, sin que el usuario las tuviera que poner
+    de forma explícita.
 
 
 3. Update manifest
@@ -153,6 +160,9 @@ Implementing client class
 Create a client class whose superclass is SDKClient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. Posible mejora: No necesitar una subclase para empezar a funcionar,
+    se temdria que poder empezar con una implementación por defecto.
+
 .. figure:: /_static/images/client1.png
   :alt: Create class
 
@@ -166,8 +176,9 @@ starting but you should add your own functionality as needed.
 
   Implement methods
 
-Don't forget to add the full qualified name of this class to the
-:ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
+.. warning::
+    Don't forget to add the full qualified name of this class to the
+    :ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
 
 Configure SDK behavior
 ^^^^^^^^^^^^^^^^^^^^^^
