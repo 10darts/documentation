@@ -30,7 +30,7 @@ Configure the application
 1. Library
 ^^^^^^^^^^
 
--  Copy the SDK ``aar`` file to your libs directory
+-  Copy the SDK ``aar`` files to your libs directory
 
 2. Gradle setup
 ^^^^^^^^^^^^^^^
@@ -39,7 +39,26 @@ Configure the application
 
 .. code::
 
-    compile(name: 'sdk-sdkProduction-release', ext: ‘aar')
+    compile(name: 'sdk-sdkProduction-release', ext: 'aar')
+    compile(name: 'general-release', ext: 'aar')
+
+.. note::
+
+    if you have a warning "Error:Failed to resolve: :sdk-sdkProduction-release:"
+    check that in your project build.gradle you have added libs directory with flatDir:
+
+   .. code::
+
+       allprojects {
+           repositories {
+               jcenter()
+               flatDir {
+                   dirs 'libs'
+               }
+           }
+       }
+
+
 
 -  Add the needed dependencies:
 
@@ -50,6 +69,17 @@ Configure the application
     compile 'com.google.android.gms:play-services-location:9.8.0'
     compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
     compile 'org.apache.httpcomponents:httpmime:4.3.5'
+
+
+- Add packaging options in android section:
+
+ .. code::
+
+        packagingOptions {
+            pickFirst 'META-INF/*'
+        }
+
+
 
 
 3. Update manifest
