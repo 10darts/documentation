@@ -27,24 +27,27 @@ based on *Android Studio.*
 Configure the application
 -------------------------
 
-1. Library
+1. Library 
 ^^^^^^^^^^
 
 -  Copy the SDK ``aar`` files to your libs directory
 
-2. Gradle setup
-^^^^^^^^^^^^^^^
 
--  Add the library to the dependencies:
+-  Add the library and needed dependncies to the dependencies section of your gradle file
 
 .. code::
 
     compile(name: 'sdk-sdkProduction-release', ext: 'aar')
     compile(name: 'general-release', ext: 'aar')
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
+    compile 'org.apache.httpcomponents:httpmime:4.3.5'
 
 .. note::
 
-    if you have a warning "Error:Failed to resolve: :sdk-sdkProduction-release:"
+    *********if you have a warning "Error:Failed to resolve: :sdk-sdkProduction-release:"
     check that in your project build.gradle you have added libs directory with flatDir:
 
    .. code::
@@ -58,19 +61,6 @@ Configure the application
            }
        }
 
-
-
--  Add the needed dependencies:
-
-.. code::
-
-    compile 'com.google.android.gms:play-services-auth:9.8.0'
-    compile 'com.google.android.gms:play-services-gcm:9.8.0'
-    compile 'com.google.android.gms:play-services-location:9.8.0'
-    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
-    compile 'org.apache.httpcomponents:httpmime:4.3.5'
-
-
 - Add packaging options in android section:
 
  .. code::
@@ -82,77 +72,11 @@ Configure the application
 
 
 
-3. Update manifest
-^^^^^^^^^^^^^^^^^^
+2. Configure 10Darts
+^^^^^^^^^^^^^^^^^^^^
 
--  Add the required permissions:
 
-.. code:: xml
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.REGISTER"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.SEND"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-
--  Add C2D Message permission, note you should change
-   **yourpackagename** with your app package, e.g.:
-   *com.yourcompany.appname*
-
-.. code:: xml
-
-    <permission android:name="yourpackagename.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="yourpackagename.C2D_MESSAGE"/>
-
--  In Application section add the required receivers note you should
-   change **yourpackagename** with your app package, e.g.:
-   *com.yourcompany.appname*:
-
-.. code:: xml
-
-    <receiver android:name="com.darts.sdk.gcm.DartsReceiver">
-        <intent-filter>
-            <action android:name="com.darts.sdk.CLEAR_PUSHES"/>
-            <action android:name="com.darts.sdk.OPEN_PUSH"/>
-            <action android:name="com.darts.sdk.OPEN_LIST"/>
-        </intent-filter>
-    </receiver>
-
-    <receiver
-        android:name="com.google.android.gms.gcm.GcmReceiver"
-        android:exported="true"
-        android:permission="com.google.android.c2dm.permission.SEND" >
-        <intent-filter>
-            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-            <category android:name="yourpackagename" />
-        </intent-filter>
-    </receiver>
-
-    <service
-        android:name="com.darts.sdk.gcm.GCMListenerService"
-        android:exported="false">
-        <intent-filter>
-            <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-        </intent-filter>
-    </service>
-
-    <service
-        android:name="com.darts.sdk.gcm.GCMInstanceIdListener"
-        android:exported="false">
-        <intent-filter>
-            <action android:name="com.google.android.gms.iid.InstanceID"/>
-        </intent-filter>
-    </service>
-
-    <service
-        android:name="com.darts.sdk.gcm.GCMRegistrationIntentService"
-        android:exported="false">
-    </service>
-
--  The last step is to add your configuration inside the Application
+-  Add your configuration inside the Application
    section
 
 .. code:: xml
@@ -177,11 +101,9 @@ Configure the application
 
 .. _android-sdk-client:
 
-Implementing client class
--------------------------
 
-Create a client class whose superclass is SDKClient
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Create a client class whose superclass is SDKClient
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
   :alt: Create class
@@ -196,34 +118,6 @@ starting but you should add your own functionality as needed.
 
   Implement methods
 
-Don't forget to add the full qualified name of this class to the
-:ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
-
-Configure SDK behavior
-^^^^^^^^^^^^^^^^^^^^^^
-
-The SDK configuration is done in the performSetup() function, just add
-your custom configuration here
-
-.. code:: java
-
-   @Override
-   public void performSetup()
-   {
-       SDK.instance().stackNotifications(true)
-               .alwaysShowLastNotification(true)
-               .limitNotificationSoundAndVibrationTime(true)
-               .setLargeIconResource(R.mipmap.ic_launcher)
-   }
-
-Please refer to :ref:`SDK class documentation <android-sdk-classes-sdk>` for further
-information
-
-Implement your functionality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Add your custom functionality as needed, please refer to :ref:`SDKClient class documentation <android-sdk-classes-client>` for further documentation
-
 .. code:: java
 
    @Override
@@ -232,15 +126,17 @@ Add your custom functionality as needed, please refer to :ref:`SDKClient class d
        return MainActivity.class.getName();
    }
 
-   @Override
-   public CharSequence getLocationExplanation(Context context)
-   {
-       return context.getString(R.string.locationPermissionExplanation);
-   }
+Don't forget to add the full qualified name of this class to the
+:ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
 
 
-Forward OnCreate of your Main Activity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Add your custom functionality as needed, please refer to :ref:`SDKClient class documentation <android-sdk-classes-client>` for further documentation
+
+
+
+4. Forward OnCreate of your Main Activity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: java
 
