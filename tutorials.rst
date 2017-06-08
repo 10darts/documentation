@@ -5,5 +5,6 @@ Tutoriales
 .. toctree::
     :maxdepth: 2
 
-    tutorials/android
+    tutorials/android/setup
+    tutorials/android/customization
     tutorials/ios
