@@ -2,6 +2,50 @@
 Notifications
 =============
 
+Listar notificaciones
+----------------------
+
+.. http:get:: /api/v1/notifications/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/notifications/ HTTP/1.1
+
+    :query search: cadena para realizar una búsqueda sobre el listado sobre el título y el mensaje
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "id": 1,
+                    "code": "w58Xar",
+                    "message": "Hello notification!",
+                    "destination_type": "news",
+                    "destination_code": "1",
+                    "language": null,
+                    "platforms":null,
+                    "version":null,
+                    "areas": null,
+                    "center": null,
+                    "radius": null,
+                    "users": [],
+                    "weight": 0.0,
+                    "audience": 1000
+                }
+            ]
+        }
+
 Crear una notificación
 ----------------------
 
