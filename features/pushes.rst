@@ -22,10 +22,10 @@ como leído aunque no lo haya abierto.
 Solo afecta al contador de ``badge`` que se envía en cada push. Es responsabilidad
 del lado cliente (la aplicación) marcar un push como leído.
 
-Pushes *seguidos*
+Pushes *abiertos*
 -----------------
 
-Los pushes *seguidos* o *abiertos*, son aquellos sobre los que el usuario a pulsado
+Los pushes *abiertos*, son aquellos sobre los que el usuario a pulsado
 para acceder al contenido.
 
 Es responsabilidad del lado cliente (la aplicación) marcar un push como seguido.
