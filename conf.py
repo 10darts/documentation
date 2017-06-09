@@ -52,8 +52,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = '10Darts'
-copyright = '2017, Onpublico Medialab SL'
-author = 'Onpublico Medialab SL'
+copyright = '2017 10darts'
+author = '10darts'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -106,10 +106,10 @@ html_theme = 'alabaster'
 #
 
 html_theme_options = {
-    'logo': 'logo.png',
+    'logo': '10darts.svg',
     'logo_name': '10darts',
     'font_family': '"Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;',
-    'head_font_family': '"Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;',
+    'head_font_family': 'Impact, "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -157,7 +157,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '10Darts.tex', '10Darts Documentation',
-     'Onpublico Medialab SL', 'manual'),
+     '10darts', 'manual'),
 ]
 
 

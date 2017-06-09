@@ -2,10 +2,10 @@
 Estadísticas
 ============
 
-Globales sobre notificaciones push
-----------------------------------
+Globales sobre campañas
+-----------------------
 
-Cada **cliente** podrá acceder a las siguientes estadísticas, agrupadas
+Se podrá acceder a las siguientes estadísticas, agrupadas
 por *días* o *semanas*.
 
 - **Notificaciones push enviadas**, el número total de notificaciones enviadas.
@@ -18,7 +18,7 @@ De entre las notificaciones que se tienen en cuenta se excluyen aquellas que son
 Globales sobre dispositivos
 ---------------------------
 
-Cada **cliente** podrá acceder a las siguientes estadísticas, agrupadas
+Se podrá acceder a las siguientes estadísticas, agrupadas
 por *días* o *semanas*.
 
 - **Dispositivos** registrados durante el periodo de tiempo indicado
@@ -56,18 +56,18 @@ Para cada *notificación push* el usuario podrá ver las siguientes estadística
 
 - **Destinatarios**, dispositivos a los que se les ha enviado la notificación.
 - **Recibidas**, el número total de notificaciones que han sido confirmadas como recibidas.
-- **Clicadas**, el número total de notificaciones que el usuario ha clicado para acceder al contenido.
+- **Abiertas**, el número total de notificaciones que el usuario ha abierto para acceder al contenido.
 - **Churn**, número de dispositivos que a las *12 horas* se ha marcado como inactivo.
 
 Estas estadísticas se ofrecerán de forma global para la notificación.
 
-Además, se mostrará al usuario la evolución de los valores de **recibidos** y **clicadas** en el tiempo en forma de
+Además, se mostrará al usuario la evolución de los valores de **recibidos** y **abiertas** en el tiempo en forma de
 gráfica.
 
 Cohorts
 -------
 
-En las *cohorts* que se le ofrecen a los **cliente** se muestra la evolución de los dispositivos que
+En las *cohorts* se muestra la evolución de los dispositivos que
 han tenido actividad con su aplicación durante las semanas. La fecha en las filas se corresponde con la fecha
 de inicio de la semana donde los dispositivos han sido creados, mientras que la fecha en las columnas se
 corresponden con las fechas en donde se ha tenido actividad.

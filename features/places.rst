@@ -14,7 +14,7 @@ De todas formas, utilizando el API de búsqueda de Nominatim, con el parámetro 
 pueden obtener resultados de lugares que incluyen la geometría, de forma que se puede integrar
 en la base de datos de forma directa.
 
-A la hora de enviar una notificación a un área administrativa, el proceso consistirá en
+A la hora de enviar una campaña a un área administrativa, el proceso consistirá en
 utilizar el API de *places* para obtener las fronteras de ese área y pasarlas directamente a la
-notificación. De esta forma, la lógica de la notificación no se ve alterada, y es equivalente mandar a
+campaña. De esta forma, la lógica de la campaña no se ve alterada, y es equivalente mandar a
 una ciudad a un polígono arbitrario.

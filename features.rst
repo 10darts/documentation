@@ -8,8 +8,8 @@ Funcionalidades
     features/introduction
     features/architecture
     features/users
-    features/devices
-    features/notifications
+    features/channels
+    features/campaigns
     features/pushes
     features/places
     features/statistics

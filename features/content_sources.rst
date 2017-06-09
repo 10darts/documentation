@@ -3,7 +3,7 @@ Contenido
 =========
 
 El sistema está preparado para el uso de diferentes fuentes de contenido para, a partir de las cuales,
-crear una notificación asociada a este contenido.
+crear una campaña asociada a este contenido.
 
 Contenido genérico
 ------------------
@@ -77,26 +77,26 @@ Conversor de contenido
 ----------------------
 
 A cada una de las fuentes de contenido se puede especificar un **conversor de contenido**, que es el encargado de
-dado un contenido en concreto de una fuente en concreto, se encarga de crear la **notificación** asociada
+dado un contenido en concreto de una fuente en concreto, se encarga de crear la **campaña** asociada
 a este, aplicando unas reglas de segmentación y/o envío definidas por el usuario.
 
 Un *conversor de contenido* permite especificar para cada una de las fuentes de contenido:
 
 - Plantilla de mensaje
 - Plantilla de título
-- Áreas donde distribuir la notificación
-- Centro y radio de donde distribuir la notificación (excluyente con las áreas)
-- Lista de usuarios a los que distribuir la notificación
-- Idioma al que distribuir la notificación
-- Plataforma a la que distribuir la notificación
-- Versión a la que distribuir la notificación
-- Segmento al que distribuir la notificación
+- Áreas donde distribuir la campaña
+- Centro y radio de donde distribuir la campaña (excluyente con las áreas)
+- Lista de usuarios a los que distribuir la campaña
+- Idioma al que distribuir la campaña
+- Plataforma a la que distribuir la campaña
+- Versión a la que distribuir la campaña
+- Segmento al que distribuir la campaña
 
 Plantillas
 ^^^^^^^^^^
 
-Las plantillas para mensajes y título de la notificación permiten la personalización del
-contenido de la notificación. A la hora de renderizar la plantilla, se tienen disponibles
+Las plantillas para mensajes y título de la campaña permiten la personalización del
+contenido de la campaña. A la hora de renderizar la plantilla, se tienen disponibles
 las siguientes variables, que vienen del contenido:
 
 - ``title``, que se corresponde con el título del contenido
@@ -105,7 +105,7 @@ las siguientes variables, que vienen del contenido:
 
 Para hacer referencia a las variables, se tienen que usar entre ``{}``. Ejemplo::
 
-    Nueva notificación titulada {{ title }} con este contenido: {{ body }} en la siguiente URL {{ url }}
+    Nueva campaña titulada {{ title }} con este contenido: {{ body }} en la siguiente URL {{ url }}
 
 
 En general, se soporta el lenguaje de plantillas de Django, ver su

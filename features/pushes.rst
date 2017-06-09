@@ -8,7 +8,7 @@ Un **push** en el sistema simboliza *un envío en concreto* que ha sido realizad
 *dispositivos*.
 
 
-La responsabilidad de crear los pushes recae **exclusivamente** en las notificaciones, por lo que
+La responsabilidad de crear los pushes recae **exclusivamente** en las campañas, por lo que
 no se pueden crear vía API. Sin embargo, la confirmación de entrega o la apertura del push se ha
 de indicar sobre el push enviado, utilizando las llamadas del API correspondientes.
 
