@@ -128,7 +128,7 @@ Crear una notificación
     :<json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios, por defecto se toma el valor de "device"
     :<json string client_data: cadena de texto con los valores de ``client_data`` de las personas a las que se quiere enviar la notificación, separados por comas
 
-    .. note::
+    .. warning::
 
         Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
 
