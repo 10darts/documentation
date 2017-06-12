@@ -126,6 +126,7 @@ Crear una notificación
     :<json bool has_churn_check: indicar que la notificación hará la comprobación de *churn*
     :<json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
     :<json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios, por defecto se toma el valor de "device"
+    :<json string client_data: cadena de texto con los valores de ``client_data`` de las personas a las que se quiere enviar la notificación, separados por comas
 
     .. note::
 
