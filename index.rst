@@ -20,10 +20,10 @@ a tu equipo de marketing.
 Características en un vistazo
 -----------------------------
 
-- Seguimiento automático de la localización de los usuarios.
-- Usuarios clasificados usando *keywords*
-- Con el *content feed* puedes actualizar un feed RSS y **10darts** irá enviando automáticamente comunicaciones a tus usuarios para mantenerlos fieles a tu aplicación, tan rápido como empezar con un blog.
-- Desde el *dashboard online* puedes lanzar campañas a tus usuarios, probar envíos segmentando por localización o *keywords* específicos.
+- Seguimiento automático de la localización de los usuarios, gracias a nuestro **SDK**.
+- Usuarios clasificados usando **keywords**
+- Con el **content feed** puedes actualizar un feed RSS y **10darts** irá enviando automáticamente comunicaciones a tus usuarios para mantenerlos fieles a tu aplicación, tan rápido como empezar con un blog.
+- Desde el **dashboard online** puedes lanzar campañas a tus usuarios, probar envíos segmentando por localización o *keywords* específicos.
 - Puedes seguir los resultados en tiempo real (mensajes enviados, cuantos se van recibiendo, cuantos se van abriendo, etc.)
 
 No olvides usar un buen título, emojis y una buena foto para comunicarte con tus usuarios.
