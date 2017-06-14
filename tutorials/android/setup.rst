@@ -9,11 +9,6 @@ implementing 10 Darts SDK in your application, the instructions are
 based on *Android Studio.*
 
 .. note::
-
-    If you are not familiar with *Android Studio* please refer to this
-    :ref:`Quick tutorial <faq-android-application>`.
-
-.. note::
     Note that the target devices should have Google Play services installed
     and updated on it for the proper operation of this SDK
 
