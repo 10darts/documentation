@@ -1,5 +1,7 @@
 .. _android-sdk-setup:
 
+
+
 =================
 Android SDK Setup
 =================
@@ -27,48 +29,22 @@ based on *Android Studio.*
 Configure the application
 -------------------------
 
-1. Library
+1. Library 
 ^^^^^^^^^^
 
--  Copy the SDK ``aar`` files to your libs directory
+Add the following line to your app build.gradle:
 
-
--  Add the library and needed dependncies to the dependencies section of your gradle file
-
+* In androoid section:
 .. code::
-
-    compile(name: 'sdk-sdkProduction-release', ext: 'aar')
-    compile(name: 'general-release', ext: 'aar')
-    compile 'com.google.android.gms:play-services-auth:9.8.0'
-    compile 'com.google.android.gms:play-services-gcm:9.8.0'
-    compile 'com.google.android.gms:play-services-location:9.8.0'
-    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
-    compile 'org.apache.httpcomponents:httpmime:4.3.5'
-
-.. note::
-
-    If you have a warning "Error:Failed to resolve: :sdk-sdkProduction-release:"
-    check that in your project build.gradle you have added libs directory with flatDir:
-
-   .. code::
-
-       allprojects {
-           repositories {
-               jcenter()
-               flatDir {
-                   dirs 'libs'
-               }
-           }
-       }
-
-- Add packaging options in android section:
-
- .. code::
 
         packagingOptions {
             pickFirst 'META-INF/*'
         }
+* In dependencies section:
 
+.. code::
+
+    ccompile  'com.10darts:sdk:1.10'
 
 
 
@@ -82,27 +58,27 @@ Configure the application
 .. code:: xml
 
   <meta-data
-      android:name="sdk_accessToken"
+      android:name="darts_accessToken"
       android:value="value"/>
 
   <meta-data
-      android:name="sdk_clientClass"
+      android:name="darts_clientClass"
       android:value="value"/>
 
   <meta-data
-      android:name="gcm_defaultSenderId"
+      android:name="darts_GcmSenderId"
       android:value="value"/>
 
--  **sdk\_accessToken**: your access token to 10 Darts
--  **sdk\_clientClass**: the full qualified name of your SDK
+-  **darts\_accessToken**: your access token to 10 Darts
+-  **darts\_clientClass**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
--  **gcm\_defaultSenderId**: the sender id you copied in the last step
+-  **darts\d_GcmSenderId**: the sender id you copied in the last step
    of :ref:`Google Cloud Messaging <faq-gcm>`
 
 .. _android-sdk-client:
 
 
-3. Create a client class whose superclass is SDKClient
+3. Create a client class whose superclass is DartsClient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
@@ -127,11 +103,11 @@ starting but you should add your own functionality as needed.
    }
 
 Don't forget to add the full qualified name of this class to the
-:ref:`manifest configuration <android-sdk-setup>` **“sdk\_clientClass”**
+:ref:`manifest configuration <android-sdk-setup>` **“darts\_clientClass”**
 
 
 
-Add your custom functionality as needed, please refer to :ref:`SDKClient class documentation <android-sdk-classes-client>` for further documentation
+Add your custom functionality as needed, please refer to :ref:`Dartslient class documentation <android-sdk-classes-client>` for further documentation
 
 
 
@@ -146,12 +122,13 @@ Add your custom functionality as needed, please refer to :ref:`SDKClient class d
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
 
-       SDK.onCreate(savedInstanceState, this, new Communications.ILocationAlerter()
+
+       DartsSDK.onCreate(savedInstanceState, this, new DartsSDK.ILocationAlerter()
        {
            @Override
-           public void alertNotEnabled(Activity activity)
+           ublic void alertNotEnabled(Activity activity)
            {
                //See Adding Geolocation if you are using this feature otherwise leave empty function.
            }
        });
-   }
+
