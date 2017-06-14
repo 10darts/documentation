@@ -1,7 +1,5 @@
 .. _android-sdk-setup:
 
-
-
 =================
 Android SDK Setup
 =================
@@ -24,28 +22,27 @@ based on *Android Studio.*
 Configure the application
 -------------------------
 
-1. Library 
+1. Library
 ^^^^^^^^^^
 
 Add the following line to your app build.gradle:
 
 * In androoid section:
+
 .. code::
 
-        packagingOptions {
-            pickFirst 'META-INF/*'
-        }
+    packagingOptions {
+        pickFirst 'META-INF/*'
+    }
+
 * In dependencies section:
 
 .. code::
 
     ccompile  'com.10darts:sdk:1.10'
 
-
-
 2. Configure 10Darts
 ^^^^^^^^^^^^^^^^^^^^
-
 
 -  Add your configuration inside the Application
    section
@@ -74,7 +71,7 @@ Add the following line to your app build.gradle:
 
 
 3. Create a client class whose superclass is DartsClient
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
   :alt: Create class
@@ -126,4 +123,3 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
                //See Adding Geolocation if you are using this feature otherwise leave empty function.
            }
        });
-
