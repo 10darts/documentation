@@ -39,7 +39,7 @@ Add the following line to your app build.gradle:
 
 .. code::
 
-    ccompile  'com.10darts:sdk:1.10'
+    compile  'com.10darts:sdk:1.10'
 
 2. Configure 10Darts
 ^^^^^^^^^^^^^^^^^^^^
