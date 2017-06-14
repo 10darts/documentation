@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-02 13:24+0200\n"
+"POT-Creation-Date: 2017-06-14 13:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1175,17 +1175,18 @@ msgstr ""
 #: ../../reference/api/feeds.rst:10 ../../reference/api/feeds.rst:46
 #: ../../reference/api/feeds.rst:75 ../../reference/api/keys.rst:13
 #: ../../reference/api/keys.rst:40 ../../reference/api/notifications.rst:10
-#: ../../reference/api/notifications.rst:27
-#: ../../reference/api/notifications.rst:45
-#: ../../reference/api/notifications.rst:147
-#: ../../reference/api/notifications.rst:170
-#: ../../reference/api/notifications.rst:206
-#: ../../reference/api/notifications.rst:223
-#: ../../reference/api/notifications.rst:263
-#: ../../reference/api/notifications.rst:303
-#: ../../reference/api/notifications.rst:382
-#: ../../reference/api/notifications.rst:475
-#: ../../reference/api/notifications.rst:571 ../../reference/api/pushes.rst:16
+#: ../../reference/api/notifications.rst:54
+#: ../../reference/api/notifications.rst:71
+#: ../../reference/api/notifications.rst:89
+#: ../../reference/api/notifications.rst:192
+#: ../../reference/api/notifications.rst:215
+#: ../../reference/api/notifications.rst:251
+#: ../../reference/api/notifications.rst:268
+#: ../../reference/api/notifications.rst:308
+#: ../../reference/api/notifications.rst:348
+#: ../../reference/api/notifications.rst:427
+#: ../../reference/api/notifications.rst:520
+#: ../../reference/api/notifications.rst:616 ../../reference/api/pushes.rst:16
 #: ../../reference/api/pushes.rst:39 ../../reference/api/pushes.rst:66
 #: ../../reference/api/pushes.rst:94 ../../reference/api/statistics.rst:10
 #: ../../reference/api/statistics.rst:35 ../../reference/api/users.rst:15
@@ -1229,16 +1230,17 @@ msgstr ""
 #: ../../reference/api/devices.rst:174 ../../reference/api/devices.rst:211
 #: ../../reference/api/devices.rst:258 ../../reference/api/feeds.rst:17
 #: ../../reference/api/feeds.rst:57 ../../reference/api/feeds.rst:86
-#: ../../reference/api/notifications.rst:90
-#: ../../reference/api/notifications.rst:158
-#: ../../reference/api/notifications.rst:177
-#: ../../reference/api/notifications.rst:212
-#: ../../reference/api/notifications.rst:229
-#: ../../reference/api/notifications.rst:275
-#: ../../reference/api/notifications.rst:309
-#: ../../reference/api/notifications.rst:388
-#: ../../reference/api/notifications.rst:481
-#: ../../reference/api/notifications.rst:582 ../../reference/api/pushes.rst:29
+#: ../../reference/api/notifications.rst:18
+#: ../../reference/api/notifications.rst:135
+#: ../../reference/api/notifications.rst:203
+#: ../../reference/api/notifications.rst:222
+#: ../../reference/api/notifications.rst:257
+#: ../../reference/api/notifications.rst:274
+#: ../../reference/api/notifications.rst:320
+#: ../../reference/api/notifications.rst:354
+#: ../../reference/api/notifications.rst:433
+#: ../../reference/api/notifications.rst:526
+#: ../../reference/api/notifications.rst:627 ../../reference/api/pushes.rst:29
 #: ../../reference/api/pushes.rst:52 ../../reference/api/pushes.rst:79
 #: ../../reference/api/pushes.rst:107 ../../reference/api/statistics.rst:19
 #: ../../reference/api/statistics.rst:53 ../../reference/api/users.rst:21
@@ -1314,44 +1316,51 @@ msgstr ""
 msgid "plantilla para usar en el título de la notificación"
 msgstr ""
 
-#: ../../reference/api/contents.rst:27 ../../reference/api/notifications.rst:71
-#: ../../reference/api/notifications.rst:129
+#: ../../reference/api/contents.rst:27
+#: ../../reference/api/notifications.rst:115
+#: ../../reference/api/notifications.rst:174
 msgid "``MultiPolygon`` con las areas donde la notificación ha de ser efectiva"
 msgstr ""
 
-#: ../../reference/api/contents.rst:28 ../../reference/api/notifications.rst:72
-#: ../../reference/api/notifications.rst:130
+#: ../../reference/api/contents.rst:28
+#: ../../reference/api/notifications.rst:116
+#: ../../reference/api/notifications.rst:175
 msgid ""
 "``Point`` que representa el centro de la circunferencia donde la "
 "notificación es efectiva"
 msgstr ""
 
-#: ../../reference/api/contents.rst:29 ../../reference/api/notifications.rst:73
-#: ../../reference/api/notifications.rst:131
+#: ../../reference/api/contents.rst:29
+#: ../../reference/api/notifications.rst:117
+#: ../../reference/api/notifications.rst:176
 msgid "radio de la circunferencia donde la notificación es efectiva"
 msgstr ""
 
-#: ../../reference/api/contents.rst:30 ../../reference/api/notifications.rst:67
-#: ../../reference/api/notifications.rst:125
+#: ../../reference/api/contents.rst:30
+#: ../../reference/api/notifications.rst:111
+#: ../../reference/api/notifications.rst:170
 msgid ""
 "plataformas a la que enviar la notificación (e.g: ``[\"android\", "
 "\"ios\"]``)"
 msgstr ""
 
-#: ../../reference/api/contents.rst:31 ../../reference/api/notifications.rst:66
-#: ../../reference/api/notifications.rst:124
+#: ../../reference/api/contents.rst:31
+#: ../../reference/api/notifications.rst:110
+#: ../../reference/api/notifications.rst:169
 msgid "idioma de los dispositivos a los que enviar la notificación"
 msgstr ""
 
-#: ../../reference/api/contents.rst:32 ../../reference/api/notifications.rst:68
-#: ../../reference/api/notifications.rst:126
+#: ../../reference/api/contents.rst:32
+#: ../../reference/api/notifications.rst:112
+#: ../../reference/api/notifications.rst:171
 msgid ""
 "versión del cliente que deben de tener los dispositivos a los que se "
 "envía la notificación"
 msgstr ""
 
-#: ../../reference/api/contents.rst:33 ../../reference/api/notifications.rst:69
-#: ../../reference/api/notifications.rst:127
+#: ../../reference/api/contents.rst:33
+#: ../../reference/api/notifications.rst:113
+#: ../../reference/api/notifications.rst:172
 msgid ""
 "código de dos letras del país en el que tienen que estar registrados los "
 "devices a los que se quiere mandar la notificación"
@@ -1579,210 +1588,226 @@ msgid "Notifications"
 msgstr ""
 
 #: ../../reference/api/notifications.rst:6
+msgid "Listar notificaciones"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:16
+msgid ""
+"cadena para realizar una búsqueda sobre el listado sobre el título y el "
+"mensaje"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:50
 msgid "Crear una notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:62
+#: ../../reference/api/notifications.rst:106
 msgid "texto de la notificación **obligatorio**"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:63
-#: ../../reference/api/notifications.rst:121
+#: ../../reference/api/notifications.rst:107
+#: ../../reference/api/notifications.rst:166
 msgid "enlace profundo"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:64
-#: ../../reference/api/notifications.rst:122
+#: ../../reference/api/notifications.rst:108
+#: ../../reference/api/notifications.rst:167
 msgid ""
 "cadena única que representa el tipo del contenido de destino de la "
 "notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:65
-#: ../../reference/api/notifications.rst:123
+#: ../../reference/api/notifications.rst:109
+#: ../../reference/api/notifications.rst:168
 msgid "código único que identifica el contenido de destino de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:70
-#: ../../reference/api/notifications.rst:128
+#: ../../reference/api/notifications.rst:114
+#: ../../reference/api/notifications.rst:173
 msgid "lista de usuarios a los que la notificación debe ser enviada"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:74
+#: ../../reference/api/notifications.rst:118
 msgid "define el algoritmo de distribución"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:75
+#: ../../reference/api/notifications.rst:119
 msgid "define el centro del efecto Geo Ripple (solo para algoritmo de Geo Ripple)"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:76
+#: ../../reference/api/notifications.rst:120
 msgid ""
 "define el radio por defecto del efecto Geo Ripple (solo para algoritmo de"
 " Geo Ripple)"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:77
-#: ../../reference/api/notifications.rst:133
+#: ../../reference/api/notifications.rst:121
+#: ../../reference/api/notifications.rst:178
 msgid "marcar la notificación como silenciosa"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:78
-#: ../../reference/api/notifications.rst:134
+#: ../../reference/api/notifications.rst:122
+#: ../../reference/api/notifications.rst:179
 msgid "indicar que la notificación requiere confirmación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:79
-#: ../../reference/api/notifications.rst:135
+#: ../../reference/api/notifications.rst:123
+#: ../../reference/api/notifications.rst:180
 msgid "indicar que la notificación hará una selección de devices aleatoria"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:80
-#: ../../reference/api/notifications.rst:136
+#: ../../reference/api/notifications.rst:124
+#: ../../reference/api/notifications.rst:181
 msgid "indica el tamaño de la muestra aleatoria"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:81
-#: ../../reference/api/notifications.rst:137
+#: ../../reference/api/notifications.rst:125
+#: ../../reference/api/notifications.rst:182
 msgid "indica el *peso* del contenido asociado a la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:82
+#: ../../reference/api/notifications.rst:126
 msgid "indicar que la notificación hará la comprobación de *churn*"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:83
-#: ../../reference/api/notifications.rst:138
+#: ../../reference/api/notifications.rst:127
+#: ../../reference/api/notifications.rst:183
 msgid ""
 "lista de *keys* que han de tener los devices a los que se quiere enviar "
 "la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:84
+#: ../../reference/api/notifications.rst:128
 msgid ""
 "puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
 "tags se aplican a dispositivos o a usuarios, por defecto se toma el valor"
 " de \"device\""
 msgstr ""
 
-#: ../../reference/api/notifications.rst:88
-#: ../../reference/api/notifications.rst:292
+#: ../../reference/api/notifications.rst:129
+msgid ""
+"cadena de texto con los valores de ``client_data`` de las personas a las "
+"que se quiere enviar la notificación, separados por comas"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:133
+#: ../../reference/api/notifications.rst:337
 msgid ""
 "Si se incluye el campo ``image`` la petición ha de ir en formato "
 "*multipart*."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:117
+#: ../../reference/api/notifications.rst:162
 msgid "identificador interno único de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:118
+#: ../../reference/api/notifications.rst:163
 msgid "identificador único de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:119
+#: ../../reference/api/notifications.rst:164
 msgid "texto de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:120
+#: ../../reference/api/notifications.rst:165
 msgid "imagen para usar en el contenido"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:132
+#: ../../reference/api/notifications.rst:177
 msgid "activar el 'ripple effect' para esta notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:139
+#: ../../reference/api/notifications.rst:184
 msgid ""
 "puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
 "tags se aplican a dispositivos o a usuarios"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:140
+#: ../../reference/api/notifications.rst:185
 msgid "número estimado de destinatarios de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:143
+#: ../../reference/api/notifications.rst:188
 msgid "Actualizar notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:166
+#: ../../reference/api/notifications.rst:211
 msgid "Actualizar audiencia de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:202
+#: ../../reference/api/notifications.rst:247
 msgid "Enviar notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:219
+#: ../../reference/api/notifications.rst:264
 msgid "Reintentar notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:256
+#: ../../reference/api/notifications.rst:301
 msgid "Crear una alternative a una notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:258
+#: ../../reference/api/notifications.rst:303
 msgid ""
 "Se puede crear una alternativa de contenido para una notificación ya "
 "creada. Los pushes se distribuirán de manera uniforme entre todas las "
 "alternativas."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:287
+#: ../../reference/api/notifications.rst:332
 msgid "texto alternativo de la notificación, **obligatorio**"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:288
+#: ../../reference/api/notifications.rst:333
 msgid ""
 "URI de la notificación de la cual se quiere crear la alternativa, "
 "**obligatorio**"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:289
+#: ../../reference/api/notifications.rst:334
 msgid "imagen para usar en la alternativa"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:296
+#: ../../reference/api/notifications.rst:341
 msgid "Pasos de distribución de una notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:298
+#: ../../reference/api/notifications.rst:343
 msgid ""
 "Para cada una de las notificaciones se pueden obtener los pasos que han "
 "dado para realizar la distribución de esta."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:375
+#: ../../reference/api/notifications.rst:420
 msgid "Log de comprobaciones de relevancia"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:377
+#: ../../reference/api/notifications.rst:422
 msgid ""
 "Los logs de comprobación de relevancia se pueden obtener para una "
 "notificación o para un paso de distribución."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:567
+#: ../../reference/api/notifications.rst:612
 msgid "Métricas de la notificación"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:577
+#: ../../reference/api/notifications.rst:622
 #: ../../reference/api/statistics.rst:41
 msgid "fecha de comienzo (eg: 2017-04-11T00:00:00)"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:578
+#: ../../reference/api/notifications.rst:623
 #: ../../reference/api/statistics.rst:42
 msgid "fecha de fin (eg: 2017-04-15T23:59:59)"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:579
+#: ../../reference/api/notifications.rst:624
 #: ../../reference/api/statistics.rst:43
 msgid "número de días que pasan entre resultado y resultado"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:580
+#: ../../reference/api/notifications.rst:625
 #: ../../reference/api/statistics.rst:44
 msgid "número de horas que pasan entre resultado y resultado"
 msgstr ""

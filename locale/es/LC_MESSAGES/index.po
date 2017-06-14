@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-02 13:24+0200\n"
+"POT-Creation-Date: 2017-06-14 13:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,19 +23,144 @@ msgstr ""
 
 #: ../../index.rst:5
 msgid ""
-"El sistema **10Darts** se puede definir como un *sistema de difusión de "
-"contenido inteligente*, en donde dicha difusión se realiza mediante el "
-"uso de *notificaciones push* a dispositivos móviles iOS y Android."
+"**10darts** es una plataforma de notificaciones push que maximiza la "
+"fidelización de tus usuarios al mismo tiempo que minimiza el tiempo de "
+"adaptación y gestión."
 msgstr ""
 
-#: ../../index.rst:8
+#: ../../index.rst:9
 msgid ""
-"El sistema completo consta de dos partes muy diferenciadas, la plataforma"
-" de *Software as a Service* (Saas), que incluye un *backend* **API "
-"público y un panel de gestión**, y el **SDK para aplicaciones móviles**."
+"Damos soporte a las plataformas de Android e iOS proporcionando un SDKs "
+"dedicados, una API RESTful, un panel de control online para diseñar y "
+"enviar campañas de notificaciones push y un servicio de contenido de "
+"*feeds* que permite el envío de campañas automáticas, evitando retrasos "
+"en la comunicación del contenido con tus usuarios y ahorrando tiempo a tu"
+" equipo de marketing."
 msgstr ""
 
-#: ../../index.rst:12
-msgid "Contenidos"
+#: ../../index.rst:18
+msgid "Pronto se añadirá soporte para Facebook Messenger y Web Notifications."
 msgstr ""
+
+#: ../../index.rst:21
+msgid "Características en un vistazo"
+msgstr ""
+
+#: ../../index.rst:23
+msgid ""
+"Seguimiento automático de la localización de los usuarios, gracias a "
+"nuestro **SDK**."
+msgstr ""
+
+#: ../../index.rst:24
+msgid "Usuarios clasificados usando **keywords**"
+msgstr ""
+
+#: ../../index.rst:25
+msgid ""
+"Con el **content feed** puedes actualizar un feed RSS y **10darts** irá "
+"enviando automáticamente comunicaciones a tus usuarios para mantenerlos "
+"fieles a tu aplicación, tan rápido como empezar con un blog."
+msgstr ""
+
+#: ../../index.rst:26
+msgid ""
+"Desde el **dashboard online** puedes lanzar campañas a tus usuarios, "
+"probar envíos segmentando por localización o *keywords* específicos."
+msgstr ""
+
+#: ../../index.rst:27
+msgid ""
+"Puedes seguir los resultados en tiempo real (mensajes enviados, cuantos "
+"se van recibiendo, cuantos se van abriendo, etc.)"
+msgstr ""
+
+#: ../../index.rst:29
+msgid ""
+"No olvides usar un buen título, emojis y una buena foto para comunicarte "
+"con tus usuarios."
+msgstr ""
+
+#: ../../index.rst:32
+msgid "Como empezar"
+msgstr ""
+
+#: ../../index.rst:34
+msgid "**Si eres desarrollador**"
+msgstr ""
+
+#: ../../index.rst:36
+msgid ""
+"Dar de alta de alta la aplicación con los credenciales las plataformas "
+"que utilices (:ref:`Android <faq-gcm>`, iOS)."
+msgstr ""
+
+#: ../../index.rst:37
+msgid ""
+"Integrar el SDK en cada una de tus plataformas (:ref:`Android <android-"
+"sdk-setup>`, :ref:`iOS <ios-sdk-setup>`)"
+msgstr ""
+
+#: ../../index.rst:38
+msgid ""
+"Prueba un envío `creando una primera campaña "
+"<https://10darts.com/app/notifications/create>`_"
+msgstr ""
+
+#: ../../index.rst:39
+msgid ""
+"Para más información, consulta la :ref:`documentación <introduction>` y/o"
+" contacta con nosotros en it@10darts.com"
+msgstr ""
+
+#: ../../index.rst:41
+msgid ""
+"**Si eres vendedor, community manage o el responsable de ganar la "
+"confianza de tus usuarios**"
+msgstr ""
+
+#: ../../index.rst:43
+msgid ""
+"Espera hasta que el equipo de desarrollo haya integrado el SDK en tus "
+"aplicaciones"
+msgstr ""
+
+#: ../../index.rst:44
+msgid "`Crea tu primera campaña <https://10darts.com/app/notifications/create>`_"
+msgstr ""
+
+#: ../../index.rst:45
+msgid "Prueba un test A/B"
+msgstr ""
+
+#: ../../index.rst:47
+msgid ""
+"Y para sacar más partido a la plataforma, aquí te dejamos el resto de la "
+"información. Si tienes dudas lánzanos un email a it@10darts.com."
+msgstr ""
+
+#: ../../index.rst:50
+msgid "Contenido"
+msgstr ""
+
+#~ msgid ""
+#~ "El sistema **10Darts** se puede definir"
+#~ " como un *sistema de difusión de "
+#~ "contenido inteligente*, en donde dicha "
+#~ "difusión se realiza mediante el uso "
+#~ "de *notificaciones push* a dispositivos "
+#~ "móviles iOS y Android."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "El sistema completo consta de dos "
+#~ "partes muy diferenciadas, la plataforma "
+#~ "de *Software as a Service* (Saas), "
+#~ "que incluye un *backend* **API público"
+#~ " y un panel de gestión**, y el"
+#~ " **SDK para aplicaciones móviles**."
+#~ msgstr ""
+
+#~ msgid "Contenidos"
+#~ msgstr ""
 
