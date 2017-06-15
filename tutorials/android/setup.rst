@@ -131,4 +131,9 @@ And onResume:
     See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing locattion accuracy and receiving location updates.
 
 
+..note::
+    By default when a notification is clicked the contained deep link is launched, check :ref:`Deep linking`
+
+
+
 
