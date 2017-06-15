@@ -23,13 +23,8 @@ You may need to associate the device with your own user, to do so, call `linkDev
 			}
 		},this,"my-user-identifier");
 
-
-
-
-================
 Adding user data
-================
-
+----------------
 
 You can optionally add user data, to do so, call `modifyUser` providing the fields you want to add or modify, if any parameter is null it will remain untouched.
 
@@ -49,6 +44,3 @@ You can optionally add user data, to do so, call `modifyUser` providing the fiel
 				//failed
 			}
 		}, this);
-
-
-
