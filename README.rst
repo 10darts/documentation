@@ -70,4 +70,4 @@ the following commands:
 
     $ workon 10darts-documentation
 
-    (10darts-documentation) $ ghp-import -n -m 'your commit message' -p _build/html
+    (10darts-documentation) $ ghp-import -n -m 'your commit message' -p _build/html --cname=docs.10darts.com
