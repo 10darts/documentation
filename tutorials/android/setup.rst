@@ -44,7 +44,7 @@ Add the following line to your app build.gradle:
             {
                 manifestPlaceholders = [tendarts_sdk_access_token: "YOUR ACCESS TOKEN",
                                         tendarts_sdk_client_class:"YOUR CLIENT CLASS",
-                                        gcm_defaultSenderId: "YOUR GCM SENDER ID"]
+                                        gcm_sender_id: "YOUR GCM SENDER ID"]
             }
 * In dependencies section:
 
@@ -55,10 +55,10 @@ Add the following line to your app build.gradle:
 
 
 
--  **tendarts_sdk_access_token**: your access token to 10 Darts
--  **dtendarts_sdk_client_class**: the full qualified name of your SDK
+-  **tendarts\_sdk\_access\_token**: your access token to 10 Darts
+-  **dtendarts\_sdk\_client\_class**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
--  **gcm_defaultSenderId**: the sender id you copied in the last step
+-  **gcm\_sender\_id**: the sender id you copied in the last step
    of :ref:`Google Cloud Messaging <faq-gcm>`
 
 
@@ -67,7 +67,7 @@ Add the following line to your app build.gradle:
 
 
 2. Create a client class whose superclass is DartsClient
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
   :alt: Create class
