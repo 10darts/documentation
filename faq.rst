@@ -7,3 +7,4 @@ FAQ
     :glob:
 
     faq/*
+    faq/**/*
