@@ -89,3 +89,39 @@ Comprobar elementos del feed
 
 
         HTTP/1.1 200 OK
+
+Conversor de feeds
+------------------
+
+.. http:GET:: /api/v1/feeds/(string: code)/converter/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/feeds/tO8idg/converter/ HTTP/1.1
+        Content-Type: application/json
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "id": 1,
+            "source": "http://testserver/api/v1/feeds/7K8yTm/",
+            "message_template": "",
+            "title_template": "",
+            "areas": null,
+            "center": null,
+            "radius": null,
+            "personas": [],
+            "language": null,
+            "platforms": [],
+            "version": null,
+            "country": null,
+            "segment": null
+        }
