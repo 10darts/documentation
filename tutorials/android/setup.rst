@@ -123,16 +123,16 @@ And onResume:
 
 
 
-..warning::
+.. warning::
 
     If you are targetting Android API level higher than 22 you showuld follow :ref:`Targetting Android API level >= 23 <android-target-api>`
 
 
-..note::
+.. note::
 
     See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing locattion accuracy and receiving location updates.
 
 
-..note::
+.. note::
 
     By default when a notification is clicked the contained deep link is launched, check :ref:`Deep linking <faq-deep-link>`
