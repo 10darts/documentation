@@ -132,3 +132,9 @@ call:
 
     // Disable geolocation updates:
     TendartsSDK.disableGeolocationUpdates();
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+
+    geolocation/*

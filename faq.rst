@@ -6,5 +6,4 @@ FAQ
     :maxdepth: 2
     :glob:
 
-    faq/*
-    faq/**/*
+    faq/*    
