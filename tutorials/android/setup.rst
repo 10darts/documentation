@@ -40,6 +40,12 @@ Add the following line to your app build.gradle:
         packagingOptions {
             pickFirst 'META-INF/*'
         }
+         defaultConfig
+            {
+                manifestPlaceholders = [tendarts_sdk_access_token: "YOUR ACCESS TOKEN",
+                                        tendarts_sdk_client_class:"YOUR CLIENT CLASS",
+                                        gcm_defaultSenderId: "YOUR GCM SENDER ID"]
+            }
 * In dependencies section:
 
 .. code::
@@ -48,37 +54,19 @@ Add the following line to your app build.gradle:
 
 
 
-2. Configure 10Darts
-^^^^^^^^^^^^^^^^^^^^
 
-
--  Add your configuration inside the Application
-   section
-
-.. code:: xml
-
-  <meta-data
-      android:name="darts_accessToken"
-      android:value="value"/>
-
-  <meta-data
-      android:name="darts_clientClass"
-      android:value="value"/>
-
-  <meta-data
-      android:name="darts_GcmSenderId"
-      android:value="value"/>
-
--  **darts\_accessToken**: your access token to 10 Darts
--  **darts\_clientClass**: the full qualified name of your SDK
+-  **tendarts_sdk_access_token**: your access token to 10 Darts
+-  **dtendarts_sdk_client_class**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
--  **darts\d_GcmSenderId**: the sender id you copied in the last step
+-  **gcm_defaultSenderId**: the sender id you copied in the last step
    of :ref:`Google Cloud Messaging <faq-gcm>`
+
+
 
 .. _android-sdk-client:
 
 
-3. Create a client class whose superclass is DartsClient
+2. Create a client class whose superclass is DartsClient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
@@ -111,17 +99,10 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
 
 
 
-4. Forward OnCreate of your Main Activity
+3. Forward OnCreate of your Main Activity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: java
-
-   @Override
-   protected void onCreate(Bundle savedInstanceState)
-   {
-       super.onCreate(savedInstanceState);
-       setContentView(R.layout.activity_main);
-
 
        DartsSDK.onCreate(savedInstanceState, this, new DartsSDK.ILocationAlerter()
        {
