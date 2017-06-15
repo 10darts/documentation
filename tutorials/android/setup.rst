@@ -31,7 +31,7 @@ Configure the application
 
 Add the following line to your app build.gradle:
 
-* In androoid section:
+* In android section:
 .. code::
 
         packagingOptions {
