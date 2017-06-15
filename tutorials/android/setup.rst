@@ -10,10 +10,7 @@ The following instructions will guide you through the process of
 implementing 10 Darts SDK in your application, the instructions are
 based on *Android Studio.*
 
-.. note::
 
-    If you are not familiar with *Android Studio* please refer to this
-    :ref:`Quick tutorial <faq-android-application>`.
 
 .. note::
     Note that the target devices should have Google Play services installed
@@ -66,8 +63,8 @@ Add the following line to your app build.gradle:
 .. _android-sdk-client:
 
 
-2. Create a client class whose superclass is DartsClient
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. Create a client class whose superclass is TendartsClient
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/client1.png
   :alt: Create class
@@ -90,8 +87,7 @@ starting but you should add your own functionality as needed.
        return MainActivity.class.getName();
    }
 
-Don't forget to add the full qualified name of this class to the
-:ref:`manifest configuration <android-sdk-setup>` **“darts\_clientClass”**
+Don't forget to add the full qualified name of this class to **tendarts_sdk_client_class** on the manifest placeholders
 
 
 
@@ -112,4 +108,5 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
                //See Adding Geolocation if you are using this feature otherwise leave empty function.
            }
        });
+
 
