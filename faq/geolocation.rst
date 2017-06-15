@@ -5,102 +5,76 @@ Adding Geolocation
 ==================
 
 Forward your Main Activity events
------------------------------------
+---------------------------------
 
 In order to keep geolocation updates properly you should forward the
-main activity events to the SDK
+main activity events to the TendarsSDK class.
+
+you can see `here <https://developer.android.com/guide/components/activities/activity-lifecycle.html>`_ more info about activity events.
+
 
 In your main activity override the following events and forward them to
 the SDK:
 
+**onCreate:**
+see Android's onCreate `documentation <htttps://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)>`_  for more info
+
 .. code:: java
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState)
-    {
-        super.onRestoreInstanceState(savedInstanceState);
-        SDK.onRestoreInstanceState(savedInstanceState,getApplicationContext());
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        SDK.onCreate(savedInstanceState, this, new Communications.ILocationAlerter()
+    
+        TendartsSDK.onCreate(savedInstanceState, this, new  TendartsSDK.ILocationAlerter()
         {
             @Override
             public void alertNotEnabled(Activity activity)
             {
-                AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-                alertDialog.setTitle("Location");
-                alertDialog.setMessage("Location not enabled");
-                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                    new DialogInterface.OnClickListener()
-                    {
-                        public void onClick(DialogInterface dialog, int which)
-                        {
-                            dialog.dismiss();
-                        }
-                    });
-            alertDialog.show();
-            //todo: add second button and redirect the user to location configuration.
+                
             }
         });
     }
 
-    @Override
-    protected void onDestroy()
-    {
-        SDK.onDestroy();
-        super.onDestroy();
-    }
+Optionally you can fill the `alertNotEnabled` function to show the user a warning when locations are not enabled (see `android-sdk-alert-location`_) 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState)
-    {
-        super.onSaveInstanceState(outState);
-        SDK.onSaveInstanceState(outState);
-    }
+**onStart:**
+see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onStart()>`_  for more info
 
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        SDK.onPause();
-    }
+.. code-block:: java
 
-    @Override
-    protected void onStart()
-    {
-        super.onStart();
-        SDK.onStart();
-    }
+    endartsSDK.onStart();
 
-    @Override
-    protected void onStop()
-    {
-        super.onStop();
-        SDK.onStop();
-    }
 
-    @Override
-    protected void onResume()
-    {
-        super.onResume();
-        SDK.onResume(getApplicationContext());
-    }
+**onResume:**
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
-    {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);               SDK.onRequestPermissionsResult(
-                requestCode,
-                permissions,
-                grantResults,
-    getApplicationContext());
-    }
+see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onResume()>`_  for more info
+
+.. code-block:: java
+
+    TendartsSDK.onResume(getApplicationContext());
+
+
+**onPause:**
+see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onPause()>`_  for more info
+
+.. code-block:: java
+
+    TendartsSDK.onPause();
+
+
+**onStop**
+see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onStop()>`_  for more info
+
+.. code-block:: java
+
+    TendartsSDK.onStop();
+
+
+**onDestroy**
+
+see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onDestroy()>`_  for more info
+
+.. code:: java
+
+        TendartsSDK.onDestroy();
+        
+
 
 Get notified on location updates
 ----------------------------------
@@ -110,7 +84,7 @@ your listener
 
 .. code:: java
 
-    SDK.registerGeoLocationReceiver( myReceiver );
+    TendartsSDK.registerGeoLocationReceiver( myReceiver );
 
 Note that the instance of the receiver will not be kept so you should
 store it while you need location updates otherwise it could be
@@ -120,7 +94,7 @@ You could also get the current location synchronously:
 
 .. code:: java
 
-    SDK.getCurrentGeoLocation();
+    TendartsSDK.getCurrentGeoLocation();
 
 By default geolocation updates are enabled, to change it's status just
 call:
@@ -128,7 +102,13 @@ call:
 .. code:: java
 
     // Enable geolocation updates:
-    SDK.enableGeolocationUpdates();
+    TendartsSDK.enableGeolocationUpdates();
 
     // Disable geolocation updates:
-    SDK.disableGeolocationUpdates();
+    TendartsSDK.disableGeolocationUpdates();
+
+
+Targetting API >= 23
+--------------------
+
+If you are  targetting Android API level greater than 22 plesase see `android-target-api`_
