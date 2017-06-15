@@ -19,7 +19,7 @@ In your `TendartsClient` implemetation you should override `getLocationExplanati
     @Override
 	public CharSequence getLocationExplanation(Context context)
 	{
-		return super.getLocationExplanation(context);
+		return ...
 	}
 
 

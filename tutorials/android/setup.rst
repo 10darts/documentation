@@ -49,12 +49,12 @@ Add the following line to your app build.gradle:
 
 .. code::
 
-    ccompile  'com.10darts:sdk:1.10'
+    compile  'com.10darts:sdk:1.18'
 
 
 
 
--  **tendarts\_sdk\_access\_token**: your access token to 10 Darts
+-  **tendarts\_sdk\_access\_token**: your access token to 10darts
 -  **dtendarts\_sdk\_client\_class**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
 -  **gcm\_sender\_id**: the sender id you copied in the last step
@@ -97,16 +97,38 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
 
 
 
-3. Forward OnCreate of your Main Activity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Forward functions of your Main Activity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Forward onCreate:
 
 .. code:: java
 
-       DartsSDK.onCreate(savedInstanceState, this, new DartsSDK.ILocationAlerter()
+
+        TendartsSDK.onCreate(savedInstanceState, this, new TendartsSDK.ILocationAlerter()
        {
            @Override
-           ublic void alertNotEnabled(Activity activity)
+           public void alertNotEnabled(Activity activity)
            {
-               //See Adding Geolocation if you are using this feature otherwise leave empty function.
+             //See Adding Geolocation if you are using this feature otherwise leave empty function.
            }
        });
+
+
+And onResume:
+
+.. code-block:: java
+
+    TendartsSDK.onResume(getApplicationContext());
+
+
+
+..warning:: 
+    If you are targetting Android API level higher than 22 you showuld follow :ref:`Targetting Android API level >= 23 <android-target-api>`
+
+
+..note::
+    See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing locattion accuracy and receiving location updates.
+
+
+

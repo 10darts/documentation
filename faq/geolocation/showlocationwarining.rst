@@ -1,5 +1,6 @@
 .. _android-sdk-alert-location:
 
+
 =======================
 Filling alertNotEnabled
 =======================
@@ -31,5 +32,3 @@ Here is a simple example of how to do it using a dialog:
             alertDialog.show();
             //todo: add second button and redirect the user to location configuration.
             }
-       
-
