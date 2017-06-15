@@ -17,21 +17,21 @@ In your main activity override the following events and forward them to
 the SDK:
 
 **onCreate:**
-see Android's onCreate `documentation <htttps://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)>`_  for more info
+see Android's `onCreate documentation <htttps://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)>`_  for more info
 
 .. code:: java
-    
+
         TendartsSDK.onCreate(savedInstanceState, this, new  TendartsSDK.ILocationAlerter()
         {
             @Override
             public void alertNotEnabled(Activity activity)
             {
-                
+
             }
         });
     }
 
-Optionally you can fill the `alertNotEnabled` function to show the user a warning when locations are not enabled (see `android-sdk-alert-location`_) 
+Optionally you can fill the `alertNotEnabled` function to show the user a warning when locations are not enabled (see :ref:`Show location warning <android-sdk-alert-location>`)
 
 **onStart:**
 see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onStart()>`_  for more info
@@ -43,7 +43,7 @@ see Android's onPause `documentation <https://developer.android.com/reference/an
 
 **onResume:**
 
-see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onResume()>`_  for more info
+see Android's `onResume documentation <https://developer.android.com/reference/android/app/Activity.html#onResume()>`_  for more info
 
 .. code-block:: java
 
@@ -51,7 +51,7 @@ see Android's onPause `documentation <https://developer.android.com/reference/an
 
 
 **onPause:**
-see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onPause()>`_  for more info
+see Android's `onPause documentation <https://developer.android.com/reference/android/app/Activity.html#onPause()>`_  for more info
 
 .. code-block:: java
 
@@ -59,7 +59,7 @@ see Android's onPause `documentation <https://developer.android.com/reference/an
 
 
 **onStop**
-see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onStop()>`_  for more info
+see Android's `onStop documentation <https://developer.android.com/reference/android/app/Activity.html#onStop()>`_  for more info
 
 .. code-block:: java
 
@@ -68,12 +68,12 @@ see Android's onPause `documentation <https://developer.android.com/reference/an
 
 **onDestroy**
 
-see Android's onPause `documentation <https://developer.android.com/reference/android/app/Activity.html#onDestroy()>`_  for more info
+see Android's `onDestroy documentation <https://developer.android.com/reference/android/app/Activity.html#onDestroy()>`_  for more info
 
 .. code:: java
 
         TendartsSDK.onDestroy();
-        
+
 
 
 Get notified on location updates
@@ -111,4 +111,4 @@ call:
 Targetting API >= 23
 --------------------
 
-If you are  targetting Android API level greater than 22 plesase see `android-target-api`_
+If you are  targetting Android API level greater than 22 plesase see :ref:`Android target API <android-target-api>`.

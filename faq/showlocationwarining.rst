@@ -1,3 +1,8 @@
+.. _android-sdk-alert-location:
+
+=====================
+Show location warning
+=====================
 
 You can make the user aware that the location is not enabled and explain why is important to be enabled
 Also is recommended that you provide a button redirecting the user to the location settings in the phone
@@ -25,5 +30,3 @@ Here is a simple example of how to do it using a dialog:
             alertDialog.show();
             //todo: add second button and redirect the user to location configuration.
             }
-       
-

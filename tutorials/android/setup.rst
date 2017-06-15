@@ -26,12 +26,13 @@ based on *Android Studio.*
 Configure the application
 -------------------------
 
-1. Library 
+1. Library
 ^^^^^^^^^^
 
 Add the following line to your app build.gradle:
 
 * In android section:
+
 .. code::
 
         packagingOptions {
@@ -43,6 +44,7 @@ Add the following line to your app build.gradle:
                                         tendarts_sdk_client_class:"YOUR CLIENT CLASS",
                                         gcm_sender_id: "YOUR GCM SENDER ID"]
             }
+
 * In dependencies section:
 
 .. code::
@@ -108,5 +110,3 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
                //See Adding Geolocation if you are using this feature otherwise leave empty function.
            }
        });
-
-
