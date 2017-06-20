@@ -6,7 +6,6 @@ Funcionalidades
     :maxdepth: 1
 
     features/introduction
-    features/architecture
     features/users
     features/segments
     features/channels
