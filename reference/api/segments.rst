@@ -57,7 +57,7 @@ Listar segmentos de *devices*
         }
 
 Listar segmentos de *personas*
------------------------------
+------------------------------
 
 .. http:get:: /api/v1/segments/personas/
 
