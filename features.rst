@@ -8,6 +8,7 @@ Funcionalidades
     features/introduction
     features/architecture
     features/users
+    features/segments
     features/channels
     features/campaigns
     features/pushes

@@ -33,10 +33,11 @@ Como empezar
 
 **Si eres desarrollador**
 
-1. Dar de alta de alta la aplicación con los credenciales las plataformas que utilices (:ref:`Android <faq-gcm>`, iOS).
-2. Integrar el SDK en cada una de tus plataformas (:ref:`Android <android-sdk-setup>`, :ref:`iOS <ios-sdk-setup>`)
-3. Prueba un envío `creando una primera campaña <https://10darts.com/app/notifications/create>`_
-4. Para más información, consulta la :ref:`documentación <introduction>` y/o contacta con nosotros en it@10darts.com
+1. Generar un :ref:`Google Server API Key <faq-gcm>` y un iOS Push Certificate.
+2. Configura el SDK: :ref:`Android <android-sdk-setup>` e :ref:`iOS <ios-sdk-setup>`.
+3. Ahora puedes `crear tu primera campaña <https://10darts.com/app/notifications/create>`_
+
+Para más información, consulta la :ref:`documentación <introduction>` y/o contacta con nosotros en it@10darts.com
 
 **Si eres vendedor, community manage o el responsable de ganar la confianza de tus usuarios**
 
