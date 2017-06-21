@@ -11,6 +11,5 @@ Funcionalidades
     features/channels
     features/campaigns
     features/pushes
-    features/places
     features/statistics
     features/content_sources

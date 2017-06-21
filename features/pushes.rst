@@ -4,9 +4,8 @@
 Pushes
 ======
 
-Un **push** en el sistema simboliza *un envío en concreto* que ha sido realizado a una serie de
-*dispositivos*.
-
+Cuando hablamos de **push** en 10darts nos referimos a *un envío en concreto*
+que ha sido realizado a una serie de *dispositivos*.
 
 La responsabilidad de crear los pushes recae **exclusivamente** en las campañas, por lo que
 no se pueden crear vía API. Sin embargo, la confirmación de entrega o la apertura del push se ha
@@ -28,7 +27,7 @@ Pushes *abiertos*
 Los pushes *abiertos*, son aquellos sobre los que el usuario a pulsado
 para acceder al contenido.
 
-Es responsabilidad del lado cliente (la aplicación) marcar un push como seguido.
+Es responsabilidad del lado cliente (la aplicación) marcar un push como abierto.
 
 Pushes *recibidos*
 ------------------
