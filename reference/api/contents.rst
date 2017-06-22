@@ -31,3 +31,25 @@ notificación cuando se cree un **nuevo contenido de una fuente en concreto.**
     :<json string language: idioma de los dispositivos a los que enviar la notificación
     :<json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
     :<json string country: código de dos letras del país en el que tienen que estar registrados los devices a los que se quiere mandar la notificación
+    :<json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
+    :<json string distribution_algorithm: define el algoritmo de distribución
+    :<json GeoJSON ripple_center: define el centro del efecto Geo Ripple (solo para algoritmo de Geo Ripple)
+    :<json int ripple_initial_radius: define el radio por defecto del efecto Geo Ripple (solo para algoritmo de Geo Ripple)
+
+Actualizar conversor
+--------------------
+
+.. http:patch:: /api/converters/(int:id)/
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        POST /api/v1/converters/ HTTP/1.1
+        Content-Type: application/json
+
+        {
+            "tags": [
+                "foo",
+                "var"
+            ]
+        }
