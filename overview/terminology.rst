@@ -1,18 +1,15 @@
 .. _introduction:
 
 ============
-Introducción
+Terminología
 ============
 
 El sistema **10darts** se puede definir como un *sistema de difusión de contenido inteligente*,
 en donde dicha difusión se realiza mediante el uso de *campañas* basadas en
 *notificaciones push* a dispositivos móviles iOS y Android.
 
-El sistema completo consta de dos partes muy diferenciadas, la plataforma de *Software as a Service* (Saas), que
+El sistema completo consta de dos partes muy diferenciadas, la plataforma de *Software as a Service* (SaaS), que
 incluye un *backend* API público y un panel de gestión, y el *SDK* para aplicaciones móviles.
-
-Terminología
-------------
 
 Resumen de los términos que se van a utilizar durante el documento. Cada uno de ellos será explicado
 en profundidad en sus correspondientes secciones.

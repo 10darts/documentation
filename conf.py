@@ -108,8 +108,8 @@ html_theme = 'alabaster'
 html_theme_options = {
     'logo': '10darts.svg',
     'logo_name': '10darts',
-    'font_family': '"Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;',
-    'head_font_family': 'Impact, "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;',
+    'font_family': '"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;',
+    'head_font_family': '"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

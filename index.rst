@@ -6,10 +6,10 @@ Documentación y ayuda
 fidelización de tus usuarios al mismo tiempo que minimiza el tiempo de
 adaptación y gestión.
 
-Damos soporte a las plataformas de Android e iOS proporcionando un
-SDKs dedicados, una API RESTful, un panel de control online para
+Damos soporte a las plataformas de **Android** e **iOS** proporcionando un
+SDKs dedicados, una **API RESTful**, un panel de control online para
 diseñar y enviar campañas de notificaciones push y un servicio de contenido
-de *feeds* que permite el envío de campañas automáticas, evitando retrasos
+de **feeds** que permite el envío de campañas automáticas, evitando retrasos
 en la comunicación del contenido con tus usuarios y ahorrando tiempo
 a tu equipo de marketing.
 
@@ -47,13 +47,41 @@ Para más información, consulta la :ref:`documentación <introduction>` y/o con
 
 Y para sacar más partido a la plataforma, aquí te dejamos el resto de la información. Si tienes dudas lánzanos un email a it@10darts.com.
 
-Contenido
----------
+.. toctree::
+    :maxdepth: 2
+    :caption: Conceptos básicos
+    :hidden:
+
+    overview/terminology
+    overview/users
+    overview/channels
+    overview/campaigns
+    overview/pushes
+    overview/content_sources
+    overview/statistics
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Tutoriales
+    :hidden:
+
+    tutorials/android/setup
+    tutorials/android/customization
+    tutorials/ios
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :caption: FAQ
+    :hidden:
+
+    faq/*
 
 .. toctree::
    :maxdepth: 2
+   :caption: Referencia
+   :hidden:
 
-   features
-   tutorials
-   faq
-   reference
+   reference/android
+   reference/ios
+   reference/api

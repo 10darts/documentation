@@ -40,6 +40,7 @@ Actualizar conversor
 --------------------
 
 .. http:patch:: /api/converters/(int:id)/
+
     **Ejemplo de petición**:
 
     .. sourcecode:: http
