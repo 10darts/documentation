@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
 
 .caption .caption-text {
   font-weight: bold;
   font-size: 120%;
   text-transform: uppercase;
+}
+
+.docutils dt {
+  font-weight: 700;
 }

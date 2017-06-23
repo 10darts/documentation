@@ -58,6 +58,7 @@ Y para sacar más partido a la plataforma, aquí te dejamos el resto de la infor
     overview/campaigns
     overview/pushes
     overview/content_sources
+    overview/options
     overview/statistics
 
 .. toctree::
