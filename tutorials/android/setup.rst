@@ -49,7 +49,7 @@ Add the following line to your app build.gradle:
 
 .. code::
 
-    compile  'com.10darts:sdk:1.18'
+    compile  'com.10darts:sdk:1.19'
 
 
 
