@@ -49,12 +49,12 @@ Add the following line to your app build.gradle:
 
 .. code::
 
-    compile  'com.10darts:sdk:1.18'
+    compile  'com.10darts:sdk:1.19'
 
 
 
 
--  **tendarts\_sdk\_access\_token**: your access token to 10darts
+-  **tendarts\_sdk\_access\_token**: your access token to 10darts (API Key)
 -  **dtendarts\_sdk\_client\_class**: the full qualified name of your SDK
    implementation (see :ref:`Implementing client class <android-sdk-client>`)
 -  **gcm\_sender\_id**: the sender id you copied in the last step
