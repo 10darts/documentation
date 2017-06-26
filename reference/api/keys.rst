@@ -62,3 +62,105 @@ Añadir clave/valor a un usuario
 .. note::
     En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
     almacenar claves como si fueran etiquetas al uso.
+
+Sugerencia de keys
+------------------
+
+.. http:get:: /api/v1/keys/personas/?query=(string: query)
+
+    Para ``keys`` que estén asignadas solo a ``personas``.
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/keys/personas/?query=foo HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "key": {
+                        "label": "foo",
+                        "term": "foo"
+                    },
+                    "kind": 2,
+                    "value": null
+                }
+            ]
+        }
+
+.. http:get:: /api/v1/keys/devices/?query=(string: query)
+
+    Para ``keys`` que estén asignadas solo a ``devices``.
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/keys/devices/?query=foo HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "key": {
+                        "label": "foo",
+                        "term": "foo"
+                    },
+                    "kind": 2,
+                    "value": null
+                }
+            ]
+        }
+
+.. http:get:: /api/v1/keys/?query=(string: query)
+
+    Para cualquier ``keys`` que el usuario haya registrado.
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/keys/?query=foo HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "key": {
+                        "label": "foo",
+                        "term": "foo"
+                    },
+                    "kind": 2,
+                    "value": null
+                }
+            ]
+        }
