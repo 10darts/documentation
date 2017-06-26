@@ -336,6 +336,43 @@ manera uniforme entre todas las alternativas.
     .. warning::
         Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
 
+Obtener alternativas de contenido
+---------------------------------
+
+.. http:get:: /api/v1/content_alternatives/?notification=(string: code)
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/content_alternatives/?notification=w58Xar HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "id": 1,
+                    "notification": "api/v1/notifications/w58Xar/",
+                    "message": "Alternative!",
+                    "deep_link": null,
+                    "destination_type": null,
+                    "destination_code": null,
+                    "title": null,
+                    "image": null,
+                    "image_url": null
+                }
+            ]
+        }
+
 
 Pasos de distribución de una notificación
 -----------------------------------------
