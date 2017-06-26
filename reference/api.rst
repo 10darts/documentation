@@ -9,7 +9,7 @@ La dirección base para llamar a los recursos siempre será::
 
     https://10darts.com
 
-Siendo, por ejemplo, el endpoint para obtener el listado de notificaciones:
+Siendo, por ejemplo, el endpoint para obtener el listado de notificaciones::
 
     https://10darts.com/api/v1/notifications/
 
