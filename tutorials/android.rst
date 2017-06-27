@@ -6,4 +6,5 @@ Android
     :maxdepth: 2
     :glob:
 
-    android/*
+    android/setup
+    android/customization
