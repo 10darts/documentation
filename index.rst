@@ -66,8 +66,7 @@ Y para sacar más partido a la plataforma, aquí te dejamos el resto de la infor
     :caption: Tutoriales
     :hidden:
 
-    tutorials/android/setup
-    tutorials/android/customization
+    tutorials/android
     tutorials/ios
 
 .. toctree::
