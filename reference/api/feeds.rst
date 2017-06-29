@@ -32,7 +32,8 @@ Listar los feeds
                     "code": "tO8idg",
                     "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
                     "last_check": null,
-                    "title": "NASA Breaking News"
+                    "title": "NASA Breaking News",
+                    "disabled": false
                 }
             ]
         }
@@ -51,7 +52,7 @@ Añadir un nuevo feed
         Content-Type: application/json
 
         {
-            "url": "..."
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss"
         }
 
     **Ejemplo de respuesta**:
@@ -63,7 +64,45 @@ Añadir un nuevo feed
         Content-Type: application/json
 
         {
-            "url": "..."
+            "id": 1,
+            "code": "tO8idg",
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+            "last_check": null,
+            "title": "NASA Breaking News",
+            "disabled": false
+        }
+
+Actualizar feed
+---------------
+
+.. http:patch:: /api/v1/feeds/(string: code)/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        PATCH /api/v1/feeds/tO8idg/ HTTP/1.1
+        Content-Type: application/json
+
+        {
+            "disabled": true
+        }
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "id": 1,
+            "code": "tO8idg",
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+            "last_check": null,
+            "title": "NASA Breaking News",
+            "disabled": true
         }
 
 Comprobar elementos del feed
