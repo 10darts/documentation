@@ -156,46 +156,96 @@ el valor que identifica al usuario de forma única para el cliente.
 
 .. http:post:: /api/v1/devices/links/
 
-    **Ejemplo de petición**:
+   **Ejemplo de petición**:
 
-    .. sourcecode:: http
+   .. sourcecode:: http
 
-        PATCH /api/v1/devices/links/ HTTP/1.1
-        Content-Type: application/json
+       PATCH /api/v1/devices/links/ HTTP/1.1
+       Content-Type: application/json
 
-        {
-            "device": "/api/v1/devices/9XzsNm/",
-            "client_data": "foo"
-        }
+       {
+           "device": "/api/v1/devices/9XzsNm/",
+           "client_data": "foo"
+       }
 
-    :<json string device: URI del device que se quiere actualizar
-    :<json string client_data: referencia única del cliente que identifica la persona
+   :<json string device: URI del device que se quiere actualizar
+   :<json string client_data: referencia única del cliente que identifica la persona
 
-    **Ejemplo de respuesta**:
+   **Ejemplo de respuesta**:
 
-    .. sourcecode:: http
+   .. sourcecode:: http
 
-        HTTP/1.1 201 Created
-        Content-Type: application/json
+       HTTP/1.1 201 Created
+       Content-Type: application/json
 
-        {
-            "id": 4,
-            "code": "9XzsNm",
-            "platform": "android",
-            "disabled": false,
-            "model": "",
-            "version": null,
-            "language": null,
-            "position": {
-                "type": "Point",
-                    "coordinates": [-123.0208, 44.0489]
-                },
-            "persona": "/api/v1/personas/IECwPN/"
-        }
+       {
+           "id": 4,
+           "code": "9XzsNm",
+           "platform": "android",
+           "disabled": false,
+           "model": "",
+           "version": null,
+           "language": null,
+           "position": {
+               "type": "Point",
+                   "coordinates": [-123.0208, 44.0489]
+               },
+           "persona": "/api/v1/personas/IECwPN/"
+       }
 
-    .. note::
+   .. note::
 
-        La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
+       La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
+
+.. _api-devices-unlink:
+
+Desenlazar un dispositivo a una persona
+---------------------------------------
+
+Se desenlazará una persona de un device cuando esta cierre la sesión en la
+aplicación con la que se este integrando.
+
+.. http:post:: /api/v1/devices/unlink/
+
+   **Ejemplo de petición**:
+
+   .. sourcecode:: http
+
+       PATCH /api/v1/devices/unlink/ HTTP/1.1
+       Content-Type: application/json
+
+       {
+           "device": "/api/v1/devices/9XzsNm/"
+       }
+
+   :<json string device: URI del device que se quiere actualizar
+
+   **Ejemplo de respuesta**:
+
+   .. sourcecode:: http
+
+       HTTP/1.1 201 Created
+       Content-Type: application/json
+
+       {
+           "id": 4,
+           "code": "9XzsNm",
+           "platform": "android",
+           "disabled": false,
+           "model": "",
+           "version": null,
+           "language": null,
+           "position": {
+               "type": "Point",
+                   "coordinates": [-123.0208, 44.0489]
+               },
+           "persona": "/api/v1/personas/IECwPN/"
+       }
+
+   .. note::
+
+       La respuesta a esta llamada es el device actualizado con la información
+       de una nueva persona anónima con la que está enlazado.
 
 Buscar dispositivo
 ------------------
