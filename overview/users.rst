@@ -18,18 +18,23 @@ criterios. Por defecto, están siempre disponibles cuatro tipos de segmentos:
 
 .. glossary::
 
-    Newbies
-        El segmento **Newbies** se corresponde con los usuarios que han usado
+    Rookies
+        El segmento **Rookies** se corresponde con los usuarios que han usado
         tu aplicación solo un día en los últimos 14 días.
 
-    Passersby
-        El segmento **Passersby** se corresponde con los usuarios que no han
-        usado tu aplicación de nuevo en los los últimos 14 días.
+    Looky-Loos
+        El segmento **Looky-Loos** se corresponde con los usuarios que solo
+        han usado tu aplicación un día, y ha sido hace más de 14 días.
 
-    Engaged
-        El segmento **Engaged** se corresponde con los usuarios que han usado
-        tu aplicación más de un día al menos una vez en los últimos 14 días.
+    Stars
+        El segmento **Stars** se corresponde con los usuarios que han usado
+        tu aplicación más de un día y al menos una vez en los últimos 14 días.
 
-    Dormant
-        El segmento **Dormant** se corresponde con los usuarios que no han
-        usado tu aplicación desde hace más de 14 días.
+    Sleepers
+        El segmento **Sleepers** se corresponde con los usuarios que han usado
+        tu aplicación más de una vez, pero que no han vuelto a usarla desde
+        hace más de 14 días, y menos de 28.
+
+    Zombies
+        El segmento **Zombies** se corresponde con los usuarios que no han
+        usado tu aplicación desde hace más de 28 días.
