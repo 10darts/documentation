@@ -143,6 +143,7 @@ Crear segmentos de *devices*
     :<json list tags: lista de *keys* que han de tener los devices seleccionadas para el segmento
     :<json string client_data: cadena de texto con los valores de ``client_data`` de los devices seleccionadas para el segmento, separados por comas
 
+
 Crear segmentos de *personas*
 -----------------------------
 
