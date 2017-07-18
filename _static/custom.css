@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
 
+div.sphinxsidebarwrapper p.logo {
+  margin-bottom: 15px !important;
+}
+
 .sphinxsidebarwrapper .caption .caption-text {
   font-weight: bold;
-  font-size: 120%;
+  font-size: 105%;
   text-transform: uppercase;
+  color: #000;
 }
 
 .docutils dt {
@@ -20,4 +25,47 @@ dl:not(.docutils) dt {
   border-top: solid 3px rgba(191, 52, 45, 1);
   padding: 6px;
   position: relative;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-left: calc(.625em - 1px);
+    padding-right: calc(.625em - 1px);
+    position: relative;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border-color: #dbdbdb;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(.375em - 1px) .75em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+button.button, input[type=submit].button {
+    line-height: 1;
+    padding-bottom: .4em;
+    padding-top: .35em;
+}
+
+.button.is-primary {
+    background-color: #bd3732;
+    border-color: transparent;
+    color: #fff;
 }
