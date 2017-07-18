@@ -16,7 +16,7 @@ INotifications.IBackgroundCustomNotificationLoaderListener
 .. java:type:: public interface IBackgroundCustomNotificationLoaderListener
    :outertype: INotifications
 
-   To provide asynchronous custom notifications loading. You must call either revertToStandardNotification or customNotificationsReady once
+   To provide asynchronous custom notifications loading. You must call either revertToStandardNotification or customNotificationsReady once.
 
 Methods
 -------
@@ -24,11 +24,11 @@ Methods
 .. java:method::  void customNotificationsReady(Bitmap bitmap)
    :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
 
-   All asynchronous loading and manipulations done, remote views are ready to use
+   All asynchronous loading and manipulations done, remote views are ready to use.
 
-   :param bitmap: if provided this bitmap will be used in NotificationBuilder..setLargeIcon()
+   :param bitmap: if provided this bitmap will be used in NotificationBuilder.setLargeIcon()
 
 .. java:method::  void revertToStandardNotification()
    :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
 
-   Loading failed and should fallback to standard notification
+   Loading failed and should fallback to standard notification.

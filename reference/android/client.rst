@@ -7,7 +7,7 @@ Package Client
 Client namespace contains all the functionality the client should use.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Interfaces
 
     client/isdkcore
@@ -17,7 +17,7 @@ Client namespace contains all the functionality the client should use.
     client/igeolocation
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Classes
 
     client/sdkclient

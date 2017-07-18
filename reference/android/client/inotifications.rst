@@ -19,7 +19,7 @@ Methods
 .. java:method:: public RemoteViews getCustomNotificationLargeView(Notification notification, Context context)
    :outertype: INotifications
 
-   you should also return a view on getCustomNotificationSmallView if you need to load some data could be done later, return immediately override if you want to provide your large custom notification view when expanded
+   You should also return a view on getCustomNotificationSmallView if you need to load some data could be done later, return immediately override if you want to provide your large custom notification view when expanded.
 
    :param notification:
    :param context:
@@ -27,7 +27,7 @@ Methods
 .. java:method:: public RemoteViews getCustomNotificationSmallView(Notification notification, Context context)
    :outertype: INotifications
 
-   if you need to load some data could be done later, return immediately, override if you want to provide your custom notification view when collapsed
+   If you need to load some data could be done later, return immediately, override if you want to provide your custom notification view when collapsed.
 
    :param notification:
    :param context:
@@ -46,7 +46,7 @@ Methods
 .. java:method:: public boolean notificationHasImage(Notification notification)
    :outertype: INotifications
 
-   Return true if the notification should have an image
+   Return true if the notification should have an image.
 
    :param notification: notification containing data to build the notification
    :return: true if the notification should contain a custom image.
@@ -54,33 +54,33 @@ Methods
 .. java:method::  boolean onNotificationClicked(Notification notification)
    :outertype: INotifications
 
-   Called when a showed notification is clicked
+   Called when a showed notification is clicked.
 
    :param notification:
 
 .. java:method::  boolean onNotificationListCleared()
    :outertype: INotifications
 
-   Called when the notification list is cleared
+   Called when the notification list is cleared.
 
 .. java:method::  boolean onNotificationReceived(Notification notification)
    :outertype: INotifications
 
-   Called when a notification is received in the device
+   Called when a notification is received in the device.
 
    :param notification:
 
 .. java:method::  void onNotificationShowed(Notification notification)
    :outertype: INotifications
 
-   Called when a notification is showed to the user
+   Called when a notification is showed to the user.
 
    :param notification:
 
 .. java:method::  void onNotificationShowedInList(Notification notification)
    :outertype: INotifications
 
-   Called when a notification is showed to the user in the stacked notification
+   Called when a notification is showed to the user in the stacked notification.
 
    :param notification:
 
@@ -96,6 +96,6 @@ Methods
 .. java:method::  void openNotificationList(Context context)
    :outertype: INotifications
 
-   Start the proper intent to show notification list, the user has clicked on stacked notification
+   Start the proper intent to show notification list, the user has clicked on stacked notification.
 
    :param context: context to be used

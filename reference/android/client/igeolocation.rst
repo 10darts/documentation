@@ -20,4 +20,4 @@ Methods
 .. java:method::  void onUserRejectedLocationPermission()
    :outertype: IGeolocation
 
-   Called when the user has rejected location permission, do not make any further UI interaction with the user regarding location permission
+   Called when the user has rejected location permission, do not make any further UI interaction with the user regarding location permission.

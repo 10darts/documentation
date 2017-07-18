@@ -7,7 +7,7 @@ TendartsClient
 
     You should subclass TendartsClient and implement the interfaces (mysdkClient) as needed.
 
-    Add to the manifest
+    Add to the manifest.
 
     .. code-block:: xml
 

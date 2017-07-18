@@ -3,7 +3,7 @@ Android SDK
 ===========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     android/sdk
     android/client

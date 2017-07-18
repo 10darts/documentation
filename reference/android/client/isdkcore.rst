@@ -10,7 +10,7 @@ ISDKCore
 
 .. java:type:: public interface ISDKCore
 
-   ISDKCore handles core events on SDK
+   ISDKCore handles core events on SDK.
 
 Methods
 -------
@@ -18,7 +18,7 @@ Methods
 .. java:method:: public void logEvent(String category, String type, String message)
    :outertype: ISDKCore
 
-   Called to log events, for example to use analytics
+   Called to log events, for example to use analytics.
 
    .. code-block:: java
 
@@ -37,20 +37,20 @@ Methods
 .. java:method:: public String mainActivityClassName()
    :outertype: ISDKCore
 
-   Called to retrieve the main activity class name \ ``return MainActivity.class.getName()``\
+   Called to retrieve the main activity class name ``return MainActivity.class.getName()``.
 
    :return: the main activity class name
 
 .. java:method:: public void performSetup(Context context)
    :outertype: ISDKCore
 
-   Called when the SDK is initialized Do any customization here like TendartsSDK.alwaysShowLastNotification: \ ``TendartsSDK.alwaysShowLastNotification(false);``\
+   Called when the SDK is initialized Do any customization here like TendartsSDK.alwaysShowLastNotification: ``TendartsSDK.alwaysShowLastNotification(false);``.
 
    :param context: context to be used, for example to get string resources
 
 .. java:method:: public void remoteLogException(Exception e)
    :outertype: ISDKCore
 
-   To send a remote exception to your desired server e.g.: \ ``Crashlytics.logException(e);``\
+   To send a remote exception to your desired server e.g.: ``Crashlytics.logException(e);``.
 
    :param e: the exception to be logged
