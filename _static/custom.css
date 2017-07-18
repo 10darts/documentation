@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
 
-.caption .caption-text {
+.sphinxsidebarwrapper .caption .caption-text {
   font-weight: bold;
   font-size: 120%;
   text-transform: uppercase;
@@ -8,4 +8,16 @@
 
 .docutils dt {
   font-weight: 700;
+}
+
+dl:not(.docutils) dt {
+  display: inline-block;
+  margin: 6px 0;
+  font-size: 90%;
+  line-height: normal;
+  background: rgba(191, 52, 45, 0.25);
+  color: rgba(191, 52, 45, 1);
+  border-top: solid 3px rgba(191, 52, 45, 1);
+  padding: 6px;
+  position: relative;
 }

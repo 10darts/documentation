@@ -13,10 +13,10 @@ To improve location accuracy you should forward some Main Activity events, note 
 Forward your Main Activity events
 ---------------------------------
 
-In order to keep geolocation updates properly you should forward the
-main activity events to the TendarsSDK class.
+In order to keep geolocation updates properly you should forward the main
+activity events to the TendartsSDK class
 
-you can see `here <https://developer.android.com/guide/components/activities/activity-lifecycle.html>`_ more info about activity events.
+You can see `here <https://developer.android.com/guide/components/activities/activity-lifecycle.html>`_ more info about activity events.
 
 
 In your main activity override the following events and forward them to
@@ -37,7 +37,7 @@ see Android's `onCreate documentation <htttps://developer.android.com/reference/
         });
     }
 
-Optionally you can fill the `alertNotEnabled` function to show the user a warning when locations are not enabled (see  :ref:`Filling alertNotEnabled <android-sdk-alert-location>`)
+Optionally you can fill the ``alertNotEnabled`` function to show the user a warning when locations are not enabled (see  :ref:`Filling alertNotEnabled <android-sdk-alert-location>`)
 
 **onStart:**
 
@@ -98,8 +98,8 @@ Optional
 Get notified on location updates
 ----------------------------------
 
-To get notified when a new location is available, you should register
-your listener, for example in onCreate
+To get notified when a new location is available, you should register your
+listener, for example in onCreate
 
 .. code:: java
 
@@ -112,9 +112,8 @@ your listener, for example in onCreate
             }
         });
 
-Note that the instance of the receiver will not be kept so you should
-store it while you need location updates otherwise it could be
-garbage-collected
+Note that the instance of the receiver will not be kept so you should store it
+while you need location updates otherwise it could be garbage-collected.
 
 You could also get the current location synchronously:
 

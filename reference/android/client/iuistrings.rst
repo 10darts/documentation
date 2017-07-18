@@ -8,12 +8,8 @@ IUIStrings
 
 .. java:type:: public interface IUIStrings
 
-   Created by jorgearimany on 19/4/17.
-
 Methods
 -------
-getLocationExplanation
-^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:method::  CharSequence getLocationExplanation(Context context)
    :outertype: IUIStrings
@@ -22,4 +18,3 @@ getLocationExplanation
 
    :param context: context to be used to access string resources
    :return: the message to be shown to the user when required in the correct language
-

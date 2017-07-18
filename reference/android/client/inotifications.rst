@@ -11,12 +11,10 @@ INotifications
 
 .. java:type:: public interface INotifications
 
-   Notifications related interface
+   Notifications related interface.
 
 Methods
 -------
-getCustomNotificationLargeView
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:method:: public RemoteViews getCustomNotificationLargeView(Notification notification, Context context)
    :outertype: INotifications
@@ -26,9 +24,6 @@ getCustomNotificationLargeView
    :param notification:
    :param context:
 
-getCustomNotificationSmallView
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method:: public RemoteViews getCustomNotificationSmallView(Notification notification, Context context)
    :outertype: INotifications
 
@@ -36,9 +31,6 @@ getCustomNotificationSmallView
 
    :param notification:
    :param context:
-
-loadBackgroundCustomNotificationData
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:method::  void loadBackgroundCustomNotificationData(IBackgroundCustomNotificationLoaderListener listener, Notification notification, RemoteViews rv, RemoteViews rvBig, Context context)
    :outertype: INotifications
@@ -51,9 +43,6 @@ loadBackgroundCustomNotificationData
    :param rvBig: RemoteViews to be filled
    :param context: context to use
 
-notificationHasImage
-^^^^^^^^^^^^^^^^^^^^
-
 .. java:method:: public boolean notificationHasImage(Notification notification)
    :outertype: INotifications
 
@@ -62,9 +51,6 @@ notificationHasImage
    :param notification: notification containing data to build the notification
    :return: true if the notification should contain a custom image.
 
-onNotificationClicked
-^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  boolean onNotificationClicked(Notification notification)
    :outertype: INotifications
 
@@ -72,16 +58,10 @@ onNotificationClicked
 
    :param notification:
 
-onNotificationListCleared
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  boolean onNotificationListCleared()
    :outertype: INotifications
 
    Called when the notification list is cleared
-
-onNotificationReceived
-^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:method::  boolean onNotificationReceived(Notification notification)
    :outertype: INotifications
@@ -90,9 +70,6 @@ onNotificationReceived
 
    :param notification:
 
-onNotificationShowed
-^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  void onNotificationShowed(Notification notification)
    :outertype: INotifications
 
@@ -100,18 +77,12 @@ onNotificationShowed
 
    :param notification:
 
-onNotificationShowedInList
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  void onNotificationShowedInList(Notification notification)
    :outertype: INotifications
 
    Called when a notification is showed to the user in the stacked notification
 
    :param notification:
-
-openNotification
-^^^^^^^^^^^^^^^^
 
 .. java:method::  boolean openNotification(Notification notification, Context context)
    :outertype: INotifications
@@ -122,16 +93,9 @@ openNotification
    :param context: context to be used
    :return: true if client opens the notification overriding SDK default behabiour
 
-openNotificationList
-^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  void openNotificationList(Context context)
    :outertype: INotifications
 
    Start the proper intent to show notification list, the user has clicked on stacked notification
 
    :param context: context to be used
-
-
-
-`back to Client <../README.md>`__

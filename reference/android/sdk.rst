@@ -1,457 +1,411 @@
 .. _android-sdk-classes-sdk:
 
-SDK
-===
+=================
+Class TendartsSDK
+=================
 
-Documentation
--------------
+.. java:type:: public class TendartsSDK
 
-``public class SDK``
-~~~~~~~~~~~~~~~~~~~~
+    TendartsSDK class enables customization of the SDK.
 
-Sdk class enables customization of the SDK
+Methods
+-------
 
-``public SDK stackNotifications(boolean stackNotifications)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK stackNotifications(boolean stackNotifications)
+    :outertype: TendartsSDK
 
-Configure to show stacked notifications or not defaults to true
+    Configure to show stacked notifications or not defaults to true.
 
--  **Parameters:** ``stackNotifications`` — if true notifications are
-   stacked
+    :param stackNotifications: if true notifications are stacked
+    :return: TendartsSDK instance so you can concatenate calls
 
-   .. raw:: html
+.. java:method:: public TendartsSDK alwaysShowLastNotification(boolean alwaysShowLastNotification)
+    :outertype: TendartsSDK
 
-      <p>
+    Configure to show always the last notification, useful in combination
+    with stackNotifications defaults to true.
 
--  **Returns:** SDK instance so you can concatenate calls
+    :param alwaysShowLastNotification: If the last notification should always been shown
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK alwaysShowLastNotification(boolean alwaysShowLastNotification)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK limitNotificationSoundAndVibrationTime(boolean limitNotificationSoundAndVibrationTime)
+    :outertype: TendartsSDK
 
-Configure to show always the last notification, useful in combination
-with stackNotifications defaults to true
+    Configure to limit when notification will make sound and vibration
+    defaults to true if enabled notifications will only make sound between
+    [firstHour ... lastHour).
 
--  **Parameters:** ``alwaysShowLastNotification`` — If the last
-   notification should allways been shown
--  **Returns:** SDK instance so you can concatenate calls
+    :param limitNotificationSoundAndVibrationTime: If the sound and vibration will be limited
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK limitNotificationSoundAndVibrationTime(    boolean limitNotificationSoundAndVibrationTime)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK notificationSoundAndVibrationFirstHour(int firstHour)
+    :outertype: TendartsSDK
 
-Configure to limit when notification will make sound and vibration
-defaults to true if enabled notifications will only make sound between
-[firstHour ... lastHour)
+    Configure to set the first hour that notifications will make sound and
+    vibration Will only taken into account if ``limitNotificationSoundAndVibrationTime`` is set to true.
 
--  **Parameters:** ``limitNotificationSoundAndVibrationTime`` — If the
-   sound and vibration will be limited
+    :param firstHour: first hour when notifications will make sound and vibration. [0..23]
+    :return: TendartsSDK instance so you can concatenate calls
 
-   .. raw:: html
+.. java:method:: public TendartsSDK notificationSoundAndVibrationLastHour(int lastHour)
+    :outertype: TendartsSDK
 
-      <p>
+    Configure to set the first hour that notifications will make sound and
+    vibration Will only taken into account if ``limitNotificationSoundAndVibrationTime`` is set to true.
 
--  **Returns:** SDK instance so you can concatenate calls
--  **See also:**
--  notificationSoundAndVibrationFirstHour(int)
--  notificationSoundAndVibrationLastHour(int)
+    :param lastHour: last hour when notifications make sound and vibration. [0..23]
+    :return: TendartsSDK instance so you can concatenate calls
 
-   .. raw:: html
+.. java:method:: public TendartsSDK notificationColorResource(int colorResource)
+    :outertype: TendartsSDK
 
-      <p>
+    Set the color resource to use in Notifications.
 
-``public SDK notificationSoundAndVibrationFirstHour(int firstHour)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param colorResource: the color to be used
+    :return: TendartsSDK instance so you can concatenate calls
 
-Configure to set the first hour that notifications will make sound and
-vibration Will only taken into account if {@link
-#limitNotificationSoundAndVibrationTime(boolean)} is set to true
+.. java:method:: public TendartsSDK setSmallIconResource(int smallIconResource)
+    :outertype: TendartsSDK
 
--  **Returns:** SDK instance so you can concatenate calls
--  **Parameters:** ``firstHour`` — first hour when notifications will
-   make sound and vibration. [0..23]
--  **See also:** #limitNotificationSoundAndVibrationTime(boolean)
+    Set the small icon resource.
 
-``public SDK notificationSoundAndVibrationLastHour(int lastHour)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param smallIconResource: small icon resource
+    :return: TendartsSDK instance so you can concatenate calls
 
-Configure to set the first hour that notifications will make sound and
-vibration Will only taken into account if {@link
-#limitNotificationSoundAndVibrationTime(boolean)} is set to true
+.. java:method:: public TendartsSDK setLargeIconResource(int largeIconResource)
+    :outertype: TendartsSDK
 
--  **Parameters:** ``lastHour`` — last hour when notifications make
-   sound and vibration. [0..23]
--  **Returns:** SDK instance so you can concatenate calls
--  **See also:** #limitNotificationSoundAndVibrationTime(boolean)
+    Set the large icon resource.
 
-``public SDK notificationColorResource(     int colorResource)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param largeIconResource: large icon resource
+    :return: TendartsSDK instance so you can concatenate calls
 
-Set the color resource to use in Notifications
+.. java:method:: public TendartsSDK stackedNotificationTitle(CharSequence title)
+    :outertype: TendartsSDK
 
--  **Parameters:** ``colorResource`` — the color to be used
+    Set the stacked notification title.
 
--  **Returns:** SDK instance so you can concatenate calls
+    :param title: the title to be used
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK setSmallIconResource(int smallIconResource)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK stackedNotificationContent(String content)
+    :outertype: TendartsSDK
 
-Set the small icon resource
+    Set the stacked notifications content.
 
--  **Parameters:** ``smallIconResource`` — small icon resource
--  **Returns:** SDK instance so you can concatenate calls
+    :param content: content, if you have an '%d' in the string it will be formatted with the number of pending notifications
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK setLargeIconResource(int largeIconResource)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK viewStackedIconResource(int iconResource)
+    :outertype: TendartsSDK
 
-Set the large icon resource
+    Set the view icon resource in stacked notification.
 
--  **Parameters:** ``largeIconResource`` — large icon resource
--  **Returns:** SDK instance so you can concatenate calls
+    :param iconResource: the icon resource, if not set defaults to android.R.drawable.ic\_menu\_view
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK stackedNotificationTitle( CharSequence title)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK viewStackdString(CharSequence string)
+    :outertype: TendartsSDK
 
-set the stacked notification Title
+    Set the view string in stacked notification.
 
--  **Parameters:** ``title`` — the title to be used
--  **Returns:** SDK instance so you can concatenate calls
+    :param string:
+    :return: TendartsSDK instance so you can concatenate calls
 
-``public SDK stackedNotificationContent(String content)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public TendartsSDK cancelStackedIconResource( int iconResource)
+    :outertype: TendartsSDK
 
-set the stacked notifications content
+    Set the cancel button icon in stacked notification.
 
--  **Parameters:** ``content`` — content, if you have an '%d' in the
-   string it will be formatted with
+    :param iconResource: the icon resource to be used, if not set defaults to android.R.drawable.ic\_menu\_close\_clear\_cancel
+    :returns: TendartsSDK instance so you can concatenate calls
 
-   the number of pending notifications
--  **Returns:** SDK instance so you can concatenate calls
+.. java:method:: public int getCancelStackedIconResource()
+    :outertype: TendartsSDK
 
-``public SDK viewStackedIconResource(int iconResource)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    android.R.drawable.ic\_menu\_close\_clear\_cancel
 
-set the view icon resource in stacked notification
+    :returns:
 
--  **Parameters:** ``iconResource`` — the icon resource, if not set
-   defaults to android.R.drawable.ic\_menu\_view
--  **Returns:** SDK instance so you can concatenate calls
+.. java:method:: public TendartsSDK cancelStackedString (CharSequence string)
+    :outertype: TendartsSDK
 
-``public SDK viewStackdString(CharSequence string)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Set the cancel button string in stacked notification.
 
-set the view string in stacked notification
+    :param string:
+    :returns: TendartsSDK instance so you can concatenate calls
 
--  **Parameters:** ``string`` —
--  **Returns:** SDK instance so you can concatenate calls
+.. java:method:: public static void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults, Context context)
+    :outertype: TendartsSDK
 
-``public SDK cancelStackedIconResource( int iconResource)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    On Api >= 23 override on main activity and call this method.
 
-set the cancel button icon in stacked notification
+    :param requestCode: request code provided in main onRequestPermissionsResult
+    :param permissions: permission provided in main onRequestPermissionsResult
+    :param grantResults: results provided in onRequestPermissionsResult
+    :param context: context, e.g getApplicationContext(), should not be null
 
--  **Parameters:** ``iconResource`` — the icon resource to be used, if
-   not set defaults to android.R.drawable.ic\_menu\_close\_clear\_cancel
--  **Returns:** SDK instance so you can concatenate calls
+.. java:method:: public static void onResume(final Context context)
+    :outertype: TendartsSDK
 
-``public int getCancelStackedIconResource()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Override on main activity and call this method.
 
-android.R.drawable.ic\_menu\_close\_clear\_cancel
+.. java:method:: public static void onPause()
+    :outertype: TendartsSDK
 
--  **Returns:**
+    Override on main activity and call this method.
 
-``public SDK cancelStackedString ( CharSequence string)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void onStart()
+    :outertype: TendartsSDK
 
-set the cancel button string in stacked notification
+    Override on main activity and call this method.
 
--  **Parameters:** ``string`` —
--  **Returns:** SDK instance so you can concatenate calls
+.. java:method:: public static void onStop()
+    :outertype: TendartsSDK
 
-``public static void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults, Context context``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Override on main activity and call this method.
 
-On Api >= 23 override on main activity and call this method
+.. java:method:: public static void onDestroy()
+    :outertype: TendartsSDK
 
--  **Parameters:**
--  ``requestCode`` — request code provided in main
-   onRequestPermissionsResult
--  ``permissions`` — permission provided in main
-   onRequestPermissionsResult
--  ``grantResults`` — results provided in onRequestPermissionsResult
--  ``context`` — context, e.g getApplicationContext(), should not be
-   null
+    Override on main activity and call this method.
 
-``public static void onResume(final Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void onCreate(Bundle savedInstanceState, final Activity activity, Communications.ILocationAlerter locationAlerter)
+    :outertype: TendartsSDK
 
-override on main activity and call this method
+    Override on main activity and call this method.
 
-``public static void onPause()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param savedInstanceState: saved instance state
+    :param activity: instance of your main activity
+    :param locationAlerter: location alerter
 
-override on main activity and call this method
+.. java:method:: public static void onSaveInstanceState(Bundle outState)
+    :outertype: TendartsSDK
 
-``public static void onStart()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Override on main activity and call this method.
 
-override on main activity and call this method
+    :param outState:
 
-``public static void onStop()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void onRestoreInstanceState(final Bundle savedInstanceState, final Context context)
+    :outertype: TendartsSDK
 
-override on main activity and call this method
+    Override on main activity and call this method.
 
-``public static void onDestroy()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param savedInstanceState:
+    :param context:
 
-override on main activity and call this method
+.. java:method:: public static void deleteNotificationFromList(String notificationCode, Context context)
+    :outertype: TendartsSDK
 
-``public static void onCreate(Bundle savedInstanceState,         final Activity activity,         Communications.ILocationAlerter locationAlerter)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Delete a single notification from the stored list.
 
-override on main activity and call this method
+    :param notificationCode: notification code
+    :param context: context
 
--  **Parameters:**
--  ``savedInstanceState`` — saved instance state
--  ``activity`` — instance of your main activity
--  ``locationAlerter`` — location alerter
+.. java:method:: public static void deleteAllNotifications(Context context)
+    :outertype: TendartsSDK
 
-``public static void onSaveInstanceState(Bundle outState)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Delete all notifications from stored list.
 
-override on main activity and call this method
+    :param context: context
 
--  **Parameters:** ``outState`` —
+.. java:method:: public static ArrayList<Notification> getNotificationsList(Context context)
+    :outertype: TendartsSDK
 
-``public static void onRestoreInstanceState(final Bundle savedInstanceState, final Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Returns a list with the stored notifications.
 
-override on main activity and call this method
+    :param context:
+    :return: the notification list
 
--  **Parameters:**
--  ``savedInstanceState`` —
--  ``context`` —
+.. java:method:: public static void notifyNotificationRead(String notificationCode, final Context context)
+    :outertype: TendartsSDK
 
-``public static void deleteNotificationFromList(String notificationCode, Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Notify that a notification has been read.
 
-Delete a single notification from the stored list
+    :param notificationCode: the code of the read notification
+    :param context: context
 
--  **Parameters:**
--  ``notificationCode`` — notification code
--  ``context`` — context
+.. java:method:: public static void notifyAllNotificationsRead(final Context context)
 
-``public static void deleteAllNotifications(Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Notify that all the notifications has been read
 
-Delete all notifications from stored list
+    :param context: context
 
--  **Parameters:** ``context`` — context
+.. java:type:: public static class GeoLocation
+    :outertype: TendartsSDK
 
-``public static ArrayList<Notification> getNotificationsList(Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Class that holds geolocation info
 
-Returns a list with the stored notifications
+    .. java:field:: public double latitude
+        :outertype: TendartsSDK.GeoLocation
 
--  **Parameters:** ``context`` —
--  **Returns:** the notification list
+        Latitude
 
-``public static void notifyNotificationRead(String notificationCode, final Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .. java:field:: public double longitude
+        :outertype: TendartsSDK.GeoLocation
 
-Notify that a notification has been read
+        Longitude
 
--  **Parameters:**
--  ``notificationCode`` — the code of the read notification
--  ``context`` — context
+    .. java:field:: public double precision
+        :outertype: TendartsSDK.GeoLocation
 
-``public static void notifyAllNotificationsRead(final Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Precision in meters.
 
-Notify that all the notifications has been read
+        We define accuracy as the radius of 68% confidence. In other words, if
+        you draw a circle centered at this location's latitude and longitude,
+        and with a radius equal to the accuracy, then there is a 68% probability
+        that the true location is inside the circle.
 
--  **Parameters:** ``context`` — context
+        In statistical terms, it is assumed that location errors are random with
+        a normal distribution, so the 68% confidence circle represents one
+        standard deviation. Note that in practice, location errors do not always
+        follow such a simple distribution.
 
-``public static class GeoLocation``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        This accuracy estimation is only concerned with horizontal accuracy.
 
-Class that holds geolocation info
+    .. java:field:: public String provider
+        :outertype: TendartsSDK.GeoLocation
 
-``public double latitude``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+        The provider of the location
 
-Latitude
+    .. java:field:: public String source
+        :outertype: TendartsSDK.GeoLocation
 
-``public double longitude``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Location source.
 
-Longitude
+    .. java:constructor:: public GeoLocation(double latitude, double longitude, double precision, String provider, String source)
+        :outertype: TendartsSDK.GeoLocation
 
-``public double precision``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Constructor.
 
-precision in meters
+        :param latitude:
+        :param longitude:
+        :param precision:
+        :param provider:
+        :param source:
 
-We define accuracy as the radius of 68% confidence. In other words, if
-you draw a circle centered at this location's latitude and longitude,
-and with a radius equal to the accuracy, then there is a 68% probability
-that the true location is inside the circle.
+.. java:method:: public static GeoLocation getCurrentGeoLocation()
+    :outertype: TendartsSDK
 
-In statistical terms, it is assumed that location errors are random with
-a normal distribution, so the 68% confidence circle represents one
-standard deviation. Note that in practice, location errors do not always
-follow such a simple distribution.
+    Call this method to get the current geolocation
 
-This accuracy estimation is only concerned with horizontal accuracy.
+    :return: the current geolocation
 
-``public String provider``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:type:: public interface IGeoLocationReceiver
+    :outertype: TendartsSDK
 
-The provider of the location
+    A receiver that will be notified when a new location is available.
 
-``public String source``
-~~~~~~~~~~~~~~~~~~~~~~~~
+    .. java:method:: void onNewLocation(GeoLocation location)
+        :outertype: TendartsSDK.IGeoLocationReceiver
 
-location source
+        New location arrived.
 
-``public GeoLocation(double latitude,       double longitude,       double precision,       String provider,       String source       )``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        :param location: the new location
 
-Constructor
+.. java:method:: public static void registerGeoLocationReceiver(IGeoLocationReceiver receiver)
+    :outertype: TendartsSDK
 
--  **Parameters:**
--  ``latitude`` —
--  ``longitude`` —
--  ``precision`` —
--  ``provider`` —
--  ``source`` —
+    Set the Geolocation receiver, if there is already set, it will be
+    overwritten with this one instance will not be kept, so make sure it's
+    not garbage collected while you need it.
 
-``public static GeoLocation getCurrentGeoLocation()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param receiver: the receiver to be called
 
-Call this method to get the current geolocation
+.. java:method:: public static void unregisterGeoLocationReceiver()
+    :outertype: TendartsSDK
 
--  **Returns:** the current geolocation
+    Remove the geolocation receiver.
 
-``public interface IGeoLocationReceiver``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void disableGeolocationUpdates()
+    :outertype: TendartsSDK
 
-A receiver that will be notified when a new location is available
+    Disable geolocation updates.
 
-``void onNewLocation(GeoLocation location)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void enableGeolocationUpdates()
+    :outertype: TendartsSDK
 
-New location arrived
+    Enable geolocation updates, by default are enabled.
 
--  **Parameters:** ``location`` — the new location
+.. java:method:: public static void changeNotificationsEnabled(boolean enabled, Context context)
+    :outertype: TendartsSDK
 
-``public static void registerGeoLocationReceiver(IGeoLocationReceiver receiver)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Call this method to enable/disable notifications on current device/app.
 
-Set the Geolocation receiver, if there is already set, it will be
-overwritten with this one instance will not be kept, so make sure it's
-not garbage collected while you need it.
+    :param enabled: if the notifications should be enabled, by default are enabled
+    :param context: context
 
--  **Parameters:** ``receiver`` — the receiver to be called
+.. java:method:: public static boolean getNotificationsEnabled(Context context)
+    :outertype: TendartsSDK
 
-``public static void unregisterGeoLocationReceiver()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Get a boolean indicating if the notifications are enabled on current
+    device/app.
 
-Remove the geolocation receiver
+    :param context:
+    :returns: if the notifications are enabled
 
-``public static void disableGeolocationUpdates()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:type:: public interface IUserResponseObserver
+    :outertype: TendartsSDK
 
-Disable geolocation updates
+    Observer on user calls.
 
-``public static void enableGeolocationUpdates()``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .. java::method:: void onOk()
+        :outertype: TendartsSDK.IUserResponseObserver
 
-Enable geolocation updates, by default are enabled
+        Called when the operation has been done correctly
 
-``public static void changeNotificationsEnabled(boolean enabled,Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .. java:method:: void onFail(String reason)
+        :outertype: TendartsSDK.IUserResponseObserver
 
-Call this method to enable/disable notifications on current device/app
+        Called when the operation failed.
 
--  **Parameters:**
--  ``enabled`` — if the notifications should be enabled, by default are
-   enabled
--  ``context`` — context
+        :param reason: reason of the fail
 
-``public static boolean getNotificationsEnabled(Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void linkUserToDevice(final IUserResponseObserver observer, final Context context)
+    :outertype: TendartsSDK
 
-Get a boolean indicating if the notifications are enabled on current
-device/app
+    Call this to link the user to the device, call it after the user has
+    been set.
 
--  **Parameters:** ``context`` —
--  **Returns:** if the notifications are enabled
+    :param observer: observer to be called when the operation is done
+    :param context: context
 
-``public interface IUserResponseObserver``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void registerUser(String email, String firstName, String lastName, String password, final IUserResponseObserver observer, Context context)
+    :outertype: TendartsSDK
 
-Observer on user calls
+    Called to register the user
 
-``void onOk()``
-~~~~~~~~~~~~~~~
+    :param email: e-mail
+    :param firstName: first name
+    :param lastName: last name
+    :param password: password to use
+    :param observer: observer to be called when the operation is done
+    :param context: context
 
-Called when the operation has been done correctly
 
-``void onFail(String reason)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. java:method:: public static void modifyUser(String email, String firstName, String lastName, String password, final IUserResponseObserver observer, Context context)
+    :outertype: TendartsSDK
 
-Called when the operation failed
+    Modify user data.
 
--  **Parameters:** ``reason`` — reason of the fail
+    Only fill the fields you want to modify, any null parameter will be kept
+    unmodified.
 
-``public static void linkUserToDevice(final IUserResponseObserver observer, final Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    :param email: e-mail
+    :param firstName: first name
+    :param lastName: last name
+    :param password: password to use
+    :param observer: observer to be called when the operation is done
 
-Call this to link the user to the device, call it after the user has
-been set
+.. java:type:: public interface ILocationAlerter
+    :outertype: TendartsSDK
 
--  **Parameters:**
--  ``observer`` — observer to be called when the operation is done
--  ``context`` — context
+    Location alerter to redirect user to configuration.
 
-``public static void registerUser(String email, String firstName, String lastName, String password,      final IUserResponseObserver observer,          Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .. java:method:: void alertNotEnabled(Activity parent)
+        :outertype: TendartsSDK.ILocationAlerter
 
-Called to register the user
+        Alert the user that location is not enabled, good place to open device
+        location settings for the user
 
--  **Parameters:**
--  ``email`` — e-mail
--  ``firstName`` — first name
--  ``lastName`` — last name
--  ``password`` — password to use
--  ``observer`` — observer to be called when the operation is done
--  ``context`` — context
-
-``public static void modifyUser(String email, String firstName, String lastName, String password,      final IUserResponseObserver observer, Context context)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Modify user data
-
-only fill the fields you want to modify, any null parameter will be kept
-unmodified
-
--  **Parameters:**
--  ``email`` — e-mail
--  ``firstName`` — first name
--  ``lastName`` — last name
--  ``password`` — password
--  ``observer`` — observer to be called when the operation is done
-
-``public interface ILocationAlerter``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Location alerter to redirect user to configuration
-
-``void alertNotEnabled(Activity parent)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Alert the user that location is not enabled, good place to open device
-location settings for the user
-
--  **Parameters:** ``parent`` — could be null.
+        :param parent: could be null.

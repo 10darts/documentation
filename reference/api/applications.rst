@@ -90,8 +90,6 @@ Listar aplicaciones
             ]
         }
 
-    }
-
 Borrar aplicaciones
 -------------------
 

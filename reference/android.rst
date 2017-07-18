@@ -4,6 +4,6 @@ Android SDK
 
 .. toctree::
     :maxdepth: 2
-    :glob:
 
-    android/*
+    android/sdk
+    android/client

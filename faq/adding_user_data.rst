@@ -8,7 +8,7 @@ Adding user data
 Link the device to your own user
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You may need to associate the device with your own user, to do so, call `linkDeviceWithUserIdentifier` providing your user identfier on the last paramameter:
+You may need to associate the device with your own user. To do so, call `linkDeviceWithUserIdentifier` providing your user identifier on the last parameter:
 
 .. code-block:: java
 

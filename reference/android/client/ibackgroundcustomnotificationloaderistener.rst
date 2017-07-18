@@ -6,6 +6,7 @@
 
 .. java:import:: com.darts.sdk Model.Notification
 
+==========================================================
 INotifications.IBackgroundCustomNotificationLoaderListener
 ==========================================================
 
@@ -19,8 +20,6 @@ INotifications.IBackgroundCustomNotificationLoaderListener
 
 Methods
 -------
-customNotificationsReady
-^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:method::  void customNotificationsReady(Bitmap bitmap)
    :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
@@ -29,11 +28,7 @@ customNotificationsReady
 
    :param bitmap: if provided this bitmap will be used in NotificationBuilder..setLargeIcon()
 
-revertToStandardNotification
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method::  void revertToStandardNotification()
    :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
 
    Loading failed and should fallback to standard notification
-

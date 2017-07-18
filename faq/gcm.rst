@@ -4,8 +4,8 @@
 Google Cloud Messaging
 ======================
 
-For the SDK to work properly a GCM / FCM configuration should be
-created.
+You need to create a GCM / FCM configuration for the SDK to work properly.
+Here’s how to do it:
 
 -  Go to your Firebase console and create a new project:
 

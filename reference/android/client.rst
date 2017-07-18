@@ -1,27 +1,23 @@
 .. _android-sdk-classes-client:
 
-Client
-======
+==============
+Package Client
+==============
 
 Client namespace contains all the functionality the client should use.
 
-Interfaces
-----------
+.. toctree::
+    :maxdepth: 2
+    :caption: Interfaces
 
-:ref:`ISDKCore <android-sdk-classes-isdkcore>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    client/isdkcore
+    client/inotifications
+    client/ibackgroundcustomnotificationloaderistener
+    client/iuistrings
+    client/igeolocation
 
-:ref:`INotifications <android-sdk-classes-inotifications>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 2
+    :caption: Classes
 
-:ref:`IUIStrings <android-sdk-classes-iustrings>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:ref:`IGeolocation <android-sdk-classes-igeolocation>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Clases
-------
-
-:ref:`SDKClient <android-sdk-classes-sdkclient>`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    client/sdkclient

@@ -14,15 +14,13 @@ ISDKCore
 
 Methods
 -------
-logEvent
-^^^^^^^^
 
 .. java:method:: public void logEvent(String category, String type, String message)
    :outertype: ISDKCore
 
    Called to log events, for example to use analytics
 
-   .. code:: java
+   .. code-block:: java
 
        Tracker _t = OnpublicoApplication.getPushTracker();
        if (_t != null)
@@ -36,9 +34,6 @@ logEvent
    :param type: type
    :param message: message
 
-mainActivityClassName
-^^^^^^^^^^^^^^^^^^^^^
-
 .. java:method:: public String mainActivityClassName()
    :outertype: ISDKCore
 
@@ -46,18 +41,12 @@ mainActivityClassName
 
    :return: the main activity class name
 
-performSetup
-^^^^^^^^^^^^
-
 .. java:method:: public void performSetup(Context context)
    :outertype: ISDKCore
 
-   Called when the SDK is initialized Do any customization here like Sdk.alwaysShowLastNotification: \ ``Sdk.alwaysShowLastNotification(false);``\
+   Called when the SDK is initialized Do any customization here like TendartsSDK.alwaysShowLastNotification: \ ``TendartsSDK.alwaysShowLastNotification(false);``\
 
    :param context: context to be used, for example to get string resources
-
-remoteLogException
-^^^^^^^^^^^^^^^^^^
 
 .. java:method:: public void remoteLogException(Exception e)
    :outertype: ISDKCore

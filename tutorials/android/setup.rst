@@ -1,26 +1,25 @@
 .. _android-sdk-setup:
 
-
-
 =================
 Android SDK Setup
 =================
 
-The following instructions will guide you through the process of
-implementing 10 Darts SDK in your application, the instructions are
-based on *Android Studio.*
-
+The following instructions will guide you through the process of implementing
+10darts SDK in your application. These instructions are based
+on *Android Studio*.
 
 
 .. note::
-    Note that the target devices should have Google Play services installed
-    and updated on it for the proper operation of this SDK
+
+    Please note that your users’ devices should have Google Play services
+    installed and updated for the proper operation of this SDK
 
 .. warning::
 
     Before proceeding you should have created a GCM project in your firebase
-    console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and
+    console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and
     follow the steps.
+
 
 
 Configure the application
@@ -33,25 +32,26 @@ Add the following line to your app build.gradle:
 
 * In android section:
 
-.. code::
+.. code-block:: groovy
 
-        packagingOptions {
-            pickFirst 'META-INF/*'
-        }
-         defaultConfig
-            {
-                manifestPlaceholders = [tendarts_sdk_access_token: "YOUR ACCESS TOKEN",
-                                        tendarts_sdk_client_class:"YOUR CLIENT CLASS",
-                                        gcm_sender_id: "YOUR GCM SENDER ID"]
-            }
+    packagingOptions {
+        pickFirst 'META-INF/*'
+    }
+
+    defaultConfig
+    {
+        manifestPlaceholders = [
+            tendarts_sdk_access_token: "YOUR ACCESS TOKEN",
+            tendarts_sdk_client_class:"YOUR CLIENT CLASS",
+            gcm_sender_id: "YOUR GCM SENDER ID"
+        ]
+    }
 
 * In dependencies section:
 
-.. code::
+.. code-block:: groovy
 
     compile  'com.10darts:sdk:1.19'
-
-
 
 
 -  **tendarts\_sdk\_access\_token**: your access token to 10darts (API Key)
@@ -61,9 +61,7 @@ Add the following line to your app build.gradle:
    of :ref:`Google Cloud Messaging <faq-gcm>`
 
 
-
 .. _android-sdk-client:
-
 
 2. Create a client class whose superclass is TendartsClient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,25 +71,22 @@ Add the following line to your app build.gradle:
 
   Create class
 
-And implement the methods, default implementation it’s ok for
-starting but you should add your own functionality as needed.
+And implement the methods, default implementation it’s ok
+for starting but you should add your own functionality as needed.
 
 .. figure:: /_static/images/client2.png
   :alt: Implement methods
 
-  Implement methods
+.. code-block:: java
 
-.. code:: java
+    @Override
+    public String mainActivityClassName()
+    {
+        return MainActivity.class.getName();
+    }
 
-   @Override
-   public String mainActivityClassName()
-   {
-       return MainActivity.class.getName();
-   }
-
-Don't forget to add the full qualified name of this class to **tendarts_sdk_client_class** on the manifest placeholders
-
-
+Don't forget to add the full qualified name of this class to
+**tendarts_sdk_client_class** on the manifest placeholders.
 
 Add your custom functionality as needed, please refer to :ref:`Dartslient class documentation <android-sdk-classes-client>` for further documentation
 
@@ -102,17 +97,17 @@ Add your custom functionality as needed, please refer to :ref:`Dartslient class 
 
 Forward onCreate:
 
-.. code:: java
+.. code-block:: java
 
-
-        TendartsSDK.onCreate(savedInstanceState, this, new TendartsSDK.ILocationAlerter()
-       {
-           @Override
-           public void alertNotEnabled(Activity activity)
-           {
-             //See Adding Geolocation if you are using this feature otherwise leave empty function.
-           }
-       });
+    TendartsSDK.onCreate(savedInstanceState, this, new TendartsSDK.ILocationAlerter()
+    {
+        @Override
+        public void alertNotEnabled(Activity activity)
+        {
+            // See Adding Geolocation if you are using this
+            // feature otherwise leave empty function.
+        }
+    });
 
 
 And onResume:
@@ -125,14 +120,14 @@ And onResume:
 
 .. warning::
 
-    If you are targetting Android API level higher than 22 you showuld follow :ref:`Targetting Android API level >= 23 <android-target-api>`
+    If you are targetting Android API level higher than 22 you should follow :ref:`Targetting Android API level >= 23 <android-target-api>`
 
 
 .. note::
 
-    See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing locattion accuracy and receiving location updates.
+    See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing location accuracy and receiving location updates.
 
 
 .. note::
 
-    By default when a notification is clicked the contained deep link is launched, check :ref:`Deep linking <faq-deep-link>`
+    When a users clicks on the notification he launches the deep link, check :ref:`Deep linking <faq-deep-link>`
