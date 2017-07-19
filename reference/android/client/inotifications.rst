@@ -99,3 +99,20 @@ Methods
    Start the proper intent to show notification list, the user has clicked on stacked notification.
 
    :param context: context to be used
+
+    .. java:type:: public interface IBackgroundCustomNotificationLoaderListener
+       :outertype: INotifications
+
+       To provide asynchronous custom notifications loading. You must call either revertToStandardNotification or customNotificationsReady once.
+
+    .. java:method::  void customNotificationsReady(Bitmap bitmap)
+       :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
+
+       All asynchronous loading and manipulations done, remote views are ready to use.
+
+       :param bitmap: if provided this bitmap will be used in NotificationBuilder.setLargeIcon()
+
+    .. java:method::  void revertToStandardNotification()
+       :outertype: INotifications.IBackgroundCustomNotificationLoaderListener
+
+       Loading failed and should fallback to standard notification.

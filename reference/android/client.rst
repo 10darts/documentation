@@ -12,7 +12,6 @@ Client namespace contains all the functionality the client should use.
 
     client/isdkcore
     client/inotifications
-    client/ibackgroundcustomnotificationloaderistener
     client/iuistrings
     client/igeolocation
 
