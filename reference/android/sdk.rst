@@ -287,7 +287,7 @@ Methods
 .. java:method:: public static GeoLocation getCurrentGeoLocation()
     :outertype: TendartsSDK
 
-    Call this method to get the current geolocation
+    Call this method to get the current geolocation.
 
     :return: the current geolocation
 
@@ -373,7 +373,7 @@ Methods
 .. java:method:: public static void registerUser(String email, String firstName, String lastName, String password, final IUserResponseObserver observer, Context context)
     :outertype: TendartsSDK
 
-    Called to register the user
+    Called to register the user.
 
     :param email: e-mail
     :param firstName: first name
@@ -406,6 +406,6 @@ Methods
         :outertype: TendartsSDK.ILocationAlerter
 
         Alert the user that location is not enabled, good place to open device
-        location settings for the user
+        location settings for the user.
 
         :param parent: could be null.
