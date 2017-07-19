@@ -30,7 +30,7 @@ Importar canales
 Se pueden importar los canales usando ficheros CSV, separados por comas, con las siguientes columnas:
 
 - Token del canal (string).
-- Plataforma (entero, ``android`` para Android, ``ios`` para iOS).
+- Plataforma (entero, ``android`` para Android, ``ios`` para iOS, ``ios_sandbox`` para iOS Sandbox).
 - Posición (string). Ejemplo: ``RID=4326;POINT (-99.0099141 19.335117)``, donde las coordenadas son **longitud y latitud, en ese orden**.
 - Idioma (string), código de dos caracteres del idioma, opcional.
 - Version (string), opcional.

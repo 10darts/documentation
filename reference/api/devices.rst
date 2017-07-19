@@ -56,7 +56,7 @@ Registro de dispositivos
         }
 
     :<json string token: token identificativo del dispositivo para la recepción de pushes
-    :<json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS
+    :<json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS, ``ios_sandbox`` para iOS Sandbox
     :<json string user: usuario al que está asociado el dispositivo
     :<json string model: cadena de descripción del modelo del dispositivo
     :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
@@ -89,7 +89,7 @@ Registro de dispositivos
 
     :>json int id: id interno único del dispositvo
     :>json string code: codigo único del dispositivo, es el que se usa al hacer referencia a este en el resto del API
-    :>json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS
+    :>json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS e ``ios_sandbox`` para iOS Sandbox
     :>json string persona: usuario ('persona') al que está asociado el dispositivo
     :>json string model: cadena de descripción del modelo del dispositivo
     :>json string version: cadena que identifica la versión del cliente que usa el dispositivo
