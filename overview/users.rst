@@ -38,3 +38,21 @@ criterios. Por defecto, están siempre disponibles cuatro tipos de segmentos:
     Zombies
         El segmento **Zombies** se corresponde con los usuarios que no han
         usado tu aplicación desde hace más de 28 días.
+
+
+Importar usuarios
+-----------------
+
+Se pueden importar usuarios usando ficheros CSV, separados por comas, con las siguientes columnas:
+
+- Valor del campo ``client_data`` (string).
+- Nombre de usuario (string), opcional.
+- Correo electrónico (string), opcional.
+- Nombre (string), opcional.
+- Apellidos (string), opcional.
+- Posición (string). Ejemplo: ``RID=4326;POINT (-99.0099141 19.335117)``, donde las coordenadas son **longitud y latitud, en ese orden**, opcional.
+- País (string), código de dos caracteres del país, opcional.
+- Etiquetas (string), lista de etiquetas asociadas al usuario, separadas por ``;``. Ejemplo: ``tag1;tag2``. Opcional.
+
+Los campos opcionales se tienen que dejar en blanco pero ocupando su columna, en caso de que no
+se quieran incluir.
