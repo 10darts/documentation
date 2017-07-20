@@ -43,7 +43,12 @@ criterios. Por defecto, están siempre disponibles cuatro tipos de segmentos:
 Importar usuarios
 -----------------
 
-Se pueden importar usuarios usando ficheros CSV, separados por comas, con las siguientes columnas:
+Se pueden importar usuarios usando ficheros CSV, separados por comas. Este proceso
+sólo **actualizará los usuarios ya existentes en tu base de datos** que tengan
+un valor de ``client_data`` asignado y que se corresponda con el valor proporcionado
+en el fichero de importación.
+
+Los valores de las columnas del fichero son:
 
 - Valor del campo ``client_data`` (string).
 - Nombre de usuario (string), opcional.
