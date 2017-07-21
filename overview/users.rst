@@ -51,7 +51,7 @@ en el fichero de importación.
 Los valores de las columnas del fichero son:
 
 - Valor del campo ``client_data`` (string).
-- Nombre de usuario (string), opcional.
+- Nickname (string), opcional.
 - Correo electrónico (string), opcional.
 - Nombre (string), opcional.
 - Apellidos (string), opcional.
