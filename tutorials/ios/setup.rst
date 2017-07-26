@@ -1,4 +1,5 @@
 .. _ios-sdk-setup:
+
 =============
 iOS SDK Setup
 =============
@@ -7,20 +8,17 @@ The following instructions will guide you through the process of implementing
 10darts SDK in your application. These instructions are based
 on *XCode*.
 
-
-
-. warning::
+.. warning::
 
     Before proceeding you should have created a push certificate for your app
     please refer to : :ref:`Getting push certificate <ios_push_certificate>` and
     follow the steps.
 
-
-
 On iOS 10 add a Notification Service Extension
 ----------------------------------------------
 
 If you are targetting iOS 10 you should add a Notification Service Extension, to do it, go to file --> new --> target:
+
 .. figure:: /_static/images/iosSE.png
    :alt: new Service Extension
 
@@ -34,60 +32,57 @@ When prompted, choose cancel scheme activation:
 .. figure:: /_static/images/iosSE3.png
    :alt: Service Extension name
 
-In your App project Capabilities, enable App gruoups and add a new one
+In your App project Capabilities, enable App gruoups and add a new one.
 
 .. figure:: /_static/images/iosPC1.png
    :alt: New group
 
-Wen prompted put 'group.TendartsSDK' as name, it's important that you use this name
+When prompted put 'group.TendartsSDK' as name, it's important that you use this name,
 
 .. figure:: /_static/images/iosPC2.png
    :alt: New group
 
-In your Service Extension capabilities enable App groups and add the 'group.TendartsSDK' group
+In your Service Extension capabilities enable App groups and add the 'group.TendartsSDK' group.
 
 Replace the contents of NotificationService with:
+
 .. code-block:: Objective-C
- 
-     #import "NotificationService.h"
-     
-     #import <TendartsSDK.h>
-     
-     #import <UIKit/UIKit.h>
-     
-     @interface NotificationService ()
-     
-     @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
-     @property (nonatomic, strong) UNMutableNotificationContent *bestAttemptContent;
 
-     @end
-     
-     @implementation NotificationService
+    #import "NotificationService.h"
+    #import <TendartsSDK.h>
+    #import <UIKit/UIKit.h>
 
-     - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
-     
-     
-     	
-         self.contentHandler = contentHandler;
-         self.bestAttemptContent = [request.content mutableCopy];
-	
-     	[TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler];
-	
+    @interface NotificationService ()
+
+    @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
+    @property (nonatomic, strong) UNMutableNotificationContent *bestAttemptContent;
+
+    @end
+
+    @implementation NotificationService
+
+    - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
+
+        self.contentHandler = contentHandler;
+        self.bestAttemptContent = [request.content mutableCopy];
+
+        [TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler];
+
      }
-     
-     - (void)serviceExtensionTimeWillExpire {     
-         // Called just before the extension will be terminated by the system.
-         // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-     	
-     	[TendartsSDK serviceExtensionTimeWillExpire:self.bestAttemptContent withContentHandler:self.contentHandler];
-         }
-     
-     @end 
+
+    - (void)serviceExtensionTimeWillExpire {
+        // Called just before the extension will be terminated by the system.
+        // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
+
+        [TendartsSDK serviceExtensionTimeWillExpire:self.bestAttemptContent withContentHandler:self.contentHandler];
+    }
+
+    @end
 
 
 .. note::
 
-    The project will not compile until you perform the following step
+    The project will not compile until you perform the following step.
 
 
 Configure the application
@@ -96,19 +91,19 @@ Configure the application
 1. Library
 ~~~~~~~~~~
 
-* Close your Xcode project and open terminal and go to the project directory
-* Run `pod init` in the terminal
-* Edit the `Podfile` that has been created
-* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDK/AppExtension'` to your service extension target
-* Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you shold always open the workspace instead of your project
-* Open the created '.xworkspace' file
+* Close your Xcode project and open terminal and go to the project directory.
+* Run `pod init` in the terminal.
+* Edit the `Podfile` that has been created.
+* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDK/AppExtension'` to your service extension target.
+* Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you should always open the workspace instead of your project.
+* Open the created '.xworkspace' file.
 
 
 2. Add App Capabilities
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Select the root project and enable **Push Notifications** and **Background Modes**, check *Remote Notifications"
- 
+* Select the root project and enable **Push Notifications** and **Background Modes**, check "Remote Notifications".
+
 3. Initialize the SDK
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -118,13 +113,6 @@ Configure the application
 
     [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"your API Key" andConfig:nil];
 
-
-
 .. note::
 
-    See :ref:`Adding Delegates <ios-delegate>` for being called when notifications arrive or when oppened. by default if the notification has a deep likn, it will be launched.
-
-
-
-
-
+    See :ref:`Adding Delegates <ios-delegate>` for being called when notifications arrive or when opened. by default if the notification has a deep link, it will be launched.
