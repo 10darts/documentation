@@ -1,4 +1,4 @@
-.. _ios-push-certificate:
+.. _ios_push_certificate:
 
 ===============================
 Getting an iOS Push Certificate
@@ -73,3 +73,8 @@ Getting an iOS Push Certificate
    :alt: Export Certificate
 
  * Upload the exported .p12 file to your 10 darts console.
+
+
+
+
+
