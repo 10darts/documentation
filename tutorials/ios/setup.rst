@@ -11,7 +11,7 @@ on *XCode*.
 .. warning::
 
     Before proceeding you should have created a push certificate for your app
-    please refer to : :ref:`Getting push certificate <ios_push_certificate>` and
+    please refer to :ref:`Getting push certificate <ios_push_certificate>` and
     follow the steps.
 
 On iOS 10 add a Notification Service Extension
