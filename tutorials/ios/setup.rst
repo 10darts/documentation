@@ -21,6 +21,7 @@ On iOS 10 add a Notification Service Extension
 ----------------------------------------------
 
 If you are targetting iOS 10 you should add a Notification Service Extension, to do it, go to file --> new --> target:
+
 .. figure:: /_static/images/iosSE.png
    :alt: new Service Extension
 
