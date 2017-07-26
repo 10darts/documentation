@@ -159,3 +159,37 @@ Se puede buscar una persona por el username o por el email.
                 }
             ]
         }
+
+Devices de una persona
+----------------------
+
+.. http:get:: /api/v1/personas/(string:code)/devices/
+
+    **Ejemplo de petición**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/personas/IECwPN/devices/ HTTP/1.1
+
+    **Ejemplo de respuesta**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "count": 1,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "token": "...",
+                    "platform": "android",
+                    "position": {
+                    "type": "Point",
+                        "coordinates": [-123.0208, 44.0489]
+                    }
+                }
+            ]
+        }
