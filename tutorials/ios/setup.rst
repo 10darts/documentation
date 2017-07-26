@@ -9,21 +9,16 @@ The following instructions will guide you through the process of implementing
 on *XCode*.
 
 
-
-. warning::
+.. warning::
 
     Before proceeding you should have created a push certificate for your app
-    please refer to : :ref:`Getting push certificate <ios_push_certificate>` and
+    please refer to :ref:`Getting push certificate <ios_push_certificate>` and
     follow the steps.
-
-
 
 On iOS 10 add a Notification Service Extension
 ----------------------------------------------
 
-If you are targetting
-
-
+If you are targeting.
 
 Configure the application
 -------------------------
@@ -31,15 +26,12 @@ Configure the application
 1. Library
 ~~~~~~~~~~
 
-* Close your Xcode project and open terminal and go to the project directory
-* Run `pod init` in the terminal
+* Close your Xcode project and open terminal and go to the project directory.
+* Run `pod init` in the terminal.
 * Edit the `Podfile` that has been created
-* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDK/AppExtension'` to your service extension target
-* Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you shold always open the workspace instead of your project
-* Open the created '.xworkspace' file
+* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDK/AppExtension'` to your service extension target.
+* Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you should always open the workspace instead of your project.
+* Open the created '.xworkspace' file.
 
 
-
-ojo onnotificationreceived, poner delegado tanto en app como en service
-
-
+ .. ojo onnotificationreceived, poner delegado tanto en app como en service
