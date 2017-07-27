@@ -119,6 +119,12 @@ Configure the application
 Replace `api_key` with your Api Key
 
 
+4. Add description strings on the app Info.plist
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As 10darts uses location services you should add  NSLocationWhenInUseUsageDescription key with a string value explaining to the user how the app uses the location.
+
+
 .. note::
 
     See :ref:`Adding Delegates <ios-delegate>` for being called when notifications arrive or when opened. by default if the notification has a deep link, it will be launched.
