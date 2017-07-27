@@ -69,3 +69,8 @@ button.button, input[type=submit].button {
     border-color: transparent;
     color: #fff;
 }
+
+li.toctree-l1 > a.current, li.toctree-l2 > a.current {
+  color: rgba(191, 52, 45, 1);
+  font-weight: bold;
+}
