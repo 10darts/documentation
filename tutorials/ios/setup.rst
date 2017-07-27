@@ -66,7 +66,7 @@ Replace the contents of NotificationService with:
         self.contentHandler = contentHandler;
         self.bestAttemptContent = [request.content mutableCopy];
 
-        [TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler];
+        [TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler  withApiKey:@"api_key"];
 
      }
 
@@ -79,6 +79,7 @@ Replace the contents of NotificationService with:
 
     @end
 
+Replace ´api_key´ with your Api Key
 
 .. note::
 
@@ -111,6 +112,8 @@ Configure the application
 
 .. code-block:: Objective-C
 
+    #import <TendartsSDK.h>
+    ...
     [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"your API Key" andConfig:nil];
 
 .. note::
