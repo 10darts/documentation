@@ -1,22 +1,22 @@
-========
-Opciones
-========
+=======
+Options
+=======
 
 Puedes consular :ref:`aquí <options>` la lista de opciones disponibles
 para ser personalizadas.
 
-Listar opciones
----------------
+Options lists
+-------------
 
 .. http:get:: /api/v1/options/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/options/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -38,12 +38,12 @@ Listar opciones
           ]
         }
 
-Actualizar opción
------------------
+Update option
+-------------
 
 .. http:patch:: /api/v1/options/(string: name)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -54,7 +54,7 @@ Actualizar opción
           "value": "1"
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

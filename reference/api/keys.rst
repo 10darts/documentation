@@ -2,15 +2,15 @@
 Keys
 ====
 
-El sistema permite almacenar **información arbitraria** en formato de clave/valor asociada
-tanto a dispositivos como a usuarios.
+The system allows to storage **arbitrary information** in a key/value format
+linked to the devices and the users.
 
-Añadir clave/valor a un dispositivo
------------------------------------
+Add value / key to device
+-------------------------
 
 .. http:post:: /api/v1/keys/devices/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -27,17 +27,17 @@ Añadir clave/valor a un dispositivo
         }
 
 
-    :<json object key: objeto JSON con la clave ``name`` indicando el nombre de la clave que se quiere asociar, **obligatorio**
-    :<json int type: en caso de indicar un valor asociado, el tipo de este valor, siendo 0: float, 1: int, 2: string, 3: bool
-    :<json string value: representación en cadena de texto del valor que se quiere asociar a la key
-    :<json string device: referencia al dispositivo al que se quiere asociar el valor
+    :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
+    :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :<json string value: text value chain representation to be linked to the key.
+    :<json string device: device linked to the value
 
-Añadir clave/valor a un usuario
--------------------------------
+Add value / key to user
+-----------------------
 
 .. http:post:: /api/v1/keys/personas/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -54,29 +54,31 @@ Añadir clave/valor a un usuario
         }
 
 
-    :<json object key: objeto JSON con la clave ``name`` indicando el nombre de la clave que se quiere asociar, **obligatorio**
-    :<json int type: en caso de indicar un valor asociado, el tipo de este valor, siendo 0: float, 1: int, 2: string, 3: bool
-    :<json string value: representación en cadena de texto del valor que se quiere asociar a la key
-    :<json string users: referencia al usuario al que se quiere asociar el valor
+        :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
+        :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+        :<json string value: text value chain representation to be linked to the key.
+        :<json string device: persona linked to the value
 
 .. note::
+
     En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
     almacenar claves como si fueran etiquetas al uso.
 
-Sugerencia de keys
-------------------
+Keys suggestion
+---------------
 
 .. http:get:: /api/v1/keys/personas/?query=(string: query)
 
-    Para ``keys`` que estén asignadas solo a ``personas``.
+    For ``keys`` only associated to ``personas``.
 
-    **Ejemplo de petición**:
+
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/keys/personas/?query=foo HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -101,15 +103,15 @@ Sugerencia de keys
 
 .. http:get:: /api/v1/keys/devices/?query=(string: query)
 
-    Para ``keys`` que estén asignadas solo a ``devices``.
+    For ``keys`` linked only to ``devices``.
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/keys/devices/?query=foo HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -134,15 +136,15 @@ Sugerencia de keys
 
 .. http:get:: /api/v1/keys/?query=(string: query)
 
-    Para cualquier ``keys`` que el usuario haya registrado.
+    For any ``keys`` registered by the user.
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/keys/?query=foo HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

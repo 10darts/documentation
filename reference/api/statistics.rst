@@ -1,13 +1,13 @@
-============
-Estadísticas
-============
+=========
+Analytics
+=========
 
 Cohorts
 -------
 
 .. http:get:: /api/v1/cohorts/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -16,7 +16,7 @@ Cohorts
     :query origin_date: fecha de inicio de la semana donde los devices se han creado (eg: 2017-04-11)
     :query target_date: fecha de inicio de la semana donde analizar la actividad de los devices creados (eg: 2017-04-11)
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -27,12 +27,12 @@ Cohorts
             "cohort": 9.345
         }
 
-Métricas
---------
+Analytics
+---------
 
 .. http:get:: /api/v1/metrics/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -50,7 +50,7 @@ Métricas
     :query accumulated: indicar a ``true`` para que los datos que se muestren sean los totales acumulados hasta la fecha indicada
     :query fields: lista de campos que se quiere incluir en la respuesta, por defecto, se incluyen todos (e.g. ``notifications=unique_devices,accesses,devices,alive_devices,active_devices,notifications,personas,alive_personas``)
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

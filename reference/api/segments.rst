@@ -1,19 +1,19 @@
 ============
-Segmentación
+Segmentation
 ============
 
-Listar segmentos de *devices*
------------------------------
+*Device* segments listing
+-------------------------
 
 .. http:get:: /api/v1/segments/devices/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/segments/devices/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -56,18 +56,18 @@ Listar segmentos de *devices*
           ]
         }
 
-Listar segmentos de *personas*
-------------------------------
+*User* segments listing
+-----------------------
 
 .. http:get:: /api/v1/segments/personas/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/segments/personas/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -110,13 +110,12 @@ Listar segmentos de *personas*
           ]
         }
 
-
-Crear segmentos de *devices*
------------------------------
+Create *device* segments
+------------------------
 
 .. http:post:: /api/v1/segments/devices/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -144,12 +143,12 @@ Crear segmentos de *devices*
     :<json string client_data: cadena de texto con los valores de ``client_data`` de los devices seleccionadas para el segmento, separados por comas
 
 
-Crear segmentos de *personas*
------------------------------
+Create *user* segments
+----------------------
 
 .. http:post:: /api/v1/segments/personas/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 

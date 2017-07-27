@@ -1,13 +1,13 @@
-============
-Aplicaciones
-============
+====
+Apps
+====
 
-Crear aplicación
+Create app
 ----------------
 
 .. http:post:: /api/v1/applications/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -20,7 +20,7 @@ Crear aplicación
             "platform_credential": "..."
         }
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -34,12 +34,12 @@ Crear aplicación
             "platform_credential": "..."
         }
 
-    :<json string name: nombre de la aplicación, ha de ser único y sin espacios, **obligatorio**
-    :<json string platform: tipo de plataforma, "GCM", "APNS" o "APNS_SANDBOX"
-    :<json string platform_principal: para APNS y APNS_SANDBOX se corresponde con el certificado SSL, y no se aplica en GCM
-    :<json string platform_credential: para APNS y APNS_SANDBOX se corresponde con el la clave privada, y con GCM se corresponde con la *API Key*
+    :<json string name: app name, must be unique and with no spaces, **compulsory**
+    :<json string platform: platform type, «GCM», «APNS» or «APNS_SANDBOX»
+    :<json string platform_principal: for APNS and APNS_SANDBOX it is equivalent to SSL certificate, and it does not apply GCM
+    :<json string platform_credential: for APNS y APNS_SANDBOX it is equivalent to private key and with GCM and with *API Key*
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -55,19 +55,19 @@ Crear aplicación
             "platform_application_arn": "..."
         }
 
-Listar aplicaciones
--------------------
+App listing
+-----------
 
 .. http:get:: /api/v1/applications/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/applications/ HTTP/1.1
 
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -90,19 +90,19 @@ Listar aplicaciones
             ]
         }
 
-Borrar aplicaciones
--------------------
+Delete apps
+-----------
 
 .. http:delete:: /api/v1/applications/(int: id)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         DELETE /api/v1/applications/1/ HTTP/1.1
 
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

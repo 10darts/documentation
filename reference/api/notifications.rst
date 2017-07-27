@@ -2,20 +2,20 @@
 Notifications
 =============
 
-Listar notificaciones
-----------------------
+Notifications listing
+---------------------
 
 .. http:get:: /api/v1/notifications/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/notifications/ HTTP/1.1
 
-    :query search: cadena para realizar una búsqueda sobre el listado sobre el título y el mensaje
+    :query search: search chain to search in title and message list.
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -51,7 +51,7 @@ Crear una notificación
 
 .. http:post:: /api/v1/notifications/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -68,7 +68,7 @@ Crear una notificación
             }
         }
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -86,7 +86,7 @@ Crear una notificación
             "radius": 10000
         }
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -103,36 +103,40 @@ Crear una notificación
             ]
         }
 
-    :<json string message: texto de la notificación **obligatorio**
-    :<json string deep_link: enlace profundo
-    :<json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
-    :<json string destination_code: código único que identifica el contenido de destino de la notificación
-    :<json string language: idioma de los dispositivos a los que enviar la notificación
-    :<json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
-    :<json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
-    :<json string country: código de dos letras del país en el que tienen que estar registrados los devices a los que se quiere mandar la notificación
-    :<json list users: lista de usuarios a los que la notificación debe ser enviada
-    :<json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
-    :<json GeoJSON center: ``Point`` que representa el centro de la circunferencia donde la notificación es efectiva
-    :<json int radius: radio de la circunferencia donde la notificación es efectiva
-    :<json string distribution_algorithm: define el algoritmo de distribución
-    :<json GeoJSON ripple_center: define el centro del efecto Geo Ripple (solo para algoritmo de Geo Ripple)
-    :<json int ripple_initial_radius: define el radio por defecto del efecto Geo Ripple (solo para algoritmo de Geo Ripple)
-    :<json bool is_silent: marcar la notificación como silenciosa
-    :<json bool is_confirmation_needed: indicar que la notificación requiere confirmación
-    :<json bool is_sample: indicar que la notificación hará una selección de devices aleatoria
-    :<json bool sample_size: indica el tamaño de la muestra aleatoria
-    :<json float weight: indica el *peso* del contenido asociado a la notificación
-    :<json bool has_churn_check: indicar que la notificación hará la comprobación de *churn*
-    :<json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
-    :<json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios, por defecto se toma el valor de "device"
-    :<json string client_data: cadena de texto con los valores de ``client_data`` de las personas a las que se quiere enviar la notificación, separados por comas
+    :<json string message: notification text, **compulsory**.
+    :<json string title: notification title.
+    :<json binary image: content image.
+    :<json binary image: content image URL.
+    :<json string deep_link: hyperlink to a web content.
+    :<json string destination_type: user string that represents the notification link type of content.
+    :<json string destination_code: unique code that represents the notification link type of content.
+    :<json string language: devices languages that will receive the notifications to.
+    :<json list platforms: platforms to send the notifications to (e.g: ``["android", "ios"]``).
+    :<json string version: app version to send the notifications to.
+    :<json string country: country code (two letters) where the devices need to be register to receive the notifications.
+    :<json list personas: users list that will receive the notification.
+    :<json GeoJSON areas: ``MultiPolygon``  including the area where the notification will be delivered.
+    :<json GeoJSON center: ``Point`` that marks the center of the circle where the notification will be delivered.
+    :<json int radius: circle radius where the notification will be delivered.
+    :<json string distribution_algorithm: applicable distribution algorithm.
+    :<json GeoJSON ripple_center: defines the center of the Geo-Ripple (only for Geo Ripple algorithm).
+    :<json int ripple_initial_radius: defines the radius of the Geo-Ripple (only for Geo Ripple algorithm).
+    :<json bool is_silent: defines a silent notification.
+    :<json bool is_confirmation_needed: the notification requires a confirmation receipt.
+    :<json bool is_sample: the notification will do a device random selection.
+    :<json bool sample_size: defines the size of the random sample.
+    :<json float weight: defines the *weight* of the content linked to the notification.
+    :<json bool has_churn_check: defines that the notification will check the *churn*.
+    :<json list tags: *keys8 list that the target users’ devices that receive the notifications have.
+    :<json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
+    :<json string client_data: text chain with the ``client_data`` values of the users targeted in the notification separated by commas.
 
     .. warning::
 
-        Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
+        When the ``image`` field is included the request should go in *multipart* format.
 
-    **Ejemplo de respuesta**:
+
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -159,37 +163,41 @@ Crear una notificación
             "audience": 1000
         }
 
-    :>json int id: identificador interno único de la notificación
-    :>json string code: identificador único de la notificación
-    :>json string message: texto de la notificación
-    :>json binary image: imagen para usar en el contenido
-    :>json string deep_link: enlace profundo
-    :>json string destination_type: cadena única que representa el tipo del contenido de destino de la notificación
-    :>json string destination_code: código único que identifica el contenido de destino de la notificación
-    :>json string language: idioma de los dispositivos a los que enviar la notificación
-    :>json list platforms: plataformas a la que enviar la notificación (e.g: ``["android", "ios"]``)
-    :>json string version: versión del cliente que deben de tener los dispositivos a los que se envía la notificación
-    :>json string country: código de dos letras del país en el que tienen que estar registrados los devices a los que se quiere mandar la notificación
-    :>json list users: lista de usuarios a los que la notificación debe ser enviada
-    :>json GeoJSON areas: ``MultiPolygon`` con las areas donde la notificación ha de ser efectiva
-    :>json GeoJSON center: ``Point`` que representa el centro de la circunferencia donde la notificación es efectiva
-    :>json int radius: radio de la circunferencia donde la notificación es efectiva
-    :>json bool is_ripple: activar el 'ripple effect' para esta notificación
-    :>json bool is_silent: marcar la notificación como silenciosa
-    :>json bool is_confirmation_needed: indicar que la notificación requiere confirmación
-    :>json bool is_sample: indicar que la notificación hará una selección de devices aleatoria
-    :>json bool sample_size: indica el tamaño de la muestra aleatoria
-    :>json float weight: indica el *peso* del contenido asociado a la notificación
-    :>json list tags: lista de *keys* que han de tener los devices a los que se quiere enviar la notificación
-    :>json string tags_content_type: puede ser "device" o "persona", para seleccionar si los filtros de tags se aplican a dispositivos o a usuarios
-    :>json int audience: número estimado de destinatarios de la notificación
+    :>json int id: notification unique internal id.
+    :>json string code: notification unique identifier code.
+    :>json string message:  notification text.
+    :>json binary image: content image.
+    :>json binary image: content image URL.
+    :>json string deep_link: hyperlink to a web content.
+    :>json string destination_type: user string that represents the notification link type of content.
+    :>json string destination_code: unique code that represents the notification link type of content.
+    :>json string language: devices languages that will receive the notifications to.
+    :>json list platforms: platforms to send the notifications to (e.g: ``["android", "ios"]``).
+    :>json string version: app version to send the notifications to.
+    :>json string country: country code (two letters) where the devices need to be register to receive the notifications.
+    :>json list personas: users list that will receive the notification.
+    :>json GeoJSON areas: ``MultiPolygon``  including the area where the notification will be delivered.
+    :>json GeoJSON center: ``Point`` that marks the center of the circle where the notification will be delivered.
+    :>json int radius: circle radius where the notification will be delivered.
+    :>json string distribution_algorithm: applicable distribution algorithm.
+    :>json GeoJSON ripple_center: defines the center of the Geo-Ripple (only for Geo Ripple algorithm).
+    :>json int ripple_initial_radius: defines the radius of the Geo-Ripple (only for Geo Ripple algorithm).
+    :>json bool is_silent: defines a silent notification.
+    :>json bool is_confirmation_needed: the notification requires a confirmation receipt.
+    :>json bool is_sample: the notification will do a device random selection.
+    :>json bool sample_size: defines the size of the random sample.
+    :>json float weight: defines the *weight* of the content linked to the notification.
+    :>json bool has_churn_check: defines that the notification will check the *churn*.
+    :>json list tags: *keys8 list that the target users’ devices that receive the notifications have.
+    :>json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
+    :>json int audience: estimated users number receiving the notification.
 
-Actualizar notificación
------------------------
+Update notification
+-------------------
 
 .. http:patch:: /api/v1/notifications/(string:code)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -200,26 +208,25 @@ Actualizar notificación
             "weight": 12.0
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
         HTTP/1.1 200 OK
 
-
-Actualizar audiencia de la notificación
+Update notification audience
 ----------------------------------------
 
 .. http:patch:: /api/v1/notifications/(string:code)/update_audience/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         PATCH /api/v1/notifications/(string:code)/update_audience/ HTTP/1.1
         Content-Type: application/json
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -243,35 +250,35 @@ Actualizar audiencia de la notificación
             "audience": 1000
         }
 
-Enviar notificación
--------------------
+Send notification
+-----------------
 
 .. http:post:: /api/v1/notifications/(string:code)/send/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         POST /api/v1/notifications/(string:code)/send/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
         HTTP/1.1 200 OK
 
-Reintentar notificación
------------------------
+Retry notification
+------------------
 
 .. http:post:: /api/v1/notifications/(string:code)/retry/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         POST /api/v1/notifications/(string:code)/retry/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -298,18 +305,18 @@ Reintentar notificación
         }
 
 
-Copiar notificación
--------------------
+Copy notification
+-----------------
 
 .. http:post:: /api/v1/notifications/(string:code)/copy/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         POST /api/v1/notifications/(string:code)/copy/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -335,15 +342,16 @@ Copiar notificación
             "weight": 0.0
         }
 
-Crear una alternative a una notificación
-----------------------------------------
+Alternative notification creation
+---------------------------------
 
-Se puede crear una alternativa de contenido para una notificación ya creada. Los pushes se distribuirán de
-manera uniforme entre todas las alternativas.
+You can create a content alternative for an already existing notification.
+The push notification will be distributed evenly among all alternatives.
+
 
 .. http:post:: /api/v1/content_alternatives/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -355,7 +363,7 @@ manera uniforme entre todas las alternativas.
             "notification": "/api/v1/notifications/w58Xar/"
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -367,25 +375,27 @@ manera uniforme entre todas las alternativas.
             "notification": "/api/v1/notifications/w58Xar/"
         }
 
-    :>json string message: texto alternativo de la notificación, **obligatorio**
-    :>json string notification: URI de la notificación de la cual se quiere crear la alternativa, **obligatorio**
-    :>json binary image: imagen para usar en la alternativa
+    :>json string message: alternative notification text, **compulsory**.
+    :>json string notification: alternative notification URL, **compulsory**.
+    :>json binary image: alternative notification image.
+    :>json binary image_url: alternative notification image URL.
 
     .. warning::
-        Si se incluye el campo ``image`` la petición ha de ir en formato *multipart*.
 
-Obtener alternativas de contenido
----------------------------------
+        If ``image`` field is included the request needs to be in *multipart* format.
+
+Obtain content alternatives
+---------------------------
 
 .. http:get:: /api/v1/content_alternatives/?notification=(string: code)
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/content_alternatives/?notification=w58Xar HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -412,21 +422,21 @@ Obtener alternativas de contenido
         }
 
 
-Pasos de distribución de una notificación
------------------------------------------
+Notification distribution steps
+-------------------------------
 
 Para cada una de las notificaciones se pueden obtener los pasos que han dado para realizar la
 distribución de esta.
 
 .. http:get:: /api/v1/notifications/(string:code)/steps/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/notifications/sPAqib/steps/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -491,21 +501,20 @@ distribución de esta.
             ]
         }
 
-Log de comprobaciones de relevancia
------------------------------------
+Relevance testing log
+---------------------
 
-Los logs de comprobación de relevancia se pueden obtener para una notificación o para un paso de
-distribución.
+The relevance testing logs can be obtained for a notification or for a distribution step.
 
 .. http:get:: /api/v1/notifications/(string:code)/logs/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/notifications/sPAqib/logs/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -592,13 +601,13 @@ distribución.
 
 .. http:get:: /api/v1/steps/(int:id)/logs/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/steps/1/logs/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -683,23 +692,23 @@ distribución.
             ]
         }
 
-Métricas de la notificación
----------------------------
+Notification metrics
+--------------------
 
 .. http:get:: /api/v1/notifications/(string:code)/metrics/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/notifications/sPAqib/metrics/ HTTP/1.1
 
-    :query start_datetime: fecha de comienzo (eg: 2017-04-11T00:00:00)
-    :query finish_datetime: fecha de fin (eg: 2017-04-15T23:59:59)
-    :query days: número de días que pasan entre resultado y resultado
-    :query hours: número de horas que pasan entre resultado y resultado
+    :query start_datetime: starting date (eg: 2017-04-11T00:00:00).
+    :query finish_datetime: ending date (eg: 2017-04-15T23:59:59).
+    :query days: number of days between results.
+    :query hours: number of hours between results.
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

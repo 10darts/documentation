@@ -2,10 +2,8 @@
 API HTTP RESTful
 ================
 
-**10darts** dispone de un **HTTP API RESTful** completo con el que puedes
-acceder a todas las funciones de la plataforma.
-
-La dirección base para llamar a los recursos siempre será::
+**10darts** provides you with a complete **HTTP API RESTful** to access to all
+the platform’s features. The base URL for all the APIs is::
 
     https://10darts.com
 

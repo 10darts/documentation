@@ -2,18 +2,18 @@
 Devices
 =======
 
-Plataformas
------------
+Platforms
+---------
 
 .. http:get:: /api/v1/platforms/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/platforms/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -34,12 +34,12 @@ Plataformas
             ]
         }
 
-Registro de dispositivos
-------------------------
+Device register
+---------------
 
 .. http:post:: /api/v1/devices/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -55,17 +55,16 @@ Registro de dispositivos
             }
         }
 
-    :<json string token: token identificativo del dispositivo para la recepción de pushes
-    :<json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS, ``ios_sandbox`` para iOS Sandbox
-    :<json string user: usuario al que está asociado el dispositivo
-    :<json string model: cadena de descripción del modelo del dispositivo
-    :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
-    :<json string language: cadena de dos caracteres que identifica el idioma del dispositivo
-    :<json string country: código de dos letras que identifica el país del dispositivo
-    :<json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
-    :<json string persona: URI de la persona con la que vincular el dispositivo
+    :<json string token: identification device token needed for push reception.
+    :<json string platform: device platform, ``android``, ``ios`` or ``ios_sandbox``.
+    :<json string model: device model description string.
+    :<json string version: app version description string.
+    :<json string language: language description string with 2 characters.
+    :<json string country: country description string with 2 characters.
+    :<json GeoJSON position: device positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
+    :<json string persona: user URI with which the device will be linked
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -87,37 +86,38 @@ Registro de dispositivos
             "persona": "/api/v1/personas/IECwPN/"
         }
 
-    :>json int id: id interno único del dispositvo
-    :>json string code: codigo único del dispositivo, es el que se usa al hacer referencia a este en el resto del API
-    :>json string platform: plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS e ``ios_sandbox`` para iOS Sandbox
-    :>json string persona: usuario ('persona') al que está asociado el dispositivo
-    :>json string model: cadena de descripción del modelo del dispositivo
-    :>json string version: cadena que identifica la versión del cliente que usa el dispositivo
-    :>json string language: cadena que identifica el idioma del dispositivo
-    :>json string country: código de dos letras que identifica el país del dispositivo
-    :>json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+    :>json int id: unique internal device id
+    :>json string code: unique device code, is the one used to refer to that device elsewhere in the API.
+    :>json string platform: device platform, ``android``, ``ios`` or ``ios_sandbox``.
+    :>json string persona: user linked to the device.
+    :>json string model: device model description string
+    :>json string version: app version description string
+    :>json string language: language description string
+    :>json string country: country description string with 2 characters
+    :>json GeoJSON position: device positioning where coordinates are defined as follows: **[longitud, latidud]**
 
 .. note::
 
-    Si no se indica una persona en la petición de creación de device, esta se
-    creará de forma automática y se devolverá en la respuesta de creación.
+    Si no se indica un usuario (campo ``persona``) en la petición de creación
+    de device, este se creará de forma automática y se devolverá en la
+    respuesta de creación.
 
 .. note::
 
     Si no se especifica un país, se tomara automáticamente desde las coordenadas
     que se introducen. Si no se dan unas coordenadas, se usará la IP para
-    establecer el país del dispostivo.
+    establecer el país del dispositivo.
 
 .. _api-devices-update:
 
-Actualizar dispositivo
-----------------------
+Device update
+-------------
 
-Para actualizar la posición, el usuario asociado u otros datos.
+Update position, user or other data.
 
 .. http:patch:: /api/v1/devices/(string:code)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -132,14 +132,14 @@ Para actualizar la posición, el usuario asociado u otros datos.
                 }
         }
 
-    :<json string persona: usuario ('persona') al que está asociado el dispositivo
-    :<json string model: cadena de descripción del modelo del dispositivo
-    :<json string version: cadena que identifica la versión del cliente que usa el dispositivo
-    :<json string language: cadena que identifica el idioma del dispositivo
-    :<json bool disabled: booleano que indica si se han desactivado/activado las notificaciones push en el dispositivo
-    :<json GeoJSON position: coordenadas del dispositivo, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+    :<json string persona: user linked to the device.
+    :<json bool disabled: boolean that shows if push notifications have been activated or not in the device.
+    :<json string model: device model description string.
+    :<json string version: app version description string.
+    :<json string language: language description string with 2 characters.
+    :<json GeoJSON position: device positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -147,16 +147,16 @@ Para actualizar la posición, el usuario asociado u otros datos.
 
 .. _api-devices-link:
 
-Enlazar un dispositivo a una persona
+Link a device with a user/individual
 ------------------------------------
 
-Para enlazar un usuario del cliente con el dispositivo, se puede realizar una
-llamada a ``/api/v1/devices/links/`` indicando en el campo de ``client_data``
-el valor que identifica al usuario de forma única para el cliente.
+To link a user with a device you can make a call to ``/api/v1/devices/links/`` 
+specifying in the ``client_data`` field the unique value that identifies
+that user.
 
 .. http:post:: /api/v1/devices/links/
 
-   **Ejemplo de petición**:
+   **Request example**:
 
    .. sourcecode:: http
 
@@ -168,59 +168,10 @@ el valor que identifica al usuario de forma única para el cliente.
            "client_data": "foo"
        }
 
-   :<json string device: URI del device que se quiere actualizar
-   :<json string client_data: referencia única del cliente que identifica la persona
+   :<json string device: device's URI that needs to be updated.
+   :<json string client_data: client's unique reference to identify the user.
 
-   **Ejemplo de respuesta**:
-
-   .. sourcecode:: http
-
-       HTTP/1.1 201 Created
-       Content-Type: application/json
-
-       {
-           "id": 4,
-           "code": "9XzsNm",
-           "platform": "android",
-           "disabled": false,
-           "model": "",
-           "version": null,
-           "language": null,
-           "position": {
-               "type": "Point",
-                   "coordinates": [-123.0208, 44.0489]
-               },
-           "persona": "/api/v1/personas/IECwPN/"
-       }
-
-   .. note::
-
-       La respuesta a esta llamada es el device actualizado con la información de la persona con la que está enlazado.
-
-.. _api-devices-unlink:
-
-Desenlazar un dispositivo a una persona
----------------------------------------
-
-Se desenlazará una persona de un device cuando esta cierre la sesión en la
-aplicación con la que se este integrando.
-
-.. http:post:: /api/v1/devices/unlink/
-
-   **Ejemplo de petición**:
-
-   .. sourcecode:: http
-
-       PATCH /api/v1/devices/unlink/ HTTP/1.1
-       Content-Type: application/json
-
-       {
-           "device": "/api/v1/devices/9XzsNm/"
-       }
-
-   :<json string device: URI del device que se quiere actualizar
-
-   **Ejemplo de respuesta**:
+   **Response example**:
 
    .. sourcecode:: http
 
@@ -245,20 +196,70 @@ aplicación con la que se este integrando.
    .. note::
 
        La respuesta a esta llamada es el device actualizado con la información
-       de una nueva persona anónima con la que está enlazado.
+       del usuario con la que está enlazado.
 
-Buscar dispositivo
-------------------
+.. _api-devices-unlink:
+
+Unlink a device with a user / individual
+----------------------------------------
+
+Se desenlazará un usuario de un device cuando esta cierre la sesión en la
+aplicación con la que se este integrando.
+
+.. http:post:: /api/v1/devices/unlink/
+
+   **Request example**:
+
+   .. sourcecode:: http
+
+       PATCH /api/v1/devices/unlink/ HTTP/1.1
+       Content-Type: application/json
+
+       {
+           "device": "/api/v1/devices/9XzsNm/"
+       }
+
+   :<json string device: device's URI that needs to be updated.
+
+   **Response example**:
+
+   .. sourcecode:: http
+
+       HTTP/1.1 201 Created
+       Content-Type: application/json
+
+       {
+           "id": 4,
+           "code": "9XzsNm",
+           "platform": "android",
+           "disabled": false,
+           "model": "",
+           "version": null,
+           "language": null,
+           "position": {
+               "type": "Point",
+                   "coordinates": [-123.0208, 44.0489]
+               },
+           "persona": "/api/v1/personas/IECwPN/"
+       }
+
+   .. note::
+
+       La respuesta a esta llamada es el device actualizado con la información
+       de un nueva persona anónima con la que está enlazado.
+
+Device search
+-------------
 
 .. http:get:: /api/v1/devices/?(string:field)=(string:value)
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/devices/?token=dummy HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -287,25 +288,25 @@ Buscar dispositivo
             ]
         }
 
-    :query token: valor del token que se quiere buscar
+    :query token: token value under search
 
 .. _api-devices-access:
 
-Registro de acceso
-------------------
+Access register
+---------------
 
-Para registrar la actividad de un dispositivo, se necesita que se realice una llamada
-explícita para que se registre el acceso de un dispositivo.
+Para registrar la actividad de un dispositivo se necesita que se realice una
+llamada explícita para que se registre el acceso de un dispositivo.
 
 .. http:post:: /api/v1/devices/(string:code)/access/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         POST /api/v1/devices/(string:code)/access/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

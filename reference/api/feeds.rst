@@ -2,19 +2,19 @@
 Feeds
 =====
 
-Listar los feeds
-----------------
+Feed listing
+------------
 
 .. http:GET:: /api/v1/feeds/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/feeds/ HTTP/1.1
         Content-Type: application/json
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -39,12 +39,12 @@ Listar los feeds
         }
 
 
-Añadir un nuevo feed
---------------------
+Add a new feed
+--------------
 
 .. http:post:: /api/v1/feeds/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -55,7 +55,7 @@ Añadir un nuevo feed
             "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss"
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -72,12 +72,12 @@ Añadir un nuevo feed
             "disabled": false
         }
 
-Actualizar feed
----------------
+Update feed
+-----------
 
 .. http:patch:: /api/v1/feeds/(string: code)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -88,7 +88,7 @@ Actualizar feed
             "disabled": true
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -105,13 +105,13 @@ Actualizar feed
             "disabled": true
         }
 
-Comprobar elementos del feed
-----------------------------
+Check feed elements
+-------------------
 
 
 .. http:post:: /api/v1/feeds/(string: code)/check/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -122,26 +122,26 @@ Comprobar elementos del feed
             "url": "..."
         }
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
 
         HTTP/1.1 200 OK
 
-Conversor de feeds
-------------------
+Feed converter
+--------------
 
 .. http:GET:: /api/v1/feeds/(string: code)/converter/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/feeds/tO8idg/converter/ HTTP/1.1
         Content-Type: application/json
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

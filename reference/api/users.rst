@@ -2,12 +2,12 @@
 Users
 =====
 
-Registro de persona
--------------------
+User registry
+-------------
 
 .. http:post:: /api/v1/personas/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -31,7 +31,7 @@ Registro de persona
     :<json string country: código de dos letras que identifica el país de la persona
     :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -88,12 +88,12 @@ Registro de persona
         }
 
 
-Actualizar persona
-------------------
+Update user
+-----------
 
 .. http:patch:: /api/v1/personas/(string:code)/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -111,33 +111,32 @@ Actualizar persona
     :<json string last_name: apellido/s del usuario, si se saben
     :<json string country: código de dos letras que identifica el país de la persona
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
         HTTP/1.1 200 OK
 
-
-Buscar persona
---------------
+Search user
+-----------
 
 Se puede buscar una persona por el username o por el email.
 
 .. http:get:: /api/v1/personas/?(string:field)=(string:value)
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/personas/?client_data=client1 HTTP/1.1
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/personas/?email=client1@example.com HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -165,13 +164,13 @@ Devices de una persona
 
 .. http:get:: /api/v1/personas/(string:code)/devices/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
         GET /api/v1/personas/IECwPN/devices/ HTTP/1.1
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 

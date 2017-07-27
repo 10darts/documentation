@@ -13,7 +13,7 @@ que este haya sido pulsado por el usuario.
 
     Marca el push indicado como leído.
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -26,7 +26,7 @@ que este haya sido pulsado por el usuario.
 
     :<json string device: device que realiza la acción
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -36,7 +36,7 @@ que este haya sido pulsado por el usuario.
 
     Marca todos los pushes no leídos como leídos.
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -49,7 +49,7 @@ que este haya sido pulsado por el usuario.
 
     :<json string device: device que realiza la acción
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -63,7 +63,7 @@ al hacer click en la notificación que le llega al dispositivo.
 
 .. http:patch:: /api/v1/pushes/(string:code)/follow/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -76,7 +76,7 @@ al hacer click en la notificación que le llega al dispositivo.
 
     :<json string device: device que realiza la acción
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
@@ -91,7 +91,7 @@ nos dan los sistemas de entrega de notificaciones push, esta notificación sí h
 
 .. http:patch:: /api/v1/pushes/(string:code)/received/
 
-    **Ejemplo de petición**:
+    **Request example**:
 
     .. sourcecode:: http
 
@@ -104,7 +104,7 @@ nos dan los sistemas de entrega de notificaciones push, esta notificación sí h
 
     :<json string device: device que realiza la acción
 
-    **Ejemplo de respuesta**:
+    **Response example**:
 
     .. sourcecode:: http
 
