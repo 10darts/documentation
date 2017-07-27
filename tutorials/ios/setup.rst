@@ -79,7 +79,7 @@ Replace the contents of NotificationService with:
 
     @end
 
-Replace ´api_key´ with your Api Key
+Replace `api_key` with your Api Key
 
 .. note::
 
@@ -114,7 +114,10 @@ Configure the application
 
     #import <TendartsSDK.h>
     ...
-    [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"your API Key" andConfig:nil];
+    [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil];
+
+Replace `api_key` with your Api Key
+
 
 .. note::
 
