@@ -1,6 +1,6 @@
 ==============
 Authentication
-============
+==============
 
 Authentication via Token
 ------------------------

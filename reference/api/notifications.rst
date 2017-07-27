@@ -127,7 +127,7 @@ Crear una notificación
     :<json bool sample_size: defines the size of the random sample.
     :<json float weight: defines the *weight* of the content linked to the notification.
     :<json bool has_churn_check: defines that the notification will check the *churn*.
-    :<json list tags: *keys8 list that the target users’ devices that receive the notifications have.
+    :<json list tags: *keys* list that the target users' devices that receive the notifications have.
     :<json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :<json string client_data: text chain with the ``client_data`` values of the users targeted in the notification separated by commas.
 
@@ -188,7 +188,7 @@ Crear una notificación
     :>json bool sample_size: defines the size of the random sample.
     :>json float weight: defines the *weight* of the content linked to the notification.
     :>json bool has_churn_check: defines that the notification will check the *churn*.
-    :>json list tags: *keys8 list that the target users’ devices that receive the notifications have.
+    :>json list tags: *keys* list that the target users’ devices that receive the notifications have.
     :>json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :>json int audience: estimated users number receiving the notification.
 

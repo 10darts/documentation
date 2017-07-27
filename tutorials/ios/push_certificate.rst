@@ -24,7 +24,7 @@ Getting an iOS Push Certificate
 2. Enable Push Notifications on Developer Site
 ----------------------------------------------
 
-* `Open the apple developer site<https://developer.apple.com/>`_ and go to **Certificates, Identifiers & Profiles**.
+* `Open the apple developer site <https://developer.apple.com/>`_ and go to **Certificates, Identifiers & Profiles**.
 
 .. figure:: /_static/images/iosP1.png
     :alt: Apple developer console

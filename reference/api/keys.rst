@@ -53,16 +53,15 @@ Add value / key to user
             "persona": "/api/v1/personas/9XzsNm/"
         }
 
+    :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
+    :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :<json string value: text value chain representation to be linked to the key.
+    :<json string device: persona linked to the value
 
-        :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
-        :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
-        :<json string value: text value chain representation to be linked to the key.
-        :<json string device: persona linked to the value
+    .. note::
 
-.. note::
-
-    En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
-    almacenar claves como si fueran etiquetas al uso.
+        En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
+        almacenar claves como si fueran etiquetas al uso.
 
 Keys suggestion
 ---------------
