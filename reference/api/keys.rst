@@ -5,8 +5,12 @@ Keys
 The system allows to storage **arbitrary information** in a key/value format
 linked to the devices and the users.
 
-Add value / key to device
+Add key/value to device
 -------------------------
+
+Esta llamada crea un nuevo *key/value* asociado al dispositivo especificado en la llamada. Si
+este dispositivo ya tiene un valor asociado al mismo *key*, entonces esta llamada actualiza
+el valor anterior con el nuevo indicado.
 
 .. http:post:: /api/v1/keys/devices/
 
@@ -32,8 +36,12 @@ Add value / key to device
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: device linked to the value
 
-Add value / key to user
+Add key/value to user
 -----------------------
+
+Esta llamada crea un nuevo *key/value* asociado al usuario especificado en la llamada. Si
+este usuario ya tiene un valor asociado al mismo *key*, entonces esta llamada actualiza
+el valor anterior con el nuevo indicado.
 
 .. http:post:: /api/v1/keys/personas/
 
