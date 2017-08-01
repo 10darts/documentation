@@ -1,8 +1,8 @@
 .. _faq-gcm:
 
-======================
-Google Cloud Messaging
-======================
+===============================
+Getting a Google Server API Key
+===============================
 
 You need to create a GCM / FCM configuration for the SDK to work properly.
 Here’s how to do it:

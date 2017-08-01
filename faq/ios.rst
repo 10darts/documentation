@@ -1,5 +1,3 @@
-.. _ios-sdk:
-
 ===
 iOS
 ===
@@ -8,5 +6,4 @@ iOS
     :maxdepth: 2
     :glob:
 
-    ios/setup
-    ios/ios_delegate
+    ios/*
