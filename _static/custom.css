@@ -4,11 +4,15 @@ div.sphinxsidebarwrapper p.logo {
   margin-bottom: 15px !important;
 }
 
+.section h1, .section h2 {
+  color: rgba(191, 52, 45, 1);
+}
+
 .sphinxsidebarwrapper .caption .caption-text {
   font-weight: bold;
   font-size: 105%;
   text-transform: uppercase;
-  color: #000;
+  color: rgba(75, 192, 192, 1);
 }
 
 .docutils dt {
