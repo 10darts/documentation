@@ -148,6 +148,15 @@ Configure the application
     ...
     [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil];
 
+
+.. code-block:: swift 3
+
+    import TendartsSDK
+    ...
+    TendartsSDK.initTendarts(launchOptions: launchOptions, withAPIKey: "api_key", andConfig: nil);
+
+
+
 Replace `api_key` with your Api Key
 
 
