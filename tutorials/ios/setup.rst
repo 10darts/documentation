@@ -79,6 +79,38 @@ Replace the contents of NotificationService with:
 
     @end
 
+
+.. code-block:: Swift 3
+    
+    import UserNotifications
+    import TendartsSDKSE
+
+    class NotificationService: UNNotificationServiceExtension {
+        var contentHandler: ((UNNotificationContent) -> Void)?
+        var bestAttemptContent: UNMutableNotificationContent?
+
+        override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+            self.contentHandler = contentHandler
+            bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
+            
+            TendartsSDK.didReceive(request, withContentHandler: contentHandler, withApiKey: "api_key")
+        
+        }
+    
+        override func serviceExtensionTimeWillExpire() {
+            // Called just before the extension will be terminated by the system.
+            // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
+            
+            TendartsSDK.serviceExtensionTimeWillExpire(bestAttemptContent, withContentHandler: contentHandler)
+        
+        
+        }
+
+    }
+
+
+
+
 Replace `api_key` with your Api Key
 
 .. note::
@@ -95,7 +127,7 @@ Configure the application
 * Close your Xcode project and open terminal and go to the project directory.
 * Run `pod init` in the terminal.
 * Edit the `Podfile` that has been created.
-* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDK/AppExtension'` to your service extension target.
+* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDKSE'` to your service extension target.
 * Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you should always open the workspace instead of your project.
 * Open the created '.xworkspace' file.
 
@@ -108,13 +140,22 @@ Configure the application
 3. Initialize the SDK
 ~~~~~~~~~~~~~~~~~~~~~
 
-* In your didFinishLaunchingWithOptions init the SDK:
+* In your app's didFinishLaunchingWithOptions init the SDK:
 
 .. code-block:: Objective-C
 
     #import <TendartsSDK.h>
     ...
     [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil];
+
+
+.. code-block:: swift 3
+
+    import TendartsSDK
+    ...
+    TendartsSDK.initTendarts(launchOptions: launchOptions, withAPIKey: "api_key", andConfig: nil);
+
+
 
 Replace `api_key` with your Api Key
 

@@ -4,7 +4,7 @@
 Adding Delegates
 ================
 
-To add your delegate to the SDK you should implement the desired functionality in your delegate class:
+To add your delegate to the SDK you should implement the desired functionality in your delegate class adopting `TendartsDelegate` protocol:
 
 .. code-block:: Objective-C
 
@@ -22,6 +22,23 @@ To add your delegate to the SDK you should implement the desired functionality i
         //your code
     }
 
+
+.. code-block:: swift 3
+
+    func onNotificationReceived(_ notification: TDNotification)
+    {
+        //your code
+    }
+    func onNotificationOpened(_ notification: TDNotification)
+    {
+        //your code
+    }
+    func onLogEvent(withCategory category: String?, type: String?, andMessage message: String?)
+    {
+        //your code
+    }
+
+
 Note that each function is optional to implement.
 
 
@@ -30,6 +47,12 @@ Then you should add your delegate to the SDK:
 .. code-block:: Objective-C
 
     [TendartsSDK setDelegate: self ];
+
+
+.. code-block:: swift 3
+
+    TendartsSDK.setDelegate(self)
+
 
 Add it as soon as possible in your code.
 
@@ -45,6 +68,10 @@ onNotificationReceived:
 .. code-block:: Objective-C
 
     - (void) onNotificationReceived: (TDNotification*_Nonnull) notification
+
+.. code-block:: swift 3
+
+    func onNotificationReceived(_ notification: TDNotification)
 
 Called when a notification is received by the app. On iOS 10 and above this will be called from your service extension, so don't forget to add your delegate there before calling ``[TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler];``.
 
@@ -62,6 +89,10 @@ onNotificationOpenned
 
     - (void) onNotificationOpened: (TDNotification*_Nonnull) notification;
 
+.. code-block:: swift 3
+
+    func onNotificationOpened(_ notification: TDNotification)
+
 Called when the user taps a notification, by default if the notification has a *Deep Link* it will be launched, if not you can use this method to complete the operation.
 
 Parameter: notification
@@ -75,6 +106,10 @@ onLogEventWithCategory,type,andMessage
 .. code-block:: Objective-C
 
     - (void) onLogEventWithCategory:(NSString*_Nullable) category type:(NSString*_Nullable) type andMessage:(NSString *_Nullable) message;
+
+.. code-block:: swift 3
+
+    func onLogEvent(withCategory category: String?, type: String?, andMessage message: String?)
 
 Called to inform SDK's operations, could be useful for analytics.
 
