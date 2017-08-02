@@ -32,19 +32,21 @@ When prompted, choose cancel scheme activation:
 .. figure:: /_static/images/iosSE3.png
    :alt: Service Extension name
 
-In your App project Capabilities, enable App gruoups and add a new one.
+In your App project Capabilities, enable App groups and add a new one.
 
 .. figure:: /_static/images/iosPC1.png
    :alt: New group
 
-When prompted put 'group.TendartsSDK' as name, it's important that you use this name,
+When prompted put ``group.TendartsSDK`` as name, it's important that you use this name,
 
 .. figure:: /_static/images/iosPC2.png
    :alt: New group
 
-In your Service Extension capabilities enable App groups and add the 'group.TendartsSDK' group.
+In your Service Extension capabilities enable App groups and add the ``group.TendartsSDK`` group.
 
 Replace the contents of NotificationService with:
+
+**Objective-C**
 
 .. code-block:: Objective-C
 
@@ -79,9 +81,10 @@ Replace the contents of NotificationService with:
 
     @end
 
+**Swift**
 
-.. code-block:: Swift 3
-    
+.. code-block:: Swift
+
     import UserNotifications
     import TendartsSDKSE
 
@@ -92,26 +95,23 @@ Replace the contents of NotificationService with:
         override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
             self.contentHandler = contentHandler
             bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-            
+
             TendartsSDK.didReceive(request, withContentHandler: contentHandler, withApiKey: "api_key")
-        
+
         }
-    
+
         override func serviceExtensionTimeWillExpire() {
             // Called just before the extension will be terminated by the system.
             // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-            
+
             TendartsSDK.serviceExtensionTimeWillExpire(bestAttemptContent, withContentHandler: contentHandler)
-        
-        
+
+
         }
 
     }
 
-
-
-
-Replace `api_key` with your Api Key
+Replace ``api_key`` with your Api Key
 
 .. note::
 
@@ -125,11 +125,11 @@ Configure the application
 ~~~~~~~~~~
 
 * Close your Xcode project and open terminal and go to the project directory.
-* Run `pod init` in the terminal.
-* Edit the `Podfile` that has been created.
-* Add `pod 'TendartsSDK'` to your app target and  `pod 'TendartsSDKSE'` to your service extension target.
-* Run `pod repo update` and `pod install` from the terminal, this will create a '.xworkspace' file, from now on you should always open the workspace instead of your project.
-* Open the created '.xworkspace' file.
+* Run ``pod init`` in the terminal.
+* Edit the ``Podfile`` that has been created.
+* Add ``pod 'TendartsSDK'`` to your app target and ``pod 'TendartsSDKSE'`` to your service extension target.
+* Run `pod repo update` and `pod install` from the terminal, this will create a ``.xworkspace`` file, from now on you should always open the workspace instead of your project.
+* Open the created ``.xworkspace`` file.
 
 
 2. Add App Capabilities
@@ -142,14 +142,17 @@ Configure the application
 
 * In your app's didFinishLaunchingWithOptions init the SDK:
 
+**Objective-C**
+
 .. code-block:: Objective-C
 
     #import <TendartsSDK.h>
     ...
     [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil];
 
+**Swift**
 
-.. code-block:: swift 3
+.. code-block:: Swift
 
     import TendartsSDK
     ...
@@ -157,14 +160,13 @@ Configure the application
 
 
 
-Replace `api_key` with your Api Key
+Replace ``api_key`` with your Api Key
 
 
 4. Add description strings on the app Info.plist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As 10darts uses location services you should add  NSLocationWhenInUseUsageDescription key with a string value explaining to the user how the app uses the location.
-
+As 10darts uses location services you should add ``NSLocationWhenInUseUsageDescription`` key with a string value explaining to the user how the app uses the location.
 
 .. note::
 

@@ -4,10 +4,11 @@
 Adding Delegates
 ================
 
-To add your delegate to the SDK you should implement the desired functionality in your delegate class adopting `TendartsDelegate` protocol:
+To add your delegate to the SDK you should implement the desired functionality in your delegate class adopting ``TendartsDelegate`` protocol:
+
+**Objective-C**
 
 .. code-block:: Objective-C
-
 
     - (void) onNotificationReceived: (TDNotification*_Nonnull) notification
     {
@@ -22,8 +23,9 @@ To add your delegate to the SDK you should implement the desired functionality i
         //your code
     }
 
+**Swift**
 
-.. code-block:: swift 3
+.. code-block:: Swift
 
     func onNotificationReceived(_ notification: TDNotification)
     {
@@ -44,12 +46,15 @@ Note that each function is optional to implement.
 
 Then you should add your delegate to the SDK:
 
+**Objective-C**
+
 .. code-block:: Objective-C
 
     [TendartsSDK setDelegate: self ];
 
+**Swift**
 
-.. code-block:: swift 3
+.. code-block:: Swift
 
     TendartsSDK.setDelegate(self)
 
@@ -65,11 +70,15 @@ Add it as soon as possible in your code.
 onNotificationReceived:
 =======================
 
+**Objective-C**
+
 .. code-block:: Objective-C
 
     - (void) onNotificationReceived: (TDNotification*_Nonnull) notification
 
-.. code-block:: swift 3
+**Swift**
+
+.. code-block:: Swift
 
     func onNotificationReceived(_ notification: TDNotification)
 
@@ -85,11 +94,15 @@ Received notification.
 onNotificationOpenned
 =====================
 
+**Objective-C**
+
 .. code-block:: Objective-C
 
     - (void) onNotificationOpened: (TDNotification*_Nonnull) notification;
 
-.. code-block:: swift 3
+**Swift**
+
+.. code-block:: Swift
 
     func onNotificationOpened(_ notification: TDNotification)
 
@@ -103,11 +116,15 @@ Opened notification.
 onLogEventWithCategory,type,andMessage
 ======================================
 
+**Objective-C**
+
 .. code-block:: Objective-C
 
     - (void) onLogEventWithCategory:(NSString*_Nullable) category type:(NSString*_Nullable) type andMessage:(NSString *_Nullable) message;
 
-.. code-block:: swift 3
+**Swift**
+
+.. code-block:: Swift
 
     func onLogEvent(withCategory category: String?, type: String?, andMessage message: String?)
 
