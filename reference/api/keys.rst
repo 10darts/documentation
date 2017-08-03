@@ -1,3 +1,5 @@
+.. _api-keys:
+
 ====
 Keys
 ====
@@ -35,6 +37,8 @@ el valor anterior con el nuevo indicado.
     :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: device linked to the value
+
+.. _api-keys-users:
 
 Add key/value to user
 -----------------------

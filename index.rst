@@ -1,59 +1,71 @@
-=====================
-Documentación y ayuda
-=====================
+===========
+Docs & Help
+===========
 
-**10darts** es una plataforma de notificaciones push que maximiza la
-fidelización de tus usuarios al mismo tiempo que minimiza el tiempo de
-adaptación y gestión.
+**10darts** is a notifications software that allows you to
+**maximize your users’ engagement** while minimizing **your time requirements**.
 
-Damos soporte a las plataformas de **Android** e **iOS** proporcionando un
-SDKs dedicados, una **API RESTful**, un panel de control online para
-diseñar y enviar campañas de notificaciones push y un servicio de contenido
-de **feeds** que permite el envío de campañas automáticas, evitando retrasos
-en la comunicación del contenido con tus usuarios y ahorrando tiempo
-a tu equipo de marketing.
+Using Machine Learning algorithms, 10darts improves the communications
+with your users applying behavior predictions and profile clustering.
+
+10darts software includes the following tools:
+
+1. :ref:`Android <android-sdk-reference>` and :ref:`iOS <ios-sdk-reference>` **SDK**.
+2. **RESTful** :ref:`API <api>`.
+3. **Campaign Manager** for `creating and managing manual campaigns <https://10darts.com/app/notifications>`_ and `monitoring the results of your Content Feed automatic campaigns <https://10darts.com/app/notifications/automatic>`_ and `API personalized push notification campaigns <https://10darts.com/app/notifications/transactional>`_.
+4. **Data Manager System** that gathers, keeps and analyzes your users’ interactions data to boost user engagement and retention.
 
 .. note::
 
-    Pronto se añadirá soporte para Facebook Messenger y Web Notifications.
+    10darts will soon release Facebook Messenger and Web.
 
-Características en un vistazo
------------------------------
+10darts Main Features
+---------------------
 
-- Seguimiento automático de la localización de los usuarios, gracias a nuestro **SDK**.
-- Usuarios clasificados usando **keywords**
-- Con el **content feed** puedes actualizar un feed RSS y **10darts** irá enviando automáticamente comunicaciones a tus usuarios para mantenerlos fieles a tu aplicación, tan rápido como empezar con un blog.
-- Desde el **dashboard online** puedes lanzar campañas a tus usuarios, probar envíos segmentando por localización o *keywords* específicos.
-- Puedes seguir los resultados en tiempo real (mensajes enviados, cuantos se van recibiendo, cuantos se van abriendo, etc.)
+.. glossary::
 
-No olvides usar un buen título, emojis y una buena foto para comunicarte con tus usuarios.
+    :ref:`RSS Content Feed <content_sources>`
+        10darts periodically monitors your RSS and when it detects a new content, it automatically launches a new campaign to the target you have previously defined.
 
-Como empezar
-------------
+    Autonomous A/B Testing
+        Once you imputed the A/B testing messages, why waist your time waiting on the results to take an action? 10darts autonomously identifies and expands on the fly the most relevant message for your users.
 
-**Si eres desarrollador**
+    Confirmation Receipt / Success Rate
+        How will you know your real push notification success rate if you don’t know how many notifications effectively reached your users? 10darts tells you both things.
 
-1. Generar un :ref:`Google Server API Key <faq-gcm>` y un iOS Push Certificate.
-2. Configura el SDK: :ref:`Android <android-sdk-setup>` e :ref:`iOS <ios-sdk-setup>`.
-3. Ahora puedes `crear tu primera campaña <https://10darts.com/app/notifications/create>`_
+    Autonomous Segmentation
+        Using AI, 10darts' clusters and segments your user base to maximize their engagement with customized push notifications.
 
-Para más información, consulta la :ref:`documentación <introduction>` y/o contacta con nosotros en it@10darts.com
+    Geo Ripple-Effect ®
+        10darts' Geo-Ripple algorithms autonomously expand your push notifications throughout your user base creating a cascade effect that maximizes the interested audience of your notifications.. This algorithm is especially useful when you manage and produce local relevant information, from job vacancies in local businesses to local news.
 
-**Si eres vendedor, community manage o el responsable de ganar la confianza de tus usuarios**
+    Content Relevance
+        10darts uses content relevance score calculation to autonomously determine the relevant audience of a specific content out of your entire user base.
 
-1. Espera hasta que el equipo de desarrollo haya integrado el SDK en tus aplicaciones
-2. `Crea tu primera campaña <https://10darts.com/app/notifications/create>`_
-3. Prueba un test A/B
+Get started
+-----------
 
-Y para sacar más partido a la plataforma, aquí te dejamos el resto de la información. Si tienes dudas lánzanos un email a it@10darts.com.
+**If you are a developer:**
+
+1. Configure your application in `10darts Dashboard <https://10darts.com/app/applications>`_. In case you don’t have a :ref:`Google Server API Key <faq-gcm>` and / or an :ref:`iOS Push Certificate <ios_push_certificate>` follow the instructions on the FAQ.
+2. Set up the SDK: :ref:`Android <android-sdk-setup>` and :ref:`iOS <ios-sdk-setup>`.
+3. 😃 Congratulations, you are ready to launch your `first campaign <https://10darts.com/app/notifications>`_.
+
+**If you are a marketer, community manager or just do not code:**
+
+1. Please have somebody integrate 10darts SDK in your app.
+2. Launch your `first campaign <https://10darts.com/app/notifications>`_.
+
+For further info keep on reading these Docs & Help this is just starting and
+feel free to contact us on it@10darts.com if you need any help.
 
 .. toctree::
     :maxdepth: 2
-    :caption: Conceptos básicos
+    :caption: Basic Concepts
     :hidden:
 
-    overview/terminology
     overview/users
+    overview/segments
     overview/channels
     overview/campaigns
     overview/pushes
@@ -63,7 +75,7 @@ Y para sacar más partido a la plataforma, aquí te dejamos el resto de la infor
 
 .. toctree::
     :maxdepth: 2
-    :caption: Tutoriales
+    :caption: Tutorials
     :hidden:
 
     tutorials/android
@@ -79,7 +91,7 @@ Y para sacar más partido a la plataforma, aquí te dejamos el resto de la infor
 
 .. toctree::
    :maxdepth: 2
-   :caption: Referencia
+   :caption: Reference
    :hidden:
 
    reference/android

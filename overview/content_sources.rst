@@ -1,66 +1,31 @@
 .. _content_sources:
 
-====================
-Fuentes de contenido
-====================
+============
+Content Feed
+============
 
-El sistema está preparado para el uso de diferentes fuentes de contenido para, a partir de las cuales,
-crear una campaña asociada a este contenido.
+10darts can automatically generate push notification campaigns directly
+from your content feed avoiding you the hustle of duplicating your job in
+posting and uploading content, information, products, etc. in your platform
+and then having to repeat the process to create your push campaign.
 
-De cualquier *fuente de contenido* se tiene que poder extraer un contenido genérico, que sería cualquier contenido de
-Internet que pueda ser referenciado por una URI y que sea susceptible de ser notificado a los usuarios de la
-plataforma.
+In 10darts you can have one or more content feed sources targeting
+different geographies, categories, etc.
 
-Además, el contenido puede tener una referencia a una posición geográfica a la que este haga referencia.
+Also, you can use different content sources to feed the automatic push
+notification campaigns as long as you can extract an Internet content
+referenced by a URI and include it in push notification
 
-Conversor de contenido
-----------------------
+Your content can be geolocated as long as it includes a reference to a
+specific location.
 
-A cada una de las fuentes de contenido se puede especificar un **conversor de contenido**, que es el encargado de
-dado un contenido en concreto de una fuente en concreto, se encarga de crear la **campaña** asociada
-a este, aplicando unas reglas de segmentación y/o envío definidas por el usuario.
+10darts supports `Django templates <https://docs.djangoproject.com/en/1.11/ref/templates/>`_, that you can check for further
+information.
 
-Un *conversor de contenido* permite especificar para cada una de las fuentes de contenido:
+The most common standard and easy to implement content feed is the
+RSS/Atom.
 
-- Plantilla de mensaje
-- Plantilla de título
-- Áreas donde distribuir la campaña
-- Centro y radio de donde distribuir la campaña (excluyente con las áreas)
-- Lista de usuarios a los que distribuir la campaña
-- Idioma al que distribuir la campaña
-- Plataforma a la que distribuir la campaña
-- Versión a la que distribuir la campaña
-- Segmento al que distribuir la campaña
-
-.. _converter_templates:
-
-Plantillas
-^^^^^^^^^^
-
-Las plantillas para mensajes y título de la campaña permiten la personalización del
-contenido de la campaña. A la hora de renderizar la plantilla, se tienen disponibles
-las siguientes variables, que vienen del contenido:
-
-- ``title``, que se corresponde con el título del contenido
-- ``body``, que se corresponde con el cuerpo del contenido, sin etiquetado
-- ``url``, la URL asociada al contenido
-
-Para hacer referencia a las variables, se tienen que usar entre ``{}``. Ejemplo::
-
-    Nueva campaña titulada {{ title }} con este contenido: {{ body }} en la siguiente URL {{ url }}
-
-
-En general, se soporta el lenguaje de plantillas de Django, ver su
-`documentación <https://docs.djangoproject.com/en/1.11/ref/templates/>`_ para una referencia completa.
-
-Feeds
------
-
-El tipo de contenido principal son los feeds RSS/Atom. Cada feed de RSS viene identificado por su URL y
-por el *cliente* al que este pertenece. Además de esto, cada feed tiene un periodo concreto y
-propio de refresco, por defecto establecido en 2 horas.
-
-Ejemplo de RSS:
+An example of a RSS Content Feed:
 
 .. code-block:: xml
 
@@ -106,5 +71,7 @@ Ejemplo de RSS:
     </rss>
 
 .. note::
-    Si la fuente tiene información geográfica asociada a los *items*, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_,
-    esta se asocia al contenido generado.
+
+    We can use RSS with geo-location, information linked to items, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_,
+    this will be linked to the generated content and allow 10darts to apply
+    smart geo distribution base on the Geo-Ripple Effect algorithm.

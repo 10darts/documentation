@@ -1,130 +1,43 @@
 .. _pushes:
 
-======
-Pushes
-======
+=================
+Push Notification
+=================
 
-Cuando hablamos de **push** en 10darts nos referimos a *un envío en concreto*
-que ha sido realizado a una serie de *dispositivos*.
+A push notification is a multimedia message sent to a user’s :ref:`Touchpoint <channels>`.
 
-La responsabilidad de crear los pushes recae **exclusivamente** en las campañas, por lo que
-no se pueden crear vía API. Sin embargo, la confirmación de entrega o la apertura del push se ha
-de indicar sobre el push enviado, utilizando las llamadas del API correspondientes.
+Here you have a list of the main terms related to push notifications you’ll find
+in 10darts dashboard:
 
-Pushes *leídos*
----------------
+Sent Push
+---------
 
-Se marca un push como *leído* cuando el usuario decide marcarlo como tal. Esto no
-tiene efecto para las estadísticas, ya que el usuario podría marcar un push
-como leído aunque no lo haya abierto.
+Is any notification that 10darts platform generates and transmits to your users
+following your specification.
 
-Solo afecta al contador de ``badge`` que se envía en cada push. Es responsabilidad
-del lado cliente (la aplicación) marcar un push como leído.
+Received Push
+-------------
 
-Pushes *abiertos*
------------------
+Notifications that 10darts SDK confirms that have reached your users.
 
-Los pushes *abiertos*, son aquellos sobre los que el usuario a pulsado
-para acceder al contenido.
+Opened Push
+-----------
 
-Es responsabilidad del lado cliente (la aplicación) marcar un push como abierto.
+Any received notification that 10darts SDK confirms that the user has clicked
+in. Opened push notifications are the basis of the “`campaign success rate <https://10darts.com/app/dashboard>`_”.
 
-Pushes *recibidos*
-------------------
+Silent Push
+-----------
 
-Los pushes *recibidos* son aquellos que la aplicación ha marcado como recibidos. Se
-asume que si el contenido del push tiene el valor de ``cfm`` a 1 se necesita
-confirmación.
+Notifications that are sent to the users but not shown in their screen. Silent
+push notifications do not require user’s consent.
 
-Es responsabilidad del lado cliente (la aplicación) marcar un push como recibido.
+The purpose of these silent pushes is to verify that your users are still alive
+with your application installed in their devices.
 
-Pushes *silenciosos*
---------------------
+When 10darts gets a “non valid” answer from a user after sending a
+notification, it considers that the user has churned.
 
-Los pushes *silenciosos* son aquellos que se envían pero la aplicación no muestra
-ningún mensaje al usuario.
-
-Estructura del push
--------------------
-
-**Android**
-
-.. code-block:: json
-
-    {
-        "data": {
-            "id": "...",
-            "message": "...",
-            "title": "...",
-            "badge": 1,
-            "not": "...",
-            "dl": "...",
-            "dst": "...",
-            "dsc": "...",
-            "img": "...",
-            "cfm": 1,
-            "sil": 0,
-            "org": "10d",
-            "ctm": {
-                "field": "value"
-            }
-        }
-    }
-
-**iOS**
-
-.. code-block:: json
-
-    {
-        "aps": {
-            "alert": {
-                "title": "...",
-                "body": "...",
-            },
-            "sound": "default",
-            "badge": 1
-        },
-        "id": "...",
-        "title": "...",
-        "not": "...",
-        "dl": "...",
-        "dst": "...",
-        "dsc": "...",
-        "img": "...",
-        "cfm": 1,
-        "sil": 0,
-        "org": "10d",
-        "ctm": {
-            "field": "value"
-        }
-    }
-
-- ``id`` se corresponde con el código único del push, que ha de ser usado para identificarlo a la hora de marcarlo como recibido o como abierto.
-- ``dl`` *deep link*
-- ``dst`` campo arbitrario de texto que debería identificar el **tipo de destino** que la aplicación cliente debería de abrir al pulsar en la notificación.
-- ``dsc`` campo arbitrario de texto que debería identificar de forma única el **contenido del destino** que la aplicación cliente debería de abrir al pulsar en la notificación.
-- ``cfm`` campo que indica si el push requiere la **confirmación de entrega**, con valor de ``1`` si lo necesita y ``0`` en caso contrario.
-- ``sil`` campo que indica si el push **es silencioso**, con valor de ``1`` si lo es y ``0`` en caso contrario.
-- ``ctm`` campo que contiene un objeto con datos personalizados del usuario (**opcional**).
-- ``img`` URL de la imagen que se usará para el contenido enriquecido de la notificación (**opcional**).
-- ``org`` campo que siempre contiene el valor ``10d``, para comprobar que el push venga desde la plataforma.
-- ``not`` campo que tiene el código único que hace referencia al contenido que ha generado la notificación push
-
-Para las notificaciones *silent* en iOS, el cuerpo del mensaje push se modifica quedando de la siguiente manera:
-
-.. code-block:: json
-
-    {
-        "aps": {
-            "content-available": 1
-        },
-        "id": "...",
-        "dst": "...",
-        "dsc": "...",
-        "cfm": 1,
-        "sil": 1,
-        "org": "10d"
-    }
-
-Además, para que el cliente sea compatible con estas notificaciones, ha de ser configurado tal como se indica
-en la `documentación de Apple <https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW8>`_.
+10darts uses this information to determine the churn of each campaign and
+analyze their impact in your user base, cohorts analysis, loyalty analysis,
+etc.

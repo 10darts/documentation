@@ -1,63 +1,42 @@
 .. _users:
 
-========
-Usuarios
-========
+=====
+Users
+=====
 
-Los usuarios  son **aquellos a los que se les asocia a un dispositivo**. Un
-dispositivo solo puede tener una persona asociado al mismo tiempo.
+Are all those individuals with whom you can communicate with because
+they have your app installed in their device/s. You might also refer to them
+as your "Clients".
 
-Los usuarios se *identifican por un código único*, y son creados al dar de alta
-un device en el sistema. También se pueden crear bajo demanda.
+It is very important that you connect your own data base client-id (your
+internal id, email, Facebook id, etc.) with the `10darts "Client data" <https://10darts.com/app/users/imports>`_.
 
-Segmentación
+Every time a user downloads your app 10darts generates an anonymous
+user ID. Once that user has signed up or logged in you need to inform
+10darts SDK so the platform updates that user’s identification code,
+access data and keys. You have specific instructions :ref:`here for Android <android-sdk-classes-sdk>`
+and here for iOS.
+
+These user data is the link between you and 10darts data base. You can
+update this information too :ref:`through the API <api-devices-link>` or :ref:`importing a CSV file <users-import>`.
+
+.. _users-import:
+
+User Import
 ------------
 
-El sistema soporta la creación de **segmentos** de usuarios o canales basados en diferentes
-criterios. Por defecto, están siempre disponibles cuatro tipos de segmentos:
+You can import user files in CSV format delimited by commas. This
+process will only update existing users in 10darts platform that have an
+assigned ``client_data`` id and that matches the value given in the imported
+file.
 
-.. glossary::
+The values in the file columns are:
 
-    Rookies
-        El segmento **Rookies** se corresponde con los usuarios que han usado
-        tu aplicación solo un día en los últimos 14 días.
-
-    Looky-Loos
-        El segmento **Looky-Loos** se corresponde con los usuarios que solo
-        han usado tu aplicación un día, y ha sido hace más de 14 días.
-
-    Stars
-        El segmento **Stars** se corresponde con los usuarios que han usado
-        tu aplicación más de un día y al menos una vez en los últimos 14 días.
-
-    Sleepers
-        El segmento **Sleepers** se corresponde con los usuarios que han usado
-        tu aplicación más de una vez, pero que no han vuelto a usarla desde
-        hace más de 14 días, y menos de 28.
-
-    Zombies
-        El segmento **Zombies** se corresponde con los usuarios que no han
-        usado tu aplicación desde hace más de 28 días.
-
-
-Importar usuarios
------------------
-
-Se pueden importar usuarios usando ficheros CSV, separados por comas. Este proceso
-sólo **actualizará los usuarios ya existentes en tu base de datos** que tengan
-un valor de ``client_data`` asignado y que se corresponda con el valor proporcionado
-en el fichero de importación.
-
-Los valores de las columnas del fichero son:
-
-- Valor del campo ``client_data`` (string).
-- Nickname (string), opcional.
-- Correo electrónico (string), opcional.
-- Nombre (string), opcional.
-- Apellidos (string), opcional.
-- Posición (string). Ejemplo: ``RID=4326;POINT (-99.0099141 19.335117)``, donde las coordenadas son **longitud y latitud, en ese orden**, opcional.
-- País (string), código de dos caracteres del país, opcional.
-- Etiquetas (string), lista de etiquetas asociadas al usuario, separadas por ``;``. Ejemplo: ``tag1;tag2``. Opcional.
-
-Los campos opcionales se tienen que dejar en blanco pero ocupando su columna, en caso de que no
-se quieran incluir.
+- Field value ``client_data`` (string).
+- Nickname (string), optional.
+- Email (string), optional.
+- First Name (string), optional.
+- Last Name (string), optional.
+- Geo-Position (string). Example: ``RID=4326;POINT (-99.0099141 19.335117)``, where the values are **longitude and latitude** in that order, opcional.
+- Country (string), 2 character code with the country, optional.
+- Tags (string), list of tags linked to the user separated by ``;`` Example: ``tag1;tag2``. Optional.

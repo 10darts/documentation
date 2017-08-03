@@ -1,3 +1,5 @@
+.. _android-sdk-reference:
+
 ===========
 Android SDK
 ===========

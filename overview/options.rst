@@ -1,87 +1,58 @@
 .. _options:
 
 ========
-Opciones
+Settings
 ========
 
-La plataforma de **10darts** permite personalizar una gran variedad de valores
-que determinan el funcionamiento del sistema. Las opciones que se pueden
-configurar son las siguientes:
+10darts has pre-configured the settings we consider most appropriate for
+all our clients. Before you change them we recommend you to wait until
+you’re familiarized with 10darts, it’s features and algorithms and have run
+some push notification campaigns and analyzed the results.
+
+10darts platform can be easily and largely customizable. Here’s the list of
+`setting <https://10darts.com/app/settings>`_ (remember, ``0`` is
+deactivated, ``1`` is activated):
 
 .. glossary::
 
     Activate/deactivate fake push notifications
-        Permite activar/desactivar el modo de notificaciones push falsas, es decir
-        en el que no se enviará ninguna notification (defecto: ``0``).
+        While you perform tests, check all the options in 10darts platform
+        and teach your colleagues, you can activate the “Fake push
+        notifications” option to make sure none of your users receive a
+        notification by accident.
 
     Activate/deactivate timezone restriction for Geo Ripple
-        Permite activar/desactivar la restricción de zona horaria del
-        algoritmo de *Geo Ripple* (defecto: ``1``).
+        This will ensure that the while the 10darts :ref:`Geo Ripple Effect <campaigns-geo-ripple>` is operating, it does not send push messages on night time to your users.
 
-    Period (in seconds) to check relevance in Geo Ripple
-        Cada cuantos segundos se comprueba la relevancia de la campaña cuando se
-        usa el algoritmo de *Geo Ripple* (defecto: ``900``).
+    Daytime (hours) to start checking relevance
+        This is the daytime at which 10darts starts checking the relevance of the push notifications sent (by default ``7am`` user local time).
 
-    Hour when starts the limit for checking relevance in Geo Ripple
-        Hora del día en la que empieza a limitarse la comprobación de relevancia
-        del algoritmo de Geo Ripple (defecto: ``23``).
+    Daytime (hours) to stop checking relevance
+        This is the daytime at which 10darts stops checking the relevance of the push notifications sent (by default ``11pm`` user local time).
 
-    Hour when finish the limit for checking relevance in Geo Ripple
-        Hora del día en la que finaliza a limitarse la comprobación de relevancia
-        del algoritmo de Geo Ripple (defecto: ``7``).
+    Maximum period to check Geo Ripple relevance
+        Maximum time period over which 10darts checks the relevance of a :ref:`Geo Ripple Effect <campaigns-geo-ripple>` campaign (``28800`` seconds by default, 8 hours). After that time period 10darts stops checking the relevance of a push notification and stops the ripple effect.
 
-    Maximum number of seconds from the creation of the notification to check relevance in Geo Ripple
-        Tiempo total en segundos durante el cual se comprobará la relevancia de una
-        campaña usando *Geo Ripple* (defecto: ``28800``)
-
-    Minimum size of the control group in Geo Ripple
-        Tamaño mínimo que ha de tener el grupo de control del algoritmo de
-        *Geo Ripple*. (defecto: ``250``)
-
-    Percentage for de control group in Geo Ripple
-        Porcentaje de usuarios que se usarán del total como grupo de control
-        en el algoritmo de *Geo Ripple* (defecto: ``10.0``)
-
-    Initial previous radius for notifications with ripple effect (meters)
-        Radio en metros previo inicial que se usará en el algoritmo de
-        *Geo Ripple* (defecto: ``1000``)
-
-    Initial radius for notifications with ripple effect (meters)
-        Radio en metros inicial que se usará en el algoritmo de
-        *Geo Ripple* (defecto: ``2000``)
-
-    Maximum number of seconds from the creation of the notification to check relevance in Progressive Ripple
-        Tiempo total en segundos durante el cual se comprobará la relevancia de una
-        campaña usando *Progressive Ripple* (defecto: ``28800``)
-
-    Period (in seconds) to check relevance in Progressive Ripple
-        Cada cuantos segundos se comprueba la relevancia de la campaña cuando se
-        usa el algoritmo de *Progressive Ripple* (defecto: ``900``).
+    Maximum period to check Progressive Ripple relevance
+        Maximum time period over which 10darts checks the relevance of a :ref:`Progressive Ripple Effect <campaigns-progressive-ripple>`  campaign (``28800`` seconds by default, 8 hours). After that time period 10darts stops checking the relevance of a push notification and stops the ripple effect.
 
     Maximum number of seconds from the creation of the notification to check relevance in Simple Ripple
-        Tiempo total en segundos durante el cual se comprobará la relevancia de una
-        campaña usando *Simple Ripple* (defecto: ``28800``)
+        Maximum time period over which 10darts checks the relevance of a Simple Ripple campaign (``28800`` seconds by default, 8 hours). A Simple Ripple is a Geo Ripple Effect that only expands in the geographical area you set in the map.
 
-    Period (in seconds) to check relevance in Simple Ripple
-        Cada cuantos segundos se comprueba la relevancia de la campaña cuando se
-        usa el algoritmo de *Simple Ripple* (defecto: ``900``).
+    Activity relevance (in percentage) threshold
+        Level of message content interaction increase, other than in the specific campaign and expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
 
-    Number of hours from last activity to be able to be selected as active device
-        Periodo de tiempo en horas durante el que el usuario ha de haber mostrado algún tipo de
-        actividad para ser considerado activo a efectos de los algoritmos de
-        *Ripple* (defecto: ``48``).
+    Openings relevance (in percentage) threshold
+        Amount of opened push notifications, expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
 
-    Number of seconds to delay the churn check
-        Numero de segundos desde que se lanza una campaña hasta que se comprueba
-        su churn asociado (defecto: ``43200``)
+    Campaign activity relevance (in percentage) threshold
+        Level of message content interaction increase, in the campaign and expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
 
-    Minimum percentage of openings to be taken into account for relevance
-        Porcentaje mínimo de pushes seguidos para tener en cuenta que una notificación es
-        relevante (defecto: ``30.0``),
-
-    Minimum percentage of activity increment for activity to be taken into account for relevance
-        Porcentaje mínimo de incremento de actividad/peso para considerar que la notificación
-        es relevante (defecto ``30.0``).
+    Minimum size of the control group in Geo Ripple
+        Minimum number of users that determine a control group. A control group is the users within a user target that meet a certain criteria and based on their level of interaction with the notification, determine that 10darts expands that notification to the rest of the target group.
 
     Number of days used to create default segments
-        Periodo de días usados para la creación de los segmentos por defecto (defecto: ``14``).
+        Number of days that 10darts takes into account for the purposes of distributing your user base into the different :ref:`pre-defined user segments <segments-reference>`, sleepers, zombies, stars, looky-loos and rookies.
+
+    Number of hours from last activity to be able to be selected as active device
+        Number of hours that 10darts takes into account for the purposes of defining an active device and be part of a control group.
