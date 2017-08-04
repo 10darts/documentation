@@ -12,18 +12,46 @@ and then having to repeat the process to create your push campaign.
 In 10darts you can have one or more content feed sources targeting
 different geographies, categories, etc.
 
-Also, you can use different content sources to feed the automatic push
-notification campaigns as long as you can extract an Internet content
-referenced by a URI and include it in push notification
+Currently 10darts supports the most common standard and easy to
+implement content feed, the RSS/Atom.
 
 Your content can be geolocated as long as it includes a reference to a
 specific location.
 
-10darts supports `Django templates <https://docs.djangoproject.com/en/1.11/ref/templates/>`_, that you can check for further
-information.
+`Feed Converter <https://10darts.com/app/feeds/create>`_
+--------------------------------------------------------
 
-The most common standard and easy to implement content feed is the
-RSS/Atom.
+The Feed Converter allows you to set up the automatic push notifications
+that your RSS content feed will generate.
+
+You can specify the following settings of each Content Feed source in the
+10darts Content Converter:
+
+- Message
+- :ref:`Targeting Criteria <targeting>`
+- :ref:`Distribution methods <distribution>`
+
+.. note::
+
+    If you have a high content production level we strongly recommend
+    you to leave our smart distribution methodologies, Geo-Ripple or
+    Progressive Ripple®, active in the settings to avoid bombarding your users
+    and increasing churn.
+
+Message
+^^^^^^^
+
+.. glossary::
+
+    Headline template
+        You can insert a headline that introduces each piece of content in your
+        feed, i.e.: “Your news”, “Latest job positions”, etc.
+
+    Text template
+        You can add personalized message and even include a message from
+        your sponsor, i.e.: “… brings you your daily news”
+
+10darts supports `Django templates <https://docs.djangoproject.com/en/1.11/ref/templates/>`_, that you can check for further information.
 
 An example of a RSS Content Feed:
 

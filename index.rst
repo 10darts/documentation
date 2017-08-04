@@ -67,6 +67,8 @@ feel free to contact us on it@10darts.com if you need any help.
     overview/users
     overview/segments
     overview/channels
+    overview/targeting
+    overview/distribution
     overview/campaigns
     overview/pushes
     overview/content_sources

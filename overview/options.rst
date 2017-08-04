@@ -36,8 +36,8 @@ deactivated, ``1`` is activated):
     Maximum period to check Progressive Ripple relevance
         Maximum time period over which 10darts checks the relevance of a :ref:`Progressive Ripple Effect <campaigns-progressive-ripple>`  campaign (``28800`` seconds by default, 8 hours). After that time period 10darts stops checking the relevance of a push notification and stops the ripple effect.
 
-    Maximum number of seconds from the creation of the notification to check relevance in Simple Ripple
-        Maximum time period over which 10darts checks the relevance of a Simple Ripple campaign (``28800`` seconds by default, 8 hours). A Simple Ripple is a Geo Ripple Effect that only expands in the geographical area you set in the map.
+    Maximum number of seconds from the creation of the notification to check relevance
+        Maximum time over which the results of a campaign are monitored (``28800`` seconds by default, 8 hours).
 
     Activity relevance (in percentage) threshold
         Level of message content interaction increase, other than in the specific campaign and expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
@@ -46,7 +46,9 @@ deactivated, ``1`` is activated):
         Amount of opened push notifications, expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
 
     Campaign activity relevance (in percentage) threshold
-        Level of message content interaction increase, in the campaign and expressed in percentage, that will make 10darts algorithms determine the campaign as relevant and trigger the next level of notifications.
+        Level of push notification interaction increase in
+        the campaign and expressed in percentage, that will trigger the
+        Activity Relevance Threshold.
 
     Minimum size of the control group in Geo Ripple
         Minimum number of users that determine a control group. A control group is the users within a user target that meet a certain criteria and based on their level of interaction with the notification, determine that 10darts expands that notification to the rest of the target group.
