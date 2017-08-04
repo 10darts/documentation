@@ -22,6 +22,8 @@ previous one meets the minimum threshold requirements.
 level of your users and amount of campaigns you send in each moment
 and in general, your content type / industry.
 
+.. _campaigns-geo-ripple:
+
 Geo Ripple
 ^^^^^^^^^^
 
@@ -38,6 +40,8 @@ in larger areas until the user engagement in those areas declines.
 
     The maximum audience that can be reached under this distribution
     method will be the user target you’ve defined for the campaign.
+
+.. _campaigns-progressive-ripple:
 
 Progressive Ripple
 ^^^^^^^^^^^^^^^^^^

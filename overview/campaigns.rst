@@ -25,7 +25,7 @@ See :ref:`Targeting Criteria <targeting>`.
 Distribution Methods
 --------------------
 
-See :ref:`Distribution Methods <distribution>`.
+See :ref:`Targeting Criteria <targeting>`.
 
 Schedule
 --------
