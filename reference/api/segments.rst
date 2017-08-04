@@ -131,16 +131,16 @@ Create *device* segments
           ]
         }
 
-    :<json string language: idioma de los dispositivos que hay que seleccionar para el segmento
-    :<json list platforms: plataformas que hay que seleccionar para el segmento (e.g: ``["android", "ios"]``)
-    :<json string version: versión del cliente que deben de tener los dispositivos que hay que seleccionar para el segmento
-    :<json string country: código de dos letras del país en el que tienen que estar registrados los devices  que hay que seleccionar para el segmento
-    :<json list users: lista de usuarios que hay que seleccionar para el segmento
-    :<json GeoJSON areas: ``MultiPolygon`` con las areas dónde se seleccionarán los devices para el segmento
-    :<json GeoJSON center: ``Point`` que representa el centro de la circunferencia dónde se seleccionarán los devices para el segmento
-    :<json int radius: radio de la circunferencia dónde se seleccionarán los devices para el segmento
-    :<json list tags: lista de *keys* que han de tener los devices seleccionadas para el segmento
-    :<json string client_data: cadena de texto con los valores de ``client_data`` de los devices seleccionadas para el segmento, separados por comas
+    :<json string language: devices languages to be chosen for the segment.
+    :<json list platforms: platforms to be chosen for the segment (e.g: ``["android", "ios"]``).
+    :<json string version: app version to be chosen for the segment.
+    :<json string country: 2 letters country code where users devices need to be registered to be chosen for the segment.
+    :<json list users: user’s list to be chosen for the segment
+    :<json GeoJSON areas: ``MultiPolygon`` including the selected areas where the segmented devices need to be
+    :<json GeoJSON center: ``Point`` where is the center of the circle containing the devices in the segment
+    :<json int radius: radius of the circle containing the devices in the segment
+    :<json list tags: list of *keys* in the devices included in the segment
+    :<json string client_data: string, separated by commas, with the ``client_data`` values of the devices included in the segment
 
 
 Create *user* segments
@@ -164,13 +164,13 @@ Create *user* segments
           ]
         }
 
-    :<json string language: idioma de las personas que hay que seleccionar para el segmento
-    :<json list platforms: plataformas que hay que seleccionar para el segmento (e.g: ``["android", "ios"]``)
-    :<json string version: versión del cliente que deben de tener los dispositivos que hay que seleccionar para el segmento
-    :<json string country: código de dos letras del país en el que tienen que estar registrados las personas  que hay que seleccionar para el segmento
-    :<json list users: lista de usuarios que hay que seleccionar para el segmento
-    :<json GeoJSON areas: ``MultiPolygon`` con las areas dónde se seleccionarán las personas para el segmento
-    :<json GeoJSON center: ``Point`` que representa el centro de la circunferencia dónde se seleccionarán las personas para el segmento
-    :<json int radius: radio de la circunferencia dónde se seleccionarán las personas para el segmento
-    :<json list tags: lista de *keys* que han de tener las personas seleccionadas para el segmento
-    :<json string client_data: cadena de texto con los valores de ``client_data`` de las personas seleccionadas para el segmento, separados por comas
+    :<json string language: devices languages to be chosen for the segment.
+    :<json list platforms: platforms to be chosen for the segment (e.g: ``["android", "ios"]``).
+    :<json string version: app version to be chosen for the segment.
+    :<json string country: 2 letters country code where users devices need to be registered to be chosen for the segment.
+    :<json list users: user’s list to be chosen for the segment
+    :<json GeoJSON areas: ``MultiPolygon`` including the selected areas where the segmented devices need to be
+    :<json GeoJSON center: ``Point`` where is the center of the circle containing the devices in the segment
+    :<json int radius: radius of the circle containing the devices in the segment
+    :<json list tags: list of *keys* in the users included in the segment
+    :<json string client_data: string, separated by commas, with the ``client_data`` values of the devices included in the segment

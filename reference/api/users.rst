@@ -24,14 +24,14 @@ User registry
             }
         }
 
-    :<json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
-    :<json string username: nombre único del usuario, según quiera el cliente
-    :<json string email: email del usuario
-    :<json string first_name: nombre del usuario, si se sabe
-    :<json string last_name: apellido/s del usuario, si se saben
-    :<json string device: URI del device al que se quiere asociar la persona
-    :<json string country: código de dos letras que identifica el país de la persona
-    :<json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+    :<json string client_data: client’s user unique system identifier
+    :<json string username: unique name of the user, as clients defines
+    :<json string email: user email
+    :<json string first_name: user first name, if known
+    :<json string last_name: user last name if known
+    :<json string device: device URI to be linked to the user
+    :<json string country: country code (two letters) to identify the user
+    :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
 
     **Response example**:
 
@@ -50,22 +50,23 @@ User registry
             "last_name": ""
         }
 
-    :>json int id: id interno único del usuario
-    :>json string code: código único del usuario, es el que se usa al hacer referencia a este en el resto del API
-    :>json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
-    :>json string username: nombre único del usuario, según quiera el cliente
-    :>json string email: email del usuario
-    :>json string first_name: nombre del usuario, si se sabe
-    :>json string last_name: apellido/s del usuario, si se saben
-    :>json string country: código de dos letras que identifica el país de la persona
-    :>json GeoJSON position: coordenadas de la persona, donde ``coordinates`` es un array con las coordenadas de la siguiente forma: **[longitud, latidud]**
+    :<json int id: unique inside user id
+    :<json string code: unique user code that is used to refer to him in the rest of the API
+    :<json string client_data: client’s user unique system identifier
+    :<json string username: unique name of the user, as clients defines
+    :<json string email: user email
+    :<json string first_name: user first name, if known
+    :<json string last_name: user last name if known
+    :<json string device: device URI to be linked to the user
+    :<json string country: country code (two letters) to identify the user
+    :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
 
-    La llamada puede dar error si:
+    The call can generate an error if::
 
-    - Se introducen datos inválidos, como un email inválido en el campo de email
-    - Si el ``client_data`` de la **persona** ya está registrado para el **cliente**
+    - If you input invalid data, such as invalid email in the email field
+    - If the **persona** ``client_data`` has already been registered
 
-    **Ejemplo de respuestas**:
+    **Response examples**:
 
     .. sourcecode:: http
 
@@ -106,12 +107,14 @@ Update user
             "email": "..."
         }
 
-    :<json string client_data: identificador único en el sistema del cliente al que pertenece el usuario
-    :<json string email: email del usuario
-    :<json string username: nombre de usuario del usuario
-    :<json string first_name: nombre del usuario, si se sabe
-    :<json string last_name: apellido/s del usuario, si se saben
-    :<json string country: código de dos letras que identifica el país de la persona
+    :<json string client_data: client’s user unique system identifier
+    :<json string username: unique name of the user, as clients defines
+    :<json string email: user email
+    :<json string first_name: user first name, if known
+    :<json string last_name: user last name if known
+    :<json string device: device URI to be linked to the user
+    :<json string country: country code (two letters) to identify the user
+    :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
 
     **Response example**:
 
@@ -122,7 +125,7 @@ Update user
 Search user
 -----------
 
-Se puede buscar una persona por el username o por el email.
+You can search a persona by the email or username.
 
 .. http:get:: /api/v1/personas/?(string:field)=(string:value)
 
@@ -161,8 +164,8 @@ Se puede buscar una persona por el username o por el email.
             ]
         }
 
-Devices de una persona
-----------------------
+User devices
+------------
 
 .. http:get:: /api/v1/personas/(string:code)/devices/
 
