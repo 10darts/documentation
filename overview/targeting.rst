@@ -9,7 +9,7 @@ User target segmentation criteria:
 .. glossary::
 
     Channel
-        Different communications channels: app, web notification, FB messenger, iOS, Android, etc.
+        Different communication channels: app, web notification, FB messenger, iOS, Android, etc.
 
     Language
         10darts takes into account the user’s device language.
@@ -25,17 +25,17 @@ User target segmentation criteria:
 
     Tags
         Keys or attributes you use for the different user categories you have in
-        your own CRM and you previously has updated on 10darts. You can
-        see how you can update your users’ categories using the API :ref:`here <api>`
-        and the SDK :ref:`here <android-sdk-user-data>`
-        or :ref:`importing a CVS File <users-import>`.
+        your CRM and that you previously have updated on 10darts. You can
+        see how you can update your users’ categories using the API click :ref:`here <api>`
+        and the SDK click :ref:`here <android-sdk-user-data>`
+        or click :ref:`here <users-import>` to import a CVS File.
 
     Random Segmentation
         When you “Enable Sample Size of Recipients” 10darts selects the
         random number of users you specify within your user target to test the
-        notification with them.
+        notification.
 
     Geographical Segmentation
         When you enable this option your campaign will be sent to users located in
-        the geographical area you define, either by name, i.e. country, state, city,
-        neighborhood, or by drawing a circle or an area in the map.
+        the geography that you define, either by name, i.e. country, state, city,
+        neighborhood, or by drawing a circle or an area on the map.

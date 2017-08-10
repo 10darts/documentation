@@ -7,7 +7,7 @@ Adding Geolocation
 Improving location accuracy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To improve location accuracy you should forward some Main Activity events, note that some of them you may have already forwarderd.
+To improve location accuracy you should forward some Main Activity events, note that some of them you may have already forwarded.
 
 
 Forward your Main Activity events
@@ -16,7 +16,7 @@ Forward your Main Activity events
 In order to keep geolocation updates properly you should forward the main
 activity events to the TendartsSDK class
 
-You can see `here <https://developer.android.com/guide/components/activities/activity-lifecycle.html>`_ more info about activity events.
+Click `here <https://developer.android.com/guide/components/activities/activity-lifecycle.html>`_ more info about activity events.
 
 
 In your main activity override the following events and forward them to

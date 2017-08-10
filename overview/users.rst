@@ -26,8 +26,8 @@ User Import
 ------------
 
 You can import user files in CSV format delimited by commas. This
-process will only update existing users in 10darts platform that have an
-assigned ``client_data`` id and that matches the value given in the imported
+process will only update existing users in  the 10darts platform that have an
+assigned ``client_data`` id and that match the values given in the imported
 file.
 
 The values in the file columns are:

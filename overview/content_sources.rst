@@ -5,7 +5,7 @@ Content Feed
 ============
 
 10darts can automatically generate push notification campaigns directly
-from your content feed avoiding you the hustle of duplicating your job in
+from your content feed avoiding the hassle of duplicating your job in
 posting and uploading content, information, products, etc. in your platform
 and then having to repeat the process to create your push campaign.
 
@@ -15,7 +15,7 @@ different geographies, categories, etc.
 Currently 10darts supports the most common standard and easy to
 implement content feed, the RSS/Atom.
 
-Your content can be geolocated as long as it includes a reference to a
+Your content can be geo-located as long as it includes a reference to a
 specific location.
 
 `Feed Converter <https://10darts.com/app/feeds/create>`_
@@ -34,7 +34,7 @@ You can specify the following settings of each Content Feed source in the
 .. note::
 
     If you have a high content production level we strongly recommend
-    you to leave our smart distribution methodologies, Geo-Ripple or
+    that you leave our smart distribution methodologies, Geo-Ripple or
     Progressive Ripple®, active in the settings to avoid bombarding your users
     and increasing churn.
 
@@ -48,7 +48,7 @@ Message
         feed, i.e.: “Your news”, “Latest job positions”, etc.
 
     Text template
-        You can add personalized message and even include a message from
+        You can add a personalized message and even include a message from
         your sponsor, i.e.: “… brings you your daily news”
 
 10darts supports `Django templates <https://docs.djangoproject.com/en/1.11/ref/templates/>`_, that you can check for further information.
@@ -100,6 +100,6 @@ An example of a RSS Content Feed:
 
 .. note::
 
-    We can use RSS with geo-location, information linked to items, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_,
-    this will be linked to the generated content and allow 10darts to apply
+    We can use RSS with geo-location, information linked to items, `GeoRSS <https://es.wikipedia.org/wiki/GeoRSS>`_.
+    This will be linked to the generated content and allow 10darts to apply
     smart geo distribution base on the Geo-Ripple Effect algorithm.

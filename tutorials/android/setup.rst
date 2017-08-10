@@ -5,7 +5,7 @@ Android SDK Setup
 =================
 
 The following instructions will guide you through the process of implementing
-10darts SDK in your application. These instructions are based
+10darts SDK into your application. These instructions are based
 on *Android Studio*.
 
 
@@ -71,8 +71,8 @@ Add the following line to your app build.gradle:
 
   Create class
 
-And implement the methods, default implementation it’s ok
-for starting but you should add your own functionality as needed.
+  And implement the methods, default implementation it’s ok for starting but you
+  should add your own functionality as needed.
 
 .. figure:: /_static/images/client2.png
   :alt: Implement methods
@@ -86,9 +86,9 @@ for starting but you should add your own functionality as needed.
     }
 
 Don't forget to add the full qualified name of this class to
-**tendarts_sdk_client_class** on the manifest placeholders.
+``tendarts_sdk_client_class`` on the manifest placeholders.
 
-Add your custom functionality as needed, please refer to :ref:`Dartslient class documentation <android-sdk-classes-client>` for further documentation
+Add your custom functionality as needed, please refer to :ref:`TendartsClient class <android-sdk-classes-client>` for further documentation
 
 
 
@@ -120,7 +120,7 @@ And onResume:
 
 .. warning::
 
-    If you are targetting Android API level higher than 22 you should follow :ref:`Targetting Android API level >= 23 <android-target-api>`
+    If you are targeting Android API level higher than 22 you should follow :ref:`Targeting Android API level >= 23 <android-target-api>`
 
 
 .. note::
@@ -130,4 +130,4 @@ And onResume:
 
 .. note::
 
-    When a users clicks on the notification he launches the deep link, check :ref:`Deep linking <faq-deep-link>`
+    When a user clicks on the notification the user launches the deep link, check :ref:`Deep linking <faq-deep-link>`

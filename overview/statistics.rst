@@ -32,39 +32,38 @@ Then you’ll see the following charts:
 Overall Notifications
 ^^^^^^^^^^^^^^^^^^^^^
 
-You can first determine the time period you want to analyze and also
-whether you want to see the results in days, weeks or months, when
-appropriate.
+You can first determine the time period that you want to analyze and
+whether or not you want to see the results in days, weeks or months.
 
-In your first chart you’ll see the analysis of the overall performance of all
-the push notifications you’ve sent to your users through 10darts, whether
+In your first report you will see the analysis of the overall performance of all
+the push notifications you have sent to your users through 10darts, whether
 through Manual Campaigns, Content Feed or API.
 
 That performance is analyzed in terms of number of push notifications you
 have sent, those received by your users, as confirmed by 10darts, and
-those your users opened.
+those your users have opened.
 
 Campaign Success Ratio
 ^^^^^^^^^^^^^^^^^^^^^^
 
-In this chart you have information on the Success Ratio of your push
+In this report you have information on the Success Ratio of your push
 notifications, Manual Campaigns, Content Feed and API, measured as the
 amount of push opened vs the amount of push received by your users.
 
 You can see in the Total bars the total number of push notifications
-opened by all your users vs the total number of received in all the push
+opened by all of your users vs the total number of received in all the push
 notification categories you have (Manual Campaigns, Content Feed and
-API) expressed in percentage.
+API) expressed in percentages.
 
 `Cohorts <https://10darts.com/app/metrics/cohorts>`_
 ----------------------------------------------------
 
 In Cohorts you can see the evolution of the users based on when they
-were acquired. This will help you to analyze the impact of your acquisition
+were acquired. This will help you analyze the impact of your acquisition
 strategy in the timeline. You can analyze the information based on days,
 weeks or months.
 
-The rows shows the time line starting at the moment your users
+The rows show the time line starting at the moment your users
 downloaded your app (0) and the consecutive days, weeks or months (1 to
 n) tell you the percentage of those alive in each given period.
 
@@ -90,4 +89,4 @@ How to read this table:
 
 **Row 3**: Out of all users acquired on the week that started on 7/10/2017, 46.45% are alive in week 1
 
-**Row 4**: We’re currently in week 7/17/2017 and there is no data available yet.
+**Row 4**: We’re currently in week 7/17/2017 and no data is available yet.

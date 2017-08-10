@@ -84,7 +84,7 @@ onNotificationReceived:
 
 Called when a notification is received by the app. On iOS 10 and above this will be called from your service extension, so don't forget to add your delegate there before calling ``[TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler];``.
 
-On older versions this only will be called when de app is running (either in foreground or background) but it will not be called if the app is terminated (swipped away from app switcher for example).
+On older versions this will only be called when the app is running (either in foreground or background) but it will not be called if the app is terminated (swiped away from app switcher for example).
 
 Parameter: notification
 -----------------------

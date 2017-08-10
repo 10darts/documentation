@@ -2,8 +2,8 @@
 Docs & Help
 ===========
 
-**10darts** is a notifications software that allows you to
-**maximize your users’ engagement** while minimizing **your time requirements**.
+**10darts** is a notifications platform that allows you to
+**maximize your users’ engagement** while minimizing **time requirements**.
 
 Using Machine Learning algorithms, 10darts improves the communications
 with your users applying behavior predictions and profile clustering.
@@ -25,22 +25,22 @@ with your users applying behavior predictions and profile clustering.
 .. glossary::
 
     :ref:`RSS Content Feed <content_sources>`
-        10darts periodically monitors your RSS and when it detects a new content, it automatically launches a new campaign to the target you have previously defined.
+        10darts periodically monitors your RSS and when it detects new content, it automatically launches a new campaign to the target you have previously defined.
 
     Autonomous A/B Testing
-        Once you imputed the A/B testing messages, why waist your time waiting on the results to take an action? 10darts autonomously identifies and expands on the fly the most relevant message for your users.
+        Once you've set up the A/B testing messages, why waste your time waiting on the results to take an action 10darts autonomously identifies and expands on the fly the most relevant message for your users.
 
     Confirmation Receipt / Success Rate
-        How will you know your real push notification success rate if you don’t know how many notifications effectively reached your users? 10darts tells you both things.
+        How will you know your real push notification success rate if you don’t know how many notifications effectively reached your users? 10darts provides this information.
 
     Autonomous Segmentation
         Using AI, 10darts' clusters and segments your user base to maximize their engagement with customized push notifications.
 
     Geo Ripple-Effect ®
-        10darts' Geo-Ripple algorithms autonomously expand your push notifications throughout your user base creating a cascade effect that maximizes the interested audience of your notifications.. This algorithm is especially useful when you manage and produce local relevant information, from job vacancies in local businesses to local news.
+        10darts' Geo-Ripple algorithms autonomously expand your push notifications throughout your user base creating a cascade effect that maximizes the interested audience of your notifications. This algorithm is especially useful when you manage and produce local relevant information, from job vacancies in local businesses to local news.
 
     Content Relevance
-        10darts uses content relevance score calculation to autonomously determine the relevant audience of a specific content out of your entire user base.
+        10darts uses content relevance score calculations to autonomously determine the relevant audience of a specific content out of your entire user base.
 
 Get started
 -----------
@@ -56,8 +56,8 @@ Get started
 1. Please have somebody integrate 10darts SDK in your app.
 2. Launch your `first campaign <https://10darts.com/app/notifications>`_.
 
-For further info keep on reading these Docs & Help this is just starting and
-feel free to contact us on it@10darts.com if you need any help.
+For further info keep reading these Docs & the Help section. Feel free to
+contact us on it@10darts.com if you need any help.
 
 .. toctree::
     :maxdepth: 2

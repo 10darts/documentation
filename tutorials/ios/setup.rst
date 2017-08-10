@@ -17,7 +17,7 @@ on *XCode*.
 On iOS 10 add a Notification Service Extension
 ----------------------------------------------
 
-If you are targetting iOS 10 you should add a Notification Service Extension, to do it, go to file --> new --> target:
+If you are targeting iOS 10 you should add a Notification Service Extension. To do this, go to file --> new --> target:
 
 .. figure:: /_static/images/iosSE.png
    :alt: new Service Extension
@@ -170,4 +170,4 @@ As 10darts uses location services you should add ``NSLocationWhenInUseUsageDescr
 
 .. note::
 
-    See :ref:`Adding Delegates <ios-delegate>` for being called when notifications arrive or when opened. by default if the notification has a deep link, it will be launched.
+    See :ref:`Adding Delegates <ios-delegate>` for being called when notifications arrive or when opened. By default, if the notification has a deep link, it will be launched.
