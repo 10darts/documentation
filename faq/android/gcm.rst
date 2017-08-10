@@ -7,7 +7,7 @@ Getting a Google Server API Key
 You need to create a GCM / FCM configuration for the SDK to work properly.
 Here’s how to do it:
 
--  Go to your Firebase console and create a new project:
+-  Go to your `Firebase console <https://console.firebase.google.com/>`_ and create a new project:
 
 .. figure:: /_static/images/gcm1.png
    :alt: Add project

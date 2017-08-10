@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-14 13:23+0200\n"
+"POT-Creation-Date: 2017-08-10 10:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../tutorials.rst:3
-msgid "Tutoriales"
+#: ../../tutorials/android.rst:3
+msgid "Android"
 msgstr ""
 
 #: ../../tutorials/android/customization.rst:3
 msgid "Android SDK Customization"
+msgstr ""
+
+#: ../../tutorials/android/customization.rst:6
+msgid "Configure SDK behavior"
+msgstr ""
+
+#: ../../tutorials/android/customization.rst:8
+msgid ""
+"The SDK configuration is done in the performSetup() function, just add "
+"your custom configuration here"
+msgstr ""
+
+#: ../../tutorials/android/customization.rst:22
+msgid ""
+"Please refer to :ref:`SDK class documentation <android-sdk-classes-sdk>` "
+"for further information"
 msgstr ""
 
 #: ../../tutorials/android/setup.rst:5
@@ -32,119 +48,463 @@ msgstr ""
 #: ../../tutorials/android/setup.rst:7
 msgid ""
 "The following instructions will guide you through the process of "
-"implementing 10 Darts SDK in your application, the instructions are based"
-" on *Android Studio.*"
+"implementing 10darts SDK into your application. These instructions are "
+"based on *Android Studio*."
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:13
+#: ../../tutorials/android/setup.rst:14
 msgid ""
-"If you are not familiar with *Android Studio* please refer to this "
-":ref:`Quick tutorial <faq-android-application>`."
+"Please note that your users’ devices should have Google Play services "
+"installed and updated for the proper operation of this SDK"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:17
-msgid ""
-"Note that the target devices should have Google Play services installed "
-"and updated on it for the proper operation of this SDK"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:22
+#: ../../tutorials/android/setup.rst:19
 msgid ""
 "Before proceeding you should have created a GCM project in your firebase "
-"console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and "
+"console, please refer to :ref:`Google Cloud Messaging <faq-gcm>` and "
 "follow the steps."
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:28
+#: ../../tutorials/android/setup.rst:26 ../../tutorials/ios/setup.rst:122
 msgid "Configure the application"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:31
+#: ../../tutorials/android/setup.rst:29 ../../tutorials/ios/setup.rst:125
 msgid "1. Library"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:33
-msgid "Copy the SDK ``aar`` files to your libs directory"
+#: ../../tutorials/android/setup.rst:31
+msgid "Add the following line to your app build.gradle:"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:36
-msgid ""
-"Add the library and needed dependncies to the dependencies section of "
-"your gradle file"
+#: ../../tutorials/android/setup.rst:33
+msgid "In android section:"
 msgstr ""
 
 #: ../../tutorials/android/setup.rst:50
+msgid "In dependencies section:"
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:57
 msgid ""
-"If you have a warning \"Error:Failed to resolve: :sdk-sdkProduction-"
-"release:\" check that in your project build.gradle you have added libs "
-"directory with flatDir:"
+"**tendarts\\_sdk\\_access\\_token**: your access token to 10darts (API "
+"Key)"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:64
-msgid "Add packaging options in android section:"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:76
-msgid "2. Configure 10Darts"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:79
-msgid "Add your configuration inside the Application section"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:96
-msgid "**sdk\\_accessToken**: your access token to 10 Darts"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:97
+#: ../../tutorials/android/setup.rst:58
 msgid ""
-"**sdk\\_clientClass**: the full qualified name of your SDK implementation"
-" (see :ref:`Implementing client class <android-sdk-client>`)"
+"**dtendarts\\_sdk\\_client\\_class**: the full qualified name of your SDK"
+" implementation (see :ref:`Implementing client class <android-sdk-"
+"client>`)"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:99
+#: ../../tutorials/android/setup.rst:60
 msgid ""
-"**gcm\\_defaultSenderId**: the sender id you copied in the last step of "
+"**gcm\\_sender\\_id**: the sender id you copied in the last step of "
 ":ref:`Google Cloud Messaging <faq-gcm>`"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:106
-msgid "3. Create a client class whose superclass is SDKClient"
+#: ../../tutorials/android/setup.rst:67
+msgid "2. Create a client class whose superclass is TendartsClient"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:111
+#: ../../tutorials/android/setup.rst:72
 msgid "Create class"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:113
+#: ../../tutorials/android/setup.rst:74
 msgid ""
 "And implement the methods, default implementation it’s ok for starting "
 "but you should add your own functionality as needed."
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:119
-msgid "Implement methods"
+#: ../../tutorials/android/setup.rst:88
+msgid ""
+"Don't forget to add the full qualified name of this class to "
+"``tendarts_sdk_client_class`` on the manifest placeholders."
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:129
+#: ../../tutorials/android/setup.rst:91
 msgid ""
-"Don't forget to add the full qualified name of this class to the "
-":ref:`manifest configuration <android-sdk-setup>` **“sdk\\_clientClass”**"
-msgstr ""
-
-#: ../../tutorials/android/setup.rst:134
-msgid ""
-"Add your custom functionality as needed, please refer to :ref:`SDKClient "
-"class documentation <android-sdk-classes-client>` for further "
+"Add your custom functionality as needed, please refer to "
+":ref:`TendartsClient class <android-sdk-classes-client>` for further "
 "documentation"
 msgstr ""
 
-#: ../../tutorials/android/setup.rst:139
-msgid "4. Forward OnCreate of your Main Activity"
+#: ../../tutorials/android/setup.rst:96
+msgid "3. Forward functions of your Main Activity"
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:98
+msgid "Forward onCreate:"
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:113
+msgid "And onResume:"
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:123
+msgid ""
+"If you are targeting Android API level higher than 22 you should follow "
+":ref:`Targeting Android API level >= 23 <android-target-api>`"
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:128
+msgid ""
+"See :ref:`Adding Geolocation <android-sdk-geolocation>` for increasing "
+"location accuracy and receiving location updates."
+msgstr ""
+
+#: ../../tutorials/android/setup.rst:133
+msgid ""
+"When a user clicks on the notification the user launches the deep link, "
+"check :ref:`Deep linking <faq-deep-link>`"
 msgstr ""
 
 #: ../../tutorials/ios.rst:5
-msgid "iOS SDKs Setup"
+msgid "iOS"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:5
+msgid "Adding Delegates"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:7
+msgid ""
+"To add your delegate to the SDK you should implement the desired "
+"functionality in your delegate class adopting ``TendartsDelegate`` "
+"protocol:"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:9
+#: ../../tutorials/ios/ios_delegate.rst:49
+#: ../../tutorials/ios/ios_delegate.rst:73
+#: ../../tutorials/ios/ios_delegate.rst:97
+#: ../../tutorials/ios/ios_delegate.rst:119 ../../tutorials/ios/setup.rst:49
+#: ../../tutorials/ios/setup.rst:145
+msgid "**Objective-C**"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:26
+#: ../../tutorials/ios/ios_delegate.rst:55
+#: ../../tutorials/ios/ios_delegate.rst:79
+#: ../../tutorials/ios/ios_delegate.rst:103
+#: ../../tutorials/ios/ios_delegate.rst:125 ../../tutorials/ios/setup.rst:84
+#: ../../tutorials/ios/setup.rst:153
+msgid "**Swift**"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:44
+msgid "Note that each function is optional to implement."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:47
+msgid "Then you should add your delegate to the SDK:"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:62
+msgid "Add it as soon as possible in your code."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:67
+msgid ""
+"On iOS 10 and above you should also add your delegate on your Service "
+"extension if you want to be called when a notification is received."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:71
+msgid "onNotificationReceived:"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:85
+msgid ""
+"Called when a notification is received by the app. On iOS 10 and above "
+"this will be called from your service extension, so don't forget to add "
+"your delegate there before calling ``[TendartsSDK "
+"didReceiveNotificationRequest:request "
+"withContentHandler:contentHandler];``."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:87
+msgid ""
+"On older versions this will only be called when the app is running "
+"(either in foreground or background) but it will not be called if the app"
+" is terminated (swiped away from app switcher for example)."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:90
+#: ../../tutorials/ios/ios_delegate.rst:112
+msgid "Parameter: notification"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:92
+msgid "Received notification."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:95
+msgid "onNotificationOpenned"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:109
+msgid ""
+"Called when the user taps a notification, by default if the notification "
+"has a *Deep Link* it will be launched, if not you can use this method to "
+"complete the operation."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:114
+msgid "Opened notification."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:117
+msgid "onLogEventWithCategory,type,andMessage"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:131
+msgid "Called to inform SDK's operations, could be useful for analytics."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:134
+msgid "Parameter: category"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:136
+msgid "Category of the event."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:139
+msgid "Parameter: type"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:141
+msgid "Type of event."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:144
+msgid "Parameter: message"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:146
+msgid "Message of the event"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:149
+msgid "TDNotification"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:151
+msgid "This class encapsulates the notification."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:154
+msgid "title"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:156
+msgid "The title of the notification."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:159
+msgid "message"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:161
+msgid "The message body."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:164
+msgid "data"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:166
+msgid "A dictionary with the raw data received from APNs."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:169
+msgid "nId"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:171
+msgid "The notification's ID."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:174
+msgid "nNot"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:176
+msgid "The notification generator's ID"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:179
+msgid "deepLink"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:181
+msgid "The deep link if any."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:184
+msgid "contentId"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:186
+msgid "Content ID related to the notification if any."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:189
+msgid "contentType"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:191
+msgid "Content type ID related to the notification."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:194
+msgid "image"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:196
+msgid "If any, the image's url."
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:199
+msgid "userData"
+msgstr ""
+
+#: ../../tutorials/ios/ios_delegate.rst:201
+msgid "The user data if any."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:5
+msgid "iOS SDK Setup"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:7
+msgid ""
+"The following instructions will guide you through the process of "
+"implementing 10darts SDK in your application. These instructions are "
+"based on *XCode*."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:13
+msgid ""
+"Before proceeding you should have created a push certificate for your app"
+" please refer to :ref:`Getting push certificate "
+"<ios_push_certificate>` and follow the steps."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:18
+msgid "On iOS 10 add a Notification Service Extension"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:20
+msgid ""
+"If you are targeting iOS 10 you should add a Notification Service "
+"Extension. To do this, go to file --> new --> target:"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:25
+msgid "Put a name to your new service extension and click finish:"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:30
+msgid "When prompted, choose cancel scheme activation:"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:35
+msgid "In your App project Capabilities, enable App groups and add a new one."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:40
+msgid ""
+"When prompted put ``group.TendartsSDK`` as name, it's important that you "
+"use this name,"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:45
+msgid ""
+"In your Service Extension capabilities enable App groups and add the "
+"``group.TendartsSDK`` group."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:47
+msgid "Replace the contents of NotificationService with:"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:114 ../../tutorials/ios/setup.rst:163
+msgid "Replace ``api_key`` with your Api Key"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:118
+msgid "The project will not compile until you perform the following step."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:127
+msgid ""
+"Close your Xcode project and open terminal and go to the project "
+"directory."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:128
+msgid "Run ``pod init`` in the terminal."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:129
+msgid "Edit the ``Podfile`` that has been created."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:130
+msgid ""
+"Add ``pod 'TendartsSDK'`` to your app target and ``pod 'TendartsSDKSE'`` "
+"to your service extension target."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:131
+msgid ""
+"Run `pod repo update` and `pod install` from the terminal, this will "
+"create a ``.xworkspace`` file, from now on you should always open the "
+"workspace instead of your project."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:132
+msgid "Open the created ``.xworkspace`` file."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:136
+msgid "2. Add App Capabilities"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:138
+msgid ""
+"Select the root project and enable **Push Notifications** and "
+"**Background Modes**, check \"Remote Notifications\"."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:141
+msgid "3. Initialize the SDK"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:143
+msgid "In your app's didFinishLaunchingWithOptions init the SDK:"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:167
+msgid "4. Add description strings on the app Info.plist"
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:169
+msgid ""
+"As 10darts uses location services you should add "
+"``NSLocationWhenInUseUsageDescription`` key with a string value "
+"explaining to the user how the app uses the location."
+msgstr ""
+
+#: ../../tutorials/ios/setup.rst:173
+msgid ""
+"See :ref:`Adding Delegates <ios-delegate>` for being called when "
+"notifications arrive or when opened. By default, if the notification has "
+"a deep link, it will be launched."
 msgstr ""
 
 #~ msgid "Copy the SDK ``aar`` file to your libs directory"
@@ -208,5 +568,106 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Forward OnCreate of your Main Activity"
+#~ msgstr ""
+
+#~ msgid "Tutoriales"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following instructions will guide "
+#~ "you through the process of implementing"
+#~ " 10 Darts SDK in your application,"
+#~ " the instructions are based on "
+#~ "*Android Studio.*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are not familiar with "
+#~ "*Android Studio* please refer to this"
+#~ " :ref:`Quick tutorial <faq-android-"
+#~ "application>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the target devices should "
+#~ "have Google Play services installed and"
+#~ " updated on it for the proper "
+#~ "operation of this SDK"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Before proceeding you should have "
+#~ "created a GCM project in your "
+#~ "firebase console, please refer to "
+#~ ":ref:`Google Cloud Messaging <faq-gcm>` "
+#~ "and follow the steps."
+#~ msgstr ""
+
+#~ msgid "Copy the SDK ``aar`` files to your libs directory"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Add the library and needed dependncies"
+#~ " to the dependencies section of your"
+#~ " gradle file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have a warning \"Error:Failed "
+#~ "to resolve: :sdk-sdkProduction-release:\" "
+#~ "check that in your project build.gradle"
+#~ " you have added libs directory with"
+#~ " flatDir:"
+#~ msgstr ""
+
+#~ msgid "Add packaging options in android section:"
+#~ msgstr ""
+
+#~ msgid "2. Configure 10Darts"
+#~ msgstr ""
+
+#~ msgid "Add your configuration inside the Application section"
+#~ msgstr ""
+
+#~ msgid "**sdk\\_accessToken**: your access token to 10 Darts"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**sdk\\_clientClass**: the full qualified name"
+#~ " of your SDK implementation (see "
+#~ ":ref:`Implementing client class <android-"
+#~ "sdk-client>`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**gcm\\_defaultSenderId**: the sender id you"
+#~ " copied in the last step of "
+#~ ":ref:`Google Cloud Messaging <faq-gcm>`"
+#~ msgstr ""
+
+#~ msgid "3. Create a client class whose superclass is SDKClient"
+#~ msgstr ""
+
+#~ msgid "Implement methods"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Don't forget to add the full "
+#~ "qualified name of this class to "
+#~ "the :ref:`manifest configuration <android-"
+#~ "sdk-setup>` **“sdk\\_clientClass”**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Add your custom functionality as needed,"
+#~ " please refer to :ref:`SDKClient class "
+#~ "documentation <android-sdk-classes-client>`"
+#~ " for further documentation"
+#~ msgstr ""
+
+#~ msgid "4. Forward OnCreate of your Main Activity"
+#~ msgstr ""
+
+#~ msgid "iOS SDKs Setup"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-02 13:24+0200\n"
+"POT-Creation-Date: 2017-08-10 10:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,146 +17,444 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../faq.rst:3
-msgid "FAQ"
+#: ../../faq/android.rst:3
+msgid "Android"
 msgstr ""
 
-#: ../../faq/app.rst:5
-msgid "How to create an Android Application"
+#: ../../faq/android/adding_user_data.rst:5
+#: ../../faq/android/adding_user_data.rst:32
+#: ../../faq/ios/adding_user_data.rst:5 ../../faq/ios/adding_user_data.rst:34
+msgid "Adding user data"
 msgstr ""
 
-#: ../../faq/app.rst:7
-msgid "Start a new Android Studio project:"
+#: ../../faq/android/adding_user_data.rst:9
+#: ../../faq/ios/adding_user_data.rst:8
+msgid "Link the device to your own user"
 msgstr ""
 
-#: ../../faq/app.rst:12
-msgid "Start project"
+#: ../../faq/android/adding_user_data.rst:11
+msgid ""
+"You may need to associate the device with your own user. To do so, call "
+"`linkDeviceWithUserIdentifier` providing your user identifier on the last"
+" parameter:"
 msgstr ""
 
-#: ../../faq/app.rst:17
-msgid "New project"
+#: ../../faq/android/adding_user_data.rst:34
+msgid ""
+"You can optionally add user data, to do so, call `modifyUser` providing "
+"the fields you want to add or modify, if any parameter is null it will "
+"remain untouched."
 msgstr ""
 
-#: ../../faq/app.rst:22
-msgid "Target project"
+#: ../../faq/android/deep_linking.rst:5
+msgid "Deep Linking"
 msgstr ""
 
-#: ../../faq/app.rst:24
-msgid "Configure your main activity"
+#: ../../faq/android/deep_linking.rst:7
+msgid "When a user clicks on the notification he launches the deep link."
 msgstr ""
 
-#: ../../faq/app.rst:29
-msgid "Add activity"
+#: ../../faq/android/deep_linking.rst:9
+msgid ""
+"Make sure your application reacts to deep links. `See Android deep link "
+"documentation <https://developer.android.com/training/app-indexing/deep-"
+"linking.html>`_."
 msgstr ""
 
-#: ../../faq/app.rst:34
-msgid "Customize activity"
+#: ../../faq/android/gcm.rst:5
+msgid "Getting a Google Server API Key"
 msgstr ""
 
-#: ../../faq/gcm.rst:5
-msgid "Google Cloud Messaging"
+#: ../../faq/android/gcm.rst:7
+msgid ""
+"You need to create a GCM / FCM configuration for the SDK to work "
+"properly. Here’s how to do it:"
 msgstr ""
 
-#: ../../faq/gcm.rst:7
-msgid "For the SDK to work properly a GCM / FCM configuration should be created."
-msgstr ""
-
-#: ../../faq/gcm.rst:10
+#: ../../faq/android/gcm.rst:10
 msgid "Go to your Firebase console and create a new project:"
 msgstr ""
 
-#: ../../faq/gcm.rst:15
+#: ../../faq/android/gcm.rst:15
 msgid "Add project"
 msgstr ""
 
-#: ../../faq/gcm.rst:20
+#: ../../faq/android/gcm.rst:20
 msgid "Create project"
 msgstr ""
 
-#: ../../faq/gcm.rst:22
+#: ../../faq/android/gcm.rst:22
 msgid "Add Firebase to your Android app:"
 msgstr ""
 
-#: ../../faq/gcm.rst:27
+#: ../../faq/android/gcm.rst:27
 msgid "Add firebase"
 msgstr ""
 
-#: ../../faq/gcm.rst:32
+#: ../../faq/android/gcm.rst:32
 msgid "Add firebase 2"
 msgstr ""
 
-#: ../../faq/gcm.rst:34
+#: ../../faq/android/gcm.rst:34
 msgid "Follow the instructions and add the configuration JSON to your project"
 msgstr ""
 
-#: ../../faq/gcm.rst:40
+#: ../../faq/android/gcm.rst:40
 msgid "Add configuration JSON"
 msgstr ""
 
-#: ../../faq/gcm.rst:42
+#: ../../faq/android/gcm.rst:42
 msgid "Go to your project settings --> GCM"
 msgstr ""
 
-#: ../../faq/gcm.rst:47
+#: ../../faq/android/gcm.rst:47
 msgid "Project settings"
 msgstr ""
 
-#: ../../faq/gcm.rst:49
+#: ../../faq/android/gcm.rst:49
 msgid "and write down your server key to configure the platform:"
 msgstr ""
 
-#: ../../faq/gcm.rst:54
+#: ../../faq/android/gcm.rst:54
 msgid "Settings"
 msgstr ""
 
-#: ../../faq/gcm.rst:56
+#: ../../faq/android/gcm.rst:56
 msgid "and the Sender ID to configure your client app"
 msgstr ""
 
-#: ../../faq/geolocation.rst:5
+#: ../../faq/android/geolocation.rst:5
 msgid "Adding Geolocation"
 msgstr ""
 
-#: ../../faq/geolocation.rst:8
+#: ../../faq/android/geolocation.rst:8
+msgid "Improving location accuracy"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:10
+msgid ""
+"To improve location accuracy you should forward some Main Activity "
+"events, note that some of them you may have already forwarded."
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:14
 msgid "Forward your Main Activity events"
 msgstr ""
 
-#: ../../faq/geolocation.rst:10
+#: ../../faq/android/geolocation.rst:16
 msgid ""
 "In order to keep geolocation updates properly you should forward the main"
-" activity events to the SDK"
+" activity events to the TendartsSDK class"
 msgstr ""
 
-#: ../../faq/geolocation.rst:13
+#: ../../faq/android/geolocation.rst:19
+msgid ""
+"Click `here <https://developer.android.com/guide/components/activities"
+"/activity-lifecycle.html>`_ more info about activity events."
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:22
 msgid ""
 "In your main activity override the following events and forward them to "
 "the SDK:"
 msgstr ""
 
-#: ../../faq/geolocation.rst:106
+#: ../../faq/android/geolocation.rst:25
+msgid ""
+"**onCreate:** see Android's `onCreate documentation "
+"<htttps://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:40
+msgid ""
+"Optionally you can fill the ``alertNotEnabled`` function to show the user"
+" a warning when locations are not enabled (see  :ref:`Filling "
+"alertNotEnabled <android-sdk-alert-location>`)"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:42
+msgid "**onStart:**"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:44
+msgid ""
+"see Android's `onStart documentation "
+"<https://developer.android.com/reference/android/app/Activity.html#onStart()>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:53
+msgid "**onResume:**"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:55
+msgid ""
+"see Android's `onResume documentation "
+"<https://developer.android.com/reference/android/app/Activity.html#onResume()>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:64
+msgid ""
+"**onPause:** see Android's `onPause documentation "
+"<https://developer.android.com/reference/android/app/Activity.html#onPause()>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:74
+msgid ""
+"**onStop** see Android's `onStop documentation "
+"<https://developer.android.com/reference/android/app/Activity.html#onStop()>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:84
+msgid "**onDestroy**"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:86
+msgid ""
+"see Android's `onDestroy documentation "
+"<https://developer.android.com/reference/android/app/Activity.html#onDestroy()>`_"
+"  for more info"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:96
+msgid "Optional"
+msgstr ""
+
+#: ../../faq/android/geolocation.rst:99
 msgid "Get notified on location updates"
 msgstr ""
 
-#: ../../faq/geolocation.rst:108
+#: ../../faq/android/geolocation.rst:101
 msgid ""
 "To get notified when a new location is available, you should register "
-"your listener"
+"your listener, for example in onCreate"
 msgstr ""
 
-#: ../../faq/geolocation.rst:115
+#: ../../faq/android/geolocation.rst:115
 msgid ""
 "Note that the instance of the receiver will not be kept so you should "
 "store it while you need location updates otherwise it could be garbage-"
-"collected"
+"collected."
 msgstr ""
 
-#: ../../faq/geolocation.rst:119
+#: ../../faq/android/geolocation.rst:118
 msgid "You could also get the current location synchronously:"
 msgstr ""
 
-#: ../../faq/geolocation.rst:125
+#: ../../faq/android/geolocation.rst:124
 msgid ""
 "By default geolocation updates are enabled, to change it's status just "
 "call:"
 msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:5
+msgid "Targetting Android API level >= 23"
+msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:8
+msgid ""
+"Starting on API level 23, Android ask permissions on runtime instead of "
+"at installation"
+msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:10
+msgid ""
+"`See Android documentation "
+"<https://developer.android.com/training/permissions/requesting.html>`_"
+msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:12
+msgid "So a bit of extra work is needed in order to receive location updates:"
+msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:15
+msgid ""
+"In your `TendartsClient` implemetation you should override "
+"`getLocationExplanation` returning the explanation of why youur app uses "
+"location and why permission should be granted:"
+msgstr ""
+
+#: ../../faq/android/geolocation/android-target-api.rst:27
+msgid ""
+"In your Main Activity you should override `onRequestPermissionsResult` "
+"and forward to  `TendartsSDK`"
+msgstr ""
+
+#: ../../faq/android/geolocation/showlocationwarining.rst:6
+msgid "Filling alertNotEnabled"
+msgstr ""
+
+#: ../../faq/android/geolocation/showlocationwarining.rst:9
+msgid ""
+"You can make the user aware that the location is not enabled and explain "
+"why is important to be enabled Also is recommended that you provide a "
+"button redirecting the user to the location settings in the phone"
+msgstr ""
+
+#: ../../faq/android/geolocation/showlocationwarining.rst:12
+msgid "Here is a simple example of how to do it using a dialog:"
+msgstr ""
+
+#: ../../faq/ios.rst:3
+msgid "iOS"
+msgstr ""
+
+#: ../../faq/ios/adding_user_data.rst:10
+msgid ""
+"You may need to associate the device with your own user. To do so, call "
+"``linkDeviceWithUserIdentifier:(NSString*)userId onSuccess: (TDOnSuccess "
+"_Nullable ) successHandler onError: (TDOnError _Nullable ) errorHandler``"
+" providing your user identifier on the last parameter:"
+msgstr ""
+
+#: ../../faq/ios/adding_user_data.rst:12 ../../faq/ios/adding_user_data.rst:38
+msgid "**Objective-C**"
+msgstr ""
+
+#: ../../faq/ios/adding_user_data.rst:23 ../../faq/ios/adding_user_data.rst:48
+msgid "**Swift**"
+msgstr ""
+
+#: ../../faq/ios/adding_user_data.rst:36
+msgid ""
+"You can optionally add user data, to do so, call `ModifyUserEmail` "
+"providing the fields you want to add or modify, if any parameter is null "
+"it will remain untouched."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:5
+msgid "Getting an iOS Push Certificate"
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:9
+msgid "1. Request a certificate"
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:11
+msgid ""
+"Open Keychain Access from your Mac OS X and select *Request a Certificate"
+" From a Certificate Authority...* (Keychain Access -> Certificates "
+"Assistant -> Request a Certificate From a Certificate Authority...)."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:16
+msgid "Select *Save to disk* and fill the requiered info:"
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:21
+msgid "The saved certificate will be used in the next step."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:25
+msgid "2. Enable Push Notifications on Developer Site"
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:27
+msgid ""
+"`Open the apple developer site <https://developer.apple.com/>`_ and go to"
+" **Certificates, Identifiers & Profiles**."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:33
+msgid "Go to App IDs and select your application, press **Edit**."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:39
+msgid "Enable **Push Notifications** and click **Done**."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:45
+msgid "Go to Certificates - All and add new certificate:"
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:51
+msgid ""
+"Select **Apple Push Notification service SSL (Sandbox & Production)** and"
+" press Continue."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:57
+msgid "Select your app id and press Continue."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:63
+msgid ""
+"The create CSR page will open, click Continue and upload the "
+".certSigningRequest created in step 1 and press Generate."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:69
+msgid "When done click on Download."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:75
+msgid ""
+"Double click the downloaded file, the Keychain Access app will be "
+"launched, select the Apple Push Services certificate for your application"
+" and right click on it, and select Export."
+msgstr ""
+
+#: ../../faq/ios/push_certificate.rst:81
+msgid "Upload the exported .p12 file to your 10 darts console."
+msgstr ""
+
+#~ msgid "FAQ"
+#~ msgstr ""
+
+#~ msgid "How to create an Android Application"
+#~ msgstr ""
+
+#~ msgid "Start a new Android Studio project:"
+#~ msgstr ""
+
+#~ msgid "Start project"
+#~ msgstr ""
+
+#~ msgid "New project"
+#~ msgstr ""
+
+#~ msgid "Target project"
+#~ msgstr ""
+
+#~ msgid "Configure your main activity"
+#~ msgstr ""
+
+#~ msgid "Add activity"
+#~ msgstr ""
+
+#~ msgid "Customize activity"
+#~ msgstr ""
+
+#~ msgid "Google Cloud Messaging"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the SDK to work properly a "
+#~ "GCM / FCM configuration should be "
+#~ "created."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In order to keep geolocation updates "
+#~ "properly you should forward the main "
+#~ "activity events to the SDK"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To get notified when a new "
+#~ "location is available, you should "
+#~ "register your listener"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the instance of the "
+#~ "receiver will not be kept so you"
+#~ " should store it while you need "
+#~ "location updates otherwise it could be"
+#~ " garbage-collected"
+#~ msgstr ""
 

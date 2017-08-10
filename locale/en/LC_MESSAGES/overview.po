@@ -1,0 +1,998 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 10darts
+# This file is distributed under the same license as the 10Darts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 10Darts 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-10 10:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../overview/campaigns.rst:5
+msgid "Campaigns"
+msgstr ""
+
+#: ../../overview/campaigns.rst:7
+msgid ""
+"A Push Notification Campaign is the action of sending push messages to "
+"part or all of the users that have your app installed and have allowed "
+"the notifications from you."
+msgstr ""
+
+#: ../../overview/campaigns.rst:11
+msgid "There are 3 ways of generating campaigns:"
+msgstr ""
+
+#: ../../overview/campaigns.rst:13
+msgid "`Manual Campaigns <https://10darts.com/app/notifications>`_ tool."
+msgstr ""
+
+#: ../../overview/campaigns.rst:14
+msgid ""
+"`Content Feed <https://10darts.com/app/notifications/automatic>`_ by "
+"generating automatic campaigns with a content RSS."
+msgstr ""
+
+#: ../../overview/campaigns.rst:15
+msgid "`API <https://10darts.com/app/notifications/transactional>`_."
+msgstr ""
+
+#: ../../overview/campaigns.rst:17
+msgid ""
+"In Manual Campaigns you can use the Campaign Manager to define user "
+"targets, distribution methods and schedules."
+msgstr ""
+
+#: ../../overview/campaigns.rst:21
+msgid "User Target"
+msgstr ""
+
+#: ../../overview/campaigns.rst:23 ../../overview/campaigns.rst:28
+msgid "See :ref:`Targeting Criteria <targeting>`."
+msgstr ""
+
+#: ../../overview/campaigns.rst:26 ../../overview/distribution.rst:5
+msgid "Distribution Methods"
+msgstr ""
+
+#: ../../overview/campaigns.rst:31
+msgid "Schedule"
+msgstr ""
+
+#: ../../overview/campaigns.rst:33
+msgid "You set up a Campaign to be delivered on a future day and time."
+msgstr ""
+
+#: ../../overview/channels.rst:5
+msgid "Touchpoints"
+msgstr ""
+
+#: ../../overview/channels.rst:7
+msgid ""
+"We have defined a Touchpoint as each communication channel that you have "
+"with each user. A user can have several Touchpoints with you, i.e.: "
+"through your app on the mobile, on the tablet, web, and (in the near "
+"future) Facebook messenger."
+msgstr ""
+
+#: ../../overview/channels.rst:12
+msgid ""
+"In order to achieve a maximum user engagement 10darts will help you "
+"control and even manage for you, each Touchpoint for you. The goal is to "
+"allow you to reach your customer where, when and how is most convenient "
+"for them to maximize their engagement."
+msgstr ""
+
+#: ../../overview/content_sources.rst:5
+msgid "Content Feed"
+msgstr ""
+
+#: ../../overview/content_sources.rst:7
+msgid ""
+"10darts can automatically generate push notification campaigns directly "
+"from your content feed avoiding the hassle of duplicating your job in "
+"posting and uploading content, information, products, etc. in your "
+"platform and then having to repeat the process to create your push "
+"campaign."
+msgstr ""
+
+#: ../../overview/content_sources.rst:12
+msgid ""
+"In 10darts you can have one or more content feed sources targeting "
+"different geographies, categories, etc."
+msgstr ""
+
+#: ../../overview/content_sources.rst:15
+msgid ""
+"Currently 10darts supports the most common standard and easy to implement"
+" content feed, the RSS/Atom."
+msgstr ""
+
+#: ../../overview/content_sources.rst:18
+msgid ""
+"Your content can be geo-located as long as it includes a reference to a "
+"specific location."
+msgstr ""
+
+#: ../../overview/content_sources.rst:22
+msgid "`Feed Converter <https://10darts.com/app/feeds/create>`_"
+msgstr ""
+
+#: ../../overview/content_sources.rst:24
+msgid ""
+"The Feed Converter allows you to set up the automatic push notifications "
+"that your RSS content feed will generate."
+msgstr ""
+
+#: ../../overview/content_sources.rst:27
+msgid ""
+"You can specify the following settings of each Content Feed source in the"
+" 10darts Content Converter:"
+msgstr ""
+
+#: ../../overview/content_sources.rst:30 ../../overview/content_sources.rst:42
+msgid "Message"
+msgstr ""
+
+#: ../../overview/content_sources.rst:31
+msgid ":ref:`Targeting Criteria <targeting>`"
+msgstr ""
+
+#: ../../overview/content_sources.rst:32
+msgid ":ref:`Distribution methods <distribution>`"
+msgstr ""
+
+#: ../../overview/content_sources.rst:36
+msgid ""
+"If you have a high content production level we strongly recommend that "
+"you leave our smart distribution methodologies, Geo-Ripple or Progressive"
+" Ripple®, active in the settings to avoid bombarding your users and "
+"increasing churn."
+msgstr ""
+
+#: ../../overview/content_sources.rst:45
+msgid "Headline template"
+msgstr ""
+
+#: ../../overview/content_sources.rst:47
+msgid ""
+"You can insert a headline that introduces each piece of content in your "
+"feed, i.e.: “Your news”, “Latest job positions”, etc."
+msgstr ""
+
+#: ../../overview/content_sources.rst:49
+msgid "Text template"
+msgstr ""
+
+#: ../../overview/content_sources.rst:51
+msgid ""
+"You can add a personalized message and even include a message from your "
+"sponsor, i.e.: “… brings you your daily news”"
+msgstr ""
+
+#: ../../overview/content_sources.rst:54
+msgid ""
+"10darts supports `Django templates "
+"<https://docs.djangoproject.com/en/1.11/ref/templates/>`_, that you can "
+"check for further information."
+msgstr ""
+
+#: ../../overview/content_sources.rst:56
+msgid "An example of a RSS Content Feed:"
+msgstr ""
+
+#: ../../overview/content_sources.rst:103
+msgid ""
+"We can use RSS with geo-location, information linked to items, `GeoRSS "
+"<https://es.wikipedia.org/wiki/GeoRSS>`_. This will be linked to the "
+"generated content and allow 10darts to apply smart geo distribution base "
+"on the Geo-Ripple Effect algorithm."
+msgstr ""
+
+#: ../../overview/distribution.rst:8
+msgid "Ripple Effect®"
+msgstr ""
+
+#: ../../overview/distribution.rst:10
+msgid ""
+"Unless you choose one of 10darts Ripple Effect Distribution Algorithms, "
+"your campaign will be blasted to all users targeted following your "
+"specifications."
+msgstr ""
+
+#: ../../overview/distribution.rst:14
+msgid ""
+"If you chose any of 10darts Distribution Algorithms, Progressive Ripple "
+"Effect or Geo Ripple, your campaign will reach the maximum interested "
+"audience from the user target you determined."
+msgstr ""
+
+#: ../../overview/distribution.rst:18
+msgid ""
+"In summary, autonomous algorithms segment your user target in different "
+"groups and only send notifications to the next group provided that the "
+"previous one meets the minimum thresholds requirements. 10darts defines "
+"those threshold dynamically depending on the interaction level of your "
+"users and the amount of campaigns you send in the moment and in general, "
+"your content type / industry."
+msgstr ""
+
+#: ../../overview/distribution.rst:28
+msgid "Geo Ripple"
+msgstr ""
+
+#: ../../overview/distribution.rst:30
+msgid ""
+"In a Campaign you can activate the **Geo Ripple Effect®** as a method to "
+"autonomously increase the effective reach in a certain geographical area."
+msgstr ""
+
+#: ../../overview/distribution.rst:33
+msgid ""
+"This distribution methodology is particularly appropriate for "
+"notifications with geo-located content over which you cannot pre-"
+"determine the maximum area of audience relevance, i.e. local businesses' "
+"information job offers, or news reports. This algorithm will expand the "
+"push notifications in larger areas until the user engagement in those "
+"areas decline."
+msgstr ""
+
+#: ../../overview/distribution.rst:41
+msgid ""
+"The maximum audience that can be reached under this distribution method "
+"will be the user target you’ve defined for the campaign."
+msgstr ""
+
+#: ../../overview/distribution.rst:47
+msgid "Progressive Ripple"
+msgstr ""
+
+#: ../../overview/distribution.rst:49
+msgid ""
+"The Progressive Ripple effect works similarly to the Geo-Ripple Effect "
+"but instead of applying the relevance algorithms in geographical areas, "
+"it is applied to different user groups dynamically generated by 10darts "
+"within the user target you define in each campaign."
+msgstr ""
+
+#: ../../overview/distribution.rst:56
+msgid ""
+"The maximum audience to be reached under this distribution will be the "
+"user target you’ve defined for the campaign."
+msgstr ""
+
+#: ../../overview/distribution.rst:60
+msgid "Touchpoint Selection"
+msgstr ""
+
+#: ../../overview/distribution.rst:62
+msgid ""
+"10darts analyzes your user engagement patterns with your platform. Among "
+"them are the :ref:`Touchpoint <channels>` that each user has."
+msgstr ""
+
+#: ../../overview/distribution.rst:65
+msgid ""
+"When you select this option, 10darts will autonomously send your push "
+"notification to each user through their preferred communication channel "
+"at the moment you launch your campaign."
+msgstr ""
+
+#: ../../overview/distribution.rst:69
+msgid ""
+"As 10darts incorporates communication channels (web notifications, "
+"Facebook messenger notifications, etc.) this feature will become more "
+"useful to ensure maximum user engagement."
+msgstr ""
+
+#: ../../overview/options.rst:5
+msgid "Settings"
+msgstr ""
+
+#: ../../overview/options.rst:7
+msgid ""
+"10darts has pre-configured the settings we consider most appropriate for "
+"our clients. Before you change them, we recommend that you wait until you"
+" are familiar with 10darts features and algorithms and that you have run "
+"some push notification campaigns and analyzed the results."
+msgstr ""
+
+#: ../../overview/options.rst:12
+msgid ""
+"10darts platform can be easily customized. Here’s the list of `settings "
+"<https://10darts.com/app/settings>`_ (remember, ``0`` is deactivated, "
+"``1`` is activated):"
+msgstr ""
+
+#: ../../overview/options.rst:17
+msgid "Activate/deactivate fake push notifications"
+msgstr ""
+
+#: ../../overview/options.rst:19
+msgid ""
+"While you perform tests, check all the options in the 10darts platform. "
+"You can activate the “Fake push notifications” option to make sure none "
+"of your users receive a notification by accident."
+msgstr ""
+
+#: ../../overview/options.rst:23
+msgid "Activate/deactivate time zone restriction for Geo Ripple"
+msgstr ""
+
+#: ../../overview/options.rst:25
+msgid ""
+"This will ensure that the while the 10darts :ref:`Geo Ripple Effect "
+"<campaigns-geo-ripple>` is operating, it does not send push messages "
+"during the night to your users."
+msgstr ""
+
+#: ../../overview/options.rst:26
+msgid "Daytime (hours) to start checking relevance"
+msgstr ""
+
+#: ../../overview/options.rst:28
+msgid ""
+"This is the time at which 10darts starts checking the relevance of the "
+"push notifications sent (by default ``7am`` users local time)."
+msgstr ""
+
+#: ../../overview/options.rst:29
+msgid "Daytime (hours) to stop checking relevance"
+msgstr ""
+
+#: ../../overview/options.rst:31
+msgid ""
+"This is the time at which 10darts stops checking the relevance of the "
+"push notifications sent (by default ``11pm`` users local time)."
+msgstr ""
+
+#: ../../overview/options.rst:32
+msgid "Maximum period to check Geo Ripple relevance"
+msgstr ""
+
+#: ../../overview/options.rst:34
+msgid ""
+"Maximum time period over which 10darts checks the relevance of a "
+":ref:`Geo Ripple Effect <campaigns-geo-ripple>` campaign (``28800`` "
+"seconds by default, 8 hours). After that time period 10darts stops "
+"checking the relevance of a push notification and stops the ripple "
+"effect."
+msgstr ""
+
+#: ../../overview/options.rst:35
+msgid "Maximum period to check Progressive Ripple relevance"
+msgstr ""
+
+#: ../../overview/options.rst:37
+msgid ""
+"Maximum time period over which 10darts checks the relevance of a "
+":ref:`Progressive Ripple Effect <campaigns-progressive-ripple>`  campaign"
+" (``28800`` seconds by default, 8 hours). After that time period 10darts "
+"stops checking the relevance of a push notification and stops the ripple "
+"effect."
+msgstr ""
+
+#: ../../overview/options.rst:38
+msgid ""
+"Maximum number of seconds from the creation of the notification to check "
+"relevance"
+msgstr ""
+
+#: ../../overview/options.rst:40
+msgid ""
+"Maximum time over which the results of a campaign are "
+"monitored (``28800`` seconds by default, 8 hours)."
+msgstr ""
+
+#: ../../overview/options.rst:41
+msgid "Activity relevance (in percentage) threshold"
+msgstr ""
+
+#: ../../overview/options.rst:43
+msgid ""
+"Level of message content interaction increase, other than in the specific"
+" campaign and expressed in percentage, that will make 10darts algorithms "
+"determine the campaign as relevant and trigger the next level of "
+"notifications."
+msgstr ""
+
+#: ../../overview/options.rst:44
+msgid "Openings relevance (in percentage) threshold"
+msgstr ""
+
+#: ../../overview/options.rst:46
+msgid ""
+"Amount of opened push notifications, expressed in percentage, that will "
+"make 10darts algorithms determine the campaign as relevant and trigger "
+"the next level of notifications."
+msgstr ""
+
+#: ../../overview/options.rst:47
+msgid "Campaign activity relevance (in percentage) threshold"
+msgstr ""
+
+#: ../../overview/options.rst:49
+msgid ""
+"Level of push notification interaction increase in the campaign and "
+"expressed in percentage, that will trigger the Activity Relevance "
+"Threshold."
+msgstr ""
+
+#: ../../overview/options.rst:52
+msgid "Minimum size of the control group in Geo Ripple"
+msgstr ""
+
+#: ../../overview/options.rst:54
+msgid ""
+"Minimum number of users that determine a control group. A control group "
+"is the users within a user target that meet a certain criteria and based "
+"on their level of interaction with the notification, determine that "
+"10darts expands that notification to the rest of the target group."
+msgstr ""
+
+#: ../../overview/options.rst:55
+msgid "Number of days used to create default segments"
+msgstr ""
+
+#: ../../overview/options.rst:57
+msgid ""
+"Number of days that 10darts takes into account for the purposes of "
+"distributing your user base into the different :ref:`pre-defined user "
+"segments <segments-reference>`, sleepers, zombies, stars, looky-loos and "
+"rookies."
+msgstr ""
+
+#: ../../overview/options.rst:58
+msgid ""
+"Number of hours from last activity to be able to be selected as active "
+"device"
+msgstr ""
+
+#: ../../overview/options.rst:60
+msgid ""
+"Number of hours that 10darts takes into account for the purpose of "
+"defining an active device and be part of a control group."
+msgstr ""
+
+#: ../../overview/pushes.rst:5
+msgid "Push Notification"
+msgstr ""
+
+#: ../../overview/pushes.rst:7
+msgid ""
+"A push notification is a multimedia message sent to a user’s "
+":ref:`Touchpoint <channels>`."
+msgstr ""
+
+#: ../../overview/pushes.rst:9
+msgid ""
+"Here you have a list of the main terms related to push notifications "
+"you’ll find in the 10darts dashboard:"
+msgstr ""
+
+#: ../../overview/pushes.rst:13
+msgid "Sent Push"
+msgstr ""
+
+#: ../../overview/pushes.rst:15
+msgid ""
+"Is any notification that 10darts platform generates and transmits to your"
+" users following your specifications."
+msgstr ""
+
+#: ../../overview/pushes.rst:19
+msgid "Received Push"
+msgstr ""
+
+#: ../../overview/pushes.rst:21
+msgid "Notifications that 10darts SDK confirms that have reached your users."
+msgstr ""
+
+#: ../../overview/pushes.rst:24
+msgid "Opened Push"
+msgstr ""
+
+#: ../../overview/pushes.rst:26
+msgid ""
+"Any received notification that 10darts SDK confirms that the user have "
+"clicked on. Opened push notifications are the basis of the “`campaign "
+"success rate <https://10darts.com/app/dashboard>`_”."
+msgstr ""
+
+#: ../../overview/pushes.rst:30
+msgid "Silent Push"
+msgstr ""
+
+#: ../../overview/pushes.rst:32
+msgid ""
+"Notifications that are sent to the users but not shown on their screen. "
+"Silent push notifications do not require the user’s consent."
+msgstr ""
+
+#: ../../overview/pushes.rst:35
+msgid ""
+"The purpose of these silent pushes is to verify that your users are still"
+" using your application installed on their devices."
+msgstr ""
+
+#: ../../overview/pushes.rst:38
+msgid ""
+"When 10darts gets a “non valid” answer from a user after sending a "
+"notification, it considers that the user has churned (uninstalled your "
+"app)."
+msgstr ""
+
+#: ../../overview/pushes.rst:41
+msgid ""
+"10darts uses this information to determine the churn of each campaign and"
+" analyzes the impact on your user base, cohorts analysis, loyalty "
+"analysis, etc."
+msgstr ""
+
+#: ../../overview/segments.rst:5
+msgid "Segments"
+msgstr ""
+
+#: ../../overview/segments.rst:7
+msgid ""
+"Through the Campaign Manager on the dashboard you can set up the user "
+"targets more commonly used in your marketing strategy. These `segments "
+"<https://10darts.com/app/segments/create>`_ can be used when you create "
+"manual campaigns as well as the campaigns handled by the API and when you"
+" configure a Content Feed."
+msgstr ""
+
+#: ../../overview/segments.rst:12
+msgid ""
+"By default, 10darts comes with `some predefined segments "
+"<https://10darts.com/app/segments>`_ based on behavioral criteria:"
+msgstr ""
+
+#: ../../overview/segments.rst:16
+msgid "Rookies"
+msgstr ""
+
+#: ../../overview/segments.rst:18
+msgid ""
+"Users who has interacted for the first time and only once, in the last 14"
+" days."
+msgstr ""
+
+#: ../../overview/segments.rst:19
+msgid "Looky-Loos"
+msgstr ""
+
+#: ../../overview/segments.rst:21
+msgid "Rookies who have not come back in the last 14 days."
+msgstr ""
+
+#: ../../overview/segments.rst:22
+msgid "Stars"
+msgstr ""
+
+#: ../../overview/segments.rst:24
+msgid "Users who has interacted for the 2nd (or more) times in the last 14 days."
+msgstr ""
+
+#: ../../overview/segments.rst:25
+msgid "Sleepers"
+msgstr ""
+
+#: ../../overview/segments.rst:27
+msgid "Stars who have not interacted in the last 14 days."
+msgstr ""
+
+#: ../../overview/segments.rst:28
+msgid "Zombies"
+msgstr ""
+
+#: ../../overview/segments.rst:30
+msgid "Any user who has not interacted in more than 14 days."
+msgstr ""
+
+#: ../../overview/segments.rst:32
+msgid ""
+"You can modify the 14 days period in `Settings "
+"<https://10darts.com/app/settings>`_."
+msgstr ""
+
+#: ../../overview/segments.rst:34
+msgid ""
+"You might find 10darts suggests you use other user segments to enhance "
+"your user engagement."
+msgstr ""
+
+#: ../../overview/statistics.rst:3
+msgid "Analytics"
+msgstr ""
+
+#: ../../overview/statistics.rst:5
+msgid ""
+"10darts provides you with a default set of reports so you know at all "
+"moments and in real time the performance level of your push notifications"
+" and your users’ engagement."
+msgstr ""
+
+#: ../../overview/statistics.rst:11
+msgid "`Overview <https://10darts.com/app/dashboard>`_"
+msgstr ""
+
+#: ../../overview/statistics.rst:13
+msgid ""
+"At the top of your Dashboard you will find the following key performance "
+"indicators:"
+msgstr ""
+
+#: ../../overview/statistics.rst:17
+msgid "Total Users"
+msgstr ""
+
+#: ../../overview/statistics.rst:19
+msgid "Total number of users you’ve had since you started with 10darts."
+msgstr ""
+
+#: ../../overview/statistics.rst:20
+msgid "Alive Users"
+msgstr ""
+
+#: ../../overview/statistics.rst:22
+msgid "Users who have not churned."
+msgstr ""
+
+#: ../../overview/statistics.rst:23
+msgid "Push-On Users"
+msgstr ""
+
+#: ../../overview/statistics.rst:25
+msgid "Live users who accept your push notifications."
+msgstr ""
+
+#: ../../overview/statistics.rst:26
+msgid "Active Users in Current Month"
+msgstr ""
+
+#: ../../overview/statistics.rst:28
+msgid "Users who interacted during the current month"
+msgstr ""
+
+#: ../../overview/statistics.rst:30
+msgid "Then you’ll see the following charts:"
+msgstr ""
+
+#: ../../overview/statistics.rst:33
+msgid "Overall Notifications"
+msgstr ""
+
+#: ../../overview/statistics.rst:35
+msgid ""
+"You can first determine the time period that you want to analyze and "
+"whether or not you want to see the results in days, weeks or months."
+msgstr ""
+
+#: ../../overview/statistics.rst:38
+msgid ""
+"In your first report you will see the analysis of the overall performance"
+" of all the push notifications you have sent to your users through "
+"10darts, whether through Manual Campaigns, Content Feed or API."
+msgstr ""
+
+#: ../../overview/statistics.rst:42
+msgid ""
+"That performance is analyzed in terms of number of push notifications you"
+" have sent, those received by your users, as confirmed by 10darts, and "
+"those your users have opened."
+msgstr ""
+
+#: ../../overview/statistics.rst:47
+msgid "Campaign Success Ratio"
+msgstr ""
+
+#: ../../overview/statistics.rst:49
+msgid ""
+"In this report you have information on the Success Ratio of your push "
+"notifications, Manual Campaigns, Content Feed and API, measured as the "
+"amount of push opened vs the amount of push received by your users."
+msgstr ""
+
+#: ../../overview/statistics.rst:53
+msgid ""
+"You can see in the Total bars the total number of push notifications "
+"opened by all of your users vs the total number of received in all the "
+"push notification categories you have (Manual Campaigns, Content Feed and"
+" API) expressed in percentages."
+msgstr ""
+
+#: ../../overview/statistics.rst:59
+msgid "`Cohorts <https://10darts.com/app/metrics/cohorts>`_"
+msgstr ""
+
+#: ../../overview/statistics.rst:61
+msgid ""
+"In Cohorts you can see the evolution of the users based on when they were"
+" acquired. This will help you analyze the impact of your acquisition "
+"strategy in the timeline. You can analyze the information based on days, "
+"weeks or months."
+msgstr ""
+
+#: ../../overview/statistics.rst:66
+msgid ""
+"The rows show the time line starting at the moment your users downloaded "
+"your app (0) and the consecutive days, weeks or months (1 to n) tell you "
+"the percentage of those alive in each given period."
+msgstr ""
+
+#: ../../overview/statistics.rst:70
+msgid "Example:"
+msgstr ""
+
+#: ../../overview/statistics.rst:73
+msgid "**Week 0**"
+msgstr ""
+
+#: ../../overview/statistics.rst:73
+msgid "**Week 1**"
+msgstr ""
+
+#: ../../overview/statistics.rst:73
+msgid "**Week 2**"
+msgstr ""
+
+#: ../../overview/statistics.rst:73
+msgid "**Week 3**"
+msgstr ""
+
+#: ../../overview/statistics.rst:75
+msgid "**Jun 26, 2017**"
+msgstr ""
+
+#: ../../overview/statistics.rst:75 ../../overview/statistics.rst:77
+#: ../../overview/statistics.rst:79 ../../overview/statistics.rst:81
+msgid "100%"
+msgstr ""
+
+#: ../../overview/statistics.rst:75
+msgid "51.53%"
+msgstr ""
+
+#: ../../overview/statistics.rst:75
+msgid "36.20%"
+msgstr ""
+
+#: ../../overview/statistics.rst:75
+msgid "25.84%"
+msgstr ""
+
+#: ../../overview/statistics.rst:77
+msgid "**Jul 3, 2017**"
+msgstr ""
+
+#: ../../overview/statistics.rst:77
+msgid "51.27%"
+msgstr ""
+
+#: ../../overview/statistics.rst:77
+msgid "28.50%"
+msgstr ""
+
+#: ../../overview/statistics.rst:79
+msgid "**Jul 10, 2017**"
+msgstr ""
+
+#: ../../overview/statistics.rst:79
+msgid "46.45%"
+msgstr ""
+
+#: ../../overview/statistics.rst:81
+msgid "**Jul 17, 2017**"
+msgstr ""
+
+#: ../../overview/statistics.rst:84
+msgid "How to read this table:"
+msgstr ""
+
+#: ../../overview/statistics.rst:86
+#, python-format
+msgid ""
+"**Row 1**: Out of all users acquired on the week that started on "
+"6/26/2017, 51.53% are alive in week 1, 36.2% in week 2 and 25.84% in week"
+" 3."
+msgstr ""
+
+#: ../../overview/statistics.rst:88
+#, python-format
+msgid ""
+"**Row 2**: Out of all users acquired on the week that started on "
+"7/3/2017, 51.27% are alive in week 1 and 28.50% in week 2."
+msgstr ""
+
+#: ../../overview/statistics.rst:90
+msgid ""
+"**Row 3**: Out of all users acquired on the week that started on "
+"7/10/2017, 46.45% are alive in week 1"
+msgstr ""
+
+#: ../../overview/statistics.rst:92
+msgid "**Row 4**: We’re currently in week 7/17/2017 and no data is available yet."
+msgstr ""
+
+#: ../../overview/targeting.rst:5
+msgid "Targeting Criteria"
+msgstr ""
+
+#: ../../overview/targeting.rst:7
+msgid "User target segmentation criteria:"
+msgstr ""
+
+#: ../../overview/targeting.rst:10
+msgid "Channel"
+msgstr ""
+
+#: ../../overview/targeting.rst:12
+msgid ""
+"Different communication channels: app, web notification, FB messenger, "
+"iOS, Android, etc."
+msgstr ""
+
+#: ../../overview/targeting.rst:13
+msgid "Language"
+msgstr ""
+
+#: ../../overview/targeting.rst:15
+msgid "10darts takes into account the user’s device language."
+msgstr ""
+
+#: ../../overview/targeting.rst:16
+msgid "App version"
+msgstr ""
+
+#: ../../overview/targeting.rst:18
+msgid ""
+"Users with different app versions can also be targeted, related with iOS "
+"and Android apps."
+msgstr ""
+
+#: ../../overview/targeting.rst:19 ../../overview/users.rst:5
+msgid "Users"
+msgstr ""
+
+#: ../../overview/targeting.rst:21
+msgid "List of individual users you specifically want to target."
+msgstr ""
+
+#: ../../overview/targeting.rst:22
+msgid "Segment"
+msgstr ""
+
+#: ../../overview/targeting.rst:24
+msgid ""
+"You can choose among those `you have already defined "
+"<https://10darts.com/app/segments>`_."
+msgstr ""
+
+#: ../../overview/targeting.rst:25
+msgid "Tags"
+msgstr ""
+
+#: ../../overview/targeting.rst:27
+msgid ""
+"Keys or attributes you use for the different user categories you have in "
+"your CRM and that you previously have updated on 10darts. You can see how"
+" you can update your users’ categories using the API click :ref:`here "
+"<api>` and the SDK click :ref:`here <android-sdk-user-data>` or click "
+":ref:`here <users-import>` to import a CVS File."
+msgstr ""
+
+#: ../../overview/targeting.rst:32
+msgid "Random Segmentation"
+msgstr ""
+
+#: ../../overview/targeting.rst:34
+msgid ""
+"When you “Enable Sample Size of Recipients” 10darts selects the random "
+"number of users you specify within your user target to test the "
+"notification."
+msgstr ""
+
+#: ../../overview/targeting.rst:37
+msgid "Geographical Segmentation"
+msgstr ""
+
+#: ../../overview/targeting.rst:39
+msgid ""
+"When you enable this option your campaign will be sent to users located "
+"in the geography that you define, either by name, i.e. country, state, "
+"city, neighborhood, or by drawing a circle or an area on the map."
+msgstr ""
+
+#: ../../overview/users.rst:7
+msgid ""
+"Are all those individuals with whom you can communicate with because they"
+" have your app installed in their device/s. You might also refer to them "
+"as your \"Clients\"."
+msgstr ""
+
+#: ../../overview/users.rst:11
+msgid ""
+"It is very important that you connect your own data base client-id (your "
+"internal id, email, Facebook id, etc.) with the `10darts \"Client data\" "
+"<https://10darts.com/app/users/imports>`_."
+msgstr ""
+
+#: ../../overview/users.rst:14
+msgid ""
+"Every time a user downloads your app 10darts generates an anonymous user "
+"ID. Once that user has signed up or logged in you need to inform 10darts "
+"SDK so the platform updates that user’s identification code, access data "
+"and keys. You have specific instructions :ref:`here for Android <android-"
+"sdk-classes-sdk>` and here for iOS."
+msgstr ""
+
+#: ../../overview/users.rst:20
+msgid ""
+"These user data is the link between you and 10darts data base. You can "
+"update this information too :ref:`through the API <api-devices-link>` or "
+":ref:`importing a CSV file <users-import>`."
+msgstr ""
+
+#: ../../overview/users.rst:26
+msgid "User Import"
+msgstr ""
+
+#: ../../overview/users.rst:28
+msgid ""
+"You can import user files in CSV format delimited by commas. This process"
+" will only update existing users in  the 10darts platform that have an "
+"assigned ``client_data`` id and that match the values given in the "
+"imported file."
+msgstr ""
+
+#: ../../overview/users.rst:33
+msgid "The values in the file columns are:"
+msgstr ""
+
+#: ../../overview/users.rst:35
+msgid "Field value ``client_data`` (string)."
+msgstr ""
+
+#: ../../overview/users.rst:36
+msgid "Nickname (string), optional."
+msgstr ""
+
+#: ../../overview/users.rst:37
+msgid "Email (string), optional."
+msgstr ""
+
+#: ../../overview/users.rst:38
+msgid "First Name (string), optional."
+msgstr ""
+
+#: ../../overview/users.rst:39
+msgid "Last Name (string), optional."
+msgstr ""
+
+#: ../../overview/users.rst:40
+msgid ""
+"Geo-Position (string). Example: ``RID=4326;POINT (-99.0099141 "
+"19.335117)``, where the values are **longitude and latitude** in that "
+"order, opcional."
+msgstr ""
+
+#: ../../overview/users.rst:41
+msgid "Country (string), 2 character code with the country, optional."
+msgstr ""
+
+#: ../../overview/users.rst:42
+msgid ""
+"Tags (string), list of tags linked to the user separated by ``;`` "
+"Example: ``tag1;tag2``. Optional."
+msgstr ""
+

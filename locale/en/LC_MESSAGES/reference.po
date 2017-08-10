@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-14 13:23+0200\n"
+"POT-Creation-Date: 2017-08-10 10:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../reference.rst:3
-msgid "Referencia"
-msgstr ""
-
-#: ../../reference/android.rst:3
+#: ../../reference/android.rst:5
 msgid "Android SDK"
 msgstr ""
 
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:10
-msgid "INotifications.IBackgroundCustomNotificationLoaderListener"
-msgstr ""
-
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:18
+#: ../../reference/android.rst:7
 msgid ""
-"To provide asynchronous custom notifications loading. You must call "
-"either revertToStandardNotification or customNotificationsReady once"
+"This is the reference of the Android SDK source code. The code is divided"
+" in two parts, on one side the class ``com.tendarts.sdk.TendartsSDK`` and"
+" on the other side, the interfaces and classes defined in the package "
+"``com.tendarts.sdk.client``."
 msgstr ""
 
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:21
-#: ../../reference/android/igeolocation.rst:13
-#: ../../reference/android/inotifications.rst:17
-#: ../../reference/android/isdkcore.rst:16
-#: ../../reference/android/iuistrings.rst:14
-msgid "Methods"
+#: ../../reference/android.rst:11
+msgid "Here you can find the definition of all classes and their methods."
 msgstr ""
 
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:23
-msgid "customNotificationsReady"
+#: ../../reference/android.rst:13
+msgid "Content"
 msgstr ""
 
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:28
-msgid ""
-"All asynchronous loading and manipulations done, remote views are ready "
-"to use"
+#: ../../reference/android/client.rst:5
+msgid "Package Client"
 msgstr ""
 
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst
-#: ../../reference/android/inotifications.rst
-#: ../../reference/android/isdkcore.rst ../../reference/android/iuistrings.rst
-msgid "Parámetros"
-msgstr ""
-
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:30
-msgid ""
-"if provided this bitmap will be used in "
-"NotificationBuilder..setLargeIcon()"
-msgstr ""
-
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:33
-msgid "revertToStandardNotification"
-msgstr ""
-
-#: ../../reference/android/INotifications-IBackgroundCustomNotificationLoaderListener.rst:38
-msgid "Loading failed and should fallback to standard notification"
-msgstr ""
-
-#: ../../reference/android/client.rst:4
-msgid "Client"
-msgstr ""
-
-#: ../../reference/android/client.rst:6
+#: ../../reference/android/client.rst:7
 msgid "Client namespace contains all the functionality the client should use."
 msgstr ""
 
@@ -85,767 +49,494 @@ msgstr ""
 msgid "Interfaces"
 msgstr ""
 
-#: ../../reference/android/client.rst:12
-#: ../../reference/android/sdkclient.rst:15
-msgid ":ref:`ISDKCore <android-sdk-classes-isdkcore>`"
-msgstr ""
-
-#: ../../reference/android/client.rst:15
-#: ../../reference/android/sdkclient.rst:18
-msgid ":ref:`INotifications <android-sdk-classes-inotifications>`"
-msgstr ""
-
 #: ../../reference/android/client.rst:18
-#: ../../reference/android/sdkclient.rst:21
-msgid ":ref:`IUIStrings <android-sdk-classes-iustrings>`"
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/android/client.rst:21
-#: ../../reference/android/sdkclient.rst:24
-msgid ":ref:`IGeolocation <android-sdk-classes-igeolocation>`"
-msgstr ""
-
-#: ../../reference/android/client.rst:24
-msgid "Clases"
-msgstr ""
-
-#: ../../reference/android/client.rst:27
-msgid ":ref:`SDKClient <android-sdk-classes-sdkclient>`"
-msgstr ""
-
-#: ../../reference/android/igeolocation.rst:4
+#: ../../reference/android/client/igeolocation.rst:4
 msgid "IGeolocation"
 msgstr ""
 
-#: ../../reference/android/igeolocation.rst:15
-msgid "onUserAcceptedLocationPermission"
+#: ../../reference/android/client/igeolocation.rst:13
+#: ../../reference/android/client/inotifications.rst:17
+#: ../../reference/android/client/isdkcore.rst:16
+#: ../../reference/android/client/iuistrings.rst:12
+#: ../../reference/android/sdk.rst:12
+msgid "Methods"
 msgstr ""
 
-#: ../../reference/android/igeolocation.rst:20
+#: ../../reference/android/client/igeolocation.rst:18
 msgid ""
 "Called when the user has accepted location permission, note that asking "
 "for permissions depends on several factors and is not always asked to the"
 " user."
 msgstr ""
 
-#: ../../reference/android/igeolocation.rst:23
-msgid "onUserRejectedLocationPermission"
-msgstr ""
-
-#: ../../reference/android/igeolocation.rst:28
+#: ../../reference/android/client/igeolocation.rst:23
 msgid ""
 "Called when the user has rejected location permission, do not make any "
-"further UI interaction with the user regarding location permission"
+"further UI interaction with the user regarding location permission."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:7
+#: ../../reference/android/client/inotifications.rst:7
 msgid "INotifications"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:14
-msgid "Notifications related interface"
+#: ../../reference/android/client/inotifications.rst:14
+msgid "Notifications related interface."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:19
-msgid "getCustomNotificationLargeView"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:24
+#: ../../reference/android/client/inotifications.rst:22
 msgid ""
-"you should also return a view on getCustomNotificationSmallView if you "
+"You should also return a view on getCustomNotificationSmallView if you "
 "need to load some data could be done later, return immediately override "
-"if you want to provide your large custom notification view when expanded"
+"if you want to provide your large custom notification view when expanded."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:30
-msgid "getCustomNotificationSmallView"
+#: ../../reference/android/client/inotifications.rst
+#: ../../reference/android/client/isdkcore.rst
+#: ../../reference/android/client/iuistrings.rst
+#: ../../reference/android/sdk.rst
+msgid "Parameters"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:35
+#: ../../reference/android/client/inotifications.rst:30
 msgid ""
-"if you need to load some data could be done later, return immediately, "
+"If you need to load some data could be done later, return immediately, "
 "override if you want to provide your custom notification view when "
-"collapsed"
+"collapsed."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:41
-msgid "loadBackgroundCustomNotificationData"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:46
+#: ../../reference/android/client/inotifications.rst:38
 msgid ""
 "Called to start all your background custom notification loading, return "
 "immediately. You MUST call listener.revertToStandardNotification() or "
 "listener.customNotificationsReady() once."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:48
+#: ../../reference/android/client/inotifications.rst:40
 msgid "listener to call when you are ready"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:49
+#: ../../reference/android/client/inotifications.rst:41
 msgid "notification to load data"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:50
-#: ../../reference/android/inotifications.rst:51
+#: ../../reference/android/client/inotifications.rst:42
+#: ../../reference/android/client/inotifications.rst:43
 msgid "RemoteViews to be filled"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:52
+#: ../../reference/android/client/inotifications.rst:44
 msgid "context to use"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:55
-msgid "notificationHasImage"
+#: ../../reference/android/client/inotifications.rst:49
+msgid "Return true if the notification should have an image."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:60
-msgid "Return true if the notification should have an image"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:62
+#: ../../reference/android/client/inotifications.rst:51
 msgid "notification containing data to build the notification"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst
-#: ../../reference/android/isdkcore.rst ../../reference/android/iuistrings.rst
-msgid "Devuelve"
+#: ../../reference/android/client/inotifications.rst
+#: ../../reference/android/client/isdkcore.rst
+#: ../../reference/android/client/iuistrings.rst
+#: ../../reference/android/sdk.rst
+msgid "Returns"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:63
+#: ../../reference/android/client/inotifications.rst:52
 msgid "true if the notification should contain a custom image."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:66
-msgid "onNotificationClicked"
+#: ../../reference/android/client/inotifications.rst:57
+msgid "Called when a showed notification is clicked."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:71
-msgid "Called when a showed notification is clicked"
+#: ../../reference/android/client/inotifications.rst:64
+msgid "Called when the notification list is cleared."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:76
-msgid "onNotificationListCleared"
+#: ../../reference/android/client/inotifications.rst:69
+msgid "Called when a notification is received in the device."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:81
-msgid "Called when the notification list is cleared"
+#: ../../reference/android/client/inotifications.rst:76
+msgid "Called when a notification is showed to the user."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:84
-msgid "onNotificationReceived"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:89
-msgid "Called when a notification is received in the device"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:94
-msgid "onNotificationShowed"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:99
-msgid "Called when a notification is showed to the user"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:104
-msgid "onNotificationShowedInList"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:109
+#: ../../reference/android/client/inotifications.rst:83
 msgid ""
 "Called when a notification is showed to the user in the stacked "
-"notification"
+"notification."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:114
-msgid "openNotification"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:119
+#: ../../reference/android/client/inotifications.rst:90
 msgid ""
 "Open the notification, start your desired intent configured properly, "
 "return true to override deep url launching."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:121
+#: ../../reference/android/client/inotifications.rst:92
 msgid "the clicked notification"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:122
-#: ../../reference/android/inotifications.rst:133
+#: ../../reference/android/client/inotifications.rst:93
+#: ../../reference/android/client/inotifications.rst:101
 msgid "context to be used"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:123
-msgid "true if client opens the notification overriding SDK default behabiour"
+#: ../../reference/android/client/inotifications.rst:94
+msgid "true if client opens the notification overriding SDK default behaviour"
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:126
-msgid "openNotificationList"
-msgstr ""
-
-#: ../../reference/android/inotifications.rst:131
+#: ../../reference/android/client/inotifications.rst:99
 msgid ""
 "Start the proper intent to show notification list, the user has clicked "
-"on stacked notification"
+"on stacked notification."
 msgstr ""
 
-#: ../../reference/android/inotifications.rst:137
-msgid "`back to Client <../README.md>`__"
+#: ../../reference/android/client/inotifications.rst:106
+msgid ""
+"To provide asynchronous custom notifications loading. You must call "
+"either revertToStandardNotification or customNotificationsReady once."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:6
+#: ../../reference/android/client/inotifications.rst:111
+msgid ""
+"All asynchronous loading and manipulations done, remote views are ready "
+"to use."
+msgstr ""
+
+#: ../../reference/android/client/inotifications.rst:113
+msgid "if provided this bitmap will be used in NotificationBuilder.setLargeIcon()"
+msgstr ""
+
+#: ../../reference/android/client/inotifications.rst:118
+msgid "Loading failed and should fallback to standard notification."
+msgstr ""
+
+#: ../../reference/android/client/isdkcore.rst:6
 msgid "ISDKCore"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:13
-msgid "ISDKCore handles core events on SDK"
+#: ../../reference/android/client/isdkcore.rst:13
+msgid "ISDKCore handles core events on SDK."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:18
-msgid "logEvent"
+#: ../../reference/android/client/isdkcore.rst:21
+msgid "Called to log events, for example to use analytics."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:23
-msgid "Called to log events, for example to use analytics"
-msgstr ""
-
-#: ../../reference/android/isdkcore.rst:35
+#: ../../reference/android/client/isdkcore.rst:33
 msgid "category"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:36
+#: ../../reference/android/client/isdkcore.rst:34
 msgid "type"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:37
+#: ../../reference/android/client/isdkcore.rst:35
 msgid "message"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:40
-msgid "mainActivityClassName"
-msgstr ""
-
-#: ../../reference/android/isdkcore.rst:45
+#: ../../reference/android/client/isdkcore.rst:40
 msgid ""
-"Called to retrieve the main activity class name \\ ``return "
-"MainActivity.class.getName()``\\"
+"Called to retrieve the main activity class name ``return "
+"MainActivity.class.getName()``."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:47
+#: ../../reference/android/client/isdkcore.rst:42
 msgid "the main activity class name"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:50
-msgid "performSetup"
-msgstr ""
-
-#: ../../reference/android/isdkcore.rst:55
+#: ../../reference/android/client/isdkcore.rst:47
 msgid ""
 "Called when the SDK is initialized Do any customization here like "
-"Sdk.alwaysShowLastNotification: \\ "
-"``Sdk.alwaysShowLastNotification(false);``\\"
+"TendartsSDK.alwaysShowLastNotification: "
+"``TendartsSDK.alwaysShowLastNotification(false);``."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:57
+#: ../../reference/android/client/isdkcore.rst:49
 msgid "context to be used, for example to get string resources"
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:60
-msgid "remoteLogException"
-msgstr ""
-
-#: ../../reference/android/isdkcore.rst:65
+#: ../../reference/android/client/isdkcore.rst:54
 msgid ""
-"To send a remote exception to your desired server e.g.: \\ "
-"``Crashlytics.logException(e);``\\"
+"To send a remote exception to your desired server e.g.: "
+"``Crashlytics.logException(e);``."
 msgstr ""
 
-#: ../../reference/android/isdkcore.rst:67
+#: ../../reference/android/client/isdkcore.rst:56
 msgid "the exception to be logged"
 msgstr ""
 
-#: ../../reference/android/iuistrings.rst:4
+#: ../../reference/android/client/iuistrings.rst:4
 msgid "IUIStrings"
 msgstr ""
 
-#: ../../reference/android/iuistrings.rst:11
-msgid "Created by jorgearimany on 19/4/17."
-msgstr ""
-
-#: ../../reference/android/iuistrings.rst:16
-msgid "getLocationExplanation"
-msgstr ""
-
-#: ../../reference/android/iuistrings.rst:21
+#: ../../reference/android/client/iuistrings.rst:17
 msgid ""
 "Return a CharSequence explaining to the user why your app uses location "
 "and why permission should be granted. the returned value should be "
 "multilanguage aware."
 msgstr ""
 
-#: ../../reference/android/iuistrings.rst:23
+#: ../../reference/android/client/iuistrings.rst:19
 msgid "context to be used to access string resources"
 msgstr ""
 
-#: ../../reference/android/iuistrings.rst:24
+#: ../../reference/android/client/iuistrings.rst:20
 msgid "the message to be shown to the user when required in the correct language"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:4
-msgid "SDK"
+#: ../../reference/android/client/sdkclient.rst:4
+msgid "TendartsClient"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:7
-msgid "Documentation"
+#: ../../reference/android/client/sdkclient.rst:8
+msgid ""
+"You should subclass TendartsClient and implement the interfaces "
+"(mysdkClient) as needed."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:10
-msgid "``public class SDK``"
+#: ../../reference/android/client/sdkclient.rst:10
+msgid "Add to the manifest."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:12
-msgid "Sdk class enables customization of the SDK"
+#: ../../reference/android/sdk.rst:5
+msgid "Class TendartsSDK"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:15
-msgid "``public SDK stackNotifications(boolean stackNotifications)``"
+#: ../../reference/android/sdk.rst:9
+msgid "TendartsSDK class enables customization of the SDK."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:17
-msgid "Configure to show stacked notifications or not defaults to true"
+msgid "Configure to show stacked notifications or not defaults to true."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:19
-msgid "**Parameters:** ``stackNotifications`` — if true notifications are stacked"
+msgid "if true notifications are stacked"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:26 ../../reference/android/sdk.rst:36
-#: ../../reference/android/sdk.rst:52 ../../reference/android/sdk.rst:68
-#: ../../reference/android/sdk.rst:82 ../../reference/android/sdk.rst:92
-#: ../../reference/android/sdk.rst:100 ../../reference/android/sdk.rst:108
-#: ../../reference/android/sdk.rst:116 ../../reference/android/sdk.rst:127
-#: ../../reference/android/sdk.rst:136 ../../reference/android/sdk.rst:144
-#: ../../reference/android/sdk.rst:153 ../../reference/android/sdk.rst:168
-msgid "**Returns:** SDK instance so you can concatenate calls"
+#: ../../reference/android/sdk.rst:20 ../../reference/android/sdk.rst:29
+#: ../../reference/android/sdk.rst:39 ../../reference/android/sdk.rst:48
+#: ../../reference/android/sdk.rst:57 ../../reference/android/sdk.rst:65
+#: ../../reference/android/sdk.rst:73 ../../reference/android/sdk.rst:81
+#: ../../reference/android/sdk.rst:89 ../../reference/android/sdk.rst:97
+#: ../../reference/android/sdk.rst:105 ../../reference/android/sdk.rst:113
+#: ../../reference/android/sdk.rst:121 ../../reference/android/sdk.rst:136
+msgid "TendartsSDK instance so you can concatenate calls"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:29
-msgid ""
-"``public SDK alwaysShowLastNotification(boolean "
-"alwaysShowLastNotification)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:31
+#: ../../reference/android/sdk.rst:25
 msgid ""
 "Configure to show always the last notification, useful in combination "
-"with stackNotifications defaults to true"
+"with stackNotifications defaults to true."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:28
+msgid "If the last notification should always been shown"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:34
 msgid ""
-"**Parameters:** ``alwaysShowLastNotification`` — If the last notification"
-" should allways been shown"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:39
-msgid ""
-"``public SDK limitNotificationSoundAndVibrationTime(    boolean "
-"limitNotificationSoundAndVibrationTime)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:41
-msgid ""
 "Configure to limit when notification will make sound and vibration "
 "defaults to true if enabled notifications will only make sound between "
-"[firstHour ... lastHour)"
+"[firstHour ... lastHour)."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:45
+#: ../../reference/android/sdk.rst:38
+msgid "If the sound and vibration will be limited"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:44 ../../reference/android/sdk.rst:53
 msgid ""
-"**Parameters:** ``limitNotificationSoundAndVibrationTime`` — If the sound"
-" and vibration will be limited"
+"Configure to set the first hour that notifications will make sound and "
+"vibration Will only taken into account if "
+"``limitNotificationSoundAndVibrationTime`` is set to true."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:53
-msgid "**See also:**"
+#: ../../reference/android/sdk.rst:47
+msgid "first hour when notifications will make sound and vibration. [0..23]"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:54
-msgid "notificationSoundAndVibrationFirstHour(int)"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:55
-msgid "notificationSoundAndVibrationLastHour(int)"
+#: ../../reference/android/sdk.rst:56
+msgid "last hour when notifications make sound and vibration. [0..23]"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:62
-msgid "``public SDK notificationSoundAndVibrationFirstHour(int firstHour)``"
+msgid "Set the color resource to use in Notifications."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:64 ../../reference/android/sdk.rst:76
-msgid ""
-"Configure to set the first hour that notifications will make sound and "
-"vibration Will only taken into account if {@link "
-"#limitNotificationSoundAndVibrationTime(boolean)} is set to true"
+#: ../../reference/android/sdk.rst:64
+msgid "the color to be used"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:69
-msgid ""
-"**Parameters:** ``firstHour`` — first hour when notifications will make "
-"sound and vibration. [0..23]"
+#: ../../reference/android/sdk.rst:70
+msgid "Set the small icon resource."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:71 ../../reference/android/sdk.rst:83
-msgid "**See also:** #limitNotificationSoundAndVibrationTime(boolean)"
+#: ../../reference/android/sdk.rst:72
+msgid "small icon resource"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:74
-msgid "``public SDK notificationSoundAndVibrationLastHour(int lastHour)``"
+#: ../../reference/android/sdk.rst:78
+msgid "Set the large icon resource."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:80
-msgid ""
-"**Parameters:** ``lastHour`` — last hour when notifications make sound "
-"and vibration. [0..23]"
+msgid "large icon resource"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:86
-msgid "``public SDK notificationColorResource(     int colorResource)``"
+msgid "Set the stacked notification title."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:88
-msgid "Set the color resource to use in Notifications"
+msgid "the title to be used"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:90
-msgid "**Parameters:** ``colorResource`` — the color to be used"
+#: ../../reference/android/sdk.rst:94
+msgid "Set the stacked notifications content."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:95
-msgid "``public SDK setSmallIconResource(int smallIconResource)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:97
-msgid "Set the small icon resource"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:99
-msgid "**Parameters:** ``smallIconResource`` — small icon resource"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:103
-msgid "``public SDK setLargeIconResource(int largeIconResource)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:105
-msgid "Set the large icon resource"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:107
-msgid "**Parameters:** ``largeIconResource`` — large icon resource"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:111
-msgid "``public SDK stackedNotificationTitle( CharSequence title)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:113
-msgid "set the stacked notification Title"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:115
-msgid "**Parameters:** ``title`` — the title to be used"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:119
-msgid "``public SDK stackedNotificationContent(String content)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:121
-msgid "set the stacked notifications content"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:123
+#: ../../reference/android/sdk.rst:96
 #, python-format
 msgid ""
-"**Parameters:** ``content`` — content, if you have an '%d' in the string "
-"it will be formatted with"
+"content, if you have an '%d' in the string it will be formatted with the "
+"number of pending notifications"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:102
+msgid "Set the view icon resource in stacked notification."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:104
+msgid ""
+"the icon resource, if not set defaults to "
+"android.R.drawable.ic\\_menu\\_view"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:110
+msgid "Set the view string in stacked notification."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:118
+msgid "Set the cancel button icon in stacked notification."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:120
+msgid ""
+"the icon resource to be used, if not set defaults to "
+"android.R.drawable.ic\\_menu\\_close\\_clear\\_cancel"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:126
-msgid "the number of pending notifications"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:130
-msgid "``public SDK viewStackedIconResource(int iconResource)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:132
-msgid "set the view icon resource in stacked notification"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:134
-msgid ""
-"**Parameters:** ``iconResource`` — the icon resource, if not set defaults"
-" to android.R.drawable.ic\\_menu\\_view"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:139
-msgid "``public SDK viewStackdString(CharSequence string)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:141
-msgid "set the view string in stacked notification"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:143 ../../reference/android/sdk.rst:167
-msgid "**Parameters:** ``string`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:147
-msgid "``public SDK cancelStackedIconResource( int iconResource)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:149
-msgid "set the cancel button icon in stacked notification"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:151
-msgid ""
-"**Parameters:** ``iconResource`` — the icon resource to be used, if not "
-"set defaults to android.R.drawable.ic\\_menu\\_close\\_clear\\_cancel"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:156
-msgid "``public int getCancelStackedIconResource()``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:158
 msgid "android.R.drawable.ic\\_menu\\_close\\_clear\\_cancel"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:160
-msgid "**Returns:**"
+#: ../../reference/android/sdk.rst:133
+msgid "Set the cancel button string in stacked notification."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:163
-msgid "``public SDK cancelStackedString ( CharSequence string)``"
+#: ../../reference/android/sdk.rst:141
+msgid "On Api >= 23 override on main activity and call this method."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:165
-msgid "set the cancel button string in stacked notification"
+#: ../../reference/android/sdk.rst:143
+msgid "request code provided in main onRequestPermissionsResult"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:171
-msgid ""
-"``public static void onRequestPermissionsResult(int requestCode, String "
-"permissions[], int[] grantResults, Context context``"
+#: ../../reference/android/sdk.rst:144
+msgid "permission provided in main onRequestPermissionsResult"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:173
-msgid "On Api >= 23 override on main activity and call this method"
+#: ../../reference/android/sdk.rst:145
+msgid "results provided in onRequestPermissionsResult"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:175 ../../reference/android/sdk.rst:214
-#: ../../reference/android/sdk.rst:231 ../../reference/android/sdk.rst:240
-#: ../../reference/android/sdk.rst:264 ../../reference/android/sdk.rst:322
-#: ../../reference/android/sdk.rst:377 ../../reference/android/sdk.rst:414
-#: ../../reference/android/sdk.rst:423 ../../reference/android/sdk.rst:439
-msgid "**Parameters:**"
+#: ../../reference/android/sdk.rst:146
+msgid "context, e.g getApplicationContext(), should not be null"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:176
-msgid "``requestCode`` — request code provided in main onRequestPermissionsResult"
+#: ../../reference/android/sdk.rst:151 ../../reference/android/sdk.rst:156
+#: ../../reference/android/sdk.rst:161 ../../reference/android/sdk.rst:166
+#: ../../reference/android/sdk.rst:171 ../../reference/android/sdk.rst:176
+#: ../../reference/android/sdk.rst:185 ../../reference/android/sdk.rst:192
+msgid "Override on main activity and call this method."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:178
-msgid "``permissions`` — permission provided in main onRequestPermissionsResult"
+msgid "saved instance state"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:179
+msgid "instance of your main activity"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:180
-msgid "``grantResults`` — results provided in onRequestPermissionsResult"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:181
-msgid "``context`` — context, e.g getApplicationContext(), should not be null"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:185
-msgid "``public static void onResume(final Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:187 ../../reference/android/sdk.rst:192
-#: ../../reference/android/sdk.rst:197 ../../reference/android/sdk.rst:202
-#: ../../reference/android/sdk.rst:207 ../../reference/android/sdk.rst:212
-#: ../../reference/android/sdk.rst:222 ../../reference/android/sdk.rst:229
-msgid "override on main activity and call this method"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:190
-msgid "``public static void onPause()``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:195
-msgid "``public static void onStart()``"
+msgid "location alerter"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:200
-msgid "``public static void onStop()``"
+msgid "Delete a single notification from the stored list."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:205
-msgid "``public static void onDestroy()``"
+#: ../../reference/android/sdk.rst:202
+msgid "notification code"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:210
-msgid ""
-"``public static void onCreate(Bundle savedInstanceState,         final "
-"Activity activity,         Communications.ILocationAlerter "
-"locationAlerter)``"
+#: ../../reference/android/sdk.rst:203 ../../reference/android/sdk.rst:210
+#: ../../reference/android/sdk.rst:226 ../../reference/android/sdk.rst:232
+#: ../../reference/android/sdk.rst:336 ../../reference/android/sdk.rst:371
+#: ../../reference/android/sdk.rst:383
+msgid "context"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:208
+msgid "Delete all notifications from stored list."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:215
-msgid "``savedInstanceState`` — saved instance state"
+msgid "Returns a list with the stored notifications."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:216
-msgid "``activity`` — instance of your main activity"
+#: ../../reference/android/sdk.rst:218
+msgid "the notification list"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:217
-msgid "``locationAlerter`` — location alerter"
+#: ../../reference/android/sdk.rst:223
+msgid "Notify that a notification has been read."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:220
-msgid "``public static void onSaveInstanceState(Bundle outState)``"
+#: ../../reference/android/sdk.rst:225
+msgid "the code of the read notification"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:224
-msgid "**Parameters:** ``outState`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:227
-msgid ""
-"``public static void onRestoreInstanceState(final Bundle "
-"savedInstanceState, final Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:232
-msgid "``savedInstanceState`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:233
-msgid "``context`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:236
-msgid ""
-"``public static void deleteNotificationFromList(String notificationCode, "
-"Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:238
-msgid "Delete a single notification from the stored list"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:241
-msgid "``notificationCode`` — notification code"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:242 ../../reference/android/sdk.rst:266
-#: ../../reference/android/sdk.rst:380 ../../reference/android/sdk.rst:416
-#: ../../reference/android/sdk.rst:429
-msgid "``context`` — context"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:245
-msgid "``public static void deleteAllNotifications(Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:247
-msgid "Delete all notifications from stored list"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:249 ../../reference/android/sdk.rst:273
-msgid "**Parameters:** ``context`` — context"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:252
-msgid ""
-"``public static ArrayList<Notification> getNotificationsList(Context "
-"context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:254
-msgid "Returns a list with the stored notifications"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:256 ../../reference/android/sdk.rst:388
-msgid "**Parameters:** ``context`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:257
-msgid "**Returns:** the notification list"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:260
-msgid ""
-"``public static void notifyNotificationRead(String notificationCode, "
-"final Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:262
-msgid "Notify that a notification has been read"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:265
-msgid "``notificationCode`` — the code of the read notification"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:269
-msgid "``public static void notifyAllNotificationsRead(final Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:271
+#: ../../reference/android/sdk.rst:230
 msgid "Notify that all the notifications has been read"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:276
-msgid "``public static class GeoLocation``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:278
+#: ../../reference/android/sdk.rst:237
 msgid "Class that holds geolocation info"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:281
-msgid "``public double latitude``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:283
+#: ../../reference/android/sdk.rst:242
 msgid "Latitude"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:286
-msgid "``public double longitude``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:288
+#: ../../reference/android/sdk.rst:247
 msgid "Longitude"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:291
-msgid "``public double precision``"
+#: ../../reference/android/sdk.rst:252
+msgid "Precision in meters."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:293
-msgid "precision in meters"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:295
+#: ../../reference/android/sdk.rst:254
 #, python-format
 msgid ""
 "We define accuracy as the radius of 68% confidence. In other words, if "
@@ -854,7 +545,7 @@ msgid ""
 "that the true location is inside the circle."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:300
+#: ../../reference/android/sdk.rst:259
 #, python-format
 msgid ""
 "In statistical terms, it is assumed that location errors are random with "
@@ -863,420 +554,186 @@ msgid ""
 "follow such a simple distribution."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:305
+#: ../../reference/android/sdk.rst:264
 msgid "This accuracy estimation is only concerned with horizontal accuracy."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:308
-msgid "``public String provider``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:310
+#: ../../reference/android/sdk.rst:269
 msgid "The provider of the location"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:313
-msgid "``public String source``"
+#: ../../reference/android/sdk.rst:274
+msgid "Location source."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:315
-msgid "location source"
+#: ../../reference/android/sdk.rst:279
+msgid "Constructor."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:318
-msgid ""
-"``public GeoLocation(double latitude,       double longitude,       "
-"double precision,       String provider,       String source       )``"
+#: ../../reference/android/sdk.rst:290
+msgid "Call this method to get the current geolocation."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:320
-msgid "Constructor"
+#: ../../reference/android/sdk.rst:292
+msgid "the current geolocation"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:323
-msgid "``latitude`` —"
+#: ../../reference/android/sdk.rst:297
+msgid "A receiver that will be notified when a new location is available."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:324
-msgid "``longitude`` —"
+#: ../../reference/android/sdk.rst:302
+msgid "New location arrived."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:325
-msgid "``precision`` —"
+#: ../../reference/android/sdk.rst:304
+msgid "the new location"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:326
-msgid "``provider`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:327
-msgid "``source`` —"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:330
-msgid "``public static GeoLocation getCurrentGeoLocation()``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:332
-msgid "Call this method to get the current geolocation"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:334
-msgid "**Returns:** the current geolocation"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:337
-msgid "``public interface IGeoLocationReceiver``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:339
-msgid "A receiver that will be notified when a new location is available"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:342
-msgid "``void onNewLocation(GeoLocation location)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:344
-msgid "New location arrived"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:346
-msgid "**Parameters:** ``location`` — the new location"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:349
-msgid ""
-"``public static void registerGeoLocationReceiver(IGeoLocationReceiver "
-"receiver)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:351
+#: ../../reference/android/sdk.rst:309
 msgid ""
 "Set the Geolocation receiver, if there is already set, it will be "
 "overwritten with this one instance will not be kept, so make sure it's "
 "not garbage collected while you need it."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:355
-msgid "**Parameters:** ``receiver`` — the receiver to be called"
+#: ../../reference/android/sdk.rst:313
+msgid "the receiver to be called"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:358
-msgid "``public static void unregisterGeoLocationReceiver()``"
+#: ../../reference/android/sdk.rst:318
+msgid "Remove the geolocation receiver."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:323
+msgid "Disable geolocation updates."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:328
+msgid "Enable geolocation updates, by default are enabled."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:333
+msgid "Call this method to enable/disable notifications on current device/app."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:335
+msgid "if the notifications should be enabled, by default are enabled"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:341
+msgid ""
+"Get a boolean indicating if the notifications are enabled on current "
+"device/app."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:345
+msgid "if the notifications are enabled"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:350
+msgid "Observer on user calls."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:360
-msgid "Remove the geolocation receiver"
+msgid "Called when the operation failed."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:363
-msgid "``public static void disableGeolocationUpdates()``"
+#: ../../reference/android/sdk.rst:362
+msgid "reason of the fail"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:365
-msgid "Disable geolocation updates"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:368
-msgid "``public static void enableGeolocationUpdates()``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:370
-msgid "Enable geolocation updates, by default are enabled"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:373
+#: ../../reference/android/sdk.rst:367
 msgid ""
-"``public static void changeNotificationsEnabled(boolean enabled,Context "
-"context)``"
+"Call this to link the user to the device, call it after the user has been"
+" set."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:375
-msgid "Call this method to enable/disable notifications on current device/app"
+#: ../../reference/android/sdk.rst:370 ../../reference/android/sdk.rst:382
+#: ../../reference/android/sdk.rst:398
+msgid "observer to be called when the operation is done"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:378
-msgid ""
-"``enabled`` — if the notifications should be enabled, by default are "
-"enabled"
+#: ../../reference/android/sdk.rst:376
+msgid "Called to register the user."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:383
-msgid "``public static boolean getNotificationsEnabled(Context context)``"
+#: ../../reference/android/sdk.rst:378 ../../reference/android/sdk.rst:394
+msgid "e-mail"
 msgstr ""
 
-#: ../../reference/android/sdk.rst:385
-msgid ""
-"Get a boolean indicating if the notifications are enabled on current "
-"device/app"
+#: ../../reference/android/sdk.rst:379 ../../reference/android/sdk.rst:395
+msgid "first name"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:380 ../../reference/android/sdk.rst:396
+msgid "last name"
+msgstr ""
+
+#: ../../reference/android/sdk.rst:381 ../../reference/android/sdk.rst:397
+msgid "password to use"
 msgstr ""
 
 #: ../../reference/android/sdk.rst:389
-msgid "**Returns:** if the notifications are enabled"
+msgid "Modify user data."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:392
-msgid "``public interface IUserResponseObserver``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:394
-msgid "Observer on user calls"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:397
-msgid "``void onOk()``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:399
-msgid "Called when the operation has been done correctly"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:402
-msgid "``void onFail(String reason)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:404
-msgid "Called when the operation failed"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:406
-msgid "**Parameters:** ``reason`` — reason of the fail"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:409
+#: ../../reference/android/sdk.rst:391
 msgid ""
-"``public static void linkUserToDevice(final IUserResponseObserver "
-"observer, final Context context)``"
+"Only fill the fields you want to modify, any null parameter will be kept "
+"unmodified."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:403
+msgid "Location alerter to redirect user to configuration."
+msgstr ""
+
+#: ../../reference/android/sdk.rst:408
+msgid ""
+"Alert the user that location is not enabled, good place to open device "
+"location settings for the user."
 msgstr ""
 
 #: ../../reference/android/sdk.rst:411
-msgid ""
-"Call this to link the user to the device, call it after the user has been"
-" set"
+msgid "could be null."
 msgstr ""
 
-#: ../../reference/android/sdk.rst:415 ../../reference/android/sdk.rst:428
-#: ../../reference/android/sdk.rst:444
-msgid "``observer`` — observer to be called when the operation is done"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:419
-msgid ""
-"``public static void registerUser(String email, String firstName, String "
-"lastName, String password,      final IUserResponseObserver observer,"
-"          Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:421
-msgid "Called to register the user"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:424 ../../reference/android/sdk.rst:440
-msgid "``email`` — e-mail"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:425 ../../reference/android/sdk.rst:441
-msgid "``firstName`` — first name"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:426 ../../reference/android/sdk.rst:442
-msgid "``lastName`` — last name"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:427
-msgid "``password`` — password to use"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:432
-msgid ""
-"``public static void modifyUser(String email, String firstName, String "
-"lastName, String password,      final IUserResponseObserver observer, "
-"Context context)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:434
-msgid "Modify user data"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:436
-msgid ""
-"only fill the fields you want to modify, any null parameter will be kept "
-"unmodified"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:443
-msgid "``password`` — password"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:447
-msgid "``public interface ILocationAlerter``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:449
-msgid "Location alerter to redirect user to configuration"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:452
-msgid "``void alertNotEnabled(Activity parent)``"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:454
-msgid ""
-"Alert the user that location is not enabled, good place to open device "
-"location settings for the user"
-msgstr ""
-
-#: ../../reference/android/sdk.rst:457
-msgid "**Parameters:** ``parent`` — could be null."
-msgstr ""
-
-#: ../../reference/android/sdkclient.rst:4
-msgid "SDKClient"
-msgstr ""
-
-#: ../../reference/android/sdkclient.rst:7
-msgid ""
-"``public abstract class SDKClient extends BroadcastReceiver implements "
-"INotifications, ISDKCore``"
-msgstr ""
-
-#: ../../reference/android/sdkclient.rst:9
-msgid ""
-"You should subclass SDKClient and implement the interfaces (mysdkClient) "
-"as needed"
-msgstr ""
-
-#: ../../reference/android/sdkclient.rst:11
-msgid ""
-"add to the manifest: ``<meta-data android:name=\"sdk_clientClass\" "
-"android:value=\"com.mycompany.myapp.mysdkClient\"/>``"
-msgstr ""
-
-#: ../../reference/api.rst:3
+#: ../../reference/api.rst:5
 msgid "API HTTP RESTful"
 msgstr ""
 
-#: ../../reference/api/applications.rst:3
-msgid "Aplicaciones"
-msgstr ""
-
-#: ../../reference/api/applications.rst:6
-msgid "Crear aplicación"
-msgstr ""
-
-#: ../../reference/api/applications.rst:10
-#: ../../reference/api/applications.rst:23
-#: ../../reference/api/applications.rst:63
-#: ../../reference/api/applications.rst:100 ../../reference/api/contents.rst:13
-#: ../../reference/api/devices.rst:10 ../../reference/api/devices.rst:42
-#: ../../reference/api/devices.rst:120 ../../reference/api/devices.rst:159
-#: ../../reference/api/devices.rst:205 ../../reference/api/devices.rst:252
-#: ../../reference/api/feeds.rst:10 ../../reference/api/feeds.rst:46
-#: ../../reference/api/feeds.rst:75 ../../reference/api/keys.rst:13
-#: ../../reference/api/keys.rst:40 ../../reference/api/notifications.rst:10
-#: ../../reference/api/notifications.rst:54
-#: ../../reference/api/notifications.rst:71
-#: ../../reference/api/notifications.rst:89
-#: ../../reference/api/notifications.rst:192
-#: ../../reference/api/notifications.rst:215
-#: ../../reference/api/notifications.rst:251
-#: ../../reference/api/notifications.rst:268
-#: ../../reference/api/notifications.rst:308
-#: ../../reference/api/notifications.rst:348
-#: ../../reference/api/notifications.rst:427
-#: ../../reference/api/notifications.rst:520
-#: ../../reference/api/notifications.rst:616 ../../reference/api/pushes.rst:16
-#: ../../reference/api/pushes.rst:39 ../../reference/api/pushes.rst:66
-#: ../../reference/api/pushes.rst:94 ../../reference/api/statistics.rst:10
-#: ../../reference/api/statistics.rst:35 ../../reference/api/users.rst:15
-#: ../../reference/api/users.rst:38 ../../reference/api/users.rst:76
-#: ../../reference/api/users.rst:162 ../../reference/api/users.rst:194
-#: ../../reference/api/users.rst:200
-msgid "**Ejemplo de petición**:"
-msgstr ""
-
-#: ../../reference/api/applications.rst ../../reference/api/contents.rst
-#: ../../reference/api/devices.rst ../../reference/api/keys.rst
-#: ../../reference/api/notifications.rst ../../reference/api/pushes.rst
-#: ../../reference/api/users.rst
-msgid "Request JSON Object"
-msgstr ""
-
-#: ../../reference/api/applications.rst:37
-msgid "nombre de la aplicación, ha de ser único y sin espacios, **obligatorio**"
-msgstr ""
-
-#: ../../reference/api/applications.rst:38
-msgid "tipo de plataforma, \"GCM\", \"APNS\" o \"APNS_SANDBOX\""
-msgstr ""
-
-#: ../../reference/api/applications.rst:39
+#: ../../reference/api.rst:7
 msgid ""
-"para APNS y APNS_SANDBOX se corresponde con el certificado SSL, y no se "
-"aplica en GCM"
+"**10darts** provides you with a complete **HTTP API RESTful** to access "
+"to all the platform’s features. The base URL for all the APIs is::"
 msgstr ""
 
-#: ../../reference/api/applications.rst:40
+#: ../../reference/api.rst:12
 msgid ""
-"para APNS y APNS_SANDBOX se corresponde con el la clave privada, y con "
-"GCM se corresponde con la *API Key*"
+"Siendo, por ejemplo, el endpoint para obtener el listado de "
+"notificaciones::"
 msgstr ""
 
-#: ../../reference/api/applications.rst:42
-#: ../../reference/api/applications.rst:70
-#: ../../reference/api/applications.rst:107 ../../reference/api/devices.rst:16
-#: ../../reference/api/devices.rst:68 ../../reference/api/devices.rst:142
-#: ../../reference/api/devices.rst:174 ../../reference/api/devices.rst:211
-#: ../../reference/api/devices.rst:258 ../../reference/api/feeds.rst:17
-#: ../../reference/api/feeds.rst:57 ../../reference/api/feeds.rst:86
-#: ../../reference/api/notifications.rst:18
-#: ../../reference/api/notifications.rst:135
-#: ../../reference/api/notifications.rst:203
-#: ../../reference/api/notifications.rst:222
-#: ../../reference/api/notifications.rst:257
-#: ../../reference/api/notifications.rst:274
-#: ../../reference/api/notifications.rst:320
-#: ../../reference/api/notifications.rst:354
-#: ../../reference/api/notifications.rst:433
-#: ../../reference/api/notifications.rst:526
-#: ../../reference/api/notifications.rst:627 ../../reference/api/pushes.rst:29
-#: ../../reference/api/pushes.rst:52 ../../reference/api/pushes.rst:79
-#: ../../reference/api/pushes.rst:107 ../../reference/api/statistics.rst:19
-#: ../../reference/api/statistics.rst:53 ../../reference/api/users.rst:21
-#: ../../reference/api/users.rst:55 ../../reference/api/users.rst:100
-#: ../../reference/api/users.rst:180 ../../reference/api/users.rst:206
-msgid "**Ejemplo de respuesta**:"
-msgstr ""
-
-#: ../../reference/api/applications.rst:59
-msgid "Listar aplicaciones"
-msgstr ""
-
-#: ../../reference/api/applications.rst:93
-msgid "}"
-msgstr ""
-
-#: ../../reference/api/applications.rst:96
-msgid "Borrar aplicaciones"
+#: ../../reference/api.rst:16
+msgid "Contenido"
 msgstr ""
 
 #: ../../reference/api/authentication.rst:3
-msgid "Autenticación"
+msgid "Authentication"
 msgstr ""
 
 #: ../../reference/api/authentication.rst:6
-msgid "Autenticación vía Token"
+msgid "Authentication via Token"
 msgstr ""
 
 #: ../../reference/api/authentication.rst:8
 msgid ""
-"Cada **cliente** dispondrá de un credencial en forma de cadena de texto "
-"aleatoria generada por el sistema. Esta cadena, o ``token`` será "
-"utilizado para la autenticación de las llamadas al API."
+"Dispondrás de un credencial en forma de cadena de texto aleatoria "
+"generada por el sistema. Esta cadena, o ``token`` será utilizado para la "
+"autenticación de las llamadas al API."
 msgstr ""
 
-#: ../../reference/api/authentication.rst:11
+#: ../../reference/api/authentication.rst:12
 msgid ""
 "El token debe ser incluido en la cabecera HTTP de **Authorization**. La "
 "clave tiene que estar precedida por el literal ``Token``, con una "
@@ -1284,86 +741,7 @@ msgid ""
 msgstr ""
 
 #: ../../reference/api/authentication.rst:17
-msgid ""
-"Las llamadas no autenticadas tendrán como resultado una respuesta del "
-"tipo ``HTTP 401 Unauthorized``."
-msgstr ""
-
-#: ../../reference/api/contents.rst:3
-msgid "Contenidos"
-msgstr ""
-
-#: ../../reference/api/contents.rst:6
-msgid "Crear conversor"
-msgstr ""
-
-#: ../../reference/api/contents.rst:8
-msgid ""
-"Un conversor es un objeto que define las reglas que se usarán para crear "
-"una notificación cuando se cree un **nuevo contenido de una fuente en "
-"concreto.**"
-msgstr ""
-
-#: ../../reference/api/contents.rst:24
-msgid "URI de la fuente del contenido del que se quiere hacer el conversor."
-msgstr ""
-
-#: ../../reference/api/contents.rst:25
-msgid "plantilla para usar en el cuerpo de la notificación"
-msgstr ""
-
-#: ../../reference/api/contents.rst:26
-msgid "plantilla para usar en el título de la notificación"
-msgstr ""
-
-#: ../../reference/api/contents.rst:27
-#: ../../reference/api/notifications.rst:115
-#: ../../reference/api/notifications.rst:174
-msgid "``MultiPolygon`` con las areas donde la notificación ha de ser efectiva"
-msgstr ""
-
-#: ../../reference/api/contents.rst:28
-#: ../../reference/api/notifications.rst:116
-#: ../../reference/api/notifications.rst:175
-msgid ""
-"``Point`` que representa el centro de la circunferencia donde la "
-"notificación es efectiva"
-msgstr ""
-
-#: ../../reference/api/contents.rst:29
-#: ../../reference/api/notifications.rst:117
-#: ../../reference/api/notifications.rst:176
-msgid "radio de la circunferencia donde la notificación es efectiva"
-msgstr ""
-
-#: ../../reference/api/contents.rst:30
-#: ../../reference/api/notifications.rst:111
-#: ../../reference/api/notifications.rst:170
-msgid ""
-"plataformas a la que enviar la notificación (e.g: ``[\"android\", "
-"\"ios\"]``)"
-msgstr ""
-
-#: ../../reference/api/contents.rst:31
-#: ../../reference/api/notifications.rst:110
-#: ../../reference/api/notifications.rst:169
-msgid "idioma de los dispositivos a los que enviar la notificación"
-msgstr ""
-
-#: ../../reference/api/contents.rst:32
-#: ../../reference/api/notifications.rst:112
-#: ../../reference/api/notifications.rst:171
-msgid ""
-"versión del cliente que deben de tener los dispositivos a los que se "
-"envía la notificación"
-msgstr ""
-
-#: ../../reference/api/contents.rst:33
-#: ../../reference/api/notifications.rst:113
-#: ../../reference/api/notifications.rst:172
-msgid ""
-"código de dos letras del país en el que tienen que estar registrados los "
-"devices a los que se quiere mandar la notificación"
+msgid "No authenticated calls will be answered with a ``HTTP 401Unauthorized``."
 msgstr ""
 
 #: ../../reference/api/devices.rst:3
@@ -1371,216 +749,319 @@ msgid "Devices"
 msgstr ""
 
 #: ../../reference/api/devices.rst:6
-msgid "Plataformas"
+msgid "Platforms"
+msgstr ""
+
+#: ../../reference/api/devices.rst:10 ../../reference/api/devices.rst:42
+#: ../../reference/api/devices.rst:120 ../../reference/api/devices.rst:159
+#: ../../reference/api/devices.rst:211 ../../reference/api/devices.rst:256
+#: ../../reference/api/devices.rst:303 ../../reference/api/keys.rst:19
+#: ../../reference/api/keys.rst:52 ../../reference/api/keys.rst:86
+#: ../../reference/api/keys.rst:119 ../../reference/api/keys.rst:152
+#: ../../reference/api/notifications.rst:10
+#: ../../reference/api/notifications.rst:54
+#: ../../reference/api/notifications.rst:71
+#: ../../reference/api/notifications.rst:89
+#: ../../reference/api/notifications.rst:200
+#: ../../reference/api/notifications.rst:222
+#: ../../reference/api/notifications.rst:258
+#: ../../reference/api/notifications.rst:275
+#: ../../reference/api/notifications.rst:313
+#: ../../reference/api/notifications.rst:354
+#: ../../reference/api/notifications.rst:392
+#: ../../reference/api/notifications.rst:433
+#: ../../reference/api/notifications.rst:511
+#: ../../reference/api/notifications.rst:604
+#: ../../reference/api/notifications.rst:700
+#: ../../reference/api/segments.rst:10 ../../reference/api/segments.rst:64
+#: ../../reference/api/segments.rst:118 ../../reference/api/segments.rst:151
+#: ../../reference/api/users.rst:12 ../../reference/api/users.rst:99
+#: ../../reference/api/users.rst:132 ../../reference/api/users.rst:138
+#: ../../reference/api/users.rst:172
+msgid "**Request example**:"
+msgstr ""
+
+#: ../../reference/api/devices.rst:16 ../../reference/api/devices.rst:67
+#: ../../reference/api/devices.rst:142 ../../reference/api/devices.rst:174
+#: ../../reference/api/devices.rst:224 ../../reference/api/devices.rst:262
+#: ../../reference/api/devices.rst:309 ../../reference/api/keys.rst:92
+#: ../../reference/api/keys.rst:125 ../../reference/api/keys.rst:158
+#: ../../reference/api/notifications.rst:18
+#: ../../reference/api/notifications.rst:139
+#: ../../reference/api/notifications.rst:211
+#: ../../reference/api/notifications.rst:229
+#: ../../reference/api/notifications.rst:264
+#: ../../reference/api/notifications.rst:281
+#: ../../reference/api/notifications.rst:319
+#: ../../reference/api/notifications.rst:366
+#: ../../reference/api/notifications.rst:398
+#: ../../reference/api/notifications.rst:439
+#: ../../reference/api/notifications.rst:517
+#: ../../reference/api/notifications.rst:610
+#: ../../reference/api/notifications.rst:711
+#: ../../reference/api/segments.rst:16 ../../reference/api/segments.rst:70
+#: ../../reference/api/users.rst:36 ../../reference/api/users.rst:119
+#: ../../reference/api/users.rst:144 ../../reference/api/users.rst:178
+msgid "**Response example**:"
 msgstr ""
 
 #: ../../reference/api/devices.rst:38
-msgid "Registro de dispositivos"
+msgid "Device register"
+msgstr ""
+
+#: ../../reference/api/devices.rst ../../reference/api/keys.rst
+#: ../../reference/api/notifications.rst ../../reference/api/segments.rst
+#: ../../reference/api/users.rst
+msgid "Request JSON Object"
 msgstr ""
 
 #: ../../reference/api/devices.rst:58
-msgid "token identificativo del dispositivo para la recepción de pushes"
+msgid "identification device token needed for push reception."
 msgstr ""
 
-#: ../../reference/api/devices.rst:59 ../../reference/api/devices.rst:92
-msgid "plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS"
+#: ../../reference/api/devices.rst:59
+msgid "device platform, ``android``, ``ios`` or ``ios_sandbox``."
 msgstr ""
 
-#: ../../reference/api/devices.rst:60
-msgid "usuario al que está asociado el dispositivo"
+#: ../../reference/api/devices.rst:60 ../../reference/api/devices.rst:137
+msgid "device model description string."
 msgstr ""
 
-#: ../../reference/api/devices.rst:61 ../../reference/api/devices.rst:94
-#: ../../reference/api/devices.rst:136
-msgid "cadena de descripción del modelo del dispositivo"
+#: ../../reference/api/devices.rst:61 ../../reference/api/devices.rst:138
+msgid "app version description string."
 msgstr ""
 
-#: ../../reference/api/devices.rst:62 ../../reference/api/devices.rst:95
-#: ../../reference/api/devices.rst:137
-msgid "cadena que identifica la versión del cliente que usa el dispositivo"
+#: ../../reference/api/devices.rst:62 ../../reference/api/devices.rst:139
+msgid "language description string with 2 characters."
 msgstr ""
 
 #: ../../reference/api/devices.rst:63
-msgid "cadena de dos caracteres que identifica el idioma del dispositivo"
+msgid "country description string with 2 characters."
 msgstr ""
 
-#: ../../reference/api/devices.rst:64 ../../reference/api/devices.rst:97
-msgid "código de dos letras que identifica el país del dispositivo"
-msgstr ""
-
-#: ../../reference/api/devices.rst:65 ../../reference/api/devices.rst:98
-#: ../../reference/api/devices.rst:140
+#: ../../reference/api/devices.rst:64 ../../reference/api/devices.rst:140
 msgid ""
-"coordenadas del dispositivo, donde ``coordinates`` es un array con las "
-"coordenadas de la siguiente forma: **[longitud, latidud]**"
+"device positioning where coordinates is an array with the following "
+"coordinates:  **[longitud, latidud]**."
 msgstr ""
 
-#: ../../reference/api/devices.rst:66
-msgid "URI de la persona con la que vincular el dispositivo"
+#: ../../reference/api/devices.rst:65
+msgid "user URI with which the device will be linked"
 msgstr ""
 
 #: ../../reference/api/devices.rst ../../reference/api/notifications.rst
-#: ../../reference/api/users.rst
 msgid "Response JSON Object"
 msgstr ""
 
+#: ../../reference/api/devices.rst:89
+msgid "unique internal device id"
+msgstr ""
+
 #: ../../reference/api/devices.rst:90
-msgid "id interno único del dispositvo"
+msgid ""
+"unique device code, is the one used to refer to that device elsewhere in "
+"the API."
 msgstr ""
 
 #: ../../reference/api/devices.rst:91
+msgid "device platform, ``android``, ``ios`` or ``ios_sandbox``."
+msgstr ""
+
+#: ../../reference/api/devices.rst:92 ../../reference/api/devices.rst:135
+msgid "user linked to the device."
+msgstr ""
+
+#: ../../reference/api/devices.rst:93
+msgid "device model description string"
+msgstr ""
+
+#: ../../reference/api/devices.rst:94
+msgid "app version description string"
+msgstr ""
+
+#: ../../reference/api/devices.rst:95
+msgid "language description string"
+msgstr ""
+
+#: ../../reference/api/devices.rst:96
+msgid "country description string with 2 characters"
+msgstr ""
+
+#: ../../reference/api/devices.rst:97
 msgid ""
-"codigo único del dispositivo, es el que se usa al hacer referencia a este"
-" en el resto del API"
+"device positioning where coordinates are defined as follows: **[longitud,"
+" latidud]**"
 msgstr ""
 
-#: ../../reference/api/devices.rst:93 ../../reference/api/devices.rst:135
-msgid "usuario ('persona') al que está asociado el dispositivo"
-msgstr ""
-
-#: ../../reference/api/devices.rst:96 ../../reference/api/devices.rst:138
-msgid "cadena que identifica el idioma del dispositivo"
-msgstr ""
-
-#: ../../reference/api/devices.rst:102
+#: ../../reference/api/devices.rst:101
 msgid ""
-"Si no se indica una persona en la petición de creación de device, esta se"
-" creará de forma automática y se devolverá en la respuesta de creación."
+"Si no se indica un usuario (campo ``persona``) en la petición de creación"
+" de device, este se creará de forma automática y se devolverá en la "
+"respuesta de creación."
 msgstr ""
 
 #: ../../reference/api/devices.rst:107
 msgid ""
 "Si no se especifica un país, se tomara automáticamente desde las "
 "coordenadas que se introducen. Si no se dan unas coordenadas, se usará la"
-" IP para establecer el país del dispostivo."
+" IP para establecer el país del dispositivo."
 msgstr ""
 
 #: ../../reference/api/devices.rst:114
-msgid "Actualizar dispositivo"
+msgid "Device update"
 msgstr ""
 
 #: ../../reference/api/devices.rst:116
-msgid "Para actualizar la posición, el usuario asociado u otros datos."
+msgid "Update position, user or other data."
 msgstr ""
 
-#: ../../reference/api/devices.rst:139
+#: ../../reference/api/devices.rst:136
 msgid ""
-"booleano que indica si se han desactivado/activado las notificaciones "
-"push en el dispositivo"
+"boolean that shows if push notifications have been activated or not in "
+"the device."
 msgstr ""
 
 #: ../../reference/api/devices.rst:151
-msgid "Enlazar un dispositivo a una persona"
+msgid "Link a device with a user/individual"
 msgstr ""
 
 #: ../../reference/api/devices.rst:153
 msgid ""
-"Para enlazar un usuario del cliente con el dispositivo, se puede realizar"
-" una llamada a ``/api/v1/devices/links/`` indicando en el campo de "
-"``client_data`` el valor que identifica al usuario de forma única para el"
-" cliente."
+"To link a user with a device you can make a call "
+"to ``/api/v1/devices/links/`` specifying in the ``client_data`` field the"
+" unique value that identifies that user."
 msgstr ""
 
-#: ../../reference/api/devices.rst:171
-msgid "URI del device que se quiere actualizar"
+#: ../../reference/api/devices.rst:171 ../../reference/api/devices.rst:222
+msgid "device's URI that needs to be updated."
 msgstr ""
 
 #: ../../reference/api/devices.rst:172
-msgid "referencia única del cliente que identifica la persona"
+msgid "client's unique reference to identify the user."
 msgstr ""
 
 #: ../../reference/api/devices.rst:198
 msgid ""
 "La respuesta a esta llamada es el device actualizado con la información "
-"de la persona con la que está enlazado."
+"del usuario con la que está enlazado."
 msgstr ""
 
-#: ../../reference/api/devices.rst:201
-msgid "Buscar dispositivo"
+#: ../../reference/api/devices.rst:204
+msgid "Unlink a device with a user / individual"
+msgstr ""
+
+#: ../../reference/api/devices.rst:206
+msgid ""
+"Se desenlazará un usuario de un device cuando esta cierre la sesión en la"
+" aplicación con la que se este integrando."
+msgstr ""
+
+#: ../../reference/api/devices.rst:248
+msgid ""
+"La respuesta a esta llamada es el device actualizado con la información "
+"de un nueva persona anónima con la que está enlazado."
+msgstr ""
+
+#: ../../reference/api/devices.rst:252
+msgid "Device search"
 msgstr ""
 
 #: ../../reference/api/devices.rst ../../reference/api/notifications.rst
-#: ../../reference/api/statistics.rst
 msgid "Query Parameters"
 msgstr ""
 
-#: ../../reference/api/devices.rst:240
-msgid "valor del token que se quiere buscar"
+#: ../../reference/api/devices.rst:291
+msgid "token value under search"
 msgstr ""
 
-#: ../../reference/api/devices.rst:245
-msgid "Registro de acceso"
+#: ../../reference/api/devices.rst:296
+msgid "Access register"
 msgstr ""
 
-#: ../../reference/api/devices.rst:247
+#: ../../reference/api/devices.rst:298
 msgid ""
-"Para registrar la actividad de un dispositivo, se necesita que se realice"
-" una llamada explícita para que se registre el acceso de un dispositivo."
-msgstr ""
-
-#: ../../reference/api/feeds.rst:3
-msgid "Feeds"
-msgstr ""
-
-#: ../../reference/api/feeds.rst:6
-msgid "Listar los feeds"
-msgstr ""
-
-#: ../../reference/api/feeds.rst:42
-msgid "Añadir un nuevo feed"
-msgstr ""
-
-#: ../../reference/api/feeds.rst:70
-msgid "Comprobar elementos del feed"
-msgstr ""
-
-#: ../../reference/api/keys.rst:3
-msgid "Keys"
+"Para registrar la actividad de un dispositivo se necesita que se realice "
+"una llamada explícita para que se registre el acceso de un dispositivo."
 msgstr ""
 
 #: ../../reference/api/keys.rst:5
+msgid "Keys"
+msgstr ""
+
+#: ../../reference/api/keys.rst:7
 msgid ""
-"El sistema permite almacenar **información arbitraria** en formato de "
-"clave/valor asociada tanto a dispositivos como a usuarios."
+"The system allows to storage **arbitrary information** in a key/value "
+"format linked to the devices and the users."
 msgstr ""
 
-#: ../../reference/api/keys.rst:9
-msgid "Añadir clave/valor a un dispositivo"
+#: ../../reference/api/keys.rst:11
+msgid "Add key/value to device"
 msgstr ""
 
-#: ../../reference/api/keys.rst:30 ../../reference/api/keys.rst:57
+#: ../../reference/api/keys.rst:13
 msgid ""
-"objeto JSON con la clave ``name`` indicando el nombre de la clave que se "
-"quiere asociar, **obligatorio**"
+"Esta llamada crea un nuevo *key/value* asociado al dispositivo "
+"especificado en la llamada. Si este dispositivo ya tiene un valor "
+"asociado al mismo *key*, entonces esta llamada actualiza el valor "
+"anterior con el nuevo indicado."
 msgstr ""
 
-#: ../../reference/api/keys.rst:31 ../../reference/api/keys.rst:58
+#: ../../reference/api/keys.rst:36 ../../reference/api/keys.rst:68
 msgid ""
-"en caso de indicar un valor asociado, el tipo de este valor, siendo 0: "
-"float, 1: int, 2: string, 3: bool"
+"JSON object with ``name`` key that shows the name of the key that is "
+"linked to,  **compulsory**."
 msgstr ""
 
-#: ../../reference/api/keys.rst:32 ../../reference/api/keys.rst:59
-msgid "representación en cadena de texto del valor que se quiere asociar a la key"
+#: ../../reference/api/keys.rst:37 ../../reference/api/keys.rst:69
+msgid ""
+"if it shows a linked value, which that value is, 0: float, 1: int, 2: "
+"string, 3: bool."
 msgstr ""
 
-#: ../../reference/api/keys.rst:33
-msgid "referencia al dispositivo al que se quiere asociar el valor"
+#: ../../reference/api/keys.rst:38 ../../reference/api/keys.rst:70
+msgid "text value chain representation to be linked to the key."
 msgstr ""
 
-#: ../../reference/api/keys.rst:36
-msgid "Añadir clave/valor a un usuario"
+#: ../../reference/api/keys.rst:39
+msgid "device linked to the value"
 msgstr ""
 
-#: ../../reference/api/keys.rst:60
-msgid "referencia al usuario al que se quiere asociar el valor"
+#: ../../reference/api/keys.rst:44
+msgid "Add key/value to user"
 msgstr ""
 
-#: ../../reference/api/keys.rst:63
+#: ../../reference/api/keys.rst:46
+msgid ""
+"Esta llamada crea un nuevo *key/value* asociado al usuario especificado "
+"en la llamada. Si este usuario ya tiene un valor asociado al mismo *key*,"
+" entonces esta llamada actualiza el valor anterior con el nuevo indicado."
+msgstr ""
+
+#: ../../reference/api/keys.rst:71
+msgid "persona linked to the value"
+msgstr ""
+
+#: ../../reference/api/keys.rst:75
 msgid ""
 "En ambas llamadas, se puede omitir los campos relacionados con el valor "
 "(``type`` y ``value``) para almacenar claves como si fueran etiquetas al "
 "uso."
+msgstr ""
+
+#: ../../reference/api/keys.rst:79
+msgid "Keys suggestion"
+msgstr ""
+
+#: ../../reference/api/keys.rst:83
+msgid "For ``keys`` only associated to ``personas``."
+msgstr ""
+
+#: ../../reference/api/keys.rst:117
+msgid "For ``keys`` linked only to ``devices``."
+msgstr ""
+
+#: ../../reference/api/keys.rst:150
+msgid "For any ``keys`` registered by the user."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:3
@@ -1588,13 +1069,11 @@ msgid "Notifications"
 msgstr ""
 
 #: ../../reference/api/notifications.rst:6
-msgid "Listar notificaciones"
+msgid "Notifications listing"
 msgstr ""
 
 #: ../../reference/api/notifications.rst:16
-msgid ""
-"cadena para realizar una búsqueda sobre el listado sobre el título y el "
-"mensaje"
+msgid "search chain to search in title and message list."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:50
@@ -1602,447 +1081,1873 @@ msgid "Crear una notificación"
 msgstr ""
 
 #: ../../reference/api/notifications.rst:106
-msgid "texto de la notificación **obligatorio**"
+msgid "notification text, **compulsory**."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:107
-#: ../../reference/api/notifications.rst:166
-msgid "enlace profundo"
+msgid "notification title."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:108
-#: ../../reference/api/notifications.rst:167
-msgid ""
-"cadena única que representa el tipo del contenido de destino de la "
-"notificación"
+#: ../../reference/api/notifications.rst:169
+msgid "content image."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:109
-#: ../../reference/api/notifications.rst:168
-msgid "código único que identifica el contenido de destino de la notificación"
+#: ../../reference/api/notifications.rst:170
+msgid "content image URL."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:110
+#: ../../reference/api/notifications.rst:171
+msgid "hyperlink to a web content."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:111
+#: ../../reference/api/notifications.rst:172
+msgid "user string that represents the notification link type of content."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:112
+#: ../../reference/api/notifications.rst:173
+msgid "unique code that represents the notification link type of content."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:113
+#: ../../reference/api/notifications.rst:174
+msgid "devices languages that will receive the notifications to."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:114
-#: ../../reference/api/notifications.rst:173
-msgid "lista de usuarios a los que la notificación debe ser enviada"
+#: ../../reference/api/notifications.rst:175
+msgid "platforms to send the notifications to (e.g: ``[\"android\", \"ios\"]``)."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:115
+#: ../../reference/api/notifications.rst:176
+msgid "app version to send the notifications to."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:116
+#: ../../reference/api/notifications.rst:177
+msgid ""
+"country code (two letters) where the devices need to be register to "
+"receive the notifications."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:117
+#: ../../reference/api/notifications.rst:178
+msgid "users list that will receive the notification."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:118
-msgid "define el algoritmo de distribución"
+#: ../../reference/api/notifications.rst:179
+msgid ""
+"``MultiPolygon``  including the area where the notification will be "
+"delivered."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:119
-msgid "define el centro del efecto Geo Ripple (solo para algoritmo de Geo Ripple)"
+#: ../../reference/api/notifications.rst:180
+msgid ""
+"``Point`` that marks the center of the circle where the notification will"
+" be delivered."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:120
-msgid ""
-"define el radio por defecto del efecto Geo Ripple (solo para algoritmo de"
-" Geo Ripple)"
+#: ../../reference/api/notifications.rst:181
+msgid "circle radius where the notification will be delivered."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:121
-#: ../../reference/api/notifications.rst:178
-msgid "marcar la notificación como silenciosa"
+#: ../../reference/api/notifications.rst:182
+msgid "applicable distribution algorithm."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:122
-#: ../../reference/api/notifications.rst:179
-msgid "indicar que la notificación requiere confirmación"
+#: ../../reference/api/notifications.rst:183
+msgid "defines the center of the Geo-Ripple (only for Geo Ripple algorithm)."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:123
-#: ../../reference/api/notifications.rst:180
-msgid "indicar que la notificación hará una selección de devices aleatoria"
+#: ../../reference/api/notifications.rst:184
+msgid "defines the radius of the Geo-Ripple (only for Geo Ripple algorithm)."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:124
-#: ../../reference/api/notifications.rst:181
-msgid "indica el tamaño de la muestra aleatoria"
+#: ../../reference/api/notifications.rst:185
+msgid "defines a silent notification."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:125
-#: ../../reference/api/notifications.rst:182
-msgid "indica el *peso* del contenido asociado a la notificación"
+#: ../../reference/api/notifications.rst:186
+msgid "the notification requires a confirmation receipt."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:126
-msgid "indicar que la notificación hará la comprobación de *churn*"
+#: ../../reference/api/notifications.rst:187
+msgid "the notification will do a device random selection."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:127
-#: ../../reference/api/notifications.rst:183
-msgid ""
-"lista de *keys* que han de tener los devices a los que se quiere enviar "
-"la notificación"
+#: ../../reference/api/notifications.rst:188
+msgid "defines the size of the random sample."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:128
-msgid ""
-"puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
-"tags se aplican a dispositivos o a usuarios, por defecto se toma el valor"
-" de \"device\""
+#: ../../reference/api/notifications.rst:189
+msgid "defines the *weight* of the content linked to the notification."
 msgstr ""
 
 #: ../../reference/api/notifications.rst:129
+#: ../../reference/api/notifications.rst:190
+msgid "defines that the notification will check the *churn*."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:130
 msgid ""
-"cadena de texto con los valores de ``client_data`` de las personas a las "
-"que se quiere enviar la notificación, separados por comas"
+"*keys* list that the target users' devices that receive the notifications"
+" have."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:133
-#: ../../reference/api/notifications.rst:337
+#: ../../reference/api/notifications.rst:131
+#: ../../reference/api/notifications.rst:192
 msgid ""
-"Si se incluye el campo ``image`` la petición ha de ir en formato "
-"*multipart*."
+"the tag filter can apply to a “device” or a “persona” – user. By default "
+"it’ll apply to a device."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:162
-msgid "identificador interno único de la notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:163
-msgid "identificador único de la notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:164
-msgid "texto de la notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:165
-msgid "imagen para usar en el contenido"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:177
-msgid "activar el 'ripple effect' para esta notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:184
+#: ../../reference/api/notifications.rst:132
 msgid ""
-"puede ser \"device\" o \"persona\", para seleccionar si los filtros de "
-"tags se aplican a dispositivos o a usuarios"
+"text chain with the ``client_data`` values of the users targeted in the "
+"notification separated by commas."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:185
-msgid "número estimado de destinatarios de la notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:188
-msgid "Actualizar notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:211
-msgid "Actualizar audiencia de la notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:247
-msgid "Enviar notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:264
-msgid "Reintentar notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:301
-msgid "Crear una alternative a una notificación"
-msgstr ""
-
-#: ../../reference/api/notifications.rst:303
+#: ../../reference/api/notifications.rst:136
 msgid ""
-"Se puede crear una alternativa de contenido para una notificación ya "
-"creada. Los pushes se distribuirán de manera uniforme entre todas las "
-"alternativas."
+"When the ``image`` field is included the request should go in *multipart*"
+" format."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:332
-msgid "texto alternativo de la notificación, **obligatorio**"
+#: ../../reference/api/notifications.rst:166
+msgid "notification unique internal id."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:333
+#: ../../reference/api/notifications.rst:167
+msgid "notification unique identifier code."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:168
+msgid "notification text."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:191
 msgid ""
-"URI de la notificación de la cual se quiere crear la alternativa, "
-"**obligatorio**"
+"*keys* list that the target users’ devices that receive the notifications"
+" have."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:334
-msgid "imagen para usar en la alternativa"
+#: ../../reference/api/notifications.rst:193
+msgid "estimated users number receiving the notification."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:341
-msgid "Pasos de distribución de una notificación"
+#: ../../reference/api/notifications.rst:196
+msgid "Update notification"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:343
+#: ../../reference/api/notifications.rst:218
+msgid "Update notification audience"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:254
+msgid "Send notification"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:271
+msgid "Retry notification"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:309
+msgid "Copy notification"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:346
+msgid "Alternative notification creation"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:348
+msgid ""
+"You can create a content alternative for an already existing "
+"notification. The push notification will be distributed evenly among all "
+"alternatives."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:378
+msgid "alternative notification text, **compulsory**."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:379
+msgid "alternative notification URL, **compulsory**."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:380
+msgid "alternative notification image."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:381
+msgid "alternative notification image URL."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:385
+msgid ""
+"If ``image`` field is included the request needs to be in *multipart* "
+"format."
+msgstr ""
+
+#: ../../reference/api/notifications.rst:388
+msgid "Obtain content alternatives"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:426
+msgid "Notification distribution steps"
+msgstr ""
+
+#: ../../reference/api/notifications.rst:428
 msgid ""
 "Para cada una de las notificaciones se pueden obtener los pasos que han "
 "dado para realizar la distribución de esta."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:420
-msgid "Log de comprobaciones de relevancia"
+#: ../../reference/api/notifications.rst:505
+msgid "Relevance testing log"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:422
+#: ../../reference/api/notifications.rst:507
 msgid ""
-"Los logs de comprobación de relevancia se pueden obtener para una "
-"notificación o para un paso de distribución."
+"The relevance testing logs can be obtained for a notification or for a "
+"distribution step."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:612
-msgid "Métricas de la notificación"
+#: ../../reference/api/notifications.rst:696
+msgid "Notification metrics"
 msgstr ""
 
-#: ../../reference/api/notifications.rst:622
-#: ../../reference/api/statistics.rst:41
-msgid "fecha de comienzo (eg: 2017-04-11T00:00:00)"
+#: ../../reference/api/notifications.rst:706
+msgid "starting date (eg: 2017-04-11T00:00:00)."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:623
-#: ../../reference/api/statistics.rst:42
-msgid "fecha de fin (eg: 2017-04-15T23:59:59)"
+#: ../../reference/api/notifications.rst:707
+msgid "ending date (eg: 2017-04-15T23:59:59)."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:624
-#: ../../reference/api/statistics.rst:43
-msgid "número de días que pasan entre resultado y resultado"
+#: ../../reference/api/notifications.rst:708
+msgid "number of days between results."
 msgstr ""
 
-#: ../../reference/api/notifications.rst:625
-#: ../../reference/api/statistics.rst:44
-msgid "número de horas que pasan entre resultado y resultado"
+#: ../../reference/api/notifications.rst:709
+msgid "number of hours between results."
 msgstr ""
 
-#: ../../reference/api/pushes.rst:3
-msgid "Pushes"
+#: ../../reference/api/segments.rst:3
+msgid "Segmentation"
 msgstr ""
 
-#: ../../reference/api/pushes.rst:6
-msgid "Read"
+#: ../../reference/api/segments.rst:6
+msgid "*Device* segments listing"
 msgstr ""
 
-#: ../../reference/api/pushes.rst:8
+#: ../../reference/api/segments.rst:60
+msgid "*User* segments listing"
+msgstr ""
+
+#: ../../reference/api/segments.rst:114
+msgid "Create *device* segments"
+msgstr ""
+
+#: ../../reference/api/segments.rst:134 ../../reference/api/segments.rst:167
+msgid "devices languages to be chosen for the segment."
+msgstr ""
+
+#: ../../reference/api/segments.rst:135 ../../reference/api/segments.rst:168
+msgid "platforms to be chosen for the segment (e.g: ``[\"android\", \"ios\"]``)."
+msgstr ""
+
+#: ../../reference/api/segments.rst:136 ../../reference/api/segments.rst:169
+msgid "app version to be chosen for the segment."
+msgstr ""
+
+#: ../../reference/api/segments.rst:137 ../../reference/api/segments.rst:170
 msgid ""
-"Los pushes leídos no afectan directamente a las estadísticas de los "
-"devices, sino que se utilizan para el parámetro ``badge`` de cada "
-"dispositivo. Un push puede ser leído sin que este haya sido pulsado por "
-"el usuario."
+"2 letters country code where users devices need to be registered to be "
+"chosen for the segment."
 msgstr ""
 
-#: ../../reference/api/pushes.rst:14
-msgid "Marca el push indicado como leído."
+#: ../../reference/api/segments.rst:138 ../../reference/api/segments.rst:171
+msgid "user’s list to be chosen for the segment"
 msgstr ""
 
-#: ../../reference/api/pushes.rst:27 ../../reference/api/pushes.rst:50
-#: ../../reference/api/pushes.rst:77 ../../reference/api/pushes.rst:105
-msgid "device que realiza la acción"
-msgstr ""
-
-#: ../../reference/api/pushes.rst:37
-msgid "Marca todos los pushes no leídos como leídos."
-msgstr ""
-
-#: ../../reference/api/pushes.rst:59
-msgid "Follow"
-msgstr ""
-
-#: ../../reference/api/pushes.rst:61
+#: ../../reference/api/segments.rst:139 ../../reference/api/segments.rst:172
 msgid ""
-"La acción de ``follow`` sobre un push se corresponde con la acción que "
-"realiza el usuario al hacer click en la notificación que le llega al "
-"dispositivo."
+"``MultiPolygon`` including the selected areas where the segmented devices"
+" need to be"
 msgstr ""
 
-#: ../../reference/api/pushes.rst:86
-msgid "Received"
-msgstr ""
-
-#: ../../reference/api/pushes.rst:88
+#: ../../reference/api/segments.rst:140 ../../reference/api/segments.rst:173
 msgid ""
-"El push se marca como recibido de forma automática en el momento en que "
-"este llega al dispositivo. De esta forma se tiene la certeza de que pese "
-"a la falta de garantías que nos dan los sistemas de entrega de "
-"notificaciones push, esta notificación sí ha llegado."
+"``Point`` where is the center of the circle containing the devices in the"
+" segment"
 msgstr ""
 
-#: ../../reference/api/statistics.rst:3
-msgid "Estadísticas"
+#: ../../reference/api/segments.rst:141 ../../reference/api/segments.rst:174
+msgid "radius of the circle containing the devices in the segment"
 msgstr ""
 
-#: ../../reference/api/statistics.rst:6
-msgid "Cohorts"
+#: ../../reference/api/segments.rst:142
+msgid "list of *keys* in the devices included in the segment"
 msgstr ""
 
-#: ../../reference/api/statistics.rst:16
+#: ../../reference/api/segments.rst:143 ../../reference/api/segments.rst:176
 msgid ""
-"fecha de inicio de la semana donde los devices se han creado (eg: "
-"2017-04-11)"
+"string, separated by commas, with the ``client_data`` values of the "
+"devices included in the segment"
 msgstr ""
 
-#: ../../reference/api/statistics.rst:17
-msgid ""
-"fecha de inicio de la semana donde analizar la actividad de los devices "
-"creados (eg: 2017-04-11)"
+#: ../../reference/api/segments.rst:147
+msgid "Create *user* segments"
 msgstr ""
 
-#: ../../reference/api/statistics.rst:31
-msgid "Métricas"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:45
-msgid "número de semanas que pasan entre resultado y resultado"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:46
-msgid "número de minutos que pasan entre resultado y resultado"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:47
-msgid "número de meses que pasan entre resultado y resultado"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:48
-msgid ""
-"lista de códigos de notificaciones sobre los que se quiere obtener "
-"estadísticas (e.g. ``notifications=MJ6H6Y,OsFKVH``)"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:49
-msgid ""
-"filtrar por tipo de notifications, ``manual`` para las manuales y "
-"``automatic`` para las automáticas"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:50
-msgid ""
-"indicar a ``true`` para que los datos que se muestren sean los totales "
-"acumulados hasta la fecha indicada"
-msgstr ""
-
-#: ../../reference/api/statistics.rst:51
-msgid ""
-"lista de campos que se quiere incluir en la respuesta, por defecto, se "
-"incluyen todos (e.g. "
-"``notifications=unique_devices,accesses,devices,alive_devices,active_devices,notifications,personas,alive_personas``)"
-msgstr ""
-
-#: ../../reference/api/users.rst:3
-msgid "Users"
+#: ../../reference/api/segments.rst:175
+msgid "list of *keys* in the users included in the segment"
 msgstr ""
 
 #: ../../reference/api/users.rst:5
-msgid ""
-"En el sistema se diferencia los diferentes perfiles de usuario usando los"
-" recursos ``users`` para los **clientes**, y ``personas`` para los "
-"**usuarios**. Se utiliza el termino ``persona`` del inglés, que hace "
-"referencia a la personalidad de alguien según la percibe otra persona, ya"
-" que en este recurso se guarda los datos que se tienen desde la "
-"perspectiva del **cliente**."
+msgid "Users"
 msgstr ""
 
-#: ../../reference/api/users.rst:11
-msgid "Usuario actual"
+#: ../../reference/api/users.rst:8
+msgid "User registry"
 msgstr ""
 
-#: ../../reference/api/users.rst:49 ../../reference/api/users.rst:93
-#: ../../reference/api/users.rst:121 ../../reference/api/users.rst:174
-msgid "email del usuario"
+#: ../../reference/api/users.rst:27 ../../reference/api/users.rst:55
+#: ../../reference/api/users.rst:110
+msgid "client’s user unique system identifier"
 msgstr ""
 
-#: ../../reference/api/users.rst:50
-msgid "nombre del usuario"
+#: ../../reference/api/users.rst:28 ../../reference/api/users.rst:56
+#: ../../reference/api/users.rst:111
+msgid "unique name of the user, as clients defines"
 msgstr ""
 
-#: ../../reference/api/users.rst:51
-msgid "apellido/s del usuario"
+#: ../../reference/api/users.rst:29 ../../reference/api/users.rst:57
+#: ../../reference/api/users.rst:112
+msgid "user email"
 msgstr ""
 
-#: ../../reference/api/users.rst:52
-msgid "contraseña del usuario"
+#: ../../reference/api/users.rst:30 ../../reference/api/users.rst:58
+#: ../../reference/api/users.rst:113
+msgid "user first name, if known"
 msgstr ""
 
-#: ../../reference/api/users.rst:72
-msgid "Registro de persona"
+#: ../../reference/api/users.rst:31 ../../reference/api/users.rst:59
+#: ../../reference/api/users.rst:114
+msgid "user last name if known"
 msgstr ""
 
-#: ../../reference/api/users.rst:91 ../../reference/api/users.rst:119
-#: ../../reference/api/users.rst:173
-msgid "identificador único en el sistema del cliente al que pertenece el usuario"
+#: ../../reference/api/users.rst:32 ../../reference/api/users.rst:60
+#: ../../reference/api/users.rst:115
+msgid "device URI to be linked to the user"
 msgstr ""
 
-#: ../../reference/api/users.rst:92 ../../reference/api/users.rst:120
-msgid "nombre único del usuario, según quiera el cliente"
+#: ../../reference/api/users.rst:33 ../../reference/api/users.rst:61
+#: ../../reference/api/users.rst:116
+msgid "country code (two letters) to identify the user"
 msgstr ""
 
-#: ../../reference/api/users.rst:94 ../../reference/api/users.rst:122
-#: ../../reference/api/users.rst:176
-msgid "nombre del usuario, si se sabe"
-msgstr ""
-
-#: ../../reference/api/users.rst:95 ../../reference/api/users.rst:123
-#: ../../reference/api/users.rst:177
-msgid "apellido/s del usuario, si se saben"
-msgstr ""
-
-#: ../../reference/api/users.rst:96
-msgid "URI del device al que se quiere asociar la persona"
-msgstr ""
-
-#: ../../reference/api/users.rst:97 ../../reference/api/users.rst:124
-#: ../../reference/api/users.rst:178
-msgid "código de dos letras que identifica el país de la persona"
-msgstr ""
-
-#: ../../reference/api/users.rst:98 ../../reference/api/users.rst:125
-msgid ""
-"coordenadas de la persona, donde ``coordinates`` es un array con las "
-"coordenadas de la siguiente forma: **[longitud, latidud]**"
-msgstr ""
-
+#: ../../reference/api/users.rst:34 ../../reference/api/users.rst:62
 #: ../../reference/api/users.rst:117
-msgid "id interno único del usuario"
-msgstr ""
-
-#: ../../reference/api/users.rst:118
 msgid ""
-"código único del usuario, es el que se usa al hacer referencia a este en "
-"el resto del API"
+"persona coordinates, where ``coordinates`` are the following "
+"array: **[longitude, latitude]**"
 msgstr ""
 
-#: ../../reference/api/users.rst:127
-msgid "La llamada puede dar error si:"
+#: ../../reference/api/users.rst:53
+msgid "unique inside user id"
 msgstr ""
 
-#: ../../reference/api/users.rst:129
-msgid "Se introducen datos inválidos, como un email inválido en el campo de email"
+#: ../../reference/api/users.rst:54
+msgid "unique user code that is used to refer to him in the rest of the API"
 msgstr ""
 
-#: ../../reference/api/users.rst:130
-msgid ""
-"Si el ``client_data`` de la **persona** ya está registrado para el "
-"**cliente**"
+#: ../../reference/api/users.rst:64
+msgid "The call can generate an error if::"
 msgstr ""
 
-#: ../../reference/api/users.rst:132
-msgid "**Ejemplo de respuestas**:"
+#: ../../reference/api/users.rst:69
+msgid "**Response examples**:"
 msgstr ""
 
-#: ../../reference/api/users.rst:158
-msgid "Actualizar persona"
+#: ../../reference/api/users.rst:95
+msgid "Update user"
 msgstr ""
 
-#: ../../reference/api/users.rst:175
-msgid "nombre de usuario del usuario"
+#: ../../reference/api/users.rst:126
+msgid "Search user"
 msgstr ""
 
-#: ../../reference/api/users.rst:188
-msgid "Buscar persona"
+#: ../../reference/api/users.rst:128
+msgid "You can search a persona by the email or username."
 msgstr ""
 
-#: ../../reference/api/users.rst:190
-msgid "Se puede buscar una persona por el username o por el email."
+#: ../../reference/api/users.rst:168
+msgid "User devices"
 msgstr ""
 
-#: ../../reference/ios.rst:3
+#: ../../reference/ios.rst:5
 msgid "iOS SDK"
 msgstr ""
+
+#~ msgid "Referencia"
+#~ msgstr ""
+
+#~ msgid "INotifications.IBackgroundCustomNotificationLoaderListener"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To provide asynchronous custom notifications"
+#~ " loading. You must call either "
+#~ "revertToStandardNotification or customNotificationsReady"
+#~ " once"
+#~ msgstr ""
+
+#~ msgid "customNotificationsReady"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All asynchronous loading and manipulations "
+#~ "done, remote views are ready to "
+#~ "use"
+#~ msgstr ""
+
+#~ msgid "Parámetros"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if provided this bitmap will be "
+#~ "used in NotificationBuilder..setLargeIcon()"
+#~ msgstr ""
+
+#~ msgid "revertToStandardNotification"
+#~ msgstr ""
+
+#~ msgid "Loading failed and should fallback to standard notification"
+#~ msgstr ""
+
+#~ msgid "Client"
+#~ msgstr ""
+
+#~ msgid ":ref:`ISDKCore <android-sdk-classes-isdkcore>`"
+#~ msgstr ""
+
+#~ msgid ":ref:`INotifications <android-sdk-classes-inotifications>`"
+#~ msgstr ""
+
+#~ msgid ":ref:`IUIStrings <android-sdk-classes-iustrings>`"
+#~ msgstr ""
+
+#~ msgid ":ref:`IGeolocation <android-sdk-classes-igeolocation>`"
+#~ msgstr ""
+
+#~ msgid "Clases"
+#~ msgstr ""
+
+#~ msgid ":ref:`SDKClient <android-sdk-classes-sdkclient>`"
+#~ msgstr ""
+
+#~ msgid "onUserAcceptedLocationPermission"
+#~ msgstr ""
+
+#~ msgid "onUserRejectedLocationPermission"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Called when the user has rejected "
+#~ "location permission, do not make any "
+#~ "further UI interaction with the user "
+#~ "regarding location permission"
+#~ msgstr ""
+
+#~ msgid "Notifications related interface"
+#~ msgstr ""
+
+#~ msgid "getCustomNotificationLargeView"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "you should also return a view on"
+#~ " getCustomNotificationSmallView if you need "
+#~ "to load some data could be done"
+#~ " later, return immediately override if "
+#~ "you want to provide your large "
+#~ "custom notification view when expanded"
+#~ msgstr ""
+
+#~ msgid "getCustomNotificationSmallView"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if you need to load some data "
+#~ "could be done later, return immediately,"
+#~ " override if you want to provide "
+#~ "your custom notification view when "
+#~ "collapsed"
+#~ msgstr ""
+
+#~ msgid "loadBackgroundCustomNotificationData"
+#~ msgstr ""
+
+#~ msgid "notificationHasImage"
+#~ msgstr ""
+
+#~ msgid "Return true if the notification should have an image"
+#~ msgstr ""
+
+#~ msgid "Devuelve"
+#~ msgstr ""
+
+#~ msgid "onNotificationClicked"
+#~ msgstr ""
+
+#~ msgid "Called when a showed notification is clicked"
+#~ msgstr ""
+
+#~ msgid "onNotificationListCleared"
+#~ msgstr ""
+
+#~ msgid "Called when the notification list is cleared"
+#~ msgstr ""
+
+#~ msgid "onNotificationReceived"
+#~ msgstr ""
+
+#~ msgid "Called when a notification is received in the device"
+#~ msgstr ""
+
+#~ msgid "onNotificationShowed"
+#~ msgstr ""
+
+#~ msgid "Called when a notification is showed to the user"
+#~ msgstr ""
+
+#~ msgid "onNotificationShowedInList"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Called when a notification is showed "
+#~ "to the user in the stacked "
+#~ "notification"
+#~ msgstr ""
+
+#~ msgid "openNotification"
+#~ msgstr ""
+
+#~ msgid "true if client opens the notification overriding SDK default behabiour"
+#~ msgstr ""
+
+#~ msgid "openNotificationList"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Start the proper intent to show "
+#~ "notification list, the user has clicked"
+#~ " on stacked notification"
+#~ msgstr ""
+
+#~ msgid "`back to Client <../README.md>`__"
+#~ msgstr ""
+
+#~ msgid "ISDKCore handles core events on SDK"
+#~ msgstr ""
+
+#~ msgid "logEvent"
+#~ msgstr ""
+
+#~ msgid "Called to log events, for example to use analytics"
+#~ msgstr ""
+
+#~ msgid "mainActivityClassName"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Called to retrieve the main activity "
+#~ "class name \\ ``return "
+#~ "MainActivity.class.getName()``\\"
+#~ msgstr ""
+
+#~ msgid "performSetup"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Called when the SDK is initialized "
+#~ "Do any customization here like "
+#~ "Sdk.alwaysShowLastNotification: \\ "
+#~ "``Sdk.alwaysShowLastNotification(false);``\\"
+#~ msgstr ""
+
+#~ msgid "remoteLogException"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To send a remote exception to your"
+#~ " desired server e.g.: \\ "
+#~ "``Crashlytics.logException(e);``\\"
+#~ msgstr ""
+
+#~ msgid "Created by jorgearimany on 19/4/17."
+#~ msgstr ""
+
+#~ msgid "getLocationExplanation"
+#~ msgstr ""
+
+#~ msgid "SDK"
+#~ msgstr ""
+
+#~ msgid "Documentation"
+#~ msgstr ""
+
+#~ msgid "``public class SDK``"
+#~ msgstr ""
+
+#~ msgid "Sdk class enables customization of the SDK"
+#~ msgstr ""
+
+#~ msgid "``public SDK stackNotifications(boolean stackNotifications)``"
+#~ msgstr ""
+
+#~ msgid "Configure to show stacked notifications or not defaults to true"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``stackNotifications`` — if "
+#~ "true notifications are stacked"
+#~ msgstr ""
+
+#~ msgid "**Returns:** SDK instance so you can concatenate calls"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public SDK alwaysShowLastNotification(boolean "
+#~ "alwaysShowLastNotification)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configure to show always the last "
+#~ "notification, useful in combination with "
+#~ "stackNotifications defaults to true"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``alwaysShowLastNotification`` — If"
+#~ " the last notification should allways "
+#~ "been shown"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public SDK limitNotificationSoundAndVibrationTime("
+#~ "    boolean limitNotificationSoundAndVibrationTime)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configure to limit when notification "
+#~ "will make sound and vibration defaults"
+#~ " to true if enabled notifications "
+#~ "will only make sound between [firstHour"
+#~ " ... lastHour)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``limitNotificationSoundAndVibrationTime`` "
+#~ "— If the sound and vibration will"
+#~ " be limited"
+#~ msgstr ""
+
+#~ msgid "**See also:**"
+#~ msgstr ""
+
+#~ msgid "notificationSoundAndVibrationFirstHour(int)"
+#~ msgstr ""
+
+#~ msgid "notificationSoundAndVibrationLastHour(int)"
+#~ msgstr ""
+
+#~ msgid "``public SDK notificationSoundAndVibrationFirstHour(int firstHour)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configure to set the first hour "
+#~ "that notifications will make sound and"
+#~ " vibration Will only taken into "
+#~ "account if {@link "
+#~ "#limitNotificationSoundAndVibrationTime(boolean)} is set"
+#~ " to true"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``firstHour`` — first hour "
+#~ "when notifications will make sound and"
+#~ " vibration. [0..23]"
+#~ msgstr ""
+
+#~ msgid "**See also:** #limitNotificationSoundAndVibrationTime(boolean)"
+#~ msgstr ""
+
+#~ msgid "``public SDK notificationSoundAndVibrationLastHour(int lastHour)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``lastHour`` — last hour "
+#~ "when notifications make sound and "
+#~ "vibration. [0..23]"
+#~ msgstr ""
+
+#~ msgid "``public SDK notificationColorResource(     int colorResource)``"
+#~ msgstr ""
+
+#~ msgid "Set the color resource to use in Notifications"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``colorResource`` — the color to be used"
+#~ msgstr ""
+
+#~ msgid "``public SDK setSmallIconResource(int smallIconResource)``"
+#~ msgstr ""
+
+#~ msgid "Set the small icon resource"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``smallIconResource`` — small icon resource"
+#~ msgstr ""
+
+#~ msgid "``public SDK setLargeIconResource(int largeIconResource)``"
+#~ msgstr ""
+
+#~ msgid "Set the large icon resource"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``largeIconResource`` — large icon resource"
+#~ msgstr ""
+
+#~ msgid "``public SDK stackedNotificationTitle( CharSequence title)``"
+#~ msgstr ""
+
+#~ msgid "set the stacked notification Title"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``title`` — the title to be used"
+#~ msgstr ""
+
+#~ msgid "``public SDK stackedNotificationContent(String content)``"
+#~ msgstr ""
+
+#~ msgid "set the stacked notifications content"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``content`` — content, if "
+#~ "you have an '%d' in the string "
+#~ "it will be formatted with"
+#~ msgstr ""
+
+#~ msgid "the number of pending notifications"
+#~ msgstr ""
+
+#~ msgid "``public SDK viewStackedIconResource(int iconResource)``"
+#~ msgstr ""
+
+#~ msgid "set the view icon resource in stacked notification"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``iconResource`` — the icon"
+#~ " resource, if not set defaults to "
+#~ "android.R.drawable.ic\\_menu\\_view"
+#~ msgstr ""
+
+#~ msgid "``public SDK viewStackdString(CharSequence string)``"
+#~ msgstr ""
+
+#~ msgid "set the view string in stacked notification"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``string`` —"
+#~ msgstr ""
+
+#~ msgid "``public SDK cancelStackedIconResource( int iconResource)``"
+#~ msgstr ""
+
+#~ msgid "set the cancel button icon in stacked notification"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Parameters:** ``iconResource`` — the icon"
+#~ " resource to be used, if not "
+#~ "set defaults to "
+#~ "android.R.drawable.ic\\_menu\\_close\\_clear\\_cancel"
+#~ msgstr ""
+
+#~ msgid "``public int getCancelStackedIconResource()``"
+#~ msgstr ""
+
+#~ msgid "**Returns:**"
+#~ msgstr ""
+
+#~ msgid "``public SDK cancelStackedString ( CharSequence string)``"
+#~ msgstr ""
+
+#~ msgid "set the cancel button string in stacked notification"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void onRequestPermissionsResult(int"
+#~ " requestCode, String permissions[], int[] "
+#~ "grantResults, Context context``"
+#~ msgstr ""
+
+#~ msgid "On Api >= 23 override on main activity and call this method"
+#~ msgstr ""
+
+#~ msgid "**Parameters:**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``requestCode`` — request code provided "
+#~ "in main onRequestPermissionsResult"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``permissions`` — permission provided in "
+#~ "main onRequestPermissionsResult"
+#~ msgstr ""
+
+#~ msgid "``grantResults`` — results provided in onRequestPermissionsResult"
+#~ msgstr ""
+
+#~ msgid "``context`` — context, e.g getApplicationContext(), should not be null"
+#~ msgstr ""
+
+#~ msgid "``public static void onResume(final Context context)``"
+#~ msgstr ""
+
+#~ msgid "override on main activity and call this method"
+#~ msgstr ""
+
+#~ msgid "``public static void onPause()``"
+#~ msgstr ""
+
+#~ msgid "``public static void onStart()``"
+#~ msgstr ""
+
+#~ msgid "``public static void onStop()``"
+#~ msgstr ""
+
+#~ msgid "``public static void onDestroy()``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void onCreate(Bundle "
+#~ "savedInstanceState,         final Activity activity,"
+#~ "         Communications.ILocationAlerter locationAlerter)``"
+#~ msgstr ""
+
+#~ msgid "``savedInstanceState`` — saved instance state"
+#~ msgstr ""
+
+#~ msgid "``activity`` — instance of your main activity"
+#~ msgstr ""
+
+#~ msgid "``locationAlerter`` — location alerter"
+#~ msgstr ""
+
+#~ msgid "``public static void onSaveInstanceState(Bundle outState)``"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``outState`` —"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void onRestoreInstanceState(final"
+#~ " Bundle savedInstanceState, final Context "
+#~ "context)``"
+#~ msgstr ""
+
+#~ msgid "``savedInstanceState`` —"
+#~ msgstr ""
+
+#~ msgid "``context`` —"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void "
+#~ "deleteNotificationFromList(String notificationCode, "
+#~ "Context context)``"
+#~ msgstr ""
+
+#~ msgid "Delete a single notification from the stored list"
+#~ msgstr ""
+
+#~ msgid "``notificationCode`` — notification code"
+#~ msgstr ""
+
+#~ msgid "``context`` — context"
+#~ msgstr ""
+
+#~ msgid "``public static void deleteAllNotifications(Context context)``"
+#~ msgstr ""
+
+#~ msgid "Delete all notifications from stored list"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``context`` — context"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static ArrayList<Notification> "
+#~ "getNotificationsList(Context context)``"
+#~ msgstr ""
+
+#~ msgid "Returns a list with the stored notifications"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``context`` —"
+#~ msgstr ""
+
+#~ msgid "**Returns:** the notification list"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void notifyNotificationRead(String"
+#~ " notificationCode, final Context context)``"
+#~ msgstr ""
+
+#~ msgid "Notify that a notification has been read"
+#~ msgstr ""
+
+#~ msgid "``notificationCode`` — the code of the read notification"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void "
+#~ "notifyAllNotificationsRead(final Context context)``"
+#~ msgstr ""
+
+#~ msgid "``public static class GeoLocation``"
+#~ msgstr ""
+
+#~ msgid "``public double latitude``"
+#~ msgstr ""
+
+#~ msgid "``public double longitude``"
+#~ msgstr ""
+
+#~ msgid "``public double precision``"
+#~ msgstr ""
+
+#~ msgid "precision in meters"
+#~ msgstr ""
+
+#~ msgid "``public String provider``"
+#~ msgstr ""
+
+#~ msgid "``public String source``"
+#~ msgstr ""
+
+#~ msgid "location source"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public GeoLocation(double latitude,       double"
+#~ " longitude,       double precision,       String"
+#~ " provider,       String source       )``"
+#~ msgstr ""
+
+#~ msgid "Constructor"
+#~ msgstr ""
+
+#~ msgid "``latitude`` —"
+#~ msgstr ""
+
+#~ msgid "``longitude`` —"
+#~ msgstr ""
+
+#~ msgid "``precision`` —"
+#~ msgstr ""
+
+#~ msgid "``provider`` —"
+#~ msgstr ""
+
+#~ msgid "``source`` —"
+#~ msgstr ""
+
+#~ msgid "``public static GeoLocation getCurrentGeoLocation()``"
+#~ msgstr ""
+
+#~ msgid "Call this method to get the current geolocation"
+#~ msgstr ""
+
+#~ msgid "**Returns:** the current geolocation"
+#~ msgstr ""
+
+#~ msgid "``public interface IGeoLocationReceiver``"
+#~ msgstr ""
+
+#~ msgid "A receiver that will be notified when a new location is available"
+#~ msgstr ""
+
+#~ msgid "``void onNewLocation(GeoLocation location)``"
+#~ msgstr ""
+
+#~ msgid "New location arrived"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``location`` — the new location"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void "
+#~ "registerGeoLocationReceiver(IGeoLocationReceiver receiver)``"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``receiver`` — the receiver to be called"
+#~ msgstr ""
+
+#~ msgid "``public static void unregisterGeoLocationReceiver()``"
+#~ msgstr ""
+
+#~ msgid "Remove the geolocation receiver"
+#~ msgstr ""
+
+#~ msgid "``public static void disableGeolocationUpdates()``"
+#~ msgstr ""
+
+#~ msgid "Disable geolocation updates"
+#~ msgstr ""
+
+#~ msgid "``public static void enableGeolocationUpdates()``"
+#~ msgstr ""
+
+#~ msgid "Enable geolocation updates, by default are enabled"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void "
+#~ "changeNotificationsEnabled(boolean enabled,Context "
+#~ "context)``"
+#~ msgstr ""
+
+#~ msgid "Call this method to enable/disable notifications on current device/app"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``enabled`` — if the notifications "
+#~ "should be enabled, by default are "
+#~ "enabled"
+#~ msgstr ""
+
+#~ msgid "``public static boolean getNotificationsEnabled(Context context)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Get a boolean indicating if the "
+#~ "notifications are enabled on current "
+#~ "device/app"
+#~ msgstr ""
+
+#~ msgid "**Returns:** if the notifications are enabled"
+#~ msgstr ""
+
+#~ msgid "``public interface IUserResponseObserver``"
+#~ msgstr ""
+
+#~ msgid "Observer on user calls"
+#~ msgstr ""
+
+#~ msgid "``void onOk()``"
+#~ msgstr ""
+
+#~ msgid "Called when the operation has been done correctly"
+#~ msgstr ""
+
+#~ msgid "``void onFail(String reason)``"
+#~ msgstr ""
+
+#~ msgid "Called when the operation failed"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``reason`` — reason of the fail"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void linkUserToDevice(final "
+#~ "IUserResponseObserver observer, final Context "
+#~ "context)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Call this to link the user to "
+#~ "the device, call it after the user"
+#~ " has been set"
+#~ msgstr ""
+
+#~ msgid "``observer`` — observer to be called when the operation is done"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void registerUser(String "
+#~ "email, String firstName, String lastName, "
+#~ "String password,      final IUserResponseObserver"
+#~ " observer,          Context context)``"
+#~ msgstr ""
+
+#~ msgid "Called to register the user"
+#~ msgstr ""
+
+#~ msgid "``email`` — e-mail"
+#~ msgstr ""
+
+#~ msgid "``firstName`` — first name"
+#~ msgstr ""
+
+#~ msgid "``lastName`` — last name"
+#~ msgstr ""
+
+#~ msgid "``password`` — password to use"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public static void modifyUser(String email,"
+#~ " String firstName, String lastName, String"
+#~ " password,      final IUserResponseObserver "
+#~ "observer, Context context)``"
+#~ msgstr ""
+
+#~ msgid "Modify user data"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "only fill the fields you want to"
+#~ " modify, any null parameter will be"
+#~ " kept unmodified"
+#~ msgstr ""
+
+#~ msgid "``password`` — password"
+#~ msgstr ""
+
+#~ msgid "``public interface ILocationAlerter``"
+#~ msgstr ""
+
+#~ msgid "Location alerter to redirect user to configuration"
+#~ msgstr ""
+
+#~ msgid "``void alertNotEnabled(Activity parent)``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alert the user that location is "
+#~ "not enabled, good place to open "
+#~ "device location settings for the user"
+#~ msgstr ""
+
+#~ msgid "**Parameters:** ``parent`` — could be null."
+#~ msgstr ""
+
+#~ msgid "SDKClient"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``public abstract class SDKClient extends "
+#~ "BroadcastReceiver implements INotifications, "
+#~ "ISDKCore``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You should subclass SDKClient and "
+#~ "implement the interfaces (mysdkClient) as "
+#~ "needed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "add to the manifest: ``<meta-data "
+#~ "android:name=\"sdk_clientClass\" "
+#~ "android:value=\"com.mycompany.myapp.mysdkClient\"/>``"
+#~ msgstr ""
+
+#~ msgid "Aplicaciones"
+#~ msgstr ""
+
+#~ msgid "Crear aplicación"
+#~ msgstr ""
+
+#~ msgid "**Ejemplo de petición**:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nombre de la aplicación, ha de ser"
+#~ " único y sin espacios, **obligatorio**"
+#~ msgstr ""
+
+#~ msgid "tipo de plataforma, \"GCM\", \"APNS\" o \"APNS_SANDBOX\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "para APNS y APNS_SANDBOX se corresponde"
+#~ " con el certificado SSL, y no "
+#~ "se aplica en GCM"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "para APNS y APNS_SANDBOX se corresponde"
+#~ " con el la clave privada, y con"
+#~ " GCM se corresponde con la *API "
+#~ "Key*"
+#~ msgstr ""
+
+#~ msgid "**Ejemplo de respuesta**:"
+#~ msgstr ""
+
+#~ msgid "Listar aplicaciones"
+#~ msgstr ""
+
+#~ msgid "}"
+#~ msgstr ""
+
+#~ msgid "Borrar aplicaciones"
+#~ msgstr ""
+
+#~ msgid "Autenticación"
+#~ msgstr ""
+
+#~ msgid "Autenticación vía Token"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cada **cliente** dispondrá de un "
+#~ "credencial en forma de cadena de "
+#~ "texto aleatoria generada por el sistema."
+#~ " Esta cadena, o ``token`` será "
+#~ "utilizado para la autenticación de las"
+#~ " llamadas al API."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Las llamadas no autenticadas tendrán "
+#~ "como resultado una respuesta del tipo"
+#~ " ``HTTP 401 Unauthorized``."
+#~ msgstr ""
+
+#~ msgid "Contenidos"
+#~ msgstr ""
+
+#~ msgid "Crear conversor"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Un conversor es un objeto que "
+#~ "define las reglas que se usarán "
+#~ "para crear una notificación cuando se"
+#~ " cree un **nuevo contenido de una "
+#~ "fuente en concreto.**"
+#~ msgstr ""
+
+#~ msgid "URI de la fuente del contenido del que se quiere hacer el conversor."
+#~ msgstr ""
+
+#~ msgid "plantilla para usar en el cuerpo de la notificación"
+#~ msgstr ""
+
+#~ msgid "plantilla para usar en el título de la notificación"
+#~ msgstr ""
+
+#~ msgid "``MultiPolygon`` con las areas donde la notificación ha de ser efectiva"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``Point`` que representa el centro de"
+#~ " la circunferencia donde la notificación"
+#~ " es efectiva"
+#~ msgstr ""
+
+#~ msgid "radio de la circunferencia donde la notificación es efectiva"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "plataformas a la que enviar la "
+#~ "notificación (e.g: ``[\"android\", \"ios\"]``)"
+#~ msgstr ""
+
+#~ msgid "idioma de los dispositivos a los que enviar la notificación"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "versión del cliente que deben de "
+#~ "tener los dispositivos a los que "
+#~ "se envía la notificación"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "código de dos letras del país en"
+#~ " el que tienen que estar registrados"
+#~ " los devices a los que se "
+#~ "quiere mandar la notificación"
+#~ msgstr ""
+
+#~ msgid "Plataformas"
+#~ msgstr ""
+
+#~ msgid "Registro de dispositivos"
+#~ msgstr ""
+
+#~ msgid "token identificativo del dispositivo para la recepción de pushes"
+#~ msgstr ""
+
+#~ msgid "plataforma del dispositivo, ``android`` para Android, ``ios`` para iOS"
+#~ msgstr ""
+
+#~ msgid "usuario al que está asociado el dispositivo"
+#~ msgstr ""
+
+#~ msgid "cadena de descripción del modelo del dispositivo"
+#~ msgstr ""
+
+#~ msgid "cadena que identifica la versión del cliente que usa el dispositivo"
+#~ msgstr ""
+
+#~ msgid "cadena de dos caracteres que identifica el idioma del dispositivo"
+#~ msgstr ""
+
+#~ msgid "código de dos letras que identifica el país del dispositivo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "coordenadas del dispositivo, donde "
+#~ "``coordinates`` es un array con las "
+#~ "coordenadas de la siguiente forma: "
+#~ "**[longitud, latidud]**"
+#~ msgstr ""
+
+#~ msgid "URI de la persona con la que vincular el dispositivo"
+#~ msgstr ""
+
+#~ msgid "id interno único del dispositvo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "codigo único del dispositivo, es el "
+#~ "que se usa al hacer referencia a"
+#~ " este en el resto del API"
+#~ msgstr ""
+
+#~ msgid "usuario ('persona') al que está asociado el dispositivo"
+#~ msgstr ""
+
+#~ msgid "cadena que identifica el idioma del dispositivo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si no se indica una persona en "
+#~ "la petición de creación de device, "
+#~ "esta se creará de forma automática "
+#~ "y se devolverá en la respuesta de"
+#~ " creación."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si no se especifica un país, se"
+#~ " tomara automáticamente desde las "
+#~ "coordenadas que se introducen. Si no "
+#~ "se dan unas coordenadas, se usará "
+#~ "la IP para establecer el país del"
+#~ " dispostivo."
+#~ msgstr ""
+
+#~ msgid "Actualizar dispositivo"
+#~ msgstr ""
+
+#~ msgid "Para actualizar la posición, el usuario asociado u otros datos."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "booleano que indica si se han "
+#~ "desactivado/activado las notificaciones push "
+#~ "en el dispositivo"
+#~ msgstr ""
+
+#~ msgid "Enlazar un dispositivo a una persona"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Para enlazar un usuario del cliente "
+#~ "con el dispositivo, se puede realizar"
+#~ " una llamada a ``/api/v1/devices/links/`` "
+#~ "indicando en el campo de ``client_data``"
+#~ " el valor que identifica al usuario"
+#~ " de forma única para el cliente."
+#~ msgstr ""
+
+#~ msgid "URI del device que se quiere actualizar"
+#~ msgstr ""
+
+#~ msgid "referencia única del cliente que identifica la persona"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La respuesta a esta llamada es el"
+#~ " device actualizado con la información "
+#~ "de la persona con la que está "
+#~ "enlazado."
+#~ msgstr ""
+
+#~ msgid "Buscar dispositivo"
+#~ msgstr ""
+
+#~ msgid "valor del token que se quiere buscar"
+#~ msgstr ""
+
+#~ msgid "Registro de acceso"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Para registrar la actividad de un "
+#~ "dispositivo, se necesita que se realice"
+#~ " una llamada explícita para que se"
+#~ " registre el acceso de un "
+#~ "dispositivo."
+#~ msgstr ""
+
+#~ msgid "Feeds"
+#~ msgstr ""
+
+#~ msgid "Listar los feeds"
+#~ msgstr ""
+
+#~ msgid "Añadir un nuevo feed"
+#~ msgstr ""
+
+#~ msgid "Comprobar elementos del feed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "El sistema permite almacenar **información "
+#~ "arbitraria** en formato de clave/valor "
+#~ "asociada tanto a dispositivos como a "
+#~ "usuarios."
+#~ msgstr ""
+
+#~ msgid "Añadir clave/valor a un dispositivo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "objeto JSON con la clave ``name`` "
+#~ "indicando el nombre de la clave "
+#~ "que se quiere asociar, **obligatorio**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "en caso de indicar un valor "
+#~ "asociado, el tipo de este valor, "
+#~ "siendo 0: float, 1: int, 2: "
+#~ "string, 3: bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "representación en cadena de texto del"
+#~ " valor que se quiere asociar a "
+#~ "la key"
+#~ msgstr ""
+
+#~ msgid "referencia al dispositivo al que se quiere asociar el valor"
+#~ msgstr ""
+
+#~ msgid "Añadir clave/valor a un usuario"
+#~ msgstr ""
+
+#~ msgid "referencia al usuario al que se quiere asociar el valor"
+#~ msgstr ""
+
+#~ msgid "Listar notificaciones"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "cadena para realizar una búsqueda sobre"
+#~ " el listado sobre el título y "
+#~ "el mensaje"
+#~ msgstr ""
+
+#~ msgid "texto de la notificación **obligatorio**"
+#~ msgstr ""
+
+#~ msgid "enlace profundo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "cadena única que representa el tipo "
+#~ "del contenido de destino de la "
+#~ "notificación"
+#~ msgstr ""
+
+#~ msgid "código único que identifica el contenido de destino de la notificación"
+#~ msgstr ""
+
+#~ msgid "lista de usuarios a los que la notificación debe ser enviada"
+#~ msgstr ""
+
+#~ msgid "define el algoritmo de distribución"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "define el centro del efecto Geo "
+#~ "Ripple (solo para algoritmo de Geo "
+#~ "Ripple)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "define el radio por defecto del "
+#~ "efecto Geo Ripple (solo para algoritmo"
+#~ " de Geo Ripple)"
+#~ msgstr ""
+
+#~ msgid "marcar la notificación como silenciosa"
+#~ msgstr ""
+
+#~ msgid "indicar que la notificación requiere confirmación"
+#~ msgstr ""
+
+#~ msgid "indicar que la notificación hará una selección de devices aleatoria"
+#~ msgstr ""
+
+#~ msgid "indica el tamaño de la muestra aleatoria"
+#~ msgstr ""
+
+#~ msgid "indica el *peso* del contenido asociado a la notificación"
+#~ msgstr ""
+
+#~ msgid "indicar que la notificación hará la comprobación de *churn*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lista de *keys* que han de tener"
+#~ " los devices a los que se "
+#~ "quiere enviar la notificación"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "puede ser \"device\" o \"persona\", para"
+#~ " seleccionar si los filtros de tags"
+#~ " se aplican a dispositivos o a "
+#~ "usuarios, por defecto se toma el "
+#~ "valor de \"device\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "cadena de texto con los valores de"
+#~ " ``client_data`` de las personas a "
+#~ "las que se quiere enviar la "
+#~ "notificación, separados por comas"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si se incluye el campo ``image`` "
+#~ "la petición ha de ir en formato"
+#~ " *multipart*."
+#~ msgstr ""
+
+#~ msgid "identificador interno único de la notificación"
+#~ msgstr ""
+
+#~ msgid "identificador único de la notificación"
+#~ msgstr ""
+
+#~ msgid "texto de la notificación"
+#~ msgstr ""
+
+#~ msgid "imagen para usar en el contenido"
+#~ msgstr ""
+
+#~ msgid "activar el 'ripple effect' para esta notificación"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "puede ser \"device\" o \"persona\", para"
+#~ " seleccionar si los filtros de tags"
+#~ " se aplican a dispositivos o a "
+#~ "usuarios"
+#~ msgstr ""
+
+#~ msgid "número estimado de destinatarios de la notificación"
+#~ msgstr ""
+
+#~ msgid "Actualizar notificación"
+#~ msgstr ""
+
+#~ msgid "Actualizar audiencia de la notificación"
+#~ msgstr ""
+
+#~ msgid "Enviar notificación"
+#~ msgstr ""
+
+#~ msgid "Reintentar notificación"
+#~ msgstr ""
+
+#~ msgid "Crear una alternative a una notificación"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Se puede crear una alternativa de "
+#~ "contenido para una notificación ya "
+#~ "creada. Los pushes se distribuirán de"
+#~ " manera uniforme entre todas las "
+#~ "alternativas."
+#~ msgstr ""
+
+#~ msgid "texto alternativo de la notificación, **obligatorio**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "URI de la notificación de la cual"
+#~ " se quiere crear la alternativa, "
+#~ "**obligatorio**"
+#~ msgstr ""
+
+#~ msgid "imagen para usar en la alternativa"
+#~ msgstr ""
+
+#~ msgid "Pasos de distribución de una notificación"
+#~ msgstr ""
+
+#~ msgid "Log de comprobaciones de relevancia"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Los logs de comprobación de relevancia"
+#~ " se pueden obtener para una "
+#~ "notificación o para un paso de "
+#~ "distribución."
+#~ msgstr ""
+
+#~ msgid "Métricas de la notificación"
+#~ msgstr ""
+
+#~ msgid "fecha de comienzo (eg: 2017-04-11T00:00:00)"
+#~ msgstr ""
+
+#~ msgid "fecha de fin (eg: 2017-04-15T23:59:59)"
+#~ msgstr ""
+
+#~ msgid "número de días que pasan entre resultado y resultado"
+#~ msgstr ""
+
+#~ msgid "número de horas que pasan entre resultado y resultado"
+#~ msgstr ""
+
+#~ msgid "Pushes"
+#~ msgstr ""
+
+#~ msgid "Read"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Los pushes leídos no afectan "
+#~ "directamente a las estadísticas de los"
+#~ " devices, sino que se utilizan para"
+#~ " el parámetro ``badge`` de cada "
+#~ "dispositivo. Un push puede ser leído "
+#~ "sin que este haya sido pulsado por"
+#~ " el usuario."
+#~ msgstr ""
+
+#~ msgid "Marca el push indicado como leído."
+#~ msgstr ""
+
+#~ msgid "device que realiza la acción"
+#~ msgstr ""
+
+#~ msgid "Marca todos los pushes no leídos como leídos."
+#~ msgstr ""
+
+#~ msgid "Follow"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La acción de ``follow`` sobre un "
+#~ "push se corresponde con la acción "
+#~ "que realiza el usuario al hacer "
+#~ "click en la notificación que le "
+#~ "llega al dispositivo."
+#~ msgstr ""
+
+#~ msgid "Received"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "El push se marca como recibido de"
+#~ " forma automática en el momento en"
+#~ " que este llega al dispositivo. De"
+#~ " esta forma se tiene la certeza "
+#~ "de que pese a la falta de "
+#~ "garantías que nos dan los sistemas "
+#~ "de entrega de notificaciones push, esta"
+#~ " notificación sí ha llegado."
+#~ msgstr ""
+
+#~ msgid "Estadísticas"
+#~ msgstr ""
+
+#~ msgid "Cohorts"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "fecha de inicio de la semana donde"
+#~ " los devices se han creado (eg: "
+#~ "2017-04-11)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "fecha de inicio de la semana donde"
+#~ " analizar la actividad de los devices"
+#~ " creados (eg: 2017-04-11)"
+#~ msgstr ""
+
+#~ msgid "Métricas"
+#~ msgstr ""
+
+#~ msgid "número de semanas que pasan entre resultado y resultado"
+#~ msgstr ""
+
+#~ msgid "número de minutos que pasan entre resultado y resultado"
+#~ msgstr ""
+
+#~ msgid "número de meses que pasan entre resultado y resultado"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lista de códigos de notificaciones sobre"
+#~ " los que se quiere obtener "
+#~ "estadísticas (e.g. ``notifications=MJ6H6Y,OsFKVH``)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "filtrar por tipo de notifications, "
+#~ "``manual`` para las manuales y "
+#~ "``automatic`` para las automáticas"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "indicar a ``true`` para que los "
+#~ "datos que se muestren sean los "
+#~ "totales acumulados hasta la fecha "
+#~ "indicada"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lista de campos que se quiere "
+#~ "incluir en la respuesta, por defecto,"
+#~ " se incluyen todos (e.g. "
+#~ "``notifications=unique_devices,accesses,devices,alive_devices,active_devices,notifications,personas,alive_personas``)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "En el sistema se diferencia los "
+#~ "diferentes perfiles de usuario usando "
+#~ "los recursos ``users`` para los "
+#~ "**clientes**, y ``personas`` para los "
+#~ "**usuarios**. Se utiliza el termino "
+#~ "``persona`` del inglés, que hace "
+#~ "referencia a la personalidad de alguien"
+#~ " según la percibe otra persona, ya"
+#~ " que en este recurso se guarda "
+#~ "los datos que se tienen desde la"
+#~ " perspectiva del **cliente**."
+#~ msgstr ""
+
+#~ msgid "Usuario actual"
+#~ msgstr ""
+
+#~ msgid "email del usuario"
+#~ msgstr ""
+
+#~ msgid "nombre del usuario"
+#~ msgstr ""
+
+#~ msgid "apellido/s del usuario"
+#~ msgstr ""
+
+#~ msgid "contraseña del usuario"
+#~ msgstr ""
+
+#~ msgid "Registro de persona"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "identificador único en el sistema del"
+#~ " cliente al que pertenece el usuario"
+#~ msgstr ""
+
+#~ msgid "nombre único del usuario, según quiera el cliente"
+#~ msgstr ""
+
+#~ msgid "nombre del usuario, si se sabe"
+#~ msgstr ""
+
+#~ msgid "apellido/s del usuario, si se saben"
+#~ msgstr ""
+
+#~ msgid "URI del device al que se quiere asociar la persona"
+#~ msgstr ""
+
+#~ msgid "código de dos letras que identifica el país de la persona"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "coordenadas de la persona, donde "
+#~ "``coordinates`` es un array con las "
+#~ "coordenadas de la siguiente forma: "
+#~ "**[longitud, latidud]**"
+#~ msgstr ""
+
+#~ msgid "id interno único del usuario"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "código único del usuario, es el "
+#~ "que se usa al hacer referencia a"
+#~ " este en el resto del API"
+#~ msgstr ""
+
+#~ msgid "La llamada puede dar error si:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Se introducen datos inválidos, como un"
+#~ " email inválido en el campo de "
+#~ "email"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si el ``client_data`` de la **persona**"
+#~ " ya está registrado para el "
+#~ "**cliente**"
+#~ msgstr ""
+
+#~ msgid "**Ejemplo de respuestas**:"
+#~ msgstr ""
+
+#~ msgid "Actualizar persona"
+#~ msgstr ""
+
+#~ msgid "nombre de usuario del usuario"
+#~ msgstr ""
+
+#~ msgid "Buscar persona"
+#~ msgstr ""
+
+#~ msgid "Se puede buscar una persona por el username o por el email."
+#~ msgstr ""
 

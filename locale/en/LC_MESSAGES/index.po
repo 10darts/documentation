@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 10Darts 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-14 13:23+0200\n"
+"POT-Creation-Date: 2017-08-10 10:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,129 +18,170 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../index.rst:3
-msgid "Documentación y ayuda"
+msgid "Docs & Help"
 msgstr ""
 
 #: ../../index.rst:5
 msgid ""
-"**10darts** es una plataforma de notificaciones push que maximiza la "
-"fidelización de tus usuarios al mismo tiempo que minimiza el tiempo de "
-"adaptación y gestión."
+"**10darts** is a notifications platform that allows you to **maximize "
+"your users’ engagement** while minimizing **time requirements**."
 msgstr ""
 
-#: ../../index.rst:9
+#: ../../index.rst:8
 msgid ""
-"Damos soporte a las plataformas de Android e iOS proporcionando un SDKs "
-"dedicados, una API RESTful, un panel de control online para diseñar y "
-"enviar campañas de notificaciones push y un servicio de contenido de "
-"*feeds* que permite el envío de campañas automáticas, evitando retrasos "
-"en la comunicación del contenido con tus usuarios y ahorrando tiempo a tu"
-" equipo de marketing."
+"Using Machine Learning algorithms, 10darts improves the communications "
+"with your users applying behavior predictions and profile clustering."
 msgstr ""
 
-#: ../../index.rst:18
-msgid "Pronto se añadirá soporte para Facebook Messenger y Web Notifications."
+#: ../../index.rst:11
+msgid "10darts software includes the following tools:"
 msgstr ""
 
-#: ../../index.rst:21
-msgid "Características en un vistazo"
+#: ../../index.rst:13
+msgid ""
+":ref:`Android <android-sdk-reference>` and :ref:`iOS <ios-sdk-reference>`"
+" **SDK**."
+msgstr ""
+
+#: ../../index.rst:14
+msgid "**RESTful** :ref:`API <api>`."
+msgstr ""
+
+#: ../../index.rst:15
+msgid ""
+"**Campaign Manager** for `creating and managing manual campaigns "
+"<https://10darts.com/app/notifications>`_ and `monitoring the results of "
+"your Content Feed automatic campaigns "
+"<https://10darts.com/app/notifications/automatic>`_ and `API personalized"
+" push notification campaigns "
+"<https://10darts.com/app/notifications/transactional>`_."
+msgstr ""
+
+#: ../../index.rst:16
+msgid ""
+"**Data Manager System** that gathers, keeps and analyzes your users’ "
+"interactions data to boost user engagement and retention."
+msgstr ""
+
+#: ../../index.rst:20
+msgid "10darts will soon release Facebook Messenger and Web."
 msgstr ""
 
 #: ../../index.rst:23
-msgid ""
-"Seguimiento automático de la localización de los usuarios, gracias a "
-"nuestro **SDK**."
-msgstr ""
-
-#: ../../index.rst:24
-msgid "Usuarios clasificados usando **keywords**"
-msgstr ""
-
-#: ../../index.rst:25
-msgid ""
-"Con el **content feed** puedes actualizar un feed RSS y **10darts** irá "
-"enviando automáticamente comunicaciones a tus usuarios para mantenerlos "
-"fieles a tu aplicación, tan rápido como empezar con un blog."
+msgid "10darts Main Features"
 msgstr ""
 
 #: ../../index.rst:26
-msgid ""
-"Desde el **dashboard online** puedes lanzar campañas a tus usuarios, "
-"probar envíos segmentando por localización o *keywords* específicos."
+msgid ":ref:`RSS Content Feed <content_sources>`"
 msgstr ""
 
-#: ../../index.rst:27
+#: ../../index.rst:28
 msgid ""
-"Puedes seguir los resultados en tiempo real (mensajes enviados, cuantos "
-"se van recibiendo, cuantos se van abriendo, etc.)"
+"10darts periodically monitors your RSS and when it detects new content, "
+"it automatically launches a new campaign to the target you have "
+"previously defined."
 msgstr ""
 
 #: ../../index.rst:29
+msgid "Autonomous A/B Testing"
+msgstr ""
+
+#: ../../index.rst:31
 msgid ""
-"No olvides usar un buen título, emojis y una buena foto para comunicarte "
-"con tus usuarios."
+"Once you've set up the A/B testing messages, why waste your time waiting "
+"on the results to take an action 10darts autonomously identifies and "
+"expands on the fly the most relevant message for your users."
 msgstr ""
 
 #: ../../index.rst:32
-msgid "Como empezar"
+msgid "Confirmation Receipt / Success Rate"
 msgstr ""
 
 #: ../../index.rst:34
-msgid "**Si eres desarrollador**"
+msgid ""
+"How will you know your real push notification success rate if you don’t "
+"know how many notifications effectively reached your users? 10darts "
+"provides this information."
 msgstr ""
 
-#: ../../index.rst:36
-msgid ""
-"Dar de alta de alta la aplicación con los credenciales las plataformas "
-"que utilices (:ref:`Android <faq-gcm>`, iOS)."
+#: ../../index.rst:35
+msgid "Autonomous Segmentation"
 msgstr ""
 
 #: ../../index.rst:37
 msgid ""
-"Integrar el SDK en cada una de tus plataformas (:ref:`Android <android-"
-"sdk-setup>`, :ref:`iOS <ios-sdk-setup>`)"
+"Using AI, 10darts' clusters and segments your user base to maximize their"
+" engagement with customized push notifications."
 msgstr ""
 
 #: ../../index.rst:38
-msgid ""
-"Prueba un envío `creando una primera campaña "
-"<https://10darts.com/app/notifications/create>`_"
+msgid "Geo Ripple-Effect ®"
 msgstr ""
 
-#: ../../index.rst:39
+#: ../../index.rst:40
 msgid ""
-"Para más información, consulta la :ref:`documentación <introduction>` y/o"
-" contacta con nosotros en it@10darts.com"
+"10darts' Geo-Ripple algorithms autonomously expand your push "
+"notifications throughout your user base creating a cascade effect that "
+"maximizes the interested audience of your notifications. This algorithm "
+"is especially useful when you manage and produce local relevant "
+"information, from job vacancies in local businesses to local news."
 msgstr ""
 
 #: ../../index.rst:41
-msgid ""
-"**Si eres vendedor, community manage o el responsable de ganar la "
-"confianza de tus usuarios**"
+msgid "Content Relevance"
 msgstr ""
 
 #: ../../index.rst:43
 msgid ""
-"Espera hasta que el equipo de desarrollo haya integrado el SDK en tus "
-"aplicaciones"
+"10darts uses content relevance score calculations to autonomously "
+"determine the relevant audience of a specific content out of your entire "
+"user base."
 msgstr ""
 
-#: ../../index.rst:44
-msgid "`Crea tu primera campaña <https://10darts.com/app/notifications/create>`_"
+#: ../../index.rst:46
+msgid "Get started"
 msgstr ""
 
-#: ../../index.rst:45
-msgid "Prueba un test A/B"
-msgstr ""
-
-#: ../../index.rst:47
-msgid ""
-"Y para sacar más partido a la plataforma, aquí te dejamos el resto de la "
-"información. Si tienes dudas lánzanos un email a it@10darts.com."
+#: ../../index.rst:48
+msgid "**If you are a developer:**"
 msgstr ""
 
 #: ../../index.rst:50
-msgid "Contenido"
+msgid ""
+"Configure your application in `10darts Dashboard "
+"<https://10darts.com/app/applications>`_. In case you don’t have a "
+":ref:`Google Server API Key <faq-gcm>` and / or an :ref:`iOS Push "
+"Certificate <ios_push_certificate>` follow the instructions on the FAQ."
+msgstr ""
+
+#: ../../index.rst:51
+msgid ""
+"Set up the SDK: :ref:`Android <android-sdk-setup>` and :ref:`iOS <ios-"
+"sdk-setup>`."
+msgstr ""
+
+#: ../../index.rst:52
+msgid ""
+"😃 Congratulations, you are ready to launch your `first campaign "
+"<https://10darts.com/app/notifications>`_."
+msgstr ""
+
+#: ../../index.rst:54
+msgid "**If you are a marketer, community manager or just do not code:**"
+msgstr ""
+
+#: ../../index.rst:56
+msgid "Please have somebody integrate 10darts SDK in your app."
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Launch your `first campaign <https://10darts.com/app/notifications>`_."
+msgstr ""
+
+#: ../../index.rst:59
+msgid ""
+"For further info keep reading these Docs & the Help section. Feel free to"
+" contact us on it@10darts.com if you need any help."
 msgstr ""
 
 #~ msgid ""
@@ -162,5 +203,134 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Contenidos"
+#~ msgstr ""
+
+#~ msgid "Documentación y ayuda"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**10darts** es una plataforma de "
+#~ "notificaciones push que maximiza la "
+#~ "fidelización de tus usuarios al mismo"
+#~ " tiempo que minimiza el tiempo de "
+#~ "adaptación y gestión."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Damos soporte a las plataformas de "
+#~ "Android e iOS proporcionando un SDKs "
+#~ "dedicados, una API RESTful, un panel "
+#~ "de control online para diseñar y "
+#~ "enviar campañas de notificaciones push y"
+#~ " un servicio de contenido de *feeds*"
+#~ " que permite el envío de campañas "
+#~ "automáticas, evitando retrasos en la "
+#~ "comunicación del contenido con tus "
+#~ "usuarios y ahorrando tiempo a tu "
+#~ "equipo de marketing."
+#~ msgstr ""
+
+#~ msgid "Pronto se añadirá soporte para Facebook Messenger y Web Notifications."
+#~ msgstr ""
+
+#~ msgid "Características en un vistazo"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Seguimiento automático de la localización "
+#~ "de los usuarios, gracias a nuestro "
+#~ "**SDK**."
+#~ msgstr ""
+
+#~ msgid "Usuarios clasificados usando **keywords**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Con el **content feed** puedes "
+#~ "actualizar un feed RSS y **10darts** "
+#~ "irá enviando automáticamente comunicaciones a"
+#~ " tus usuarios para mantenerlos fieles "
+#~ "a tu aplicación, tan rápido como "
+#~ "empezar con un blog."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Desde el **dashboard online** puedes "
+#~ "lanzar campañas a tus usuarios, probar"
+#~ " envíos segmentando por localización o "
+#~ "*keywords* específicos."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Puedes seguir los resultados en tiempo"
+#~ " real (mensajes enviados, cuantos se "
+#~ "van recibiendo, cuantos se van abriendo,"
+#~ " etc.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "No olvides usar un buen título, "
+#~ "emojis y una buena foto para "
+#~ "comunicarte con tus usuarios."
+#~ msgstr ""
+
+#~ msgid "Como empezar"
+#~ msgstr ""
+
+#~ msgid "**Si eres desarrollador**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dar de alta de alta la aplicación"
+#~ " con los credenciales las plataformas "
+#~ "que utilices (:ref:`Android <faq-gcm>`, "
+#~ "iOS)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Integrar el SDK en cada una de "
+#~ "tus plataformas (:ref:`Android <android-"
+#~ "sdk-setup>`, :ref:`iOS <ios-sdk-setup>`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prueba un envío `creando una primera "
+#~ "campaña <https://10darts.com/app/notifications/create>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Para más información, consulta la "
+#~ ":ref:`documentación <introduction>` y/o contacta "
+#~ "con nosotros en it@10darts.com"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Si eres vendedor, community manage o"
+#~ " el responsable de ganar la confianza"
+#~ " de tus usuarios**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Espera hasta que el equipo de "
+#~ "desarrollo haya integrado el SDK en "
+#~ "tus aplicaciones"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Crea tu primera campaña "
+#~ "<https://10darts.com/app/notifications/create>`_"
+#~ msgstr ""
+
+#~ msgid "Prueba un test A/B"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Y para sacar más partido a la "
+#~ "plataforma, aquí te dejamos el resto "
+#~ "de la información. Si tienes dudas "
+#~ "lánzanos un email a it@10darts.com."
+#~ msgstr ""
+
+#~ msgid "Contenido"
 #~ msgstr ""
 
