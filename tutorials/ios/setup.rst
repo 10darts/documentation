@@ -37,12 +37,12 @@ In your App project Capabilities, enable App groups and add a new one.
 .. figure:: /_static/images/iosPC1.png
    :alt: New group
 
-When prompted put ``group.TendartsSDK`` as name, it's important that you use this name,
+When prompted put your group name
 
 .. figure:: /_static/images/iosPC2.png
    :alt: New group
 
-In your Service Extension capabilities enable App groups and add the ``group.TendartsSDK`` group.
+In your Service Extension capabilities enable App groups and add the same group name you just have entered.
 
 Replace the contents of NotificationService with:
 
@@ -68,7 +68,7 @@ Replace the contents of NotificationService with:
         self.contentHandler = contentHandler;
         self.bestAttemptContent = [request.content mutableCopy];
 
-        [TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler  withApiKey:@"api_key"];
+        [TendartsSDK didReceiveNotificationRequest:request withContentHandler:contentHandler  withApiKey:@"api_key"  andSharedGroup:@"group_name"];
 
      }
 
@@ -96,7 +96,7 @@ Replace the contents of NotificationService with:
             self.contentHandler = contentHandler
             bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
 
-            TendartsSDK.didReceive(request, withContentHandler: contentHandler, withApiKey: "api_key")
+            TendartsSDK.didReceive(request, withContentHandler: contentHandler, withApiKey: "api_key" , andSharedGroup: "group_name")
 
         }
 
@@ -111,7 +111,7 @@ Replace the contents of NotificationService with:
 
     }
 
-Replace ``api_key`` with your Api Key
+Replace ``api_key`` with your Api Key and ``group_name`` with your group name
 
 .. note::
 
@@ -148,7 +148,7 @@ Configure the application
 
     #import <TendartsSDK.h>
     ...
-    [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil];
+    [TendartsSDK initTendartsUsingLaunchOptions:launchOptions withAPIKey:@"api_key" andConfig:nil andSharedGroup: @"group_name"];
 
 **Swift**
 
@@ -156,11 +156,11 @@ Configure the application
 
     import TendartsSDK
     ...
-    TendartsSDK.initTendarts(launchOptions: launchOptions, withAPIKey: "api_key", andConfig: nil);
+    TendartsSDK.initTendarts(launchOptions: launchOptions, withAPIKey: "api_key", andConfig: nil, andSharedGroup:"group_name");
 
 
 
-Replace ``api_key`` with your Api Key
+Replace ``api_key`` with your Api Key and ``group_name`` with your group name
 
 
 4. Add description strings on the app Info.plist
