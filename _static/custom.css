@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 
 div.sphinxsidebarwrapper p.logo {
   margin-bottom: 15px !important;
 }
 
 .section h1, .section h2 {
-  color: rgba(191, 52, 45, 1);
+  color: #48c1c4;
 }
 
 .sphinxsidebarwrapper .caption .caption-text {
   font-weight: bold;
   font-size: 105%;
   text-transform: uppercase;
-  color: rgba(75, 192, 192, 1);
+  color: #D65D52;
 }
 
 .docutils dt {
@@ -24,9 +24,9 @@ dl:not(.docutils) dt {
   margin: 6px 0;
   font-size: 90%;
   line-height: normal;
-  background: rgba(191, 52, 45, 0.25);
-  color: rgba(191, 52, 45, 1);
-  border-top: solid 3px rgba(191, 52, 45, 1);
+  background: rgba(214, 93, 82, 0.25);
+  color: rgba(214, 93, 82, 1);
+  border-top: solid 3px rgba(214, 93, 82, 1);
   padding: 6px;
   position: relative;
 }
@@ -69,12 +69,12 @@ button.button, input[type=submit].button {
 }
 
 .button.is-primary {
-    background-color: #bd3732;
+    background-color: #D65D52;
     border-color: transparent;
     color: #fff;
 }
 
 li.toctree-l1 > a.current, li.toctree-l2 > a.current {
-  color: rgba(191, 52, 45, 1);
+  color: #48c1c4;
   font-weight: bold;
 }
