@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 
+a {
+    color: #D65D52;
+    text-decoration: underline;
+}
+
+.footer-wrapper:before,
+.footer-wrapper:after {
+    content : "";
+    display : table;
+}
+.footer-wrapper:after {
+    clear : both;
+}
+.footer-wrapper {
+    background-color: #333333;
+}
+div.footer, div.footer a {
+    color: #fff;
+}
+
 div.sphinxsidebarwrapper p.logo {
   margin-bottom: 15px !important;
 }
@@ -17,6 +37,15 @@ div.sphinxsidebarwrapper p.logo {
 
 .docutils dt {
   font-weight: 700;
+}
+
+div.body > .section {
+    text-align: left;
+    margin-top: 5px;
+}
+
+div.body p, div.body dd, div.body li {
+    line-height: 1.7em;
 }
 
 dl:not(.docutils) dt {

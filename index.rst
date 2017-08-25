@@ -44,17 +44,17 @@ with your users applying behavior predictions and profile clustering.
 
 Get started
 -----------
+.. glossary::
 
-**If you are a developer:**
+    If you are a developer
+        1. Configure your application in `10darts Dashboard <https://10darts.com/app/applications>`_. In case you don’t have a :ref:`Google Server API Key <faq-gcm>` and / or an :ref:`iOS Push Certificate <ios_push_certificate>` follow the instructions on the FAQ.
+        2. Set up the SDK: :ref:`Android <android-sdk-setup>` and :ref:`iOS <ios-sdk-setup>`.
+        3. 😃 Congratulations, you are ready to launch your `first campaign <https://10darts.com/app/notifications>`_.
 
-1. Configure your application in `10darts Dashboard <https://10darts.com/app/applications>`_. In case you don’t have a :ref:`Google Server API Key <faq-gcm>` and / or an :ref:`iOS Push Certificate <ios_push_certificate>` follow the instructions on the FAQ.
-2. Set up the SDK: :ref:`Android <android-sdk-setup>` and :ref:`iOS <ios-sdk-setup>`.
-3. 😃 Congratulations, you are ready to launch your `first campaign <https://10darts.com/app/notifications>`_.
+    If you are a marketer, community manager or just do not code
 
-**If you are a marketer, community manager or just do not code:**
-
-1. Please have somebody integrate 10darts SDK in your app.
-2. Launch your `first campaign <https://10darts.com/app/notifications>`_.
+        1. Please have somebody integrate 10darts SDK in your app.
+        2. Launch your `first campaign <https://10darts.com/app/notifications>`_.
 
 For further info keep reading these Docs & the Help section. Feel free to
 contact us on it@10darts.com if you need any help.
