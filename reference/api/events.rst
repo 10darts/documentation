@@ -2,7 +2,7 @@
 Events
 ======
 
-The type of events is specified using an integer valuer:
+The type of events is specified using an integer value:
 
 * ``0`` for float
 * ``1`` for integer
