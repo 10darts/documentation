@@ -117,6 +117,10 @@ Replace ``api_key`` with your Api Key and ``group_name`` with your group name
 
     The project will not compile until you perform the following step.
 
+.. note::
+
+    If you are going to send notifications with image URL's using HTTP instead of HTTPS, don't forget to add required permission to access insecure servers in your service extension's ``.plist``
+
 
 Configure the application
 -------------------------
