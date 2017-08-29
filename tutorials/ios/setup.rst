@@ -121,6 +121,10 @@ Replace ``api_key`` with your Api Key and ``group_name`` with your group name
 
     If you are going to send notifications with image URL's using HTTP instead of HTTPS, don't forget to add required permission to access insecure servers in your service extension's ``.plist``
 
+.. note::
+
+    Remember that service extension is an independent process so if you want to watch logs or debug your service extension you should attatch the debugger to the service extension instead of to your app.
+
 
 Configure the application
 -------------------------
