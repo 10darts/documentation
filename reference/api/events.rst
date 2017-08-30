@@ -2,14 +2,14 @@
 Events
 ======
 
-The type of events is specified using an integer value:
+An integer specifies the event type:
 
 * ``0`` for float
 * ``1`` for integer
 * ``2`` for string
 
-List default events kinds
--------------------------
+List default kinds of events
+----------------------------
 
 .. http:get:: /api/v1/event_kinds/
 
