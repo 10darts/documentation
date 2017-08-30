@@ -1,38 +1,222 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
 
+/* Base styles */
+html, body {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000;
+}
 a {
-    color: #D65D52;
-    text-decoration: underline;
+  color: #D65D52;
+  text-decoration: none;
+}
+a.reference {
+  text-decoration: none;
+  border-bottom: none;
+}
+strong {
+  font-weight: 600;
+}
+.section h1{
+  color: #000;
+  font-weight: 300 !important;
+  font-size: 1.51rem !important;
+}
+.section h2 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  font-size: 0.54rem !important;
+  letter-spacing: 0.54em;
+}
+div.document {
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+div.documentwrapper {
+  padding-top: 30px;
 }
 
-.footer-wrapper:before,
-.footer-wrapper:after {
-    content : "";
-    display : table;
-}
-.footer-wrapper:after {
-    clear : both;
-}
-.footer-wrapper {
-    background-color: #333333;
-}
-div.footer, div.footer a {
-    color: #fff;
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 0.54rem;
+  letter-spacing: 0.54rem;
+  text-transform: uppercase;
+  height: 1.7rem;
+  justify-content: flex-start;
+  padding-left: .625rem;
+  padding-right: 0.085rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  position: relative;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
 }
 
+button.button, input[type=submit].button {
+  line-height: 1;
+  padding-bottom: .4em;
+  padding-top: .35em;
+}
+
+.button.is-inverse {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+a.button:hover {
+  text-decoration: none;
+}
+
+/* Header */
+div.header-wrapper:before,
+div.header-wrapper:after {
+  content : "";
+  display : table;
+}
+div.header-wrapper:after {
+  clear : both;
+}
+div.header-wrapper {
+  background-color: #000;
+}
+div.header {
+  width: 940px;
+  height: 55px;
+  margin: 0 auto 0 auto;
+}
+div.header .header-inner {
+  padding: 0 10px;
+}
+div.header .logo {
+  height: 28px;
+  margin: 7px 0;
+  float: left;
+}
+div.header .actions {
+  float: right;
+  margin: 10px 0;
+}
+@media screen and (max-width: 875px) {
+  div.header-wrapper {
+    margin: -20px -31px 0 -30px;
+    padding: 0 20px;
+  }
+}
+
+/* Quick search */
+#searchbox h3 {
+  font-weight: 600 !important;
+  font-size: 0.54em !important;
+  letter-spacing: 0.54em;
+  text-transform: uppercase;
+  color: #D65D52;
+}
+#searchbox input[type="submit"] {
+  background-color: #D65D52;
+  border-color: transparent;
+  color: #fff;
+  margin-top: 5px;
+  padding: 5px 7px;
+}
+/* Sidebar */
+div.sphinxsidebar {
+  width: 220px;
+  font-size: 14px;
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  /* height: 100%; */
+  left: 0;
+  bottom: 0;
+  padding-top: 30px;
+  margin-left: 0;
+  /* margin-bottom: -30px; */
+}
+div.sphinxsidebar h3 a {
+  color: #000;
+  font-size: 1rem;
+}
+div.sphinxsidebar h3 {
+  margin-bottom: 20px;
+}
 div.sphinxsidebarwrapper p.logo {
   margin-bottom: 15px !important;
 }
-
-.section h1, .section h2 {
-  color: #48c1c4;
-}
-
 .sphinxsidebarwrapper .caption .caption-text {
-  font-weight: bold;
-  font-size: 105%;
+  font-weight: 600 !important;
+  font-size: 0.54em !important;
+  letter-spacing: 0.54em;
   text-transform: uppercase;
   color: #D65D52;
+}
+div.sphinxsidebar ul li.toctree-l1 > a {
+  font-size: 1rem;
+}
+div.sphinxsidebar a {
+  color: #000;
+  border: none;
+}
+li.toctree-l1 > a.current, li.toctree-l2 > a.current {
+  color: #D65D52;
+  font-weight: 600;
+}
+div.sphinxsidebar ul {
+  margin: 10px 0 20px 0;
+}
+div.sphinxsidebarwrapper {
+    padding: 10px 10px;
+}
+@media screen and (max-width: 875px) {
+  div.sphinxsidebar {
+      display: block;
+      float: none;
+      width: 102.5%;
+      margin: 50px -30px -20px -30px;
+      padding: 10px 20px;
+      background: #000;
+      color: #FFF;
+  }
+  div.sphinxsidebar a {
+    color: #fff;
+  }
+}
+
+/* Footer */
+.footer-wrapper:before,
+.footer-wrapper:after {
+  content : "";
+  display : table;
+}
+.footer-wrapper:after {
+  clear : both;
+}
+.footer-wrapper {
+  background-color: #000;
+}
+
+div.footer {
+  text-align: center;
+}
+
+div.footer, div.footer a {
+  color: #fff;
 }
 
 .docutils dt {
@@ -40,12 +224,12 @@ div.sphinxsidebarwrapper p.logo {
 }
 
 div.body > .section {
-    text-align: left;
-    margin-top: 5px;
+  text-align: left;
+  margin-top: 5px;
 }
 
 div.body p, div.body dd, div.body li {
-    line-height: 1.7em;
+  line-height: 1.7em;
 }
 
 dl:not(.docutils) dt {
@@ -58,52 +242,4 @@ dl:not(.docutils) dt {
   border-top: solid 3px rgba(214, 93, 82, 1);
   padding: 6px;
   position: relative;
-}
-
-.button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    box-shadow: none;
-    display: inline-flex;
-    font-size: 1rem;
-    height: 2.25em;
-    justify-content: flex-start;
-    line-height: 1.5;
-    padding-left: calc(.625em - 1px);
-    padding-right: calc(.625em - 1px);
-    position: relative;
-    vertical-align: top;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #fff;
-    border-color: #dbdbdb;
-    color: #363636;
-    cursor: pointer;
-    justify-content: center;
-    padding: calc(.375em - 1px) .75em;
-    text-align: center;
-    white-space: nowrap;
-}
-
-button.button, input[type=submit].button {
-    line-height: 1;
-    padding-bottom: .4em;
-    padding-top: .35em;
-}
-
-.button.is-primary {
-    background-color: #D65D52;
-    border-color: transparent;
-    color: #fff;
-}
-
-li.toctree-l1 > a.current, li.toctree-l2 > a.current {
-  color: #48c1c4;
-  font-weight: bold;
 }

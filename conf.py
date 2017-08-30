@@ -106,7 +106,7 @@ html_theme = 'alabaster'
 #
 
 html_theme_options = {
-    'logo': '10darts.svg',
+    'logo': '10darts-white.svg',
     'logo_name': '10darts',
     'font_family': '"Work Sans","proxima-nova","Helvetica Neue",Arial,sans-serif;',
     'head_font_family': '"Work Sans","ff-tisa-web-pro","Georgia",Arial,sans-serif;',
@@ -119,11 +119,11 @@ html_static_path = ['_static']
 
 html_sidebars = {
     '**': [
-        'about.html',
+        # 'about.html',
         'custom-navigation.html',
         'relations.html',
         'searchbox.html',
-        'sign-in.html',
+        # 'sign-in.html',
     ]
 }
 

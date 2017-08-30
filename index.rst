@@ -2,6 +2,9 @@
 Docs & Help
 ===========
 
+10darts software
+----------------
+
 **10darts** is a notifications platform that allows you to
 **maximize your users’ engagement** while minimizing **time requirements**.
 
