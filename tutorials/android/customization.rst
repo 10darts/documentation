@@ -1,3 +1,5 @@
+.. _android-sdk-customization:
+
 =========================
 Android SDK Customization
 =========================
@@ -21,3 +23,5 @@ your custom configuration here
 
 Please refer to :ref:`SDK class documentation <android-sdk-classes-sdk>` for further
 information
+
+See :ref:`Customizing notifications <android-sdk-icons>` 

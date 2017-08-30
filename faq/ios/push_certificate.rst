@@ -78,4 +78,4 @@ Getting an iOS Push Certificate
     :alt: Export Certificate
 
 
-* Upload the exported .p12 file to your 10 darts console.
+* Upload the exported .p12 file to your 10 darts console, use it for APNS and APNS_SANDBOX platforms.
