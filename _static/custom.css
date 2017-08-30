@@ -26,8 +26,8 @@ strong {
   color: #000;
   text-transform: uppercase;
   font-weight: 600 !important;
-  font-size: 0.54rem !important;
-  letter-spacing: 0.54em;
+  font-size: 0.64rem !important;
+  letter-spacing: 0.64em;
 }
 div.document {
   position: relative;
@@ -44,8 +44,8 @@ div.documentwrapper {
   border: 1px solid transparent;
   box-shadow: none;
   display: inline-flex;
-  font-size: 0.54rem;
-  letter-spacing: 0.54rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.64rem;
   text-transform: uppercase;
   height: 1.7rem;
   justify-content: flex-start;
@@ -123,8 +123,8 @@ div.header .actions {
 /* Quick search */
 #searchbox h3 {
   font-weight: 600 !important;
-  font-size: 0.54em !important;
-  letter-spacing: 0.54em;
+  font-size: 0.64em !important;
+  letter-spacing: 0.64em;
   text-transform: uppercase;
   color: #D65D52;
 }
@@ -161,8 +161,8 @@ div.sphinxsidebarwrapper p.logo {
 }
 .sphinxsidebarwrapper .caption .caption-text {
   font-weight: 600 !important;
-  font-size: 0.54em !important;
-  letter-spacing: 0.54em;
+  font-size: 0.64em !important;
+  letter-spacing: 0.64em;
   text-transform: uppercase;
   color: #D65D52;
 }
