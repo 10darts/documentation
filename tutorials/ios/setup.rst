@@ -123,7 +123,7 @@ Replace ``api_key`` with your Api Key and ``group_name`` with your group name
 
 .. note::
 
-    Remember that service extension is an independent process so if you want to watch logs or debug your service extension you should attatch the debugger to the service extension instead of to your app.
+    Remember that service extension is an independent process so if you want to watch logs or debug your service extension you should attach the debugger to the service extension instead of to your app.
 
 
 Configure the application
