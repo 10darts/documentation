@@ -117,7 +117,7 @@ div.header .actions {
 #searchbox h3 {
   font-weight: 600 !important;
   font-size: 0.64em !important;
-  letter-spacing: 0.64em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: #D65D52;
 }
@@ -142,7 +142,7 @@ div.sphinxsidebarwrapper p.logo {
 .sphinxsidebarwrapper .caption .caption-text {
   font-weight: 600 !important;
   font-size: 0.64em !important;
-  letter-spacing: 0.64em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: #D65D52;
 }
