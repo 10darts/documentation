@@ -59,6 +59,7 @@ Device register
     :<json string platform: device platform, ``android``, ``ios`` or ``ios_sandbox``.
     :<json string model: device model description string.
     :<json string version: app version description string.
+    :<json string sdk: sdk version description string.
     :<json string language: language description string with 2 characters.
     :<json string country: country description string with 2 characters.
     :<json GeoJSON position: device positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
@@ -92,6 +93,7 @@ Device register
     :>json string persona: user linked to the device.
     :>json string model: device model description string
     :>json string version: app version description string
+    :>json string sdk: sdk version description string.
     :>json string language: language description string
     :>json string country: country description string with 2 characters
     :>json GeoJSON position: device positioning where coordinates are defined as follows: **[longitud, latidud]**
