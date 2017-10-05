@@ -20,7 +20,7 @@ with your users applying behavior predictions and profile clustering.
 
 .. note::
 
-    10darts will soon release Facebook Messenger and Web.
+    10darts will soon release Web.
 
 10darts Main Features
 ---------------------
