@@ -85,6 +85,7 @@ contact us on it@10darts.com if you need any help.
 
     tutorials/android
     tutorials/ios
+    tutorials/messenger
 
 .. toctree::
     :maxdepth: 2
