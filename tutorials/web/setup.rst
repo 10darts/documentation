@@ -28,7 +28,7 @@ Web SDK Setup
 
 Download and set up 10darts file so it’s accessible from your project’s root. It should be::
 
-  https://yoursite.com/10dartsServiceWorker.js.
+  https://yoursite.com/10dartsServiceWorker.js
 
 You can download the latest version of the worker from
 `here <https://github.com/10darts/web-TendartsSDK/releases/latest>`_.
@@ -37,7 +37,7 @@ Insert the code to start the SDK:
 
 .. code-block:: html
 
-  <script src="https://s3-us-west-1.amazonaws.com/10darts-sdk/v0.1.0/10dartsSDK.js" async></script>
+  <script src="https://sdk.10darts.com/v0.1.0/10dartsSDK.js" async></script>
   <script>
     var Tendarts = window.Tendarts || {};
     Tendarts.init({
