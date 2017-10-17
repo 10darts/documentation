@@ -4,3 +4,4 @@ sphinx-rtd-theme==0.2.4
 sphinxcontrib-httpdomain==1.5.0
 ghp-import==0.5.5
 javasphinx==0.9.15
+awscli==1.11.170
