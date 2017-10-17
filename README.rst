@@ -60,14 +60,12 @@ To create the HTML version of the documentation, run these commands:
     (10darts-documentation) $ make html
 
 
-Upload to GitHub pages
-^^^^^^^^^^^^^^^^^^^^^^
+Upload
+^^^^^^
 
-After commit and push, and also after compiling the documentation, then, run
-the following commands:
+After commit and push run the following command:
 
 .. code-block:: bash
 
     $ workon 10darts-documentation
-
-    (10darts-documentation) $ ghp-import -n -m 'your commit message' -p _build/html --cname=docs.10darts.com
+    (10darts-documentation) $ ./deploy.sh
