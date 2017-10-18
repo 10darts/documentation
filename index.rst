@@ -18,10 +18,6 @@ with your users applying behavior predictions and profile clustering.
 3. **Campaign Manager** for `creating and managing manual campaigns <https://10darts.com/app/notifications>`_ and `monitoring the results of your Content Feed automatic campaigns <https://10darts.com/app/notifications/automatic>`_ and `API personalized push notification campaigns <https://10darts.com/app/notifications/transactional>`_.
 4. **Data Manager System** that gathers, keeps and analyzes your users’ interactions data to boost user engagement and retention.
 
-.. note::
-
-    10darts will soon release Web.
-
 10darts Main Features
 ---------------------
 
