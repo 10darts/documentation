@@ -54,3 +54,10 @@ Methods
    To send a remote exception to your desired server e.g.: ``Crashlytics.logException(e);``.
 
    :param e: the exception to be logged
+
+.. java:method:: void onUserLinkedToDevice()
+   :outertype: ISDKCore
+   
+   If linkDeviceWithUserIdentifier has failed, an automatic retry is started, so when finally
+
+   the user is linked this method will be called

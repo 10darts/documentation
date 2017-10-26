@@ -28,6 +28,9 @@ You may need to associate the device with your own user. To do so, call `linkDev
 		},this,"my-user-identifier");
 
 
+From version 1.22, if this function fails, it will be automatically retried and when succesfull your client class's `onUserLinkedToDevice` function will be called
+
+
 Adding user data
 ^^^^^^^^^^^^^^^^
 
