@@ -7,6 +7,5 @@ readonly CLOUDFRONT_DISTRIBUTION_ID="E13Y6ODRU3K68O"
 
 # Buld and upload
 # ------------------------------------------------------------------------------
-rm -rf _build && make html
-aws --profile 10darts s3 sync _build/html/ s3://${AWS_S3_BUCKET}/ --acl public-read
-aws --profile 10darts cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths /*
+rm -rf _build && make html && \
+aws --profile 10darts s3 sync _build/html/ s3://${AWS_S3_BUCKET}/ --acl public-read 
