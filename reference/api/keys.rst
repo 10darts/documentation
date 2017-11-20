@@ -10,9 +10,9 @@ linked to the devices and the users.
 Add key/value to device
 -------------------------
 
-Esta llamada crea un nuevo *key/value* asociado al dispositivo especificado en la llamada. Si
-este dispositivo ya tiene un valor asociado al mismo *key*, entonces esta llamada actualiza
-el valor anterior con el nuevo indicado.
+This call creates a new *key/value* associated with the device specified in the call. If this
+device has already a value associated to the same *key*, then this call updates the older
+value with the new one specified.
 
 .. http:post:: /api/v1/keys/devices/
 
@@ -43,9 +43,9 @@ el valor anterior con el nuevo indicado.
 Add key/value to user
 -----------------------
 
-Esta llamada crea un nuevo *key/value* asociado al usuario especificado en la llamada. Si
-este usuario ya tiene un valor asociado al mismo *key*, entonces esta llamada actualiza
-el valor anterior con el nuevo indicado.
+This call creates a new *key/value* associated with the user specified in the call. If
+this user has already a value associated to the same *key*, then this call updates
+the older value with the new one specified.
 
 .. http:post:: /api/v1/keys/personas/
 
@@ -72,8 +72,8 @@ el valor anterior con el nuevo indicado.
 
     .. note::
 
-        En ambas llamadas, se puede omitir los campos relacionados con el valor (``type`` y ``value``) para
-        almacenar claves como si fueran etiquetas al uso.
+        There is no need to specify the fields associated with the value (``type`` and ``value``) to 
+        storage keys as if they were tags.
 
 Keys suggestion
 ---------------

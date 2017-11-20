@@ -46,8 +46,8 @@ Notifications listing
             ]
         }
 
-Crear una notificación
-----------------------
+Create a notification
+---------------------
 
 .. http:post:: /api/v1/notifications/
 
@@ -425,8 +425,7 @@ Obtain content alternatives
 Notification distribution steps
 -------------------------------
 
-Para cada una de las notificaciones se pueden obtener los pasos que han dado para realizar la
-distribución de esta.
+The steps given to distribute each notification can be obtained for each specific notification.
 
 .. http:get:: /api/v1/notifications/(string:code)/steps/
 
