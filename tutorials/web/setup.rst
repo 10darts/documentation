@@ -37,13 +37,15 @@ Insert the code to start the SDK:
 
 .. code-block:: html
 
-  <script src="https://sdk.10darts.com/v0.1.0/10dartsSDK.js"></script>
+  <script src="https://sdk.10darts.com/v0.2/10dartsSDK.js"></script>
   <script>
     var Tendarts = window.Tendarts || {};
     Tendarts.init({
-     token: 'YOUR_APPLICATION_TOKEN',
-     publicKey: 'YOUR_APPLICATION_KEY',
-     autosubscribe: true,
+      token: 'YOUR_APPLICATION_TOKEN',
+      publicKey: 'YOUR_APPLICATION_KEY',
+      autosubscribe: true,
+      geolocation: true,
+      debug: false,
    });
   </script>
 
