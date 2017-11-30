@@ -37,11 +37,7 @@ Insert the code to start the SDK:
 
 .. code-block:: html
 
-<<<<<<< HEAD
   <script src="https://sdk.10darts.com/v0.2/10dartsSDK.js"></script>
-=======
-  <script src="https://sdk.10darts.com/v0.2/10dartsSDK.js" async></script>
->>>>>>> adf090a48bd2e8f8a7963678fe6c8e762d22b3c0
   <script>
     var Tendarts = window.Tendarts || {};
     Tendarts.init({
