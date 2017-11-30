@@ -100,15 +100,15 @@ Device register
 
 .. note::
 
-    Si no se indica un usuario (campo ``persona``) en la petición de creación
-    de device, este se creará de forma automática y se devolverá en la
-    respuesta de creación.
+    If a user (field ``persona``) is not specified at the device creation
+    request, the user will be created automatically and you'll get it with
+    the creation response
 
 .. note::
 
-    Si no se especifica un país, se tomara automáticamente desde las coordenadas
-    que se introducen. Si no se dan unas coordenadas, se usará la IP para
-    establecer el país del dispositivo.
+    If a country is not specified, the country will be automatically chosen
+    based on the position, coordinates introduced. If there are not coordinates
+    the country will be chosen based on the device IP.
 
 .. _api-devices-update:
 
@@ -197,16 +197,16 @@ that user.
 
    .. note::
 
-       La respuesta a esta llamada es el device actualizado con la información
-       del usuario con la que está enlazado.
+       The answer to this call is the device updated with the user
+       information that is linked with.
 
 .. _api-devices-unlink:
 
 Unlink a device with a user / individual
 ----------------------------------------
 
-Se desenlazará un usuario de un device cuando esta cierre la sesión en la
-aplicación con la que se este integrando.
+The user will be unlinked with a device when he closes the session
+in the app that is being integrated.
 
 .. http:post:: /api/v1/devices/unlink/
 
@@ -247,8 +247,8 @@ aplicación con la que se este integrando.
 
    .. note::
 
-       La respuesta a esta llamada es el device actualizado con la información
-       de un nueva persona anónima con la que está enlazado.
+       The answer to this call is the device updated with the information of a
+       new non-identifiable persona that is linked with.
 
 Device search
 -------------
@@ -297,8 +297,8 @@ Device search
 Access register
 ---------------
 
-Para registrar la actividad de un dispositivo se necesita que se realice una
-llamada explícita para que se registre el acceso de un dispositivo.
+There needs to be an explicit call to register a device access and ultimately, a
+device activity.
 
 .. http:post:: /api/v1/devices/(string:code)/access/
 
