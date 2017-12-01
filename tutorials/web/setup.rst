@@ -25,7 +25,7 @@ Platform Support
 
 .. [2] Notifications are only shown when the browser is opened.
 
-Note: Notifications are not shown when user is in "incognito" mode".
+Note: Notifications are not shown when user is in "incognito" mode.
 
 Platform Preview
 ----------------
