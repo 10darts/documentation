@@ -10,6 +10,8 @@ Web SDK
   :param string options.token: Needed. **Application token** povided with 10darts application.
   :param string options.publicKey: Needed. **Public key** povided with 10darts application.
   :param string options.autosubscribe: Automatically requests users permission (default false).
+  :param string options.geolocation: Saves the user's location (default false).
+  :param string options.degug: Show log messages in console (default false).
 
 .. js:method:: Tendarts.subscribe
 
@@ -18,6 +20,10 @@ Web SDK
 .. js:method:: Tendarts.unsubscribe
 
   Removes user subscription and he will not receive any other push notifications.
+
+.. js:method:: Tendarts.clear
+
+  Removes user subscription and local saved data.
 
 .. js:method:: Tendarts.linkDeviceClientData(clientData)
 

@@ -2,7 +2,78 @@
 Web Setup
 =========
 
-10darts web SDK is Chrome and Firefox compatible.
+10darts web SDK is Chrome, Firefox amd Opera compatible.
+
+Platform Support
+----------------
+
++------------+-----------------+---------------+------------+------------+ 
+| Browser    | Windows         | macOS         | Android    | iOS        |
++============+=================+===============+============+============+
+| Chrome     | Yes [2]_        | Yes [1]_ [2]_ | Yes        | No         |
++------------+-----------------+---------------+------------+------------+  
+| Firefox    | Yes [1]_ [2]_   | Yes [1]_ [2]_ | Yes [1]_   | No         |
++------------+-----------------+---------------+------------+------------+
+| Safari     | No              | No            | \-         | No         |
++------------+-----------------+---------------+------------+------------+  
+| Opera      | Yes [1]_ [2]_   | Yes [1]_ [2]_ | Yes [1]_   | No         |
++------------+-----------------+---------------+------------+------------+  
+| Edge       | No              | \-            | No         | No         |
++------------+-----------------+---------------+------------+------------+  
+
+.. [1] Not show image in notifications.
+
+.. [2] Only show notifications when browser is open.
+
+Note: Inconigto mode not support web push notifications.
+
+Platform Preview
+----------------
+
+**macOS - Chrome**
+
+.. figure:: /_static/images/web/macOS_Chrome.png
+  :alt: macOS - Chrome
+
+**macOS - Firefox**
+
+.. figure:: /_static/images/web/macOS_Firefox.png
+  :alt: macOS - Firefox
+
+**macOS - Opera**
+
+.. figure:: /_static/images/web/macOS_Opera.png
+  :alt: macOS - Opera
+
+**Windows - Chrome**
+
+.. figure:: /_static/images/web/windows_Chrome.png
+  :alt: Windows - Chrome
+
+**Windows - Firefox**
+
+.. figure:: /_static/images/web/windows_Firefox.png
+  :alt: Windows - Firefox
+
+**Windows - Opera**
+
+.. figure:: /_static/images/web/windows_Opera.png
+  :alt: Windows - Opera
+
+**Android - Chrome**
+
+.. figure:: /_static/images/web/android_Chrome.png
+  :alt: Android - Chrome
+
+**Android - Firefox**
+
+.. figure:: /_static/images/web/android_Firefox.png
+  :alt: Android - Firefox
+
+**Android - Opera**
+
+.. figure:: /_static/images/web/android_Opera.png
+  :alt: Android - Opera
 
 Setup requirements
 ------------------
