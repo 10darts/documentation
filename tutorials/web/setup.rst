@@ -2,7 +2,7 @@
 Web Setup
 =========
 
-10darts web SDK is Chrome, Firefox amd Opera compatible.
+10darts web SDK is Chrome, Firefox and Opera compatible.
 
 Platform Support
 ----------------
@@ -21,11 +21,11 @@ Platform Support
 | Edge       | No              | \-            | No         | No         |
 +------------+-----------------+---------------+------------+------------+  
 
-.. [1] Not show image in notifications.
+.. [1] Notifications do not support images.
 
-.. [2] Only show notifications when browser is open.
+.. [2] Notifications are only shown when the browser is opened.
 
-Note: Inconigto mode not support web push notifications.
+Note: Notifications are not shown when user is in "incognito" mode".
 
 Platform Preview
 ----------------
