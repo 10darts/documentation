@@ -27,14 +27,14 @@ value with the new one specified.
             "key": {
                 "label": "foo"
             },
-            "type": 2,
+            "kind": 2,
             "value": "var"
             "device": "/api/v1/devices/9XzsNm/"
         }
 
 
     :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
-    :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :<json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: device linked to the value
 
@@ -60,7 +60,7 @@ the older value with the new one specified.
             "key": {
                 "label": "foo"
             },
-            "type": 2,
+            "kind": 2,
             "value": "var"
             "persona": "/api/v1/personas/9XzsNm/"
         }
@@ -72,7 +72,7 @@ the older value with the new one specified.
 
     .. note::
 
-        There is no need to specify the fields associated with the value (``type`` and ``value``) to 
+        There is no need to specify the fields associated with the value (``type`` and ``value``) to
         storage keys as if they were tags.
 
 Keys suggestion
