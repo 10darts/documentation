@@ -2,8 +2,11 @@
 Facebook Messenger Integration Guide
 ====================================
 
-Create application
-------------------
+Please make sure you **complete all the following 5 steps in the appropriate order** so your integration
+goes smoothly and without problems.
+
+1. Create application
+---------------------
 
 **10darts Facebook Messenger Channel (FMC)** allows any business Facebook page to
 deliver messages to their Facebook users.
@@ -15,8 +18,8 @@ Until Facebook grants you the required permits, during development and
 integration phases, you can test your application with users that have signed up in
 the application Role.
 
-Add Product > Messenger
------------------------
+2. Add Product > Messenger
+--------------------------
 
 Once you have created your application, you need to add the *Messenger*
 product.
@@ -24,8 +27,8 @@ product.
 .. figure:: /_static/images/messenger/add_messenger.png
   :alt: Add Product > Messenger
 
-Token Generation
-----------------
+3. Token Generation
+-------------------
 
 When setting up the Messenger, under the Token Generation section, you will
 have to select the Facebook page you will use to send your messages and generate
@@ -39,8 +42,8 @@ Keep your token in a safe place once it has been generated, you will have to ins
 .. figure:: /_static/images/messenger/app.png
   :alt: App
 
-Webhooks
---------
+4. Webhooks
+-----------
 
 Once you have created the application in **10darts** you need to set up
 Facebook Messenger Webhooks going back to the Facebook page application
@@ -48,6 +51,9 @@ you have just created, under the following section
 
 .. figure:: /_static/images/messenger/webhook.png
   :alt: Webhooks
+
+You will find the *Callback URL* and the *Verify Token* that Facebook is asking you to 
+for in 10darts Applications under the fields *Webhook URL* and *Webhook verification token*.
 
 .. note::
 
@@ -66,8 +72,8 @@ indicate Facebook which Facebook Page will register the events.
   You only need to select the Facebook Page in the *Select Page* option within
   the dropdown menu.
 
-Application Review
-------------------
+5. Application Review
+---------------------
 
 You first need the ``pages_messaging``, authorization so you can reply a
 user who has contacted you in the previous 24 hours.
