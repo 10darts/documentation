@@ -40,9 +40,9 @@ You can optionally add user data, to do so, call `modifyUserEmail` providing the
 .. code-block:: Objective-C
 
     [TendartsSDK modifyUserEmail:email firstName:@"first" lastName:@"last" password:@"pass" onSuccess:^{
-            //succeeded
+        //succeeded
         } onError:^(NSString * _Nullable error) {
-            //failed
+        //failed
         }];
 
 **Swift**
@@ -50,8 +50,45 @@ You can optionally add user data, to do so, call `modifyUserEmail` providing the
 .. code-block:: Swift
 
     TendartsSDK.modifyUserEmail("email", firstName: "first name", lastName: "last name", password: "password", onSuccess: {
-                //succeeded
+            //succeeded
             }, onError: { (errorString) in
 
                 //error
             })
+
+Saving arbitrary data to users and devices
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can save to any user or device any data using a key/value storage. The type of the value
+can be set usiong the ``kind`` argument, which that value is, 0: float, 1: int, 2: string,
+3: bool.
+
+For adding data to devices:
+
+**Objective-C**
+
+.. code-block:: Objective-C
+
+    [TendartsSDK sendDeviceKey: @"somekey"
+                          kind: @3
+                         value: @"true"
+                     onSuccess:^{
+
+                     } onError:^(NSString * _Nullable error) {
+
+                     }];
+
+And for users:
+
+**Objective-C**
+
+.. code-block:: Objective-C
+
+   [TendartsSDK sendPersonaKey: @"somekey"
+                          kind: @3
+                         value: @"true"
+                     onSuccess:^{
+
+                     } onError:^(NSString * _Nullable error) {
+
+                     }];
