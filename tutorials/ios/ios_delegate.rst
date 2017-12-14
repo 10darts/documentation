@@ -113,8 +113,8 @@ Parameter: notification
 
 Opened notification.
 
-onLogEventWithCategory,type,andMessage
-======================================
+onLogEventWithCategory, type, andMessage
+========================================
 
 **Objective-C**
 

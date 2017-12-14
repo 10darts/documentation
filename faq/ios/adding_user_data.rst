@@ -7,28 +7,29 @@ Adding user data
 Link the device to your own user
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You may need to associate the device with your own user. To do so, call ``linkDeviceWithUserIdentifier:(NSString*)userId onSuccess: (TDOnSuccess _Nullable ) successHandler onError: (TDOnError _Nullable ) errorHandler`` providing your user identifier on the last parameter:
+You may need to associate the device with your own user. To do so, call
+``linkDeviceWithUserIdentifier:(NSString*)userId onSuccess: (TDOnSuccess _Nullable ) successHandler onError: (TDOnError _Nullable ) errorHandler``
+providing your user identifier on the last parameter:
 
 **Objective-C**
 
 .. code-block:: Objective-C
 
-    [TendartsSDK linkDeviceWithUserIdentifier:@"my-user-id" onSuccess:^{
-
-        //device linked, save it to not re-link again
-    } onError:^(NSString * _Nullable error) {
-        //something failed, try again later, more info on errorString
-    }];
+  [TendartsSDK linkDeviceWithUserIdentifier:@"my-user-id" onSuccess:^{
+      // Device linked, save it to not re-link again
+  } onError:^(NSString * _Nullable error) {
+      // Something failed, try again later, more info on errorString
+  }];
 
 **Swift**
 
 .. code-block:: Swift
 
-    TendartsSDK.linkDevice(withUserIdentifier: "my-user-identifier", onSuccess: {
-            //device linked, save it to not re-link again
-        }) { (errorString) in
-            //something failed, try again later, more info on errorString
-        }
+  TendartsSDK.linkDevice(withUserIdentifier: "my-user-identifier", onSuccess: {
+      //device linked, save it to not re-link again
+  }) { (errorString) in
+      // Something failed, try again later, more info on errorString
+  }
 
 Adding user data
 ^^^^^^^^^^^^^^^^
@@ -39,22 +40,21 @@ You can optionally add user data, to do so, call `modifyUserEmail` providing the
 
 .. code-block:: Objective-C
 
-    [TendartsSDK modifyUserEmail:email firstName:@"first" lastName:@"last" password:@"pass" onSuccess:^{
-        //succeeded
-        } onError:^(NSString * _Nullable error) {
-        //failed
-        }];
+  [TendartsSDK modifyUserEmail:email firstName:@"first" lastName:@"last" password:@"pass" onSuccess:^{
+      // Succeeded
+  } onError:^(NSString * _Nullable error) {
+      // Failed
+  }];
 
 **Swift**
 
 .. code-block:: Swift
 
     TendartsSDK.modifyUserEmail("email", firstName: "first name", lastName: "last name", password: "password", onSuccess: {
-            //succeeded
-            }, onError: { (errorString) in
-
-                //error
-            })
+        // Succeeded
+    }, onError: { (errorString) in
+        // Error
+    })
 
 Saving arbitrary data to users and devices
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,14 +69,11 @@ For adding data to devices:
 
 .. code-block:: Objective-C
 
-    [TendartsSDK sendDeviceKey: @"somekey"
-                          kind: @3
-                         value: @"true"
-                     onSuccess:^{
-
-                     } onError:^(NSString * _Nullable error) {
-
-                     }];
+  [TendartsSDK sendDeviceKey: @"somekey" kind: @3 value: @"true" onSuccess:^{
+      // Succeeded
+  } onError:^(NSString * _Nullable error) {
+      // Error
+  }];
 
 And for users:
 
@@ -84,11 +81,8 @@ And for users:
 
 .. code-block:: Objective-C
 
-   [TendartsSDK sendPersonaKey: @"somekey"
-                          kind: @3
-                         value: @"true"
-                     onSuccess:^{
-
-                     } onError:^(NSString * _Nullable error) {
-
-                     }];
+  [TendartsSDK sendPersonaKey: @"somekey" kind: @3 value: @"true" onSuccess:^{
+      // Succeeded
+  } onError:^(NSString * _Nullable error) {
+      // Error
+  }];
