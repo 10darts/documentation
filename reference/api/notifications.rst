@@ -130,6 +130,7 @@ Create a notification
     :<json list tags: *keys* list that the target users' devices that receive the notifications have.
     :<json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :<json string client_data: text chain with the ``client_data`` values of the users targeted in the notification separated by commas.
+    :<json bool use_in_badge: defines if the notification should be used to calculate the badge.
 
     .. warning::
 
@@ -191,6 +192,7 @@ Create a notification
     :>json list tags: *keys* list that the target users’ devices that receive the notifications have.
     :>json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :>json int audience: estimated users number receiving the notification.
+    :>json bool use_in_badge: defines if the notification should be used to calculate the badge.
 
 Update notification
 -------------------
