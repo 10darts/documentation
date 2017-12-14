@@ -14,4 +14,4 @@ You can reset the badge by calling:
       // Error
   }];
 
-This will mark all the unread notifications as readed.
+This will mark all the unread notifications as read.
