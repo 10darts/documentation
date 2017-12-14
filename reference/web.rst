@@ -12,6 +12,11 @@ Web SDK
   :param string options.autosubscribe: Automatically requests users permission (default false).
   :param string options.geolocation: Saves the user's location (default false).
   :param string options.degug: Show log messages in console (default false).
+  :param options.key: tag associated to the device created or key/value associated to the device.
+  :param string options.key.label: key name.
+  :param string options.key.value: value associated with the key.
+  :param int options.key.kind: value type associated to the key so it is correctly represented, 0: float, 1: int, 2: string, 3: bool. (default 3).
+  :type options.key: string or object
 
 .. js:method:: Tendarts.subscribe
 
@@ -30,3 +35,12 @@ Web SDK
   Links the device with the user with a certain client data.
 
   :param string client_data: client’s unique reference to identify the user.
+
+
+.. js:method:: Tendarts.saveKey(label, value, kind):
+
+  Creates a key or a key/value associated to the registered device. You can create keys with no value as if they were tags.
+
+  :param string label: key name.
+  :param string value: value associated with the key.
+  :param int kind: value type associated to the key so it is correctly represented, 0: float, 1: int, 2: string, 3: bool. (default 3).
