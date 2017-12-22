@@ -106,9 +106,9 @@ Create a notification
     :<json string message: notification text, **compulsory**.
     :<json string title: notification title.
     :<json binary attachment: content image.
-    :<json binary attachment_url: content image URL.
+    :<json string attachment_url: content image URL.
     :<json binary thumbnail: content image thumbnail.
-    :<json binary thumbnail_url: content image thumbnail URL.
+    :<json string thumbnail_url: content image thumbnail URL.
     :<json string deep_link: hyperlink to a web content.
     :<json string destination_type: user string that represents the notification link type of content.
     :<json string destination_code: unique code that represents the notification link type of content.
@@ -170,9 +170,9 @@ Create a notification
     :>json string code: notification unique identifier code.
     :>json string message:  notification text.
     :>json binary attachment: content image.
-    :>json binary attachment_url: content image URL.
+    :>json string attachment_url: content image URL.
     :>json binary thumbnail: content image thumbnail.
-    :>json binary thumbnail_url: content image thumbnail URL.
+    :>json string thumbnail_url: content image thumbnail URL.
     :>json string deep_link: hyperlink to a web content.
     :>json string destination_type: user string that represents the notification link type of content.
     :>json string destination_code: unique code that represents the notification link type of content.
@@ -384,7 +384,7 @@ The push notification will be distributed evenly among all alternatives.
     :>json string message: alternative notification text, **compulsory**.
     :>json string notification: alternative notification URL, **compulsory**.
     :>json binary attachment: alternative notification image.
-    :>json binary attachment_url: alternative notification image URL.
+    :>json string attachment_url: alternative notification image URL.
 
     .. warning::
 
