@@ -105,8 +105,10 @@ Create a notification
 
     :<json string message: notification text, **compulsory**.
     :<json string title: notification title.
-    :<json binary image: content image.
-    :<json binary image: content image URL.
+    :<json binary attachment: content image.
+    :<json binary attachment_url: content image URL.
+    :<json binary thumbnail: content image thumbnail.
+    :<json binary thumbnail_url: content image thumbnail URL.
     :<json string deep_link: hyperlink to a web content.
     :<json string destination_type: user string that represents the notification link type of content.
     :<json string destination_code: unique code that represents the notification link type of content.
@@ -134,7 +136,7 @@ Create a notification
 
     .. warning::
 
-        When the ``image`` field is included the request should go in *multipart* format.
+        When the ``attachment`` field is included the request should go in *multipart* format.
 
 
     **Response example**:
@@ -167,8 +169,10 @@ Create a notification
     :>json int id: notification unique internal id.
     :>json string code: notification unique identifier code.
     :>json string message:  notification text.
-    :>json binary image: content image.
-    :>json binary image: content image URL.
+    :>json binary attachment: content image.
+    :>json binary attachment_url: content image URL.
+    :>json binary thumbnail: content image thumbnail.
+    :>json binary thumbnail_url: content image thumbnail URL.
     :>json string deep_link: hyperlink to a web content.
     :>json string destination_type: user string that represents the notification link type of content.
     :>json string destination_code: unique code that represents the notification link type of content.
@@ -379,12 +383,12 @@ The push notification will be distributed evenly among all alternatives.
 
     :>json string message: alternative notification text, **compulsory**.
     :>json string notification: alternative notification URL, **compulsory**.
-    :>json binary image: alternative notification image.
-    :>json binary image_url: alternative notification image URL.
+    :>json binary attachment: alternative notification image.
+    :>json binary attachment_url: alternative notification image URL.
 
     .. warning::
 
-        If ``image`` field is included the request needs to be in *multipart* format.
+        If ``attachment`` field is included the request needs to be in *multipart* format.
 
 Obtain content alternatives
 ---------------------------
@@ -417,8 +421,8 @@ Obtain content alternatives
                     "destination_type": null,
                     "destination_code": null,
                     "title": null,
-                    "image": null,
-                    "image_url": null
+                    "attachment": null,
+                    "attachment_url": null
                 }
             ]
         }
