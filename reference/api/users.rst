@@ -30,8 +30,13 @@ User registry
     :<json string first_name: user first name, if known
     :<json string last_name: user last name if known
     :<json string device: device URI to be linked to the user
+    :<json object nested_device: device object, to create it and link to the user
     :<json string country: country code (two letters) to identify the user
     :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
+
+    .. note::
+
+      See :ref:`docs <api-devices>` for ``nested_device`` field.
 
     **Response example**:
 
@@ -50,21 +55,26 @@ User registry
             "last_name": ""
         }
 
-    :<json int id: unique inside user id
-    :<json string code: unique user code that is used to refer to him in the rest of the API
-    :<json string client_data: client’s user unique system identifier
-    :<json string username: unique name of the user, as clients defines
-    :<json string email: user email
-    :<json string first_name: user first name, if known
-    :<json string last_name: user last name if known
-    :<json string device: device URI to be linked to the user
-    :<json string country: country code (two letters) to identify the user
-    :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
+    :>json int id: unique inside user id
+    :>json string code: unique user code that is used to refer to him in the rest of the API
+    :>json string client_data: client’s user unique system identifier
+    :>json string username: unique name of the user, as clients defines
+    :>json string email: user email
+    :>json string first_name: user first name, if known
+    :>json string last_name: user last name if known
+    :>json string device: device URI to be linked to the user
+    :>json object nested_device: device object, to create it and link to the user
+    :>json string country: country code (two letters) to identify the user
+    :>json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
 
     The call can generate an error if::
 
     - If you input invalid data, such as invalid email in the email field
     - If the **persona** ``client_data`` has already been registered
+
+    .. note::
+
+      See :ref:`docs <api-devices>` for ``nested_device`` field.
 
     **Response examples**:
 
@@ -113,8 +123,13 @@ Update user
     :<json string first_name: user first name, if known
     :<json string last_name: user last name if known
     :<json string device: device URI to be linked to the user
+    :<json object nested_device: device object, to create it and link to the user
     :<json string country: country code (two letters) to identify the user
     :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
+
+    .. note::
+
+      See :ref:`docs <api-devices>` for ``nested_device`` field.
 
     **Response example**:
 

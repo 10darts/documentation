@@ -1,3 +1,5 @@
+.. _api-devices:
+
 =======
 Devices
 =======
@@ -56,7 +58,7 @@ Device register
         }
 
     :<json string token: identification device token needed for push reception.
-    :<json string platform: device platform, ``android``, ``ios`` or ``ios_sandbox``.
+    :<json string platform: device platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
     :<json string model: device model description string.
     :<json string version: app version description string.
     :<json string sdk: sdk version description string.
@@ -89,7 +91,7 @@ Device register
 
     :>json int id: unique internal device id
     :>json string code: unique device code, is the one used to refer to that device elsewhere in the API.
-    :>json string platform: device platform, ``android``, ``ios`` or ``ios_sandbox``.
+    :>json string platform: device platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
     :>json string persona: user linked to the device.
     :>json string model: device model description string
     :>json string version: app version description string
