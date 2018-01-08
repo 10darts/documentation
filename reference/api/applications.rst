@@ -40,7 +40,7 @@ Create an application
     :<json string platform: type of the platform, ``GCM``, ``APNS``, ``APNS_SANDBOX``, ``WEB`` or ``MESSENGER``
     :<json string platform_principal: for ``APNS`` and ``APNS_SANDBOX`` it corresponds with the SSL certificate, and is not used in other types
     :<json string platform_credential: for ``APNS`` and ``APNS_SANDBOX`` it corresponds with the private key, and with ``GCM`` it correspondes with the *API Key*
-    :<jsons string page_access_token: for ``MESSENGER`` it corresponds with the page acccess token
+    :<json string page_access_token: for ``MESSENGER`` it corresponds with the page acccess token
 
     **Response example**:
 
