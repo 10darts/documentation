@@ -32,11 +32,51 @@ value with the new one specified.
             "device": "/api/v1/devices/9XzsNm/"
         }
 
-
     :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
     :<json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: device linked to the value
+
+    **Response example**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "id": 6,
+            "key": {
+              "label": "foo",
+              "term": "foo"
+            },
+            "kind": 2,
+            "value": "var"
+         }
+
+    :>json int id: unique identifier for the key/value.
+    :>json object key: JSON object with ``name`` key that shows the name of the key that is linked to, and ``term``, the name normalized.
+    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :>json string value: text value chain representation to be linked to the key.
+
+Delete key/value from device
+----------------------------
+
+.. http:delete:: /api/v1/keys/devices/(int: id)/
+
+    **Request example**:
+
+    .. sourcecode:: http
+
+        DELETE /api/v1/keys/devices/1/ HTTP/1.1
+
+
+    **Response example**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 204 No Content
+        Content-Type: application/json
 
 .. _api-keys-users:
 
@@ -74,6 +114,47 @@ the older value with the new one specified.
 
         There is no need to specify the fields associated with the value (``type`` and ``value``) to
         storage keys as if they were tags.
+
+    **Response example**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+
+        {
+            "id": 6,
+            "key": {
+              "label": "foo",
+              "term": "foo"
+            },
+            "kind": 2,
+            "value": "var"
+         }
+
+    :>json int id: unique identifier for the key/value.
+    :>json object key: JSON object with ``name`` key that shows the name of the key that is linked to, and ``term``, the name normalized.
+    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :>json string value: text value chain representation to be linked to the key.
+
+Delete key/value from user
+--------------------------
+
+.. http:delete:: /api/v1/keys/personas/(int: id)/
+
+    **Request example**:
+
+    .. sourcecode:: http
+
+        DELETE /api/v1/keys/personas/1/ HTTP/1.1
+
+
+    **Response example**:
+
+    .. sourcecode:: http
+
+        HTTP/1.1 204 No Content
+        Content-Type: application/json
 
 Keys suggestion
 ---------------
