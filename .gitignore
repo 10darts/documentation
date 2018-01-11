@@ -24,5 +24,7 @@ __pycache__
 *.mo
 *.pot
 
+.ropeproject
+
 # Sphinx
 _build/
