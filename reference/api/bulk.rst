@@ -2,8 +2,8 @@
 Bulk operations
 ===============
 
-Every bulk operation expects a list of elements to create or update using a single
-request. Their responses are always empty.
+You can create or update users' data in bulk. In this case, 10darts platform will require a list of elements.
+10darts responses in Bulk Operations requests are always empty.
 
 Create users
 ------------
@@ -73,7 +73,7 @@ Update users
 
   .. note::
 
-    It needs the field ``code`` to be able to update the user.
+    The field ``code`` is required to update user data.
 
   **Response example**:
 

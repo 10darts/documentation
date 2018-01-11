@@ -11,8 +11,8 @@ Add key/value to device
 -------------------------
 
 This call creates a new *key/value* associated with the device specified in the call. If this
-device has already a value associated to the same *key*, then this call updates the older
-value with the new one specified.
+device has already a value associated to the same *key*, then this call updates the previous
+value with the new one.
 
 .. http:post:: /api/v1/keys/devices/
 
@@ -83,9 +83,9 @@ Delete key/value from device
 Add key/value to user
 -----------------------
 
-This call creates a new *key/value* associated with the user specified in the call. If
-this user has already a value associated to the same *key*, then this call updates
-the older value with the new one specified.
+This call creates a new *key/value* associated with the device specified in the call. If this
+user has already a value associated to the same *key*, then this call updates the previous
+value with the new one.
 
 .. http:post:: /api/v1/keys/personas/
 
@@ -112,8 +112,7 @@ the older value with the new one specified.
 
     .. note::
 
-        There is no need to specify the fields associated with the value (``type`` and ``value``) to
-        storage keys as if they were tags.
+        If you are using keys as tags, there is no need to specify the value fields (``type`` and ``value``).
 
     **Response example**:
 
