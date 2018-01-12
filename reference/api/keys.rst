@@ -33,7 +33,7 @@ value with the new one.
         }
 
     :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
-    :<json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :<json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool, 4: list.
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: device linked to the value
 
@@ -56,7 +56,7 @@ value with the new one.
 
     :>json int id: unique identifier for the key/value.
     :>json object key: JSON object with ``name`` key that shows the name of the key that is linked to, and ``term``, the name normalized.
-    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool, 4: list.
     :>json string value: text value chain representation to be linked to the key.
 
 Delete key/value from device
@@ -106,7 +106,7 @@ value with the new one.
         }
 
     :<json object key: JSON object with ``name`` key that shows the name of the key that is linked to,  **compulsory**.
-    :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :<json int type: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool, :4 list.
     :<json string value: text value chain representation to be linked to the key.
     :<json string device: persona linked to the value
 
@@ -133,7 +133,7 @@ value with the new one.
 
     :>json int id: unique identifier for the key/value.
     :>json object key: JSON object with ``name`` key that shows the name of the key that is linked to, and ``term``, the name normalized.
-    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool.
+    :>json int kind: if it shows a linked value, which that value is, 0: float, 1: int, 2: string, 3: bool, 4: list.
     :>json string value: text value chain representation to be linked to the key.
 
 Delete key/value from user
