@@ -101,7 +101,7 @@ value with the new one.
                 "label": "foo"
             },
             "kind": 2,
-            "value": "var"
+            "value": "var",
             "persona": "/api/v1/personas/9XzsNm/"
         }
 
