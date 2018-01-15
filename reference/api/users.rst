@@ -33,6 +33,7 @@ User registry
     :<json object nested_device: device object, to create it and link to the user
     :<json string country: country code (two letters) to identify the user
     :<json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
+    :<json list keys: list of key/values objects, as defined :ref:`here <api-keys-users>`
 
     .. note::
 
@@ -66,7 +67,8 @@ User registry
     :>json object nested_device: device object, to create it and link to the user
     :>json string country: country code (two letters) to identify the user
     :>json GeoJSON position: persona coordinates, where ``coordinates`` are the following array: **[longitude, latitude]**
-
+    :>json list keys: list of key/values objects, as defined :ref:`here <api-keys-users>`
+    
     The call can generate an error if::
 
     - If you input invalid data, such as invalid email in the email field
