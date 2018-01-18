@@ -51,7 +51,7 @@ Add the following line to your app build.gradle:
 
 .. code-block:: groovy
 
-    compile  'com.10darts:sdk:1.23'
+    compile  'com.10darts:sdk:1.25'
 
 
 -  **tendarts\_sdk\_access\_token**: your access token to 10darts (API Key)
