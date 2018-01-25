@@ -1,8 +1,8 @@
 .. _api-devices:
 
-=======
-Devices
-=======
+===========
+Touchpoints
+===========
 
 Platforms
 ---------
@@ -36,8 +36,8 @@ Platforms
             ]
         }
 
-Device register
----------------
+Touchpoint register
+-------------------
 
 .. http:post:: /api/v1/devices/
 
@@ -57,15 +57,15 @@ Device register
             }
         }
 
-    :<json string token: identification device token needed for push reception.
-    :<json string platform: device platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
-    :<json string model: device model description string.
+    :<json string token: identification touchpoint token needed for push reception.
+    :<json string platform: touchpoint platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
+    :<json string model: touchpoint model description string.
     :<json string version: app version description string.
     :<json string sdk: sdk version description string.
     :<json string language: language description string with 2 characters.
     :<json string country: country description string with 2 characters.
-    :<json GeoJSON position: device positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
-    :<json string persona: user URI with which the device will be linked
+    :<json GeoJSON position: touchpoint positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
+    :<json string persona: user URI with which the touchpoint will be linked
 
     **Response example**:
 
@@ -89,20 +89,20 @@ Device register
             "persona": "/api/v1/personas/IECwPN/"
         }
 
-    :>json int id: unique internal device id
-    :>json string code: unique device code, is the one used to refer to that device elsewhere in the API.
-    :>json string platform: device platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
-    :>json string persona: user linked to the device.
-    :>json string model: device model description string
+    :>json int id: unique internal touchpoint id
+    :>json string code: unique touchpoint code, is the one used to refer to that touchpoint elsewhere in the API.
+    :>json string platform: touchpoint platform, ``android``, ``ios``, ``ios_sandbox``, ``web`` or ``messenger``.
+    :>json string persona: user linked to the touchpoint.
+    :>json string model: touchpoint model description string
     :>json string version: app version description string
     :>json string sdk: sdk version description string.
     :>json string language: language description string
     :>json string country: country description string with 2 characters
-    :>json GeoJSON position: device positioning where coordinates are defined as follows: **[longitud, latidud]**
+    :>json GeoJSON position: touchpoint positioning where coordinates are defined as follows: **[longitud, latidud]**
 
 .. note::
 
-    If a user (field ``persona``) is not specified at the device creation
+    If a user (field ``persona``) is not specified at the touchpoint creation
     request, the user will be created automatically and you'll get it with
     the creation response
 
@@ -110,12 +110,12 @@ Device register
 
     If a country is not specified, the country will be automatically chosen
     based on the position, coordinates introduced. If there are not coordinates
-    the country will be chosen based on the device IP.
+    the country will be chosen based on the touchpoint IP.
 
 .. _api-devices-update:
 
-Device update
--------------
+Touchpoint update
+-----------------
 
 Update position, user or other data.
 
@@ -136,12 +136,12 @@ Update position, user or other data.
                 }
         }
 
-    :<json string persona: user linked to the device.
-    :<json bool disabled: boolean that shows if push notifications have been activated or not in the device.
-    :<json string model: device model description string.
+    :<json string persona: user linked to the touchpoint.
+    :<json bool disabled: boolean that shows if push notifications have been activated or not in the touchpoint.
+    :<json string model: touchpoint model description string.
     :<json string version: app version description string.
     :<json string language: language description string with 2 characters.
-    :<json GeoJSON position: device positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
+    :<json GeoJSON position: touchpoint positioning where coordinates is an array with the following coordinates:  **[longitud, latidud]**.
 
     **Response example**:
 
@@ -151,10 +151,10 @@ Update position, user or other data.
 
 .. _api-devices-link:
 
-Link a device with a user/individual
-------------------------------------
+Link a touchpoint with a user
+-----------------------------
 
-To link a user with a device you can make a call to ``/api/v1/devices/links/`` 
+To link a user with a touchpoint you can make a call to ``/api/v1/devices/links/`` 
 specifying in the ``client_data`` field the unique value that identifies
 that user.
 
@@ -172,7 +172,7 @@ that user.
            "client_data": "foo"
        }
 
-   :<json string device: device's URI that needs to be updated.
+   :<json string device: touchpoint's URI that needs to be updated.
    :<json string client_data: client's unique reference to identify the user.
 
    **Response example**:
@@ -199,15 +199,15 @@ that user.
 
    .. note::
 
-       The answer to this call is the device updated with the user
+       The answer to this call is the touchpoint updated with the user
        information that is linked with.
 
 .. _api-devices-unlink:
 
-Unlink a device with a user / individual
-----------------------------------------
+Unlink a touchpoint with a user
+-------------------------------
 
-The user will be unlinked with a device when he closes the session
+The user will be unlinked with a touchpoint when he closes the session
 in the app that is being integrated.
 
 .. http:post:: /api/v1/devices/unlink/
@@ -223,7 +223,7 @@ in the app that is being integrated.
            "device": "/api/v1/devices/9XzsNm/"
        }
 
-   :<json string device: device's URI that needs to be updated.
+   :<json string device: touchpoint's URI that needs to be updated.
 
    **Response example**:
 
@@ -249,11 +249,11 @@ in the app that is being integrated.
 
    .. note::
 
-       The answer to this call is the device updated with the information of a
+       The answer to this call is the touchpoint updated with the information of a
        new non-identifiable persona that is linked with.
 
-Device search
--------------
+Touchpoint search
+-----------------
 
 .. http:get:: /api/v1/devices/?(string:field)=(string:value)
 
@@ -299,8 +299,8 @@ Device search
 Access register
 ---------------
 
-There needs to be an explicit call to register a device access and ultimately, a
-device activity.
+There needs to be an explicit call to register a touchpoint access and ultimately, a
+touchpoint activity.
 
 .. http:post:: /api/v1/devices/(string:code)/access/
 
