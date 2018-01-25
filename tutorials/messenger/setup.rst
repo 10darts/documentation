@@ -52,7 +52,7 @@ you have just created, under the following section
 .. figure:: /_static/images/messenger/webhook.png
   :alt: Webhooks
 
-You will find the *Callback URL* and the *Verify Token* that Facebook is asking you to 
+You will find the *Callback URL* and the *Verify Token* that Facebook is asking you to
 for in 10darts Applications under the fields *Webhook URL* and *Webhook verification token*.
 
 .. note::
@@ -61,6 +61,12 @@ for in 10darts Applications under the fields *Webhook URL* and *Webhook verifica
     to your own address. You can do so adding the field ``redirect_to`` as a URL
     parameter. 10darts will forward to that address the Facebook
     message as it is.
+
+    Example:
+
+    https://your_10darts_webhook_URL/?redirect_to=https:///your_BOT_webhook_URL
+
+
 
 Once all events and the webhook address are registered you only need to
 indicate Facebook which Facebook Page will register the events.
