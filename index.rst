@@ -73,6 +73,7 @@ contact us on it@10darts.com if you need any help.
     overview/content_sources
     overview/options
     overview/statistics
+    overview/triggers
 
 .. toctree::
     :maxdepth: 2
