@@ -133,7 +133,8 @@ Create a notification
     :<json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :<json string client_data: text chain with the ``client_data`` values of the users targeted in the notification separated by commas.
     :<json bool use_in_badge: defines if the notification should be used to calculate the badge.
-
+    :<json string schedule_for: the date and time when the notification should be send, in ISO 8601 format
+    
     .. warning::
 
         When the ``attachment`` field is included the request should go in *multipart* format.
@@ -197,6 +198,7 @@ Create a notification
     :>json string tags_content_type: the tag filter can apply to a “device” or a “persona” – user. By default it’ll apply to a device.
     :>json int audience: estimated users number receiving the notification.
     :>json bool use_in_badge: defines if the notification should be used to calculate the badge.
+    :>json string schedule_for: the date and time when the notification should be send, in ISO 8601 format
 
 Update notification
 -------------------
