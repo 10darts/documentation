@@ -1,8 +1,8 @@
 .. _triggers:
 
-============================
-Campañas basadas en triggers
-============================
+=================
+Trigger Campaigns
+=================
 
 In **10darts** you can set up campaigns that will be sent when the user behaves in pre-determined manner, i.e.: accesses
 for the first time, has not accessed in certain number of days, etc. Each of these events is a trigger.
