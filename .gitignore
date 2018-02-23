@@ -25,6 +25,7 @@ __pycache__
 *.pot
 
 .ropeproject
+Pipfile.lock
 
 # Sphinx
 _build/
