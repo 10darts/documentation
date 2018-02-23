@@ -1,5 +1,5 @@
 ====================================
-Repository for 10Darts documentation
+Repository for 10darts documentation
 ====================================
 
 Write documentation
@@ -19,16 +19,11 @@ You only have to do this once:
 Translations
 ^^^^^^^^^^^^
 
-First, activate the virtualenv:
-
-.. code-block:: bash
-
-    $ pipenv shell
-
 Extract document’s translatable messages into pot files:
 
 .. code-block:: bash
 
+    $ pipenv shell
     (10darts-documentation) $ make gettext
 
 Setup/update locale:
