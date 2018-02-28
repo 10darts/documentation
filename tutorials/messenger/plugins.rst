@@ -10,7 +10,7 @@ referral information to the plugins.
 Referral
 --------
 
-Referral field can be used to add user information to **10darts** backend. You can ad ``client_data``
+Referral field can be used to add user information to **10darts** backend. You can add ``client_data``
 value to link your CRM user key with 10darts user key. You can also add key/values to qualify
 your user/visitor adding his interests, user acquisition channel, etc.
 
@@ -26,4 +26,4 @@ Example without ``client_data``::
 
   key1:value1;key2:value2
 
-**Important**: referral field **need to be encoded** in **Base64**.
+**Important**: referral field **needs to be encoded** in **Base64**.
