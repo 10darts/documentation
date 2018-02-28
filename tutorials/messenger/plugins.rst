@@ -11,8 +11,8 @@ Referral
 --------
 
 Referral field can be used to add user information to **10darts** backend. You can ad ``client_data``
- value to link your CRM user key with 10darts user key. You can also add key/values to qualify
- your user/visitor adding his interests, user acquisition channel, etc.
+value to link your CRM user key with 10darts user key. You can also add key/values to qualify
+your user/visitor adding his interests, user acquisition channel, etc.
 
 The referral field format is the following: client_data and keys/values are separated using ``|``,
 each key/value is separated using ``;`` and the key and value are separated using ``:``.
