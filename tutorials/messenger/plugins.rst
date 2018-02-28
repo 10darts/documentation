@@ -2,21 +2,20 @@
 Facebook Messenger Plugins
 ==========================
 
-You can integrate Messenger using
-`the available plugins <https://developers.facebook.com/docs/messenger-platform/reference/web-plugins>`_ from
-Facebook. In case you want to save data from your platform to our users, yo can add referral
-information to the plugins.
+Facebook provides a variety of easy-to-integrate plug-ins that bring users to your messenger from the web.
+`Messenger's web pug-ins <https://developers.facebook.com/docs/messenger-platform/reference/web-plugins>`_
+allow your user's to choose to receive messages, open a new conversation, and more. You can add user
+referral information to the plugins.
 
 Referral
 --------
 
-You can give to **10darts** data about your users using the referral field from
-Facebook Messenger plugins. This data could be the ``client_data`` value and any
-amount of key/values.
+Referral field can be used to add user information to **10darts** backend. You can ad ``client_data``
+ value to link your CRM user key with 10darts user key. You can also add key/values to qualify
+ your user/visitor adding his interests, user acquisition channel, etc.
 
-The ``client_data`` and the keys/values are separated by
-the ``|`` character. Each key/value is separated using ``;`` character and the
-key is separated from the value using ``:`` character.
+The referral field format is the following: client_data and keys/values are separated using ``|``,
+each key/value is separated using ``;`` and the key and value are separated using ``:``.
 
 Example::
 
@@ -27,5 +26,4 @@ Example without ``client_data``::
 
   key1:value1;key2:value2
 
-**10darts** expects a referral field encoded in base64, therefore this sting should be base64
-encoded before sending it to Facebook.
+**Important**: referral field **need to be encoded** in **Base64**.
