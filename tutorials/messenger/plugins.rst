@@ -22,5 +22,10 @@ Example::
 
   client_data_value|key1:value1;key2:value2
 
+
+Example without ``client_data``::
+
+  key1:value1;key2:value2
+
 **10darts** expects a referral field encoded in base64, therefore this sting should be base64
 encoded before sending it to Facebook.
