@@ -59,7 +59,7 @@ Get started
 
     If you are a marketer, community manager or just do not code
 
-        1. For Facebook Messenger go to: :ref:`Integration Guide <messenger-sdk-setup>`
+        1. For Facebook Messenger go to: :ref:`Integration Guide <messenger-sdk-setup>`.
         2. For Web, iOS and Android, please have somebody integrate 10darts SDK in your app/web.
         3. Launch your `first campaign <https://10darts.com/app/notifications>`_.
 
