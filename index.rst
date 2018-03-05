@@ -47,6 +47,7 @@ Get started
 .. glossary::
 
     If you are a developer
+
         1. For Facebook Messenger go to: :ref:`Integration Guide <messenger-sdk-setup>`.
         2. For Web Notifications got to: :ref:`Setup Guide <web-sdk-setup>`.
         3. Fot iOs and Android:
@@ -59,8 +60,8 @@ Get started
     If you are a marketer, community manager or just do not code
 
         1. For Facebook Messenger go to: :ref:`Integration Guide <messenger-sdk-setup>`
-        1. For Web, iOS and Android, please have somebody integrate 10darts SDK in your app/web.
-        2. Launch your `first campaign <https://10darts.com/app/notifications>`_.
+        2. For Web, iOS and Android, please have somebody integrate 10darts SDK in your app/web.
+        3. Launch your `first campaign <https://10darts.com/app/notifications>`_.
 
 For further info keep reading these Docs & the Help section. Feel free to
 contact us on it@10darts.com if you need any help.
