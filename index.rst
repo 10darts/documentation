@@ -13,8 +13,8 @@ with your users applying behavior predictions and profile clustering.
 
 10darts software includes the following tools:
 
-1. Facebook Messenger setup.
-2. Web Notifications, :ref:`Android <android-sdk-reference>` and :ref:`iOS <ios-sdk-reference>` **SDK**.
+1. :ref:`Facebook Messenger setup <messenger-sdk-setup>`.
+2. :ref:`Web Notifications <web-sdk-setup>`, :ref:`Android <android-sdk-reference>` and :ref:`iOS <ios-sdk-reference>` **SDK**.
 3. **RESTful** :ref:`API <api>`.
 4. **Campaign Manager** for `creating and managing manual campaigns <https://10darts.com/app/notifications>`_ , `seetting up and monitoring the results of your automatic campaigns <https://10darts.com/app/notifications/automatic>`_ and `API personalized push notification campaigns <https://10darts.com/app/notifications/transactional>`_.
 5. **Data Manager System** that gathers keeps and analyzes your users’ interactions data to boost user engagement and retention.
