@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = '10Darts'
+project = '10darts'
 copyright = '2017 10darts'
 author = '10darts'
 
@@ -110,6 +110,7 @@ html_theme_options = {
     'logo_name': '10darts',
     'font_family': '"Work Sans","proxima-nova","Helvetica Neue",Arial,sans-serif;',
     'head_font_family': '"Work Sans","ff-tisa-web-pro","Georgia",Arial,sans-serif;',
+    'analytics_id': 'UA-108033358-1',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -130,7 +131,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = '10Dartsdoc'
+htmlhelp_basename = '10dartsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -157,7 +158,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, '10Darts.tex', '10Darts Documentation',
+    (master_doc, '10darts.tex', '10darts Documentation',
      '10darts', 'manual'),
 ]
 
@@ -167,7 +168,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, '10darts', '10Darts Documentation',
+    (master_doc, '10darts', '10darts Documentation',
      [author], 1)
 ]
 
@@ -178,7 +179,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, '10Darts', '10Darts Documentation',
-     author, '10Darts', 'One line description of project.',
+    (master_doc, '10darts', '10darts Documentation',
+     author, '10darts', 'One line description of project.',
      'Miscellaneous'),
 ]

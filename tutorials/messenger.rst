@@ -9,3 +9,4 @@ Facebook Messenger
     :glob:
 
     messenger/setup
+    messenger/plugins
