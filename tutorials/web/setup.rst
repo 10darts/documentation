@@ -110,7 +110,7 @@ Insert the code to start the SDK:
 
 .. code-block:: html
 
-  <script src="https://sdk.10darts.com/v0.2/10dartsSDK.js"></script>
+  <script src="https://sdk.10darts.com/v0.3/10dartsSDK.js"></script>
   <script>
     var Tendarts = window.Tendarts || {};
     Tendarts.init({
