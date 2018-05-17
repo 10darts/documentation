@@ -18,6 +18,7 @@ Web SDK
   :param int options.key.kind: value type associated to the key so it is correctly represented, 0: float, 1: int, 2: string, 3: bool. (default 3).
   :type options.key: string or object
   :param string options.scope: Representing a URL that defines a service worker's registration scope (default: '/').
+  :param string options.serviceWorkerPath: URL of the service worker script (default: '/').
 
 .. js:method:: Tendarts.subscribe
 
